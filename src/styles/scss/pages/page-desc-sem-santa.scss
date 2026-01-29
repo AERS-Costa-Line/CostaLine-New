@@ -1,0 +1,386 @@
+@use '../core' as*;
+@use '../_01-settings/variables' as *;
+@use '../_02-tools/mixin' as *;
+
+// Import components
+@use '../_06-components/header' as *;
+@use '../_06-components/modal-doters' as *;
+@use '../_06-components/cotiza' as *;
+@use '../_06-components/button-eva-trip' as *;
+@use '../_06-components/button-whats' as *;
+@use '../_06-components/payments-logos' as *;
+@use '../_06-components/app-banner-image' as *;
+@use '../_06-components/card-right-description' as *;
+@use '../_06-components/section-title' as *;
+@use '../_06-components/destinations-grid' as *;
+@use '../_06-components/app-faqs-component' as *;
+@use '../_06-components/footer' as *;
+@use '../_06-components/cookies-policy' as *;
+@use '../_06-components/card-image-top' as *;
+
+/*-------------------ESTILOS ESPECIFICOS PARA LAS SECCIONES DE RENTA DE AUTOBUSES---------------------*/
+
+
+.__section_brand {
+  color: $brand-color;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.__first-title {
+  font-size: clamp(1.5rem, 2.5vh, 1.5rem);
+  text-align: center;
+}
+
+.__panthom_space {
+  height: 200px;
+  width: 100%;
+  display: block;
+
+  @media (max-width: 900px) {
+    height: 100px;
+
+  }
+}
+
+.__sections {
+  width: 100%;
+  padding: 35px 70px;
+
+  .__section_tittle {
+    color: $primary-color;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+
+  .__section_subtittle {
+    color: $primary-color;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  @include media ("md") {
+    padding: 15px;
+  }
+}
+
+.__sections-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px 70px;
+  gap: 10px;
+
+  @include media ("md") {
+    padding: 15px;
+  }
+
+
+  .__link {
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+}
+
+.__bg-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background-color: $white;
+  text-align: left;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  gap: 15px;
+
+  @include media ("md") {
+    padding: 15px;
+  }
+}
+
+.__bg-blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  box-sizing: border-box;
+  background-color: $bg-card-primary;
+  padding: 15px 50px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  gap: 15px;
+
+  .__section-cards-image-top {
+    width: 100%;
+    padding: 30px;
+
+    app-card-image-top {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      width: 100%;
+
+      @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 740px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  @include media ("md") {
+    padding: 15px;
+  }
+}
+
+.__subtitle-section {
+  justify-content: left;
+  text-align: left;
+  color: $primary-color;
+}
+
+.__terms-purchase-text {
+  color: $primary-color;
+  text-align: justify;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.__link-text {
+  color: $primary-color;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.__terms-purchase-list {
+  display: flex;
+  flex-direction: column;
+  list-style-position: outside;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+.__terms-purchase-item .__terms-purchase-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.__order-list-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  list-style-position: outside;
+  gap: 80px;
+
+  @include media ("md") {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.__order-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  list-style: numeric;
+}
+
+.__item-text-bold {
+  color: $primary-color;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.__item-text {
+  text-align: center;
+  font-size: 20px;
+}
+
+.__order-list-column {
+  display: flex;
+  flex-direction: column;
+  list-style-position: outside;
+  width: 100%;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+.__order-list-column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  list-style-position: outside;
+  width: 100%;
+  padding-left: 20px;
+  gap: 10px;
+}
+
+.__section__pets-info {
+  width: 100%;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  h3 {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: $hover-header-color;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+  }
+
+}
+
+.__subtitle-section__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+  text-align: center;
+  font-weight: 900;
+}
+
+.__subtitle-section__left {
+  width: 90%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: $primary-color;
+  text-align: start;
+  font-weight: 900;
+  margin: auto;
+}
+
+.__link-section__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 10px;
+  text-decoration-line: underline;
+}
+
+.pets-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 4rem 2rem;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+
+  .pet-item {
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0b3a5b;
+
+    img {
+      width: auto;
+      height: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #0b3a5b;
+      opacity: 0.9;
+    }
+  }
+
+  @media (max-width: 900px) {
+    gap: 2rem;
+
+    .pet-item {
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+
+    .pet-item {
+      max-width: 100%;
+
+
+    }
+  }
+}
+
+.asterisk-list {
+  list-style: none; // 🔹 Quita la bolita predeterminada
+  padding-left: 1.2em;
+
+  li {
+    position: relative;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+
+    &::before {
+      content: "*"; // 🔹 Asterisco personalizado
+      position: absolute;
+      left: -1.2em;
+      color: #0b3a5b; // 🔹 Cambia el color si quieres
+      font-weight: bold;
+    }
+  }
+}
