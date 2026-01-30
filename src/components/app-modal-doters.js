@@ -22,7 +22,7 @@ class AppModalDoters extends HTMLElement {
         <div id="modalDoters-loginModal" class="modalDoters-modal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="modalDoters-title">
             <div class="modalDoters-modal-content">
                 <div class="modalHeader">
-                    <img src="https://costaline.com.mx/etn-img-web/logos/logo-doters-24-blanc.webp" alt="Logotipo Doters" title="Doters" loading="lazy">
+                    <img src="../../src/assets/img/logos/doters.svg" alt="Logotipo Doters" title="Doters" loading="lazy">
                     <button class="modalDoters-close" aria-label="Cerrar modal">×</button>
                 </div>
                 <div class="modalContenido">
