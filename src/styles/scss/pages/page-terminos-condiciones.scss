@@ -16,7 +16,20 @@
 @use '../_06-components/footer' as *;
 @use '../_06-components/cookies-policy' as *;
 
+
+/*---------------------------ESTILOS ESPECIFICOS DE IMAGEN DE MONEDERO ----------------------------*/
+.__section-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-logo{
+    max-width: 350px;
+}
+
 /*-------------------ESTILOS ESPECIFICOS PARA LAS SECCIONES DE RENTA DE AUTOBUSES---------------------*/
+
 .__panthom_space {
     height: 200px;
     width: 100%;

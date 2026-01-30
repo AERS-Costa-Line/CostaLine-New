@@ -22,11 +22,13 @@ class PageTravelpass extends HTMLElement {
 
             <app-payments></app-payments>
 
-            <section class="__section">
+            <section class="__sections">
                 <app-section-title section-title="Términos y condiciones"></app-section-title>
             </section>
 
-            <img src="../src/assets/img/logos/logo-monedero-electronico.webp" alt="Travelpass" class="img-logo">
+            <section class="__sections __section-img">
+                <img src="../src/assets/img/logos/logo-monedero-electronico.webp" alt="Travelpass" class="img-logo">
+            </section>
 
             <section class="__sections">
                 <article class="__bg-blue">
