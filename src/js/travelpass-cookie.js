@@ -10,31 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	const userNameElement = document.getElementById("user-name");
 	const userBalanceElement = document.getElementById("user-balance");
 	const logoutLink = document.getElementById("logout-link");
-	const brandButtons = document.querySelectorAll(".brand-btn");
 	const brandInput = document.getElementById("brand");
 	const miCuentaBtn = document.getElementById("miCuentaBtn");
-	const registerLink = document.getElementById("register-link");
-	const infoLink = document.getElementById("info-link");
 
 	const loginUrl = "https://one-api.costaline.com.mx/api/v2/ewallet/login";
 	const profileUrl = "https://one-api.costaline.com.mx/api/v2/ewallet/profile";
-
-	const dashboardUrls = {
-		surdejalisco:
-			"https://travelpass-sur-de-jalisco.costaline.com.mx/dashboard",
-		pegasso: "https://travelpass-pegasso.costaline.com.mx/dashboard",
-	};
-
-	const registerUrls = {
-		surdejalisco: "https://travelpass-sur-de-jalisco.costaline.com.mx/signup",
-		pegasso: "https://travelpass-pegasso.costaline.com.mx/signup",
-	};
-
-	const infoUrls = {
-		surdejalisco:
-			"https://www.costaline.com.mx/sur-de-jalisco/travel-pass.html",
-		pegasso: "https://www.costaline.com.mx/pegasso/travel-pass.html",
-	};
 
 	// Funciones para manejo de cookies
 	function setCookie(name, value, days = 7) {
@@ -146,34 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
-	// Actualiza enlace de registro
-	function updateRegisterLink() {
-		const selectedBrand = brandInput.value;
-		if (registerUrls[selectedBrand]) {
-			registerLink.href = registerUrls[selectedBrand];
-		}
-	}
-
-	// Actualiza enlace de "¿Qué es Monedero Electrónico?"
-	function updateInfoLink() {
-		const selectedBrand = brandInput.value;
-		if (infoUrls[selectedBrand]) {
-			infoLink.href = infoUrls[selectedBrand];
-		}
-	}
-
-	// Selector de marca
-	brandButtons.forEach((button) => {
-		button.addEventListener("click", function () {
-			brandButtons.forEach((btn) => btn.classList.remove("selected"));
-			this.classList.add("selected");
-			brandInput.value = this.dataset.brand;
-
-			updateRegisterLink();
-			updateInfoLink();
-		});
-	});
-
 	// Envío del formulario de login
 	loginForm.addEventListener("submit", function (event) {
 		event.preventDefault();
@@ -217,10 +169,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (miCuentaBtn) {
 		miCuentaBtn.addEventListener("click", function (event) {
 			event.preventDefault();
-			const userBrand = localStorage.getItem("userBrand");
-			if (userBrand && dashboardUrls[userBrand]) {
-				window.open(dashboardUrls[userBrand], "_blank");
-			}
+			window.open("https://travelpass.costaline.com.mx/dashboard", "_blank");
 		});
 	}
 
@@ -236,7 +185,5 @@ document.addEventListener("DOMContentLoaded", function () {
 			profileModal.style.display = "none";
 		});
 
-	updateRegisterLink();
-	updateInfoLink();
 	checkSession();
 });
