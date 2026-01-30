@@ -26,13 +26,16 @@ class PageViajeroProtegido extends HTMLElement {
                 <app-section-title section-title="Términos y condiciones"></app-section-title>
             </section>
 
-            <div class="btn-group-pages">
-                <a class="btn-enable" href="../../../servicios/viajero-protegido-plus.html" class="__btn">Servicio Plus</a>
-                <a class="btn-disable" class="__btn">Servicio Basico</a> 
-                <a class="btn-enable" href="../../../servicios/viajero-protegido-lujo.html" class="__btn">Servicio de Lujo</a> 
-            </div>
+            <section class="__sections __btn-group-pages">
+                <div>
+                    <a class="__btn btn-enable" href="../../../servicios/viajero-protegido-plus.html">Servicio Plus</a>
+                    <a class="__btn btn-disable">Servicio Basico</a> 
+                    <a class="__btn btn-enable" href="../../../servicios/viajero-protegido-lujo.html">Servicio de Lujo</a> 
+                </div>
 
-            <h3 class="__title__section">Condiciones Generales IAMSA Básico</h3>
+                <h3 class="__subtitle-section">Condiciones Generales IAMSA Básico</h3>
+            </section>
+
 
 
             <section class="__sections">
