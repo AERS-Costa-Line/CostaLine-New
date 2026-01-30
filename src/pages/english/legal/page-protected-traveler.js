@@ -8,15 +8,15 @@ import "../../../js/slick.js?v=1.0.2";
 import "../../../components/app-destinations-table.js";
 
 class PageProtectedTraveler extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
         <app-cotiza></app-cotiza>
 
             <app-modal-doters></app-modal-doters>
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/banner/promociones/web/viajero-protegido-web.webp","mediumImage": "../../../src/assets/img/banner/promociones/tablet/viajero-protegido-tablet.webp", "smallImage": "../../../src/assets/img/banner/promociones/movil/viajero-protegido-mobile.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/banner/promociones/web/viajero_protegido.webp","mediumImage": "../../../src/assets/img/banner/promociones/tablet/viajero-protegido-tablet.webp", "smallImage": "../../../src/assets/img/banner/promociones/movil/viajero-protegido-mobile.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
@@ -768,7 +768,7 @@ class PageProtectedTraveler extends HTMLElement {
             </section>
 
     `;
-  }
+	}
 }
 
 customElements.define("page-protected-traveler", PageProtectedTraveler);

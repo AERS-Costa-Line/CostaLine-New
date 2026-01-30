@@ -8,15 +8,15 @@ import "../../../js/slick.js?v=1.0.2";
 import "../../../components/app-destinations-table.js";
 
 class PageProtectedTravelerLuxury extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
          <app-cotiza></app-cotiza>
 
             <app-modal-doters></app-modal-doters>
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/banner/promociones/web/viajero-protegido-web.webp","mediumImage": "../../../src/assets/img/banner/promociones/tablet/viajero-protegido-tablet.webp", "smallImage": "../../../src/assets/img/banner/promociones/movil/viajero-protegido-mobile.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/banner/promociones/web/viajero_protegido.webp","mediumImage": "../../../src/assets/img/banner/promociones/tablet/viajero-protegido-tablet.webp", "smallImage": "../../../src/assets/img/banner/promociones/movil/viajero-protegido-mobile.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
@@ -1452,20 +1452,20 @@ class PageProtectedTravelerLuxury extends HTMLElement {
 
     `;
 
-    this.loadAndSetPetsTableData(
-      "#pets-table",
-      "../../../src/data/table-pets-3.json"
-    );
-  }
-  async loadAndSetPetsTableData(tableElementSelector, jsonPath) {
-    const tableElement = this.querySelector(tableElementSelector);
-    const response = await fetch(jsonPath);
-    const data = await response.json();
-    tableElement.setTableData(data);
-  }
+		this.loadAndSetPetsTableData(
+			"#pets-table",
+			"../../../src/data/table-pets-3.json",
+		);
+	}
+	async loadAndSetPetsTableData(tableElementSelector, jsonPath) {
+		const tableElement = this.querySelector(tableElementSelector);
+		const response = await fetch(jsonPath);
+		const data = await response.json();
+		tableElement.setTableData(data);
+	}
 }
 
 customElements.define(
-  "page-protected-traveler-luxury",
-  PageProtectedTravelerLuxury
+	"page-protected-traveler-luxury",
+	PageProtectedTravelerLuxury,
 );
