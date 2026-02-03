@@ -1,4 +1,5 @@
 @use '../_01-settings/variables' as *;
+@use '../_02-tools/_mixin' as *;
 
 app-card-right-description {
     display: block;
@@ -9,9 +10,17 @@ app-card-right-description {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     width: 100%;
-    min-height: 250px;
+    max-height: 350px;
     background-color: white;
     gap: 1rem;
+    align-items: stretch;
+
+    @include media('md') {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        max-height: none;
+        gap: 0.75rem;
+    }
 
     .card-content {
         display: flex;
@@ -20,34 +29,100 @@ app-card-right-description {
         flex-direction: column;
         justify-content: center;
         border-radius: 15px;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: $box-shadow-small;
 
         .title-card {
-            font-size: 22px;
+            font-size: $fs-h5;
             font-weight: bold;
             color: $primary-color;
             margin-bottom: 15px;
+            line-height: $lh-title-sm;
         }
 
         .text-card {
-            font-size: 16px;
+            font-size: $fs-p;
             color: $primary-color;
-            line-height: 1.5;
+            line-height: $lh-p;
             text-align: left;
+            margin-bottom: 12px;
+        }
+
+        .btn-card {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: fit-content;
+            height: auto;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: $doters-color;
+            color: $white-color;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+            gap: 8px;
+            box-shadow: $box-shadow-small;
+            font-size: $fs-button;
+            transition: all 0.3s ease-in-out;
+            
+            &:hover{
+                opacity: 0.8;
+                transition: all 0.3s ease-in-out;
+            }
+
+            .btn-icon {
+                height: 20px;
+            }
+        }
+
+        @include media('sm') {
+            padding: $padding-medium;
+
+            .title-card {
+                font-size: $fs-h5-md;
+                margin-bottom: 10px;
+            }
+
+            .text-card {
+                font-size: $fs-p-md;
+            }
+
+            .btn-card {
+                padding: 8px 16px;
+                font-size: $fs-button;
+            }
         }
     }
 
     .card-image {
         display: flex;
-        width: 100%;
-        height: 100%;
+        max-height: 350px;
+        width: auto;
         border-radius: 15px;
         overflow: hidden;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        align-items: center;
+        justify-content: center;
+
+        @include media('md') {
+            order: -1;
+            /* show image on top for small screens */
+            width: 100%;
+            height: 220px;
+            border-radius: 12px;
+        }
 
         img {
-            width: 100%;
-            object-fit: cover;
+            /* Ensure the image fits the container without being cropped or distorted */
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+            margin: auto;
+
+            @include media('md') {
+                width: auto;
+                height: 100%;
+            }
         }
     }
 }
