@@ -11,22 +11,36 @@ class AppHeader extends HTMLElement {
 				<nav aria-label="Menú principal">
 					<ul>
 						<li><a href="../../../">Inicio</a></li>
-						
-						<li><a href="../../../servicios/facturacion.html">Facturación</a></li>
+						<li><a href="../../../servicios/pack-multienlace/">Pack Multienlace</a></li>
+						<li class="submenu">
+							<a href="#" role="button" aria-haspopup="true" aria-expanded="false">Mi viaje<span class="icon-arrow-down"></span></a>
+							<ul>
+								<li><a href="../../../servicios/facturacion.html">Facturación</a></li>
 						<li><a href="https://viaje.costaline.com.mx/download-tickets">Pase de abordar</a></li>
 						<li><a href="https://viaje.costaline.com.mx/exchange/itinerary">Modificar itinerario</a></li>
+							</ul>
+						</li>
+
+
+
+						
+						<li><a href="../../../servicios/mas-komodo.html">Mas Komodo</a></li>
+						<li><a href="../../../servicios/monedero-electronico.html">Monedero</a></li>
+						<li><a href="../../../destinos/">Destinos</a></li>
 						<li class="submenu">
 							<a href="#" role="button" aria-haspopup="true" aria-expanded="false">Más <span class="icon-arrow-down"></span></a>
 							<ul>
+								<li><a href="../../../doters/">Doters</a></li>
 								<li><a href="../../../boletos-autobus/">Boletos</a></li>
+								<li><a href="../../../descuentos/">Descuentos</a></li>
 								<li><a href="../../../boletos-autobus/donde-comprar-costa.html">¿Dónde comprar?</a></li>
-								<li><a href="../../../destinos/">Destinos</a></li>
-								<li><a href="../../../terminales/">Taquillas</a></li>
+								<li><a href="../../../terminales-taquillas/">Terminales y Taquillas</a></li>
 								<li><a href="../../../servicios/salas-de-espera.html">Salas de Espera</a></li>
-								<li><a href="../../../servicios/servicio-a-bordo.html">Servicios</a></li>
+								<li><a href="../../../servicios/servicio-a-bordo.html">Servicios a bordo</a></li>
 								<li><a href="../../../promociones/">Promociones</a></li>
 								<li><a href="https://ventas.costaline.com.mx/request.aspx?APPNAME=Navegante&PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES&_ga=2.70363408.1421465980.1688335622-27413750.1682467979&_gl=1*5d35ok*_gcl_au*MTE5NTUxODc1MS4xNzY5MDMwOTg3">Agencias</a></li>
 								<li><a href="../../../servicios/pago-referenciado-oxxo.html">OXXO Pay</a></li>
+								<li><a href="../../../servicios/compra-con-kueski-pay.html">Keski Pay</a></li>
 								<li><a href="../../../servicios/viajero-protegido.html">Viajero protegido</a></li>
 								<li><a href="https://costaline.com.mx/blog/">Blog</a></li>
 								<li><a href="../../../servicios/atencion-a-clientes.html">Atención a clientes</a></li>
@@ -56,21 +70,36 @@ class AppHeader extends HTMLElement {
 							</a>
 						</li>
 						<li><a href="../../../">Inicio</a></li>
-						<li><a href="../../../servicios/facturacion.html">Facturación</a></li>
+						<li><a href="../../../servicios/pack-multienlace">Pack Multienlace</a></li>
+						<li class="submenu__media-queries">
+							<a href="#" aria-haspopup="true" aria-expanded="false">Mi viaje <span class="icon-arrow-down"></span></a>
+							<ul>
+								<li><a href="../../../servicios/facturacion.html">Facturación</a></li>
 						<li><a href="https://viaje.costaline.com.mx/download-tickets">Pase de abordar</a></li>
 						<li><a href="https://viaje.costaline.com.mx/exchange/itinerary">Modificar itinerario</a></li>
+							</ul>
+						</li>
+						<li><a href="../../../servicios/mas-komodo.html">Más Komodo</a></li>
+						<li><a href="../../../servicios/monedero-electronico.html">Monedero</a></li>
+						<li><a href="../../../destinos/">Destinos</a></li>
+
+
+
+						
 						<li class="submenu__media-queries">
 							<a href="#" aria-haspopup="true" aria-expanded="false">Más <span class="icon-arrow-down"></span></a>
 							<ul>
+								<li><a href="../../../Doters/">Doters</a></li>
 								<li><a href="../../../boletos-autobus/">Boletos</a></li>
+								<li><a href="../../../descuentos/">Descuentos</a></li>
 								<li><a href="../../../boletos-autobus/donde-comprar-costa.html">¿Dónde comprar?</a></li>
-								<li><a href="../../../destinos/">Destinos</a></li>
-								<li><a href="../../../terminales/">Taquillas</a></li>
+								<li><a href="../../../terminales-taquillas/">Terminales y Taquillas</a></li>
 								<li><a href="../../../servicios/salas-de-espera.html">Salas de Espera</a></li>
-								<li><a href="../../../servicios/servicio-a-bordo.html">Servicios</a></li>
+								<li><a href="../../../servicios/servicio-a-bordo.html">Servicios a bordo</a></li>
 								<li><a href="../../../promociones/">Promociones</a></li>
 								<li><a href="https://ventas.costaline.com.mx/request.aspx?APPNAME=Navegante&PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES&_ga=2.70363408.1421465980.1688335622-27413750.1682467979&_gl=1*5d35ok*_gcl_au*MTE5NTUxODc1MS4xNzY5MDMwOTg3">Agencias</a></li>
 								<li><a href="../../../servicios/pago-referenciado-oxxo.html">OXXO Pay</a></li>
+								<li><a href="../../../servicios/compra-con-kueski-pay.html">Kueski Pay</a></li>
 								<li><a href="../../../servicios/viajero-protegido.html">Viajero protegido</a></li>
 								<li><a href="https://costaline.com.mx/blog/">Blog</a></li>
 								<li><a href="../../../servicios/atencion-a-clientes.html">Atención a clientes</a></li>

@@ -10,70 +10,7 @@ class AppListDestinations extends HTMLElement {
           <article class="region_column" role="region">
             <h3 id="region-bajio">
               <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
-              Bajío (Aguascalientes, Guanajuato, Querétaro, San Luis Potosí)
-            </h3>
-            <ul class="region_column__list-cities">
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Aguascalientes"
-                  title="Boletos de Autobús a Aguascalientes"
-                  >Boletos de Autobús a Aguascalientes</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Celaya"
-                  title="Boletos de Autobús a Celaya"
-                  >Boletos de Autobús a Celaya</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a León"
-                  title="Boletos de Autobús a León"
-                  >Boletos de Autobús a León</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Querétaro"
-                  title="Boletos de Autobús a Querétaro"
-                  >Boletos de Autobús a Querétaro</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a San Juan de los Lagos"
-                  title="Boletos de Autobús a San Juan de los Lagos"
-                  >Boletos de Autobús a San Juan de los Lagos</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a San Luis Potosí"
-                  title="Boletos de Autobús a San Luis Potosí"
-                  >Boletos de Autobús a San Luis Potosí</a>
-              </li>
-            </ul>
-          </article>
-
-          <article class="region_column" role="region">
-            <h3 id="region-centro">
-              <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
-              Centro (Ciudad de México)
+              CDMX y Zona Metropólitana
             </h3>
             <ul class="region_column__list-cities">
               <li>
@@ -137,7 +74,71 @@ class AppListDestinations extends HTMLElement {
           <article class="region_column" role="region">
             <h3 id="region-centro">
               <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
-              Centro (Estado de México, Morelos)
+              Corredor Guerrero
+            </h3>
+            <ul class="region_column__list-cities">
+              <li>
+                <a
+                  href="#"
+                  class="region_column__city"
+                  rel="noopener noreferrer"
+                  aria-label="Boletos de Autobús al aeropuerto de la Ciudad de México"
+                  title="Boletos de Autobús al aeropuerto de la Ciudad de México"
+                  >Boletos de Autobús al AICM</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="region_column__city"
+                  rel="noopener noreferrer"
+                  aria-label="Boletos de Autobús a El Ángel Río Tiber"
+                  title="Boletos de Autobús a El Ángel Río Tiber"
+                  >Boletos de Autobús a Río Tiber</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="region_column__city"
+                  rel="noopener noreferrer"
+                  aria-label="Boletos de Autobús a Hotel Benidorm"
+                  title="Boletos de Autobús a Hotel Benidorm"
+                  >Boletos de Autobús a Hotel Benidorm</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="region_column__city"
+                  rel="noopener noreferrer"
+                  aria-label="Boletos de Autobús a México Norte"
+                  title="Boletos de Autobús a México Norte"
+                  >Boletos de Autobús a México Norte</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="region_column__city"
+                  rel="noopener noreferrer"
+                  aria-label="Boletos de Autobús a México Poniente"
+                  title="Boletos de Autobús a México Poniente"
+                  >Boletos de Autobús a México Poniente</a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="region_column__city"
+                  rel="noopener noreferrer"
+                  aria-label="Boletos de Autobús a México Sur"
+                  title="Boletos de Autobús a México Sur"
+                  >Boletos de Autobús a México Sur</a>
+              </li>
+            </ul>
+          </article>
+
+          <article class="region_column" role="region">
+            <h3 id="region-centro">
+              <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
+              Rutas regionales
             </h3>
             <ul class="region_column__list-cities">
               <li>
@@ -197,174 +198,7 @@ class AppListDestinations extends HTMLElement {
             </ul>
           </article>
 
-          <article class="region_column" role="region">
-            <h3 id="region-norte">
-              <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
-              Norte (Nuevo León)
-            </h3>
-            <ul class="region_column__list-cities">
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Monterrey Central"
-                  title="Boletos de Autobús a Monterrey Central"
-                  >Boletos de Autobús a Monterrey Central</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Monterrey Churubusco"
-                  title="Boletos de Autobús a Monterrey Churubusco"
-                  >Boletos de Autobús a Monterrey Churubusco</a
-                >
-              </li>
-            </ul>
-          </article>
           
-          <article class="region_column" role="region">
-            <h3 id="region-occidente">
-              <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
-              Occidente (Jalisco, Michoacán)
-            </h3>
-            <ul class="region_column__list-cities">
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Guadalajara"
-                  title="Boletos de Autobús a Guadalajara"
-                  >Boletos de Autobús a Guadalajara</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Guadalajara Mod. 7"
-                  title="Boletos de Autobús a Guadalajara Mod. 7"
-                  >Boletos de Autobús a Guadalajara Mod.7</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Lázaro Cárdenas"
-                  title="Boletos de Autobús a Lázaro Cárdenas"
-                  >Boletos de Autobús a Lázaro Cárdenas</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Morelia"
-                  title="Boletos de Autobús a Morelia"
-                  >Boletos de Autobús a Morelia</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Uruapan"
-                  title="Boletos de Autobús a Uruapan"
-                  >Boletos de Autobús a Uruapan</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Zapopan"
-                  title="Boletos de Autobús a Zapopan"
-                  >Boletos de Autobús a Zapopan</a>
-              </li>
-            </ul>
-          </article>
-
-          <article class="region_column" role="region">
-            <h3 id="region-sur">
-              <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
-              Sur y Sureste (Guerrero, Oaxaca)
-            </h3>
-            <ul class="region_column__list-cities">
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Acapulco Centro"
-                  title="Boletos de Autobús a Acapulco Centro"
-                  >Boletos de Autobús a Acapulco Centro</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Acapulco Ejido"
-                  title="Boletos de Autobús a Acapulco Ejido"
-                  >Boletos de Autobús a Acapulco Ejido</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Acapulco Papagayo"
-                  title="Boletos de Autobús a Acapulco Papagayo"
-                  >Boletos de Autobús a Acapulco Papagayo</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Buenavista"
-                  title="Boletos de Autobús a Buenavista"
-                  >Boletos de Autobús a Buenavista</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Cacahutla"
-                  title="Boletos de Autobús a Cacahutla"
-                  >Boletos de Autobús a Cacahutla</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Chilpancingo"
-                  title="Boletos de Autobús a Chilpancingo"
-                  >Boletos de Autobús a Chilpancingo</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Ciudad Altamirano"
-                  title="Boletos de Autobús a Ciudad Altamirano"
-                  >Boletos de Autobús a Ciudad Altamirano</a>
-              </li>
-            </ul>
-          </article>
         </section>
       </div>
     `;

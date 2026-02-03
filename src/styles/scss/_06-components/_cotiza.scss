@@ -25,6 +25,12 @@
   }
 }
 
+h1 {
+  color: #fff;
+  font-size: 1.2rem; // Mantiene la variable existente
+  padding: 5px;
+}
+
 @media screen and (max-width:900px) {
   .cotiza {
     position: relative;
