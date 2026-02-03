@@ -25,15 +25,19 @@ app-card-doters {
 
 
     .__card-doters__img {
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: 200px;
         margin-bottom: 2.5rem;
+        background: #00AE42;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
 
         img {
-            width: 100%;
             height: 100%;
+            width: auto;
             object-fit: cover;
-            object-position: bottom;
             border-top-left-radius: 1rem;
             border-top-right-radius: 1rem;
         }

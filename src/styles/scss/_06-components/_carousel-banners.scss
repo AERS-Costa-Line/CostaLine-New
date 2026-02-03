@@ -1,0 +1,214 @@
+@use '../_01-settings/variables' as *;
+@use '../_02-tools/_mixin' as *;
+
+.carousel-container-doters {
+    display: flex;
+    align-items: center;
+    gap: $spacing-xxl;
+    /* ~4.375rem, en lugar de 8rem */
+    width: 90%;
+    min-height: 430px;
+    max-height: 430px;
+    /* límite en desktop */
+    margin: auto;
+
+    @include media('lg') {
+        gap: $spacing-lg;
+        min-height: 430px;
+    }
+
+    @include media('md') {
+        gap: $spacing-md;
+        width: 100%;
+        min-height: auto;
+        max-height: none;
+        /* permitir que el contenido crezca en móviles */
+        padding: 1rem;
+    }
+}
+
+.carousel__viewport-doters {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel__track-doters {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel__card-doters {
+    min-width: 100%;
+    height: 100%;
+    min-height: 430px;
+    max-height: 430px;
+    background: #053a40;
+    color: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    box-shadow: none;
+
+    @include media('lg') {
+        padding: 1.75rem;
+        gap: 1.5rem;
+    }
+
+    @include media('md') {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .card__col-left-doters {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        @include media('md') {
+            flex-direction: row;
+            width: 100%;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .card__title-doters {
+            font-size: $fs-h2;
+            font-weight: 700;
+            margin: 0;
+            margin-bottom: 20px;
+            line-height: $lh-h2;
+
+            @include media('md') {
+                font-size: $fs-h3-md;
+                margin-bottom: 6px;
+                text-align: center;
+            }
+        }
+    }
+
+    .card__content-doters {
+        width: 50%;
+
+        @include media('md') {
+            width: 100%;
+        }
+    }
+}
+
+
+
+/* avatar container (fallback) */
+.card__avatar-doters {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    background: #ccc;
+
+    &.green-doters {
+        background: #39b54a;
+    }
+
+    &.yellow-doters {
+        background: #f1c40f;
+    }
+
+    &.blue-doters {
+        background: #3498db;
+    }
+
+    @include media('lg') {
+        width: 100px;
+        height: 100px;
+    }
+
+    @include media('md') {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+/* avatar when it's an <img> element */
+img.card__avatar-doters {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+
+    @include media('lg') {
+        width: 100px;
+        height: 100px;
+    }
+
+    @include media('md') {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+.subtitle__card-doters {
+    font-size: $fs-h5;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    @include media('md') {
+        font-size: $fs-h5-md;
+    }
+}
+
+.paragraph__card-doters {
+    font-size: $fs-p;
+    font-weight: 400;
+
+    @include media('md') {
+        font-size: $fs-p-md;
+    }
+}
+
+.list__card-doters {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin: 0;
+    font-size: $fs-p;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+
+    @include media('md') {
+        font-size: $fs-p-md;
+    }
+
+    li {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.carousel__arrow-doters {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #053a40;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+    @include media('md') {
+        font-size: 1.5rem;
+    }
+}

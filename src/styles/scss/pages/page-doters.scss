@@ -1,0 +1,209 @@
+@use '../core' as *;
+@use '../_01-settings/variables' as *;
+@use '../_02-tools/mixin' as *;
+
+// Import components
+@use '../_06-components/header';
+@use '../_06-components/footer';
+@use '../_06-components/modal-doters';
+@use '../_06-components/modalDoters';
+@use '../_06-components/cotiza';
+@use '../_06-components/banner-slider';
+@use '../_06-components/section-title';
+@use '../_06-components/app-card-doters';
+@use '../_06-components/cookies-policy';
+@use '../_06-components/card-right-description';
+@use '../_06-components/card-left-description';
+@use '../_06-components/carousel-banners';
+
+
+
+
+// Import utilities
+@use '../_07-utilities/utilities' as *;
+
+
+
+.__sections__cards {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.__section__taquilla-exclusiva {
+    display: flex;
+    background-color: $bg-card-primary;
+    width: 100%;
+    height: auto;
+    padding: 20px 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+
+    @include media("md") {
+        padding: 20px 30px;
+    }
+
+    .__paragraph__xxl {
+        display: flex;
+        font-size: 30px;
+        text-align: center;
+        justify-content: center;
+        font-weight: bold;
+        color: $primary-color;
+        line-height: 50px;
+
+        @include media("sm") {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+
+.__section__taquilla-exclusiva__ask {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px 70px;
+    justify-content: center;
+    align-items: center;
+
+    @include media("md") {
+        padding: 20px 30px;
+    }
+
+    .__section__taquilla-exclusiva__title {
+        display: flex;
+        font-size: 40px;
+        text-align: center;
+        justify-content: center;
+        font-weight: bold;
+        color: $primary-color;
+        line-height: 50px;
+
+        @include media("sm") {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+
+    .__paragraph__xl {
+        display: flex;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        font-weight: bold;
+        color: $primary-color;
+        line-height: 40px;
+
+        @include media("sm") {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
+
+.__section__taquilla-exclusiva__cards {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 80px;
+
+    .__section__taquilla-exclusiva__cards__items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        padding: 0 70px;
+        position: relative;
+        z-index: 1;
+        gap: 20px;
+        margin: auto;
+
+        @include media("md") {
+            flex-direction: row;
+            overflow-x: auto;
+            overflow-y: hidden;
+            width: 100%;
+            padding: 0 10px;
+            justify-content: flex-start;
+
+            .card-doters {
+                width: 320px;
+            }
+        }
+    }
+
+    .__section__taquilla-exclusiva__cards__bg {
+        position: absolute;
+        top: calc(249px - 48px);
+        left: 0;
+        width: 100%;
+        height: 300px;
+        background-color: $doters-color;
+        z-index: 0;
+
+        @include media("lg") {
+            height: 60%;
+        }
+    }
+}
+
+.__section__taquilla-exclusiva__explication {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px 70px;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-card-primary;
+    border-radius: 20px;
+
+    @include media("md") {
+        padding: 0 30px;
+        flex-direction: column;
+    }
+
+
+
+
+    .__section__taquilla-exclusiva__explication__text {
+        position: relative;
+        margin-top: 30px;
+        display: flex;
+        width: 60%;
+        font-size: 25px;
+        text-align: start;
+        justify-content: center;
+        color: $doters-color;
+        line-height: 40px;
+        padding: 20px;
+
+        @include media("lg") {
+            width: 70%;
+        }
+
+        @include media("md") {
+            width: 90%;
+            font-size: 20px;
+        }
+
+    }
+
+    .__section__taquilla-exclusiva__explication__img {
+        width: 30%;
+        height: auto;
+        @include media("md") {
+                width: 50%;
+            }
+    }
+
+}
