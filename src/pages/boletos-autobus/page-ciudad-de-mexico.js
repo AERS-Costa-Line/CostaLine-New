@@ -9,9 +9,9 @@ class PageCiudadDeMexico extends HTMLElement {
 
 <app-banner-slider
   slides-data='[
-    {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/home-viajero-web.webp","mediumImage": "../../src/assets/img/banner/tablet/home-viajero-tablet.webp", "smallImage": "../../src/assets/img/banner/movil/home-viajero-mobile.webp", "link": "#index.html/banner1"},
-    {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/banner/web/home-10-desc-web.webp", "mediumImage": "../../src/assets/img/banner/tablet/home-10-desc-tablet.webp","smallImage": "../../src/assets/img/banner/movil/home-10-desc-mobile.webp", "link": "#index.html/banner2"},
-    {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/banner/web/home-puente-web.webp", "mediumImage": "../../src/assets/img/banner/tablet/home-puente-tablet.webp","smallImage": "../../src/assets/img/banner/movil/home-puente-mobile.webp", "link": "#index.html/banner3"}
+    {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/3-clics-web.webp","mediumImage": "../../src/assets/img/banner/tablet/3-clics-tablet.webp", "smallImage": "../../src/assets/img/banner/movil/3-clics-mobile.webp", "link": "#index.html/banner1"},
+    {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/banner/web/aca-diamante-web.webp", "mediumImage": "../../src/assets/img/banner/tablet/aca-diamante-tablet.webp","smallImage": "../../src/assets/img/banner/movil/aca-diamante-mobile.webp", "link": "#index.html/banner2"},
+    {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/banner/web/chil-aca-web.webp", "mediumImage": "../../src/assets/img/banner/tablet/chil-aca-tablet.webp","smallImage": "../../src/assets/img/banner/movil/chil-aca-mobile.webp", "link": "#index.html/banner3"}
   ]'
 ></app-banner-slider>
 
