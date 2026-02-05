@@ -2,7 +2,7 @@ class AppCotiza extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <div class="cotiza">
-      <h1>¡Tu nueva aventura comienza aquí! Compra tus boletos de autobús</h1>
+      <h1>¡Tu nueva aventura comienza aquí! 🚍 Compra tus boletos de autobús</h1>
         <!-- Widget Ventas Reservamos -->
         <div class="espaciado-widget"
           style="display: flex; background-color: #eee; justify-content:center; margin: 10px 0 10px 0; border-radius: 12px;">

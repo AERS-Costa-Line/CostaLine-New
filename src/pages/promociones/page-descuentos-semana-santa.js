@@ -54,23 +54,7 @@ class DescuentosSemanaSanta extends HTMLElement {
       </div>
       </section>
 
-      <app-destinations-grid
-                titlesText='[
-                {"id": "title1", "title": "¿Aún no sabes a dónde viajar?", "text": "Conoce nuestros destinos Costa Line y elige tu lugar favorito"}
-                ]'
-                destinations='[
-                {"id": "destination1", "title": "Acapulco", "content": "Disfruta de sus playas doradas, noches llenas de vida y la magia de la Quebrada.", "image": "../src/assets/img/destinos-img/acapulco.webp", "link": "../guia-viaje/viajar-a-acapulco.html"},
-        
-                {"id": "destination2", "title": "Chilpancingo", "content": "Visita esta Joya colonial llena de historia, sabores y magia.", "image": "../src/assets/img/destinos-img/morelia.webp", "link": "../guia-viaje/viajar-a-chilpancingo.html"},
-        
-                {"id": "destination3", "title": "Taxco", "content": "Sumergete en este laberinto de plata y encanto colonial.", "image": "../src/assets/img/destinos-img/taxco.webp", "link": "../guia-viaje/viajar-a-taxco.html"},
-                
-                {"id": "destination5", "title": "Cuernavaca", "content": "Cuernavaca: La ciudad de la eterna primavera, donde el sol abraza y la historia inspira.", "image": "../src/assets/img/destinos-img/cuernavaca.webp", "link": "../guia-viaje/viajar-a-cuernavaca.html"},
-        
-                {"id": "destination4", "title": "Ixtapa Zihuatanejo", "content": "Déjate cautivar por la magia colonial de Guanajuato.", "image": "../src/assets/img/destinos-img/ixtapa.webp", "link": "../guia-viaje/viajar-a-ixtapa-zihuatanejo.html"}
-                ]'
-            >
-            </app-destinations-grid>
+    
 
       <section class="__sections">
         <article class="__bg-white">

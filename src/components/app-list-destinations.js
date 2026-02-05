@@ -15,35 +15,27 @@ class AppListDestinations extends HTMLElement {
             <ul class="region_column__list-cities">
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/aifa.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús al aeropuerto de la Ciudad de México"
-                  title="Boletos de Autobús al aeropuerto de la Ciudad de México"
-                  >Boletos de Autobús al AICM</a
+                  aria-label="Boletos de Autobús al aeropuerto Felipe Ángeles"
+                  title="Boletos de Autobús al aeropuerto Internacional Felipe Ángeles"
+                  >Boletos de Autobús al AIFA</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/ciudad-de-mexico.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a El Ángel Río Tiber"
-                  title="Boletos de Autobús a El Ángel Río Tiber"
-                  >Boletos de Autobús a Río Tiber</a>
+                  aria-label="Boletos de Autobús a la Ciudad de México"
+                  title="Boletos de Autobús a la Ciudad de México"
+                  >Boletos de Autobús a la Ciudad de México</a
+                >
               </li>
               <li>
                 <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Hotel Benidorm"
-                  title="Boletos de Autobús a Hotel Benidorm"
-                  >Boletos de Autobús a Hotel Benidorm</a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="../../boletos-autobus/mexico-norte.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a México Norte"
@@ -52,7 +44,7 @@ class AppListDestinations extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/mexico-poniente.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a México Poniente"
@@ -61,13 +53,23 @@ class AppListDestinations extends HTMLElement {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/mexico-sur.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a México Sur"
                   title="Boletos de Autobús a México Sur"
                   >Boletos de Autobús a México Sur</a>
               </li>
+              <li>
+                <a
+                  href="../../boletos-autobus/toluca.html"
+                  class="region_column__city"
+                  rel="noopener noreferrer"
+                  aria-label="Boletos de Autobús a Toluca"
+                  title="Boletos de Autobús a Toluca"
+                  >Boletos de Autobús a Toluca</a>
+              </li>
+             
             </ul>
           </article>
 
@@ -79,59 +81,74 @@ class AppListDestinations extends HTMLElement {
             <ul class="region_column__list-cities">
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/acapulco.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús al aeropuerto de la Ciudad de México"
-                  title="Boletos de Autobús al aeropuerto de la Ciudad de México"
-                  >Boletos de Autobús al AICM</a
+                  aria-label="Boletos de Autobús a Acapulco"
+                  title="Boletos de Autobús a Acapulco"
+                  >Boletos de Autobús a Acapulco</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/acapulco-diamante.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a El Ángel Río Tiber"
-                  title="Boletos de Autobús a El Ángel Río Tiber"
-                  >Boletos de Autobús a Río Tiber</a>
+                  aria-label="Boletos de Autobús a Acapulco Diamante"
+                  title="Boletos de Autobús a Acapulco Diamante"
+                  >Boletos de Autobús a Acapulco Diamante</a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/chilpancingo.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Hotel Benidorm"
-                  title="Boletos de Autobús a Hotel Benidorm"
-                  >Boletos de Autobús a Hotel Benidorm</a>
+                  aria-label="Boletos de Autobús a Chilpancingo"
+                  title="Boletos de Autobús a Chilpancingo"
+                  >Boletos de Autobús a Chilpancingo</a>
               </li>
-              <li>
+             
+
+               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/maxitunel.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a México Norte"
-                  title="Boletos de Autobús a México Norte"
-                  >Boletos de Autobús a México Norte</a>
+                  aria-label="Boletos de Autobús por el maxitunel"
+                  title="Boletos de Autobús por maxitunel"
+                  >Boletos de Autobús por Maxitunel</a>
               </li>
-              <li>
+
+               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/taxco.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a México Poniente"
-                  title="Boletos de Autobús a México Poniente"
-                  >Boletos de Autobús a México Poniente</a>
+                  aria-label="Boletos de Autobús a Taxco"
+                  title="Boletos de Autobús a Taxco"
+                  >Boletos de Autobús a Taxco</a>
               </li>
-              <li>
+
+               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/iguala.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a México Sur"
-                  title="Boletos de Autobús a México Sur"
-                  >Boletos de Autobús a México Sur</a>
+                  aria-label="Boletos de Autobús a Iguala"
+                  title="Boletos de Autobús a Iguala"
+                  >Boletos de Autobús a Iguala</a>
               </li>
+
+               <li>
+                <a
+                  href="../../boletos-autobus/zihuatanejo.html"
+                  class="region_column__city"
+                  rel="noopener noreferrer"
+                  aria-label="Boletos de Autobús a Zihuatanejo"
+                  title="Boletos de Autobús a Zihuatanejo"
+                  >Boletos de Autobús a Zihuatanejo</a>
+              </li>
+             
             </ul>
           </article>
 
@@ -141,60 +158,55 @@ class AppListDestinations extends HTMLElement {
               Rutas regionales
             </h3>
             <ul class="region_column__list-cities">
+
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/ciudad-altamirano.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Cuautla"
-                  title="Boletos de Autobús a Cuautla"
-                  >Boletos de Autobús a Cuautla</a>
+                  aria-label="Boletos de Autobús a Ciudad Altamirano"
+                  title="Boletos de Autobús a Ciudad Altamirano"
+                  >Boletos de Autobús a Ciudad Altamirano</a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/coyuca-de-benitez.html"
+                  class="region_column__city"
+                  rel="noopener noreferrer"
+                  aria-label="Boletos de Autobús a Coyuca de Benitez"
+                  title="Boletos de Autobús a Coyuca de Benitez"
+                  >Boletos de Autobús a Coyuca de Benitez</a>
+              </li>
+              
+              <li>
+                <a
+                  href="../../boletos-autobus/cuernavaca.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Cuernavaca"
                   title="Boletos de Autobús a Cuernavaca"
                   >Boletos de Autobús a Cuernavaca</a>
               </li>
+             
               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/tecpan.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Las Américas Ecatepec"
-                  title="Boletos de Autobús a Las Américas Ecatepec"
-                  >Boletos de Autobús a Las Américas Ecatepec</a>
+                  aria-label="Boletos de Autobús a Tecpan"
+                  title="Boletos de Autobús a Tecpan"
+                  >Boletos de Autobús a Tecpan</a>
               </li>
-              <li>
+               <li>
                 <a
-                  href="#"
+                  href="../../boletos-autobus/tepotzotlan.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús a Tepotzotlán"
                   title="Boletos de Autobús a Tepotzotlán"
                   >Boletos de Autobús a Tepotzotlán</a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Puente de Ixtla"
-                  title="Boletos de Autobús a Puente de Ixtla"
-                  >Boletos de Autobús a Puente de Ixtla</a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="region_column__city"
-                  rel="noopener noreferrer"
-                  aria-label="Boletos de Autobús a Toluca"
-                  title="Boletos de Autobús a Toluca"
-                  >Boletos de Autobús a Toluca</a>
-              </li>
+              
             </ul>
           </article>
 
