@@ -15,7 +15,7 @@ class AppListDestinations extends HTMLElement {
             <ul class="region_column__list-cities">
               <li>
                 <a
-                  href="../../boletos-autobus/aifa.html"
+                  href="../../boletos-autobus/aeropuerto-aifa.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús al aeropuerto Felipe Ángeles"
@@ -111,7 +111,7 @@ class AppListDestinations extends HTMLElement {
 
                <li>
                 <a
-                  href="../../boletos-autobus/maxitunel.html"
+                  href="../../boletos-autobus/acapulco-maxitunel.html"
                   class="region_column__city"
                   rel="noopener noreferrer"
                   aria-label="Boletos de Autobús por el maxitunel"

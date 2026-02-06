@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Torta de tamal (Guajolota)",
+    "description": "Uno de los clásicos más representativos de CDMX, ideal para salidas tempranas. La guajolota es un tamal dentro de un bolillo, acompañada comúnmente con atole. Es práctica, llenadora y perfecta para viajeros que buscan un desayuno rápido antes de abordar en Observatorio.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/guajolota.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/guajolota-m.webp",
+    "altText": "Torta de tamal o guajolota",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Torta de chilaquiles",
+    "description": "La torta de chilaquiles es una de las favoritas en CDMX por su sabor y energía. Se prepara con chilaquiles verdes o rojos dentro de un bolillo, a veces con pollo, bistec o milanesa. Es ideal para comer antes del viaje y seguir con el día sin hambre.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/torta-chilaquiles.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/torta-chilaquiles-m.webp",
+    "altText": "Torta de chilaquiles",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tacos de suadero",
+    "description": "En el poniente de la ciudad son muy populares los tacos de suadero, conocidos por su sabor intenso y su textura jugosa. Se sirven en tortilla caliente con cebolla, cilantro y salsas, y son una opción excelente para comer algo rápido antes de salir de la terminal.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/tacos-suadero.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/tacos-suadero-m.webp",
+    "altText": "Tacos de suadero",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Consomé y birria",
+    "description": "Si buscas algo más completo, el consomé con birria es una opción muy popular en CDMX. Se sirve caliente, con carne suave, limón, cebolla y salsa, ideal para recargar energía antes de un trayecto largo o para comer al llegar.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/birria.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/birria-m.webp",
+    "altText": "Consomé y birria",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Elote y esquites",
+    "description": "Un antojo clásico y fácil de encontrar en CDMX. Los esquites y elotes se preparan con mayonesa, queso, chile y limón, y son una opción ligera y muy representativa para comer algo rápido antes de viajar.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/esquites.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/esquites-m.webp",
+    "altText": "Elote y esquites",
+    "linkText": "Ver..."
+  }
+]

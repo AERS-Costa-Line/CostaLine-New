@@ -39,7 +39,7 @@ class PageHome extends HTMLElement {
                 
                 {"id": "destination5", "title": "Cuernavaca", "content": "Cuernavaca: La ciudad de la eterna primavera, donde el sol abraza y la historia inspira.", "image": "./src/assets/img/destinos-img/cuernavaca.webp", "link": "./boletos-autobus/cuernavaca.html"},
         
-                {"id": "destination4", "title": "Ixtapa Zihuatanejo", "content": "Déjate cautivar por la magia colonial de Guanajuato.", "image": "./src/assets/img/destinos-img/ixtapa.webp", "link": "./boletos-autobus/ixtapa-zihuatanejo.html"}
+                {"id": "destination4", "title": "Zihuatanejo", "content": "Déjate cautivar por la magia colonial de Guanajuato.", "image": "./src/assets/img/destinos-img/ixtapa.webp", "link": "./boletos-autobus/zihuatanejo.html"}
                 ]'
             >
             </app-destinations-grid>

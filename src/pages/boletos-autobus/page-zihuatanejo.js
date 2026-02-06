@@ -2,7 +2,7 @@ import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 
-class PageIxtapaZihuatanejo extends HTMLElement {
+class PageZihuatanejo extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
   <app-cotiza></app-cotiza>
@@ -20,7 +20,7 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 <!-- HERO -->
 <section class="hero">
   <div class="hero__content">
-    <h1 class="hero__title">Autobuses a Ixtapa Zihuatanejo con Costaline</h1>
+    <h1 class="hero__title">Autobuses a Zihuatanejo con Costaline</h1>
     <p class="hero__subtitle">
       Viaja a uno de los destinos de playa más hermosos de Guerrero con unidades modernas, asientos cómodos y operadores certificados.
     </p>
@@ -30,7 +30,7 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 <!-- FEATURES -->
 <section class="features">
   <div class="container">
-    <h2 class="section-title">¿Por qué viajar con Costaline a Ixtapa Zihuatanejo?</h2>
+    <h2 class="section-title">¿Por qué viajar con Costaline a Zihuatanejo?</h2>
 
     <div class="features__grid">
 
@@ -81,7 +81,7 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 <!-- ROUTE INFO -->
 <section class="route-info">
   <div class="container route-info__container">
-    <h2 class="section-title">Ruta destacada: Ciudad de México → Ixtapa Zihuatanejo</h2>
+    <h2 class="section-title">Ruta destacada: Ciudad de México → Zihuatanejo</h2>
 
     <div class="route-info__card">
 
@@ -97,7 +97,7 @@ class PageIxtapaZihuatanejo extends HTMLElement {
           </div>
 
           <div class="route-info__stop">
-            <span class="route-info__stop-name">Ixtapa Zihuatanejo</span>
+            <span class="route-info__stop-name">Zihuatanejo</span>
             <div class="route-info__stop-icon">
               <span class="icon-place material-symbols-outlined"></span>
             </div>
@@ -129,7 +129,7 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 <!-- ATTRACTIONS -->
 <section class="attractions">
   <div class="container">
-    <h2 class="section-title">Lugares para visitar en Ixtapa Zihuatanejo</h2>
+    <h2 class="section-title">Lugares para visitar en Zihuatanejo</h2>
 
     <div class="attractions__grid">
 
@@ -167,7 +167,7 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 
       <details class="faq-item">
         <summary class="faq-item__summary">
-          <span class="faq-item__question">¿Cuánto cuesta el boleto a Ixtapa Zihuatanejo?</span>
+          <span class="faq-item__question">¿Cuánto cuesta el boleto a Zihuatanejo?</span>
           <span class="faq-item__icon">
             <span class="icon-arrow-down material-symbols-outlined"></span>
           </span>
@@ -208,9 +208,9 @@ class PageIxtapaZihuatanejo extends HTMLElement {
 <!-- CTA -->
 <section class="cta">
   <div class="container">
-    <h2 class="cta__title">Viaja a Ixtapa Zihuatanejo con Costaline</h2>
+    <h2 class="cta__title">Viaja a Zihuatanejo con Costaline</h2>
     <p class="cta__subtitle">Reserva tu boleto y disfruta uno de los mejores destinos de playa del Pacífico.</p>
-    <a href="../destinos/autobus-a-ixtapa-zihuatanejo.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
+    <a href="../destinos/autobus-a-zihuatanejo.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer">
       Ver más sobre el destino
     </a>
   </div>
@@ -224,4 +224,4 @@ class PageIxtapaZihuatanejo extends HTMLElement {
         `;
 	}
 }
-customElements.define("page-ixtapa-zihuatanejo", PageIxtapaZihuatanejo);
+customElements.define("page-zihuatanejo", PageZihuatanejo);

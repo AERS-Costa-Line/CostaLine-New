@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Tostadas",
+    "description": "Uno de los platillos más representativos del sur de CDMX. Las tostadas se preparan con una base crujiente de maíz y se acompañan con ingredientes como tinga, pollo, pata, queso, crema, lechuga y salsas. Son prácticas, muy mexicanas y perfectas para comer antes de viajar.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/tostadas.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/tostadas-m.webp",
+    "altText": "Tostadas tradicionales de Ciudad de México",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Pozole",
+    "description": "El pozole es uno de los platillos más tradicionales para una comida completa en CDMX. Se sirve caliente, con maíz cacahuazintle, carne y acompañamientos como lechuga, rábano, cebolla, orégano y limón. Es ideal si buscas un platillo sustancioso antes de tu salida desde Taxqueña.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/pozole.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/pozole-m.webp",
+    "altText": "Pozole tradicional en Ciudad de México",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Chilaquiles",
+    "description": "Un desayuno clásico en el sur de la ciudad. Los chilaquiles pueden ser verdes o rojos, con crema, queso, cebolla y proteína opcional como pollo, bistec o huevo. Son una opción ideal si viajas temprano y quieres comer algo típico y energético.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/chilaquiles.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/chilaquiles-m.webp",
+    "altText": "Chilaquiles verdes o rojos",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Esquites y elotes",
+    "description": "En el sur de CDMX, especialmente en zonas tradicionales, los esquites y elotes son un antojo muy común. Se preparan con mayonesa, queso, chile y limón, y son una opción ligera y muy representativa para comer algo rápido antes de viajar.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/esquites.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/esquites-m.webp",
+    "altText": "Esquites y elotes preparados",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Nieva y helados tradicionales",
+    "description": "En el sur de la ciudad es muy común encontrar nieves y helados tradicionales, con sabores frutales, cremosos o típicos como limón, mamey o vainilla. Son una opción perfecta para refrescarte si viajas en temporada de calor o si quieres cerrar tu visita a CDMX con un toque dulce.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/nieves.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/nieves-m.webp",
+    "altText": "Nieves y helados tradicionales en CDMX",
+    "linkText": "Ver..."
+  }
+]

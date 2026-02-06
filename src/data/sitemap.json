@@ -33,8 +33,8 @@
 			},
 			{ "nombre": "Iguala", "url": "../../destinos/autobus-a-iguala.html" },
 			{
-				"nombre": "Ixtapa Zihuatanejo",
-				"url": "../../destinos/autobus-a-ixtapa-zihuatanejo.html"
+				"nombre": "Zihuatanejo",
+				"url": "../../destinos/autobus-a-zihuatanejo.html"
 			},
 			{
 				"nombre": "Monterrey",
@@ -85,7 +85,7 @@
 			{ "nombre": "Iguala", "url": "../../boletos-autobus/iguala.html" },
 			{
 				"nombre": "Ixtapa Zihuatanejo",
-				"url": "../../boletos-autobus/ixtapa-zihuatanejo.html"
+				"url": "../../boletos-autobus/zihuatanejo.html"
 			},
 			{
 				"nombre": "Monterrey",
