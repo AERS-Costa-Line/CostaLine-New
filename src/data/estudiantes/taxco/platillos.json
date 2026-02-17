@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Chiles rellenos de picadillo",
+    "description": "Chiles Rellenos de Picadillo estilo Taxco: Chiles anchos rellenos de un aromático picadillo de carne, frutos secos y especias. Cubiertos con huevo batido y fritos, nadan en un caldillo de jitomate. ¡Una explosión de sabores y texturas en cada bocado! Un festín tradicional de Taxco.",
+    "imageSrc": "../src/assets/img/platillos/taxco/chiles-rellenos-picadillo.webp",
+    "imageModal": "../src/assets/img/platillos/taxco/chiles-rellenos-picadillo-m.webp",
+    "altText": "Chiles rellenos de picadillo",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tinga de res estilo Taxco",
+    "description": "Tinga de Res estilo Taxco: Tierna carne de res deshebrada cocida en una salsa de jitomate, chile chipotle y cebolla. De sabor ahumado y ligeramente picante. ¡Se sirve en tostadas crujientes con aguacate, queso fresco y crema, una delicia taxqueña!",
+    "imageSrc": "../src/assets/img/platillos/taxco/tinga-de-res.webp",
+    "imageModal": "../src/assets/img/platillos/taxco/tinga-de-res-m.webp",
+    "altText": "Tinga de res estilo Taxco",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tacos de cecina con queso",
+    "description": "Tacos de cecina con queso, el sabor de Taxco. Suave cecina de res asada a la perfección, abrazada por queso Oaxaca derretido en tortillas de maíz hechas a mano. ¡Una combinación irresistible que deleita el paladar en cada bocado! Se acompaña con salsa roja y limón.",
+    "imageSrc": "../src/assets/img/platillos/taxco/tacos-cecina-queso.webp",
+    "imageModal": "../src/assets/img/platillos/taxco/tacos-cecina-queso-m.webp",
+    "altText": "Tacos de cecina con queso",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Quesadillas de huitlacoche",
+    "description": "Quesadillas de Huitlacoche, un manjar de Taxco. Tortillas de maíz rellenas con huitlacoche (hongo del maíz), flor de calabaza y queso Oaxaca. Un bocado de sabor terroso y suave. ¡Un manjar prehispánico que celebra la tradición y la riqueza de Taxco!.",
+    "imageSrc": "../src/assets/img/platillos/taxco/quesadillas-huitlacoche.webp",
+    "imageModal": "../src/assets/img/platillos/taxco/quesadillas-huitlacoche-m.webp",
+    "altText": "Quesadillas de huitlacoche",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Alfeñiques de Taxco",
+    "description": "Alfeñiques de Taxco: Figuras de azúcar glass, moldeadas y pintadas a mano con vivos colores. Calaveras, animalitos y frutales adornan estas dulces creaciones. ¡Un arte tradicional que cobra vida en Taxco cada Día de Muertos, un bocado de alegría y colorido!",
+    "imageSrc": "../src/assets/img/platillos/taxco/alfeniques.webp",
+    "imageModal": "../src/assets/img/platillos/taxco/alfeniques-m.webp",
+    "altText": "Alfeñiques de Taxco",
+    "linkText": "Ver..."
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "basilica-de-guadalupe",
+    "text": "Basílica de Guadalupe",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/basilica-guadalupe.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/basilica-guadalupe-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/basilica-guadalupe-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/basilica-guadalupe-4.webp",
+    "title": "Basílica de Guadalupe",
+    "description": "La Basílica de Guadalupe es uno de los recintos religiosos más importantes de México y un punto muy accesible desde la Terminal México Norte. Además de su valor espiritual, el complejo ofrece una experiencia cultural e histórica única, con espacios arquitectónicos emblemáticos, plazas amplias y vistas desde el Cerro del Tepeyac. Es una visita ideal si tienes tiempo antes de tu salida o al llegar a la ciudad."
+  },
+  {
+    "id": "alameda-central",
+    "text": "Alameda Central",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/alameda-central.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/alameda-central-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/alameda-central-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/alameda-central-4.webp",
+    "title": "Alameda Central",
+    "description": "La Alameda Central es uno de los parques más tradicionales del Centro Histórico y un excelente punto para caminar, descansar y conocer zonas icónicas de la ciudad. Desde aquí puedes conectar fácilmente con museos, edificios históricos y espacios culturales. Es una visita recomendada para viajeros que buscan una experiencia céntrica sin complicaciones."
+  },
+  {
+    "id": "plaza-de-la-constitucion",
+    "text": "Zócalo de CDMX",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/plaza-de-la-constitucion.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/plaza-de-la-constitucion-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/plaza-de-la-constitucion-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/plaza-de-la-constitucion-4.webp",
+    "title": "Zócalo y Centro Histórico",
+    "description": "El Zócalo es el corazón histórico de la Ciudad de México y uno de los lugares más recomendados para conocer en una visita corta. Rodeado por la Catedral Metropolitana y el Palacio Nacional, este espacio concentra historia, arquitectura y vida cultural. Es ideal para recorrer a pie, tomar fotografías y vivir el ambiente del centro de la ciudad."
+  },
+  {
+    "id": "paseo-de-la-reforma",
+    "text": "Paseo de la Reforma",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/paseo-reforma.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/paseo-reforma-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/paseo-reforma-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/paseo-reforma-4.webp",
+    "title": "Paseo de la Reforma",
+    "description": "Paseo de la Reforma es una de las avenidas más emblemáticas de la ciudad, famosa por sus monumentos, edificios modernos y espacios culturales. Aquí se encuentran puntos clave como el Ángel de la Independencia y zonas ideales para caminar, tomar fotos y conocer la parte moderna de CDMX. Es una excelente opción si buscas un recorrido representativo en poco tiempo."
+  }
+]

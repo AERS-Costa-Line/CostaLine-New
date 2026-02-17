@@ -1,0 +1,46 @@
+[
+  {
+    "id": "terminal-pasajeros-aifa",
+    "text": "Terminal de Pasajeros",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/aifa/terminal-pasajeros-aifa.webp",
+    "image2":"../src/assets/img/destinos-img/aifa/terminal-pasajeros-aifa-2.webp",
+    "image3":"../src/assets/img/destinos-img/aifa/terminal-pasajeros-aifa-3.webp",
+    "image4":"../src/assets/img/destinos-img/aifa/terminal-pasajeros-aifa-4.webp",
+    "title": "Terminal de Pasajeros del AIFA",
+    "description": "¿Por qué visitarla? La terminal de pasajeros del AIFA ofrece una experiencia moderna y funcional para viajar. Cuenta con espacios amplios, señalización clara y servicios pensados para que el proceso de documentación, filtros y abordaje sea más ordenado. Si viajas por primera vez, llegar con anticipación te permitirá ubicar con calma tu aerolínea, mostradores, puertas y áreas de servicios."
+  },
+  {
+    "id": "accesos-y-llegadas-aifa",
+    "text": "Accesos y Llegadas",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/aifa/accesos-y-llegadas-aifa.webp",
+    "image2":"../src/assets/img/destinos-img/aifa/accesos-y-llegadas-aifa-2.webp",
+    "image3":"../src/assets/img/destinos-img/aifa/accesos-y-llegadas-aifa-3.webp",
+    "image4":"../src/assets/img/destinos-img/aifa/accesos-y-llegadas-aifa-4.webp",
+    "title": "Accesos y área de Llegadas del AIFA",
+    "description": "¿Por qué considerarlo? Identificar con anticipación el acceso, el punto de descenso y la zona de llegadas te ayuda a ahorrar tiempo y evitar confusiones. Al arribar en autobús, podrás organizar mejor tu ingreso a la terminal, ubicar puertas y dirigirte a documentación o seguridad según tu vuelo. Si vas por alguien, la zona de llegadas facilita el encuentro con puntos de referencia claros."
+  },
+  {
+    "id": "documentacion-y-seguridad-aifa",
+    "text": "Documentación y Seguridad",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/aifa/documentacion-y-seguridad-aifa.webp",
+    "image2":"../src/assets/img/destinos-img/aifa/documentacion-y-seguridad-aifa-2.webp",
+    "image3":"../src/assets/img/destinos-img/aifa/documentacion-y-seguridad-aifa-3.webp",
+    "image4":"../src/assets/img/destinos-img/aifa/documentacion-y-seguridad-aifa-4.webp",
+    "title": "Documentación y filtros de seguridad",
+    "description": "¿Por qué es importante? Planear tu llegada al aeropuerto pensando en documentación y filtros de seguridad reduce el estrés. Lleva identificación a la mano, revisa tu pase de abordar y considera tiempo adicional si documentas equipaje. Un traslado cómodo en autobús te permite llegar con mejor margen y pasar estos procesos con tranquilidad."
+  },
+  {
+    "id": "servicios-y-comodidades-aifa",
+    "text": "Servicios para Viajeros",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/aifa/servicios-y-comodidades-aifa.webp",
+    "image2":"../src/assets/img/destinos-img/aifa/servicios-y-comodidades-aifa-2.webp",
+    "image3":"../src/assets/img/destinos-img/aifa/servicios-y-comodidades-aifa-3.webp",
+    "image4":"../src/assets/img/destinos-img/aifa/servicios-y-comodidades-aifa-4.webp",
+    "title": "Servicios y comodidades dentro del AIFA",
+    "description": "¿Qué encontrarás? En el AIFA puedes ubicar áreas de alimentos, puntos de información y servicios para hacer más cómoda la espera. Si tu vuelo sale temprano o tienes una escala, considera llegar con margen para ubicar tu puerta, identificar servicios cercanos y organizar tu tiempo. Un buen plan de traslado te ayuda a aprovechar mejor la experiencia en el aeropuerto."
+  }
+]

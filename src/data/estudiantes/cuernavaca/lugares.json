@@ -1,0 +1,46 @@
+[
+  {
+    "id": "palacio-de-cortes",
+    "text": "Palacio de Cortés",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/cuernavaca/palacio-de-cortes.webp",
+    "image2": "../src/assets/img/destinos-img/cuernavaca/palacio-de-cortes-2.webp",
+    "image3": "../src/assets/img/destinos-img/cuernavaca/palacio-de-cortes-3.webp",
+    "image4": "../src/assets/img/destinos-img/cuernavaca/palacio-de-cortes-4.webp",
+    "title": "Palacio de Cortés",
+    "description": "¿Por qué visitarlo? El Palacio de Cortés, un tesoro histórico en Cuernavaca, es una ventana al pasado colonial de México y un importante centro cultural. Este palacio, construido por Hernán Cortés, alberga hoy el Museo Regional Cuauhnáhuac, donde se exponen artefactos prehispánicos, piezas coloniales y los famosos murales de Diego Rivera. Los visitantes pueden explorar sus salas, conocer la historia de la región y admirar las obras de arte. Para una experiencia completa, se recomienda dedicar tiempo a observar los detalles arquitectónicos y disfrutar del ambiente histórico que lo rodea."
+  },
+  {
+    "id": "salto-de-san-anton",
+    "text": "Salto de San Antón",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/cuernavaca/salto-san-anton.webp",
+    "image2": "../src/assets/img/destinos-img/cuernavaca/salto-san-anton-2.webp",
+    "image3": "../src/assets/img/destinos-img/cuernavaca/salto-san-anton-3.webp",
+    "image4": "../src/assets/img/destinos-img/cuernavaca/salto-san-anton-4.webp",
+    "title": "Salto de San Antón",
+    "description": "¿Por qué visitarlo? El Salto de San Antón, un tesoro natural cerca de Cuernavaca, es un destino imperdible para los amantes de la naturaleza y la aventura. Esta cascada, rodeada de exuberante vegetación, ofrece una experiencia sensorial única. Los visitantes pueden escuchar el sonido del agua al caer, sentir la frescura del ambiente y admirar la belleza del paisaje. Para una experiencia completa, se recomienda llevar calzado cómodo para descender a la base de la cascada y disfrutar de las vistas panorámicas desde los miradores."
+  },
+  {
+    "id": "catedral-cuernavaca",
+    "text": "Catedral de Cuernavaca",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cuernavaca/catedral-cuernavaca.webp",
+    "image2": "../src/assets/img/destinos-img/cuernavaca/catedral-cuernavaca-2.webp",
+    "image3": "../src/assets/img/destinos-img/cuernavaca/catedral-cuernavaca-3.webp",
+    "image4": "../src/assets/img/destinos-img/cuernavaca/catedral-cuernavaca-4.webp",
+    "title": "Catedral de Cuernavaca",
+    "description": "¿Por qué visitarla? La Catedral de Cuernavaca, un tesoro histórico en el corazón de la ciudad, es un fascinante ejemplo de arquitectura religiosa y un testigo de siglos de historia. Este conjunto catedralicio, que incluye la capilla abierta, la capilla de la Tercera Orden y los jardines, exhibe una mezcla de estilos que reflejan las diferentes etapas de su construcción. Los visitantes pueden explorar sus espacios, admirar su sobria belleza y descubrir los detalles que hacen de este lugar un sitio único en México. Para una experiencia completa, se recomienda dedicar tiempo a recorrer los jardines y disfrutar de la atmósfera de paz y tranquilidad."
+  },
+  {
+    "id": "jardin-borda",
+    "text": "Jardín Borda",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cuernavaca/jardin-borda.webp",
+    "image2": "../src/assets/img/destinos-img/cuernavaca/jardin-borda-2.webp",
+    "image3": "../src/assets/img/destinos-img/cuernavaca/jardin-borda-3.webp",
+    "image4": "../src/assets/img/destinos-img/cuernavaca/jardin-borda-4.webp",
+    "title": "Jardín Borda",
+    "description": "¿Por qué visitarlo? El Jardín Borda, un tesoro histórico y natural en Cuernavaca, es un destino imperdible para los amantes de la belleza y la tranquilidad. Este jardín, que ha sido escenario de importantes eventos históricos, ofrece una combinación única de arquitectura colonial, vegetación exuberante y espacios para la relajación. Los visitantes pueden explorar sus diferentes áreas, admirar sus fuentes y estanques, y disfrutar de la atmósfera pacífica que lo caracteriza. Para una experiencia completa, se recomienda dedicar tiempo a recorrer sus galerías de arte y disfrutar de un café en alguno de sus encantadores rincones."
+  }
+]

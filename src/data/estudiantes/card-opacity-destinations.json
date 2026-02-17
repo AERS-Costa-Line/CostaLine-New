@@ -1,0 +1,98 @@
+[
+	{
+		"imageSrc": "../src/assets/img/destinos-img/acapulco/acapulco-m.webp",
+		"imageAlt": "Acapulco",
+		"destinationName": "Acapulco, Guerrero",
+		"destinationTagline": "Sol, mar y vida nocturna sin igual.",
+		"buttonText": "Explorar Acapulco",
+		"buttonLink": "../../destinos/autobus-a-acapulco.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/ixtapa/zihuatanejo-m.webp",
+		"imageAlt": "Zihuatanejo",
+		"destinationName": "Zihuatanejo, Guerrero",
+		"destinationTagline": "Playas tranquilas y encanto pesquero.",
+		"buttonText": "Explorar Zihuatanejo",
+		"buttonLink": "../../destinos/autobus-a-zihuatanejo.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/tecpan/tecpan-m.webp",
+		"imageAlt": "Tecpan de Galeana",
+		"destinationName": "Tecpan, Guerrero",
+		"destinationTagline": "Naturaleza, costa y cultura local.",
+		"buttonText": "Explorar Tecpan",
+		"buttonLink": "../../destinos/autobus-a-tecpan.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/coyuca-de-benitez/coyuca-m.webp",
+		"imageAlt": "Coyuca de Benítez",
+		"destinationName": "Coyuca de Benítez, Guerrero",
+		"destinationTagline": "Laguna, mar y naturaleza en un solo lugar.",
+		"buttonText": "Explorar Coyuca",
+		"buttonLink": "../../destinos/autobus-a-coyuca-de-benitez.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/chilpancingo/chilpancingo-m.webp",
+		"imageAlt": "Chilpancingo",
+		"destinationName": "Chilpancingo, Guerrero",
+		"destinationTagline": "La capital del estado con historia y cultura.",
+		"buttonText": "Explorar Chilpancingo",
+		"buttonLink": "../../destinos/autobus-a-chilpancingo.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/cd-altamirano/cd-altamirano-m.webp",
+		"imageAlt": "Ciudad Altamirano",
+		"destinationName": "Cd. Altamirano, Guerrero",
+		"destinationTagline": "Encuentra tranquilidad junto al río Balsas.",
+		"buttonText": "Explorar Cd. Altamirano",
+		"buttonLink": "../../destinos/autobus-a-cd-altamirano.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/iguala/iguala-m.webp",
+		"imageAlt": "Iguala",
+		"destinationName": "Iguala, Guerrero",
+		"destinationTagline": "Cuna de la Bandera Nacional.",
+		"buttonText": "Explorar Iguala",
+		"buttonLink": "../../destinos/autobus-a-iguala.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/taxco/taxco-m.webp",
+		"imageAlt": "Taxco",
+		"destinationName": "Taxco, Guerrero",
+		"destinationTagline": "Pueblo mágico y joya colonial de plata.",
+		"buttonText": "Explorar Taxco",
+		"buttonLink": "../../destinos/autobus-a-taxco.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/cdmx/cdmx-m.webp",
+		"imageAlt": "Ciudad de México",
+		"destinationName": "Ciudad de México, CDMX",
+		"destinationTagline": "Tradición y modernidad en la gran capital.",
+		"buttonText": "Explorar CDMX",
+		"buttonLink": "../../destinos/autobus-a-ciudad-de-mexico.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/cuernavaca/cuernavaca-m.webp",
+		"imageAlt": "Cuernavaca",
+		"destinationName": "Cuernavaca, Morelos",
+		"destinationTagline": "La ciudad de la eterna primavera.",
+		"buttonText": "Explorar Cuernavaca",
+		"buttonLink": "../../destinos/autobus-a-cuernavaca.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/toluca/cosmovitral-1.webp",
+		"imageAlt": "Cosmovitral Jardín Botánico",
+		"destinationName": "Toluca, Estado de México",
+		"destinationTagline": "Descubre la belleza natural y cultural de Toluca.",
+		"buttonText": "Explorar Toluca",
+		"buttonLink": "../../destinos/autobus-a-toluca.html"
+	},
+	{
+		"imageSrc": "../src/assets/img/destinos-img/tepotzotlan/arcos-del-sitio-1.webp",
+		"imageAlt": "Tepotzotlán",
+		"destinationName": "Tepotzotlán, Estado de México",
+		"destinationTagline": "Pueblo mágico con historia y arquitectura colonial.",
+		"buttonText": "Explorar Tepotzotlán",
+		"buttonLink": "../../destinos/autobus-a-tepotzotlan.html"
+	}
+]

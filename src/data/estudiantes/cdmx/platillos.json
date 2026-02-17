@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Tacos al Pastor",
+    "description": "Los tacos al pastor, ícono chilango, nacieron de la fusión libanesa-mexicana. Finas láminas de cerdo marinadas en achiote y chiles se asan en trompo vertical, luego se sirven en tortilla con piña, cebolla, cilantro y salsa. Su jugosidad y equilibrio dulce-picante los hacen el rey de la calle. ¡Imperdibles en puestos nocturnos!",
+    "imageSrc": "../src/assets/img/platillos/cdmx/tacos-al-pastor.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/tacos-al-pastor-m.webp",
+    "altText": "Tacos al Pastor",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tlacoyos",
+    "description": "Los tlacoyos, joya prehispánica de CDMX, son ovaladas de masa azul o blanca rellenas de frijol, haba o requesón. Se doran en comal y se cubren con nopalitos, queso fresco, salsa y cilantro. Tradicionales en mercados como Coyoacán, son un bocado sabroso, nutritivo y 100% mexicano que une pasado y presente.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/tlacoyos.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/tlacoyos-m.webp",
+    "altText": "Tlacoyos",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tamales",
+    "description": "Los tamales de hoja de maíz en CDMX son una tradición matutina. Elaborados con masa nixtamalizada y envueltos en hoja de maíz, pueden ser verdes (con salsa y pollo), dulces (con pasas) o de mole. Se venden en puestos callejeros junto con atole, formando el desayuno clásico del chilango. ¡Sabores que evocan nostalgia!",
+    "imageSrc": "../src/assets/img/platillos/cdmx/tamales.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/tamales-m.webp",
+    "altText": "Tamales",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Churros Rellenos",
+    "description": "Los churros rellenos de CDMX son una delicia crujiente con corazón sorpresa. Elaborados con masa frita en forma alargada, se inyectan calientes con dulce de leche, chocolate o cajeta. Imperdibles en la emblemática Churrería El Moro (desde 1935), donde se acompañan con chocolate espumoso. ¡Un placer que combina tradición española y sabor mexicano!",
+    "imageSrc": "../src/assets/img/platillos/cdmx/churros-rellenos.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/churros-rellenos-m.webp",
+    "altText": "Churros Rellenos",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Quesadillas de Huitlacoche",
+    "description": "Las quesadillas de huitlacoche en CDMX son un manjar único de la gastronomía mexicana. El hongo del maíz se cocina con epazote y cebolla, creando un relleno negro intenso con sabor terroso y umami. Se sirven en tortillas azules o de maíz, fundidas con queso Oaxaca, en mercados como La Merced. ¡Un tesoro culinario prehispánico que sorprende a paladares exigentes!",
+    "imageSrc": "../src/assets/img/platillos/cdmx/quesadillas-de-huitlacoche.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/quesadillas-de-huitlacoche-m.webp",
+    "altText": "Quesadillas de Huitlacoche",
+    "linkText": "Ver..."
+  }
+]

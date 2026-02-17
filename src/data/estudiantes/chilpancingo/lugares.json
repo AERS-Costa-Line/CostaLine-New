@@ -1,0 +1,46 @@
+[
+  {
+    "id": "museo-regional-de-guerrero",
+    "text": "Museo Regional de Guerrero",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/chilpancingo/museo-regional-guerrero.webp",
+    "image2": "../src/assets/img/destinos-img/chilpancingo/museo-regional-guerrero-2.webp",
+    "image3": "../src/assets/img/destinos-img/chilpancingo/museo-regional-guerrero-3.webp",
+    "image4": "../src/assets/img/destinos-img/chilpancingo/museo-regional-guerrero-4.webp",
+    "title": "Museo Regional de Guerrero",
+    "description": "¿Por qué visitarlo? El Museo Regional de Guerrero, ubicado en el corazón de Chilpancingo, es un impresionante centro cultural dedicado a la preservación y difusión de la historia y la cultura del estado. Este museo alberga una valiosa colección que abarca desde la época prehispánica hasta la actualidad, con artefactos arqueológicos, obras de arte y documentos históricos. Los visitantes pueden recorrer sus salas, aprender sobre las culturas que florecieron en la región y conocer la historia de Guerrero a través de sus exhibiciones. Se puede acceder fácilmente a pie o en transporte público, lo que permite sumergirse en el patrimonio cultural del estado."
+  },
+  {
+    "id": "zoo-zoochilpan",
+    "text": "Zoo Zoochilpan",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/chilpancingo/zoo-zoochilpan.webp",
+    "image2": "../src/assets/img/destinos-img/chilpancingo/zoo-zoochilpan-2.webp",
+    "image3": "../src/assets/img/destinos-img/chilpancingo/zoo-zoochilpan-3.webp",
+    "image4": "../src/assets/img/destinos-img/chilpancingo/zoo-zoochilpan-4.webp",
+    "title": "Zoo Zoochilpan",
+    "description": "¿Por qué visitarlo? El Zoológico Zoochilpan, ubicado en Chilpancingo, es un impresionante espacio dedicado a la conservación de la fauna y a la educación ambiental. Este zoológico alberga una gran variedad de animales, desde especies nativas de Guerrero hasta ejemplares de otras partes del mundo. Los visitantes pueden recorrer sus instalaciones, observar a los animales en ambientes que simulan sus hábitats naturales y aprender sobre la importancia de la conservación. Se puede acceder fácilmente en automóvil o transporte público, lo que permite disfrutar de una experiencia educativa y de entretenimiento en contacto con la naturaleza."
+  },
+  {
+    "id": "rio-verde",
+    "text": "Rio Verde",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/chilpancingo/rio-verde.webp",
+    "image2": "../src/assets/img/destinos-img/chilpancingo/rio-verde-2.webp",
+    "image3": "../src/assets/img/destinos-img/chilpancingo/rio-verde-3.webp",
+    "image4": "../src/assets/img/destinos-img/chilpancingo/rio-verde-4.webp",
+    "title": "Rio Verde",
+    "description": "¿Por qué visitarlo? Río Verde, ubicado cerca de Chilpancingo, es un refrescante paraje natural conocido por sus aguas cristalinas y su entorno verde. Este destino ofrece la oportunidad de disfrutar de actividades acuáticas como nadar, chapotear o simplemente relajarse a la orilla del río. Los visitantes pueden realizar picnics, disfrutar de la sombra de los árboles y conectar con la naturaleza. El acceso es relativamente sencillo, lo que lo convierte en una opción popular para familias y grupos de amigos que buscan un día de esparcimiento."
+  },
+  {
+    "id": "grutas-de-juxtlahuaca",
+    "text": "Grutas de Juxtlahuaca",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/chilpancingo/grutas-juxtlahuaca.webp",
+    "image2": "../src/assets/img/destinos-img/chilpancingo/grutas-juxtlahuaca-2.webp",
+    "image3": "../src/assets/img/destinos-img/chilpancingo/grutas-juxtlahuaca-3.webp",
+    "image4": "../src/assets/img/destinos-img/chilpancingo/grutas-juxtlahuaca-4.webp",
+    "title": "Grutas de Juxtlahuaca",
+    "description": "¿Por qué visitarlas? Las Grutas de Juxtlahuaca, ubicadas cerca de Chilpancingo, son un impresionante atractivo natural y un importante sitio arqueológico. Estas cuevas, con miles de años de antigüedad, albergan pinturas rupestres de la cultura olmeca, consideradas unas de las más antiguas de Mesoamérica. Los visitantes pueden realizar una visita guiada para explorar las diferentes galerías, admirar las pinturas y aprender sobre la historia de la región. Se puede acceder a las grutas en automóvil o transporte público, aunque se requiere una caminata para llegar a la entrada, lo que permite disfrutar del hermoso paisaje circundante."
+  }
+]

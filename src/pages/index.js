@@ -42,6 +42,9 @@ import "./page-ofertas-en-1-click.js?v=1.0.2";
 import "./page-festival-de-viajes.js?v=1.0.2";
 import "./page-kueski-pay.js?v=1.0.2";
 
+
+
+
 //BOLETOS AUTOBUS
 
 import "./boletos-autobus/page-acapulco.js?v=1.0.2";
@@ -165,3 +168,6 @@ import "../js/travelpass-cookie.js?v=1.0.2";
 /* Doters */
 
 import "./doters/page-doters.js?v=1.0.1";
+
+/*----------------PAGINAS-SUBE---------------------------------*/
+import "./estudiantes/page-cdmx-a-acapulco-diamante.js";

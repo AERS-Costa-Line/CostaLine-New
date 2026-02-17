@@ -1,0 +1,46 @@
+[
+  {
+    "id": "parque-la-mexicana",
+    "text": "Parque La Mexicana",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/parque-la-mexicana.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/parque-la-mexicana-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/parque-la-mexicana-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/parque-la-mexicana-4.webp",
+    "title": "Parque La Mexicana (Santa Fe)",
+    "description": "El Parque La Mexicana es uno de los espacios más recomendados en el poniente de la ciudad por su ambiente moderno, áreas verdes, zonas para caminar y espacios gastronómicos. Es ideal si viajas desde Observatorio y quieres un plan relajado antes de tu salida o al llegar a CDMX."
+  },
+  {
+    "id": "centro-comercial-santa-fe",
+    "text": "Centro Santa Fe",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/centro-santa-fe.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/centro-santa-fe-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/centro-santa-fe-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/centro-santa-fe-4.webp",
+    "title": "Centro Comercial Santa Fe",
+    "description": "Centro Santa Fe es una de las zonas más prácticas para viajeros que necesitan comer, comprar o pasar el tiempo antes de trasladarse. Su cercanía con el poniente de CDMX lo convierte en una opción conveniente si sales o llegas a la Terminal México Poniente."
+  },
+  {
+    "id": "museo-de-historia-natural",
+    "text": "Museo de Historia Natural",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/museo-historia-natural.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/museo-historia-natural-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/museo-historia-natural-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/museo-historia-natural-4.webp",
+    "title": "Museo de Historia Natural",
+    "description": "Si buscas un plan cultural cercano y familiar, el Museo de Historia Natural es una excelente opción para visitar antes de tu viaje. Su ubicación dentro de la zona de Chapultepec lo hace accesible desde el poniente, ideal para una visita corta con enfoque educativo y recreativo."
+  },
+  {
+    "id": "observatorio-parque-tacubaya",
+    "text": "Tacubaya y alrededores",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/tacubaya.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/tacubaya-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/tacubaya-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/tacubaya-4.webp",
+    "title": "Tacubaya y conectividad urbana",
+    "description": "La zona de Tacubaya y Observatorio es un punto estratégico para moverse hacia distintas áreas de CDMX. Si llegas con tiempo, puedes aprovechar la cercanía para conectar con zonas turísticas del poniente o realizar traslados hacia centros de trabajo, hoteles y puntos de interés sin cruzar toda la ciudad."
+  }
+]

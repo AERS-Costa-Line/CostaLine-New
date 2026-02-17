@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Barbacoa de Chivo",
+    "description": "La barbacoa de chivo de Altamirano es una joya culinaria de Guerrero. Cocida lentamente en hoyo con leña, mezcal y hierbas como el árnica, adquiere una textura melosa y un ahumado único. Se sirve en tacos o consomé, acompañada de salsa borracha y cebolla curtida. ¡Imperdible para amantes de los sabores auténticos!",
+    "imageSrc": "../src/assets/img/platillos/cd-altamirano/barbacoa-de-chivo.webp",
+    "imageModal": "../src/assets/img/platillos/cd-altamirano/barbacoa-de-chivo-m.webp",
+    "altText": "Barbacoa de Chivo",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Pozole Verde",
+    "description": "El pozole verde de Altamirano es una delicia única de Guerrero, preparado con maíz cacahuazintle y una salsa de pipián (semillas de calabaza), tomate verde y chiles serranos. A diferencia del pozole rojo, tiene un sabor herbáceo y fresco, acompañado de carne de cerdo, lechuga, rábanos y tostadas. ¡Una joya gastronómica poco conocida pero inolvidable!",
+    "imageSrc": "../src/assets/img/platillos/cd-altamirano/pozole-verde.webp",
+    "imageModal": "../src/assets/img/platillos/cd-altamirano/pozole-verde-m.webp",
+    "altText": "Pozole Verde",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Gorditas de Chicharrón",
+    "description": "Las gorditas de chicharrón de Altamirano son una explosión de sabor guerrerense. Elaboradas con masa de maíz nixtamalizado y rellenas de chicharrón prensado mezclado con salsa verde o roja, se doran en comal hasta quedar crujientes. Se acompañan con crema, queso fresco y lechuga, ¡una delicia callejera que no te puedes perder!",
+    "imageSrc": "../src/assets/img/platillos/cd-altamirano/gorditas-de-chicharron.webp",
+    "imageModal": "../src/assets/img/platillos/cd-altamirano/gorditas-de-chicharron-m.webp",
+    "altText": "Gorditas de Chicharrón",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Enchiladas",
+    "description": "Las enchiladas estilo Tierra Caliente de Altamirano son un ícono regional, con tortillas bañadas en salsa de chile guajillo y rellenas de pollo desmenuzado o queso. Se adornan con cebolla morada, lechuga, crema fresca y queso cotija, ofreciendo un equilibrio perfecto entre picante y cremosidad. ¡Un platillo que captura la esencia guerrerense en cada bocado!",
+    "imageSrc": "../src/assets/img/platillos/cd-altamirano/enchiladas.webp",
+    "imageModal": "../src/assets/img/platillos/cd-altamirano/enchiladas-m.webp",
+    "altText": "Enchiladas",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Atole de ciruela o tamarindo",
+    "description": "El atole de ciruela o tamarindo de Altamirano es una bebida tradicional refrescante y única. Preparado con maíz, piloncillo y frutas locales, combina lo dulce y lo ácido en un balance perfecto. Ideal para acompañar antojitos o disfrutarse solo, este atole de sabores vibrantes es una delicia que refleja la creatividad gastronómica de la Tierra Caliente guerrerense.",
+    "imageSrc": "../src/assets/img/platillos/cd-altamirano/atole-ciruela-tamarindo.webp",
+    "imageModal": "../src/assets/img/platillos/cd-altamirano/atole-ciruela-tamarindo-m.webp",
+    "altText": "Atole de ciruela o tamarindo",
+    "linkText": "Ver..."
+  }
+]

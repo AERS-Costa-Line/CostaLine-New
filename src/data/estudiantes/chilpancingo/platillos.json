@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Pozole verde guerrerense",
+    "description": "El pozole verde de Chilpancingo es un platillo emblemático de Guerrero, con raíces prehispánicas. Destaca por su salsa verde de tomate milpero, chiles, pepitas, hierbas como chaya y pipicha, y carne de cerdo. Se sirve con maíz cacahuazintle, chicharrón, lechuga y tostadas. ¡Un manjar lleno de historia y sabor!.",
+    "imageSrc": "../src/assets/img/platillos/chilpancingo/pozole-verde-guerrerense.webp",
+    "imageModal": "../src/assets/img/platillos/chilpancingo/pozole-verde-guerrerense-m.webp",
+    "altText": "Pozole verde guerrerense",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tlatonile de Chilpancingo",
+    "description": "El tlatonile de Chilpancingo es un mole verde guerrerense de origen prehispánico, preparado con hierbas únicas como pipicha, hoja santa y chepiche, tomate verde, chile y semillas de calabaza. Se sirve con pollo o cerdo, destacando por su sabor herbáceo y aromático. Representa la fusión de tradiciones indígenas y coloniales, siendo un platillo ceremonial en festividades locales.",
+    "imageSrc": "../src/assets/img/platillos/chilpancingo/tlatonile.webp",
+    "imageModal": "../src/assets/img/platillos/chilpancingo/tlatonile-m.webp",
+    "altText": "Tlatonile de Chilpancingo",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Chalupas chilpancingueñas",
+    "description": "Las chalupas chilpancingueñas son antojitos típicos de Guerrero: tortillas fritas crujientes cubiertas con salsa verde/roja, cecina, cebolla y queso fresco. Se diferencian de otras chalupas por su base gruesa y el uso de cecina local. ¡Un sabor único guerrerense!.",
+    "imageSrc": "../src/assets/img/platillos/chilpancingo/chalupas-chilpancinguenas.webp",
+    "imageModal": "../src/assets/img/platillos/chilpancingo/chalupas-chilpancinguenas-m.webp",
+    "altText": "Chalupas chilpancingueñas",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Barbacoa de chivo de Chilpancingo",
+    "description": "La barbacoa de chivo de Chilpancingo es un platillo tradicional cocido en hoyo subterráneo con maguey, hierbas de olor y chile. La carne jugosa se sirve con consomé aromático y tortillas hechas a mano, heredando técnicas prehispánicas y ganaderas de Guerrero.",
+    "imageSrc": "../src/assets/img/platillos/chilpancingo/barbacoa-chilpancingo.webp",
+    "imageModal": "../src/assets/img/platillos/chilpancingo/barbacoa-chilpancingo-m.webp",
+    "altText": "Barbacoa de chivo de Chilpancingo",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Aporreadillo de Chilpancingo",
+    "description": "El aporreadillo de Chilpancingo es un guiso tradicional guerrerense hecho con carne de res seca (machacada), huevo, jitomate, chile y especias. De origen rural, nació como solución para conservar la carne. Se sirve con frijoles y tortillas, destacando por su textura fibrosa y sabor intenso.",
+    "imageSrc": "../src/assets/img/platillos/chilpancingo/aporreadillo-chilpancingo.webp",
+    "imageModal": "../src/assets/img/platillos/chilpancingo/aporreadillo-chilpancingo-m.webp",
+    "altText": "Aporreadillo de Chilpancingo",
+    "linkText": "Ver..."
+  }
+]
