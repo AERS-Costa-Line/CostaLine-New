@@ -1,0 +1,34 @@
+[
+   {
+    "title": "Ceviche Acapulqueño",
+    "description": "Un clásico de la costa preparado con pescado fresco finamente picado, jitomate, cebolla, cilantro y jugo de limón. Es fresco, ligero y perfecto para el clima cálido de Acapulco.",
+    "imageSrc": "../src/assets/img/platillos/acapulco/ceviche1.webp",
+    "imageModal": "../src/assets/img/platillos/acapulco/ceviche2.webp",
+    "altText": "Ceviche Acapulqueño",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Camarones al Coco",
+    "description": "Una deliciosa fusión de lo tropical y lo marino. Los camarones se empanizan en coco rallado y se fríen hasta quedar crujientes, servidos con salsas agridulces o picantes.",
+    "imageSrc": "../src/assets/img/platillos/acapulco/camarones1.webp",
+    "imageModal": "../src/assets/img/platillos/acapulco/camarones2.webp",
+    "altText": "Camarones al Coco",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Pescadillas",
+    "description": "Tortillas rellenas de pescado desmenuzado sazonado con jitomate y especias, dobladas y fritas hasta quedar doradas. Se sirven con guacamole, salsa y limón.",
+    "imageSrc": "../src/assets/img/platillos/acapulco/pescadillas1.webp",
+    "imageModal": "../src/assets/img/platillos/acapulco/pescadillas2.webp",
+    "altText": "Pescadillas",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Agua de Coco",
+    "description": "Una bebida natural y refrescante que se disfruta en la playa. Se sirve directamente en el coco, a veces con un toque de limón o un poco de ron para quienes prefieren algo más festivo.",
+    "imageSrc": "../src/assets/img/platillos/acapulco/coco1.webp",
+    "imageModal": "../src/assets/img/platillos/acapulco/coco2.webp",
+    "altText": "Agua de Coco",
+    "linkText": "Ver..."
+  }
+]

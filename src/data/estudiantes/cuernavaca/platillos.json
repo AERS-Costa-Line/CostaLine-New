@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Chalupas Morelenses",
+    "description": "Chalupas Morelenses: Pequeñas tortillas fritas cubiertas con salsa roja o verde, cebolla picada y queso fresco. ¡Crujientes, sabrosas y un clásico de la cocina callejera de Cuernavaca! Un bocado perfecto para disfrutar en cualquier momento del día.",
+    "imageSrc": "../src/assets/img/platillos/cuernavaca/chalupas-morelenses.webp",
+    "imageModal": "../src/assets/img/platillos/cuernavaca/chalupas-morelenses-m.webp",
+    "altText": "Chalupas Morelenses",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tacos Acorazados",
+    "description": "Tacos acorazados: Tortilla de maíz (a veces ligeramente frita para darle firmeza),arroz rojo (sazonado con jitomate y ajo), Proteína: Milanesa de cerdo/pollo, huevo duro, chorizo, bistec o incluso chicharrón, aguacate, salsa verde o roja, y a veces frijoles refritos.",
+    "imageSrc": "../src/assets/img/platillos/cuernavaca/tacos-acorazados.webp",
+    "imageModal": "../src/assets/img/platillos/cuernavaca/tacos-acorazados-m.webp",
+    "altText": "Tacos acorazados",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Cecina de Yecapixtla",
+    "description": "Cecina de Yecapixtla: Carne de res sazonada con sal y jugo de limón, secada al sol y asada en comal, se sirve con queso fresco, crema, aguacate, salsa verde y tortillas hechas a mano.",
+    "imageSrc": "../src/assets/img/platillos/cuernavaca/cecina-yecapixtla.webp",
+    "imageModal": "../src/assets/img/platillos/cuernavaca/cecina-yecapixtla-m.webp",
+    "altText": "Cecina de Yecapixtla",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Chiles rellenos Morelenses",
+    "description": "Chiles rellenos Morelenses: Son una deliciosa variante de este platillo clásico mexicano, pero con ingredientes y técnicas propias del estado de Morelos. A diferencia de otras versiones (como los poblanos o los norteños), los de Morelos destacan por su relleno de picadillo dulce-salado y su salsa de jitomate.",
+    "imageSrc": "../src/assets/img/platillos/cuernavaca/chiles-rellenos-morelenses.webp",
+    "imageModal": "../src/assets/img/platillos/cuernavaca/chiles-rellenos-morelenses-m.webp",
+    "altText": "Chiles rellenos Morelenses",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Limones rellenos de coco",
+    "description": "Limones rellenos de coco:Los limones rellenos de coco son un postre típico de Cuernavaca y Morelos, conocido por su combinación refrescante de acidez cítrica y dulzor del coco. Este dulce artesanal es parte de la herencia gastronómica de la región y suele encontrarse en mercados, ferias y dulcerías tradicionales.",
+    "imageSrc": "../src/assets/img/platillos/cuernavaca/limones-rellenos-de-coco.webp",
+    "imageModal": "../src/assets/img/platillos/cuernavaca/limones-rellenos-de-coco-m.webp",
+    "altText": "Limones rellenos de coco",
+    "linkText": "Ver..."
+  }
+]

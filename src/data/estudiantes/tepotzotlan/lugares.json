@@ -1,0 +1,46 @@
+[
+  {
+    "id": "museo-nacional-del-virreinato",
+    "text": "Museo Nacional del Virreinato",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/tepotzotlan/museo-virreinato-1.webp",
+    "image2": "../src/assets/img/destinos-img/tepotzotlan/museo-virreinato-2.webp",
+    "image3": "../src/assets/img/destinos-img/tepotzotlan/museo-virreinato-3.webp",
+    "image4": "../src/assets/img/destinos-img/tepotzotlan/museo-virreinato-4.webp",
+    "title": "Museo Nacional del Virreinato",
+    "description": "¿Por qué visitarlo? Es el museo más importante de Tepotzotlán y uno de los recintos virreinales mejor conservados de México. Alberga arte sacro, salas históricas y el impresionante Templo de San Francisco Javier. Perfecto para amantes de la historia, la arquitectura y la cultura."
+  },
+  {
+    "id": "arcos-del-sitio",
+    "text": "Arcos del Sitio",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/tepotzotlan/arcos-del-sitio-1.webp",
+    "image2": "../src/assets/img/destinos-img/tepotzotlan/arcos-del-sitio-2.webp",
+    "image3": "../src/assets/img/destinos-img/tepotzotlan/arcos-del-sitio-3.webp",
+    "image4": "../src/assets/img/destinos-img/tepotzotlan/arcos-del-sitio-4.webp",
+    "title": "Arcos del Sitio",
+    "description": "¿Por qué visitarlos? Este acueducto del siglo XVIII es una joya arquitectónica enclavada en un paisaje natural espectacular. Ideal para senderismo, picnic, fotografía y para disfrutar vistas panorámicas impresionantes."
+  },
+  {
+    "id": "centro-historico-tepotzotlan",
+    "text": "Centro Histórico de Tepotzotlán",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/tepotzotlan/centro-historico-1.webp",
+    "image2": "../src/assets/img/destinos-img/tepotzotlan/centro-historico-2.webp",
+    "image3": "../src/assets/img/destinos-img/tepotzotlan/centro-historico-3.webp",
+    "image4": "../src/assets/img/destinos-img/tepotzotlan/centro-historico-4.webp",
+    "title": "Centro Histórico de Tepotzotlán",
+    "description": "¿Por qué visitarlo? Las calles empedradas, el ambiente provincial y sus plazas llenas de vida hacen del centro una parada obligada. Aquí encontrarás artesanías, gastronomía típica y rincones perfectos para fotos."
+  },
+  {
+    "id": "puente-colgante-tepotzotlan",
+    "text": "Puente Colgante",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/tepotzotlan/puente-colgante-1.webp",
+    "image2": "../src/assets/img/destinos-img/tepotzotlan/puente-colgante-2.webp",
+    "image3": "../src/assets/img/destinos-img/tepotzotlan/puente-colgante-3.webp",
+    "image4": "../src/assets/img/destinos-img/tepotzotlan/puente-colgante-4.webp",
+    "title": "Puente Colgante de Tepotzotlán",
+    "description": "¿Por qué visitarlo? Es una de las atracciones más emocionantes de Tepotzotlán. Ubicado en un entorno natural, ofrece vistas espectaculares y una experiencia ideal para aventureros, amantes de la fotografía y quienes buscan una actividad al aire libre diferente."
+  }
+]

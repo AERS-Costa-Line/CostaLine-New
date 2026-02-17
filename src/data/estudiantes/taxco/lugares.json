@@ -1,0 +1,46 @@
+[
+  {
+    "id": "museo-de-la-plateria",
+    "text": "Museo de la Platería",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/taxco/museo-de-plateria.webp",
+    "image2": "../src/assets/img/destinos-img/taxco/museo-de-plateria-2.webp",
+    "image3": "../src/assets/img/destinos-img/taxco/museo-de-plateria-3.webp",
+    "image4": "../src/assets/img/destinos-img/taxco/museo-de-plateria-4.webp",
+    "title": "Museo de la Platería",
+    "description": "¿Por qué visitarlo? El Museo de la Platería, ubicado en Taxco de Alarcón, es un recinto dedicado a exhibir la belleza y la maestría de la orfebrería en plata, tradición que ha dado fama a esta ciudad. El museo alberga una colección de piezas históricas y contemporáneas, desde joyas y utensilios hasta esculturas y objetos decorativos. Los visitantes pueden admirar la creatividad de los artesanos, conocer las técnicas de la platería y apreciar el valor cultural de este arte. Su céntrica ubicación permite visitarlo fácilmente mientras se explora la ciudad."
+  },
+  {
+    "id": "casa-borda",
+    "text": "Casa Borda",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/taxco/casa-borda.webp",
+    "image2": "../src/assets/img/destinos-img/taxco/casa-borda-2.webp",
+    "image3": "../src/assets/img/destinos-img/taxco/casa-borda-3.webp",
+    "image4": "../src/assets/img/destinos-img/taxco/casa-borda-4.webp",
+    "title": "Casa Borda",
+    "description": "¿Por qué visitarla? Casa Borda, ubicada en Taxco, es un emblemático edificio que te transporta a la época de la bonanza minera de la plata. Esta antigua casa, que perteneció al famoso minero José de la Borda, exhibe una hermosa arquitectura colonial. Los visitantes pueden explorar sus patios y salones, imaginando la vida de este personaje histórico. Su céntrica ubicación la hace fácilmente accesible."
+  },
+  {
+    "id": "grutas-cacahuamilpa",
+    "text": "Grutas de Cacahuamilpa",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/taxco/grutas-cacahuamilpa.webp",
+    "image2": "../src/assets/img/destinos-img/taxco/grutas-cacahuamilpa-2.webp",
+    "image3": "../src/assets/img/destinos-img/taxco/grutas-cacahuamilpa-3.webp",
+    "image4": "../src/assets/img/destinos-img/taxco/grutas-cacahuamilpa-4.webp",
+    "title": "Grutas de Cacahuamilpa",
+    "description": "¿Por qué visitarlas? Las Grutas de Cacahuamilpa, un tesoro natural en los alrededores de Taxco, te invitan a explorar un mundo subterráneo lleno de maravillas. Adéntrate en estas impresionantes cavernas, maravíllate con las formaciones rocosas. Estas grutas, consideradas unas de las más grandes de México, albergan espectaculares estalactitas y estalagmitas esculpidas por la naturaleza a lo largo de miles de años. Los visitantes pueden realizar una visita guiada para explorar las diferentes salas, admirar las caprichosas formas de las rocas y conocer la historia geológica de este lugar. Se accede a las grutas caminando por senderos bien acondicionados."
+  },
+  {
+    "id": "mirador-cristo-monumental",
+    "text": "Mirador del Cristo Monumental",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/taxco/mirador-cristo-monumental.webp",
+    "image2": "../src/assets/img/destinos-img/taxco/mirador-cristo-monumental-2.webp",
+    "image3": "../src/assets/img/destinos-img/taxco/mirador-cristo-monumental-3.webp",
+    "image4": "../src/assets/img/destinos-img/taxco/mirador-cristo-monumental-4.webp",
+    "title": "Mirador del Cristo Monumental",
+    "description": "¿Por qué visitarlo? El Mirador del Cristo Monumental, ubicado en Taxco, es un impresionante mirador que ofrece una vista panorámica de la ciudad y sus alrededores. Este monumento, que representa a Cristo con los brazos abiertos, se ha convertido en un símbolo de Taxco. Los visitantes pueden ascender hasta la base de la estatua para admirar la vista, tomar fotografías y disfrutar de la tranquilidad del lugar. Se puede acceder al mirador en automóvil o transporte público, lo que permite apreciar la belleza de Taxco desde una perspectiva única."
+  }
+]

@@ -1,0 +1,43 @@
+[
+    {
+      "title": "Pescado a la Talla",
+      "description": "Un clásico costeño que puedes disfrutar en Tecpan, especialmente en comunidades cercanas a la costa como Papanoa. Se marina el pescado con una mezcla de chiles y especias, se asa sobre brasas y se sirve con arroz y tortillas.",
+      "imageSrc": "../src/assets/img/platillos/tecpan/pescado-talla.webp",
+      "imageModal": "../src/assets/img/platillos/tecpan/pescado-talla-m.webp",
+      "altText": "Pescado a la Talla",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Tiritas de Pescado",
+      "description": "Platillo fresco y muy popular en zonas costeras de Tecpan. Se prepara con pescado fresco en tiras, marinado con limón, cebolla morada y chile verde. Ideal para los días calurosos cerca del mar.",
+      "imageSrc": "../src/assets/img/platillos/tecpan/tiritas-pescado.webp",
+      "imageModal": "../src/assets/img/platillos/tecpan/tiritas-pescado-m.webp",
+      "altText": "Tiritas de Pescado",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Tamales de Elote",
+      "description": "Suaves, dulces y tradicionales. Se elaboran con elote tierno molido, mantequilla y azúcar, y se cuecen en hojas de maíz. Se sirven como postre o acompañamiento en desayunos y meriendas.",
+      "imageSrc": "../src/assets/img/platillos/tecpan/tamales-elote.webp",
+      "imageModal": "../src/assets/img/platillos/tecpan/tamales-elote-m.webp",
+      "altText": "Tamales de Elote",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Caldo de Pescado",
+      "description": "Guiso tradicional con pescado fresco de la región, cocido con verduras como calabaza, jitomate y chile. Muy nutritivo y reconfortante, ideal para comidas familiares en Tecpan.",
+      "imageSrc": "../src/assets/img/platillos/tecpan/caldo-pescado.webp",
+      "imageModal": "../src/assets/img/platillos/tecpan/caldo-pescado-m.webp",
+      "altText": "Caldo de Pescado",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Camarones al Mojo de Ajo",
+      "description": "Uno de los mariscos más disfrutados en la zona. Los camarones se saltean en mantequilla con ajo picado y se sirven con arroz y ensalada. Una delicia simple pero llena de sabor.",
+      "imageSrc": "../src/assets/img/platillos/tecpan/camarones-mojo.webp",
+      "imageModal": "../src/assets/img/platillos/tecpan/camarones-mojo-m.webp",
+      "altText": "Camarones al Mojo de Ajo",
+      "linkText": "Ver..."
+    }
+  ]
+  

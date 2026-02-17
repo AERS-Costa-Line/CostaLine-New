@@ -1,0 +1,47 @@
+[
+    {
+      "id": "museo-bandera",
+      "text": "Museo de la Bandera",
+      "className": "card-wide",
+      "backgroundImage": "../src/assets/img/destinos-img/iguala/museo-bandera-1.webp",
+      "image2": "../src/assets/img/destinos-img/iguala/museo-bandera-2.webp",
+      "image3": "../src/assets/img/destinos-img/iguala/museo-bandera-3.webp",
+      "image4": "../src/assets/img/destinos-img/iguala/museo-bandera-4.webp",
+      "title": "Museo de la Bandera y Santuario a la Patria",
+      "description": "¿Por qué visitarlo? Este museo, ubicado en el sitio donde se juró por primera vez la Bandera de México en 1821, es un emblema histórico nacional. En su interior se exhiben documentos, uniformes, armas y banderas que narran la historia de la Independencia de México. Es un espacio ideal para comprender la importancia de Iguala en la historia patria. Para una experiencia completa, se recomienda visitar el santuario anexo y la Plaza de la Bandera frente al museo."
+    },
+    {
+      "id": "iglesia-san-francisco",
+      "text": "Iglesia de San Francisco",
+      "className": "card-tall",
+      "backgroundImage": "../src/assets/img/destinos-img/iguala/iglesia-san-francisco-1.webp",
+      "image2": "../src/assets/img/destinos-img/iguala/iglesia-san-francisco-2.webp",
+      "image3": "../src/assets/img/destinos-img/iguala/iglesia-san-francisco-3.webp",
+      "image4": "../src/assets/img/destinos-img/iguala/iglesia-san-francisco-4.webp",
+      "title": "Iglesia de San Francisco",
+      "description": "¿Por qué visitarla? Esta iglesia es uno de los recintos religiosos más antiguos de Iguala y destaca por su arquitectura tradicional y su importancia histórica en la región. Es un sitio ideal para quienes buscan conocer el legado colonial del estado de Guerrero. Se recomienda visitarla en días festivos, cuando se llevan a cabo procesiones y celebraciones locales."
+    },
+    {
+        "id": "zocalo-iguala",
+        "text": "Zócalo de Iguala",
+        "className": "",
+        "backgroundImage": "../src/assets/img/destinos-img/iguala/zocalo-iguala-1.webp",
+        "image2": "../src/assets/img/destinos-img/iguala/zocalo-iguala-2.webp",
+        "image3": "../src/assets/img/destinos-img/iguala/zocalo-iguala-3.webp",
+        "image4": "../src/assets/img/destinos-img/iguala/zocalo-iguala-4.webp",
+        "title": "Zócalo de Iguala",
+        "description": "¿Por qué visitarlo? El Zócalo de Iguala es el punto de encuentro por excelencia en la ciudad. Rodeado de comercios, cafés y edificios históricos, es un lugar ideal para descansar bajo la sombra de los árboles o disfrutar de eventos culturales. Por las tardes, el ambiente se llena de vida con música, venta de antojitos y paseos familiares. Para una experiencia completa, se recomienda visitar por la noche, cuando la iluminación realza su belleza y dinamismo."
+    },
+    {
+      "id": "laguna-tuxpan",
+      "text": "Laguna de Tuxpan",
+      "className": "",
+      "backgroundImage": "../src/assets/img/destinos-img/iguala/laguna-tuxpan-1.webp",
+      "image2": "../src/assets/img/destinos-img/iguala/laguna-tuxpan-2.webp",
+      "image3": "../src/assets/img/destinos-img/iguala/laguna-tuxpan-3.webp",
+      "image4": "../src/assets/img/destinos-img/iguala/laguna-tuxpan-4.webp",
+      "title": "Laguna de Tuxpan",
+      "description": "¿Por qué visitarla? Esta laguna es uno de los espacios naturales más visitados de Iguala. Ideal para paseos en lancha, picnics en familia y observación de aves. Rodeada de vegetación y áreas recreativas, ofrece un ambiente tranquilo para escapar del bullicio urbano. Se recomienda visitarla por la tarde para disfrutar del atardecer sobre el agua."
+    }
+  ]
+  

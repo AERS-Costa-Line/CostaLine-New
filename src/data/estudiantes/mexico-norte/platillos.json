@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Tacos al Pastor",
+    "description": "Cerca de la Terminal México Norte es común encontrar taquerías y puestos ideales para comer rápido antes de abordar. Los tacos al pastor, con carne marinada al trompo, piña, cebolla y cilantro, son una opción práctica, accesible y rendidora para viajeros que buscan sabor chilango sin perder tiempo.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/tacos-al-pastor.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/tacos-al-pastor-m.webp",
+    "altText": "Tacos al Pastor",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Garnachas y antojitos",
+    "description": "En los alrededores de la Central del Norte suelen abundar opciones de antojitos para comer algo sustancioso sin complicaciones: sopes, gorditas, quesadillas y huaraches preparados al momento con guisos, queso y salsas. Son una alternativa ideal si viajas con poco tiempo y quieres algo bien servido.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/tlacoyos.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/tlacoyos-m.webp",
+    "altText": "Antojitos mexicanos cerca de la Terminal México Norte",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tamales y atole",
+    "description": "Para salidas temprano, el combo clásico es tamal y atole. Es fácil de encontrar en zonas cercanas a la terminal y funciona perfecto como desayuno rápido antes de viajar. Hay opciones verdes, de mole y dulces, ideales para empezar el trayecto con algo caliente y tradicional.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/tamales.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/tamales-m.webp",
+    "altText": "Tamales y atole cerca de la Terminal México Norte",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Churros y chocolate",
+    "description": "Si prefieres algo dulce antes del camino o al regresar, los churros con chocolate son una excelente opción. Cerca de las zonas de conexión hacia el centro de CDMX hay alternativas tradicionales para llevar, perfectas para esperar tu salida o cerrar el viaje con un antojo clásico.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/churros-rellenos.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/churros-rellenos-m.webp",
+    "altText": "Churros con chocolate en Ciudad de México",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Quesadillas de guisado",
+    "description": "Una opción muy práctica y común cerca de terminales es la quesadilla de comal con guisados: flor de calabaza, tinga, rajas o huitlacoche, según disponibilidad. Son ideales si buscas algo rápido, caliente y fácil de comer antes de abordar.",
+    "imageSrc": "../src/assets/img/platillos/cdmx/quesadillas-de-huitlacoche.webp",
+    "imageModal": "../src/assets/img/platillos/cdmx/quesadillas-de-huitlacoche-m.webp",
+    "altText": "Quesadillas de guisado en Ciudad de México",
+    "linkText": "Ver..."
+  }
+]

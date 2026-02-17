@@ -1,0 +1,178 @@
+[
+	{
+		"title-dropdown": "¿A que hora sale el primer autobus de la Ciudad de México a Acapulco?",
+		"content-dropdown": {
+			"type": "paragraph",
+			"text": "El primer autobús de la Ciudad de México con destino a Acapulco sale a las 12:30 AM."
+		}
+	},
+	{
+		"title-dropdown": "¿Cuáles son las rutas de autobús más populares con destino a Acapulco?",
+		"content-dropdown": {
+			"type": "list",
+			"items": [
+				"CDMX, Central Sur",
+				"CDMX, Central Norte",
+				"México Tepotzotlan",
+				"Cuernavaca"
+			]
+		}
+	},
+	{
+		"title-dropdown": "¿Cuánto cuesta el pasaje de la Ciudad de México a Acapulco?",
+		"content-dropdown": {
+			"type": "paragraph",
+			"text": "El boleto de autobús más barato de México Central Sur a Acapulco puedes adquirirlo desde $345 MXN."
+		}
+	},
+	{
+		"title-dropdown": "¿Cuáles son las rutas de autobús más populares con destino a Acapulco?",
+		"content-dropdown": {
+			"type": "list",
+			"items": [
+				"La quebrada",
+				"La Roqueta",
+				"La Bordaleza",
+				"Punta Diamante",
+				"Capilla de la Paz",
+				"Playa Pie de la Cuesta"
+			]
+		}
+	},
+	{
+		"title-dropdown": "¿Dónde puedo comprar boletos de autobús a Acapulco CostaLine?",
+		"content-dropdown": {
+			"type": "list",
+			"items": [
+				"Taquillas CostaLine AERS",
+				{
+					"text": "Aplicación móvil CostaLine AERS Disponible en",
+					"links": [
+						{
+							"label": "Google Play",
+							"url": "https://play.google.com/store/apps/details?id=mx.com.iamsa.costaline&hl=es&pli=1"
+						},
+						{
+							"label": "App Store",
+							"url": "https://apps.apple.com/mx/app/costa-line/id1486185563"
+						}
+					]
+				},
+				{
+					"text": "Contact Center CostaLine AERS marcando al",
+					"phones": [
+						{ "label": "800 0037 635", "tel": "018000037635" },
+						{ "label": "800 2490 460", "tel": "018002490460" }
+					]
+				},
+				{
+					"text": "Oxxo. Consulta detalles.",
+					"link": "https://costaline.com.mx/pago-referenciado-oxxo.html"
+				},
+				"Visita nuestros puntos de venta.",
+				"Agencias afiliadas."
+			]
+		}
+	},
+	{
+		"title-dropdown": "¿Cómo es el viaje de Ciudad de México a Acapulco?",
+		"content-dropdown": {
+			"type": "complex",
+			"blocks": [
+				{
+					"type": "paragraph",
+					"text": "La ruta de Ciudad de México Central Sur a Acapulco tiene un costo de $670 MXN. Obten un descuento de hasta el 49% anticipando tu viaje."
+				},
+				{
+					"type": "table",
+					"headers": ["Día", "Horario"],
+					"rows": [
+						["Costo del viaje de autobús:", "$670.00 MXN"],
+						["Descuento viajero anticipado:", "$345.00 MXN (49% de descuento)"],
+						["Boleto abierto:", "Desde $670 MXN"],
+						["Horas de viaje:", "5 horas 20 minutos"],
+						["Viajes directos:", "Si"],
+						["Primer salida:", "12:30 AM"],
+						["Segunda salida:", "11:59 PM"],
+						["Amenidades:", "Baños - TV - Boleto electrónico"]
+					]
+				}
+			]
+		}
+	},
+	{
+		"title-dropdown": "¿Cuánto cuesta un boleto de Taxqueña a Acapulco?",
+		"content-dropdown": {
+			"type": "paragraph",
+			"text": "El viaje en autobús de la Terminal del Sur - Taxqueña a Acapulco tiene un costo de $670.00 . Anticipa tu viaje y obtén un descuento de hasta el 49% (Costo final $345.00)."
+		}
+	},
+	{
+		"title-dropdown": "¿Cómo viajar de Ciudad de México a Acapulco?",
+		"content-dropdown": {
+			"type": "paragraph",
+			"text": "Puedes tomar un autobús en la Central del Norte o Central Sur, los precios van desde $345.00 a $670.00 y el viaje tiene una duración de 5h 30m aproximadamente."
+		}
+	},
+	{
+		"title-dropdown": "¿Cuál es la forma más barata de viajar en autobus de la Ciudad de México a Acapulco?",
+		"content-dropdown": {
+			"type": "complex",
+			"blocks": [
+				{
+					"type": "paragraph",
+					"text": "Compra tus boletos en CostaLine obten estas promociones:"
+				},
+				{
+					"type": "list",
+					"items": [
+						{
+							"text": "15% de descuento: Compra tu boleto redondo en nuestra página web y obtén un 15% de descuento en tu viaje de regreso. Consulta ",
+							"links": [
+								{
+									"label": "Terminos y condiciones",
+									"url": "https://costaline.com.mx/promociones"
+								}
+							]
+						},
+						{
+							"text": "10% de descuento: Ahora tu compra de boleto redondo en taquillas tiene un 10% de descuento. Consulta términos y condiciones.",
+							"links": [
+								{
+									"label": "Terminos y condiciones",
+									"url": "https://costaline.com.mx/promociones"
+								}
+							]
+						},
+						{
+							"text": "Viajero anticipado: Obtén hasta un 60% de descuento, conoce la tarifa de viajero anticipado. Consulta términos y condiciones.",
+							"links": [
+								{
+									"label": "Terminos y condiciones",
+									"url": "https://costaline.com.mx/promociones"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "images",
+					"images": [
+						{
+							"../src": "../src/assets/img/logos/descuento-15.webp",
+							"alt": "descuento 15%"
+						},
+						{
+							"../src": "../src/assets/img/logos/descuento-10.webp",
+							"alt": "descuento 10%"
+						},
+						{
+							"../src": "../src/assets/img/logos/logo-viajero-anticipado.webp",
+							"alt": "Bus 3"
+						}
+					]
+				}
+			]
+		}
+	}
+]

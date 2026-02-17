@@ -1,0 +1,43 @@
+[
+    {
+      "title": "Pozole Guerrerense",
+      "description": "Tradición de todos los jueves en Iguala, el pozole guerrerense se sirve blanco, verde o rojo. Preparado con maíz cacahuazintle, carne de cerdo o pollo, y acompañado de sardina, chicharrón, huevo duro y mezcal. Es una fiesta de sabores y costumbre.",
+      "imageSrc": "../src/assets/img/platillos/iguala/pozole-guerrerense.webp",
+      "imageModal": "../src/assets/img/platillos/iguala/pozole-guerrerense-m.webp",
+      "altText": "Pozole Guerrerense",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Tamales Nejos",
+      "description": "Los tamales nejos de Iguala son únicos por su textura suave y su sabor a nixtamal, ya que se preparan solo con masa de maíz y se envuelven en hojas de maíz secas. Se sirven con mole rojo o verde, y son tradición en días festivos y reuniones familiares.",
+      "imageSrc": "../src/assets/img/platillos/iguala/tamales-nejos.webp",
+      "imageModal": "../src/assets/img/platillos/iguala/tamales-nejos-m.webp",
+      "altText": "Tamales Nejos",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Cecina con Guajes",
+      "description": "Uno de los platillos más representativos de la región. La cecina se sirve asada y acompañada de guajes frescos, salsa molcajeteada y tortillas de maíz hechas a mano. Una explosión de sabor que enaltece la sencillez de los ingredientes locales.",
+      "imageSrc": "../src/assets/img/platillos/iguala/cecina-guajes.webp",
+      "imageModal": "../src/assets/img/platillos/iguala/cecina-guajes-m.webp",
+      "altText": "Cecina con Guajes",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Aporreadillo",
+      "description": "El aporreadillo es un guiso tradicional de carne seca machacada, revuelta con huevo y cocinada en salsa roja o verde. Muy consumido en Iguala como desayuno energético o almuerzo fuerte. Se acompaña con frijoles y tortillas calientes.",
+      "imageSrc": "../src/assets/img/platillos/iguala/aporreadillo.webp",
+      "imageModal": "../src/assets/img/platillos/iguala/aporreadillo-m.webp",
+      "altText": "Aporreadillo",
+      "linkText": "Ver..."
+    },
+    {
+      "title": "Chalupitas Igualeñas",
+      "description": "Las chalupitas igualeñas son pequeñas tortillas fritas, cubiertas con salsa roja o verde, carne deshebrada y queso fresco. Son populares en fiestas y ferias locales, ideales para botanear o disfrutar como entrada tradicional.",
+      "imageSrc": "../src/assets/img/platillos/iguala/chalupitas.webp",
+      "imageModal": "../src/assets/img/platillos/iguala/chalupitas-m.webp",
+      "altText": "Chalupitas Igualeñas",
+      "linkText": "Ver..."
+    }
+  ]
+  

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "templo-mayor",
+    "text": "Templo Mayor",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/templo-mayor.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/templo-mayor-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/templo-mayor-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/templo-mayor-4.webp",
+    "title": "Templo Mayor",
+    "description": "El Templo Mayor es una visita esencial para quienes desean conocer el origen y la grandeza de la antigua Tenochtitlán. En este sitio arqueológico podrás recorrer los restos de los templos dedicados a Tláloc y Huitzilopochtli, además de observar objetos ceremoniales recuperados durante las excavaciones. El museo anexo complementa la experiencia con piezas que revelan cómo vivían, creían y celebraban los mexicas, permitiéndote conectar con una de las culturas más importantes de Mesoamérica."
+  },
+  {
+    "id": "bosque-de-chapultepec",
+    "text": "Bosque de Chapultepec",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/bosque-chapultepec.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/bosque-chapultepec-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/bosque-chapultepec-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/bosque-chapultepec-4.webp",
+    "title": "Bosque de Chapultepec",
+    "description": "El Bosque de Chapultepec es uno de los parques urbanos más importantes de Latinoamérica y un punto ideal para disfrutar naturaleza, cultura y recreación en un solo lugar. Aquí encontrarás lagos, senderos para caminar o andar en bicicleta, museos de gran renombre y el histórico Castillo de Chapultepec. Es perfecto para pasar el día en familia, relajarte bajo la sombra de sus árboles o descubrir espacios culturales que hacen de este bosque un pulmón verde esencial para la ciudad."
+  },
+  {
+    "id": "plaza-de-la-constitucion",
+    "text": "Plaza de la Constitución",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/plaza-de-la-constitucion.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/plaza-de-la-constitucion-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/plaza-de-la-constitucion-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/plaza-de-la-constitucion-4.webp",
+    "title": "Plaza de la Constitución",
+    "description": "El Zócalo es el corazón histórico de la Ciudad de México y un punto donde convergen siglos de tradición, arquitectura y vida cultural. Rodeado de edificios emblemáticos como la Catedral Metropolitana y el Palacio Nacional, este espacio ofrece un ambiente vibrante ideal para recorrer a pie. Además, es escenario de eventos cívicos y festividades que muestran la identidad mexicana. Visitarlo permite comprender la importancia histórica de este punto clave en la vida del país."
+  },
+  {
+    "id": "palacio-de-bellas-artes",
+    "text": "Palacio de Bellas Artes",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/palacio-de-bellas-artes.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/palacio-de-bellas-artes-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/palacio-de-bellas-artes-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/palacio-de-bellas-artes-4.webp",
+    "title": "Palacio de Bellas Artes",
+    "description": "El Palacio de Bellas Artes es uno de los recintos culturales más icónicos de México, famoso por su arquitectura Art Nouveau y Art Deco. En su interior alberga murales de grandes artistas como Diego Rivera y David Alfaro Siqueiros, además de presentaciones de ópera, ballet y conciertos. Su majestuosidad y valor histórico lo convierten en un punto obligado para quienes desean disfrutar arte, cultura y patrimonio en un solo lugar dentro del centro de la ciudad."
+  }
+]

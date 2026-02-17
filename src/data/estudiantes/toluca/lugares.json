@@ -1,0 +1,46 @@
+[
+  {
+    "id": "cosmovitral-toluca",
+    "text": "Cosmovitral",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/toluca/cosmovitral-1.webp",
+    "image2": "../src/assets/img/destinos-img/toluca/cosmovitral-2.webp",
+    "image3": "../src/assets/img/destinos-img/toluca/cosmovitral-3.webp",
+    "image4": "../src/assets/img/destinos-img/toluca/cosmovitral-4.webp",
+    "title": "Cosmovitral Jardín Botánico",
+    "description": "¿Por qué visitarlo? Es uno de los vitrales más grandes del mundo y un símbolo de Toluca. Sus jardines interiores, el arte monumental y la luz que atraviesa los colores crean un espectáculo único. Ideal para fotografía, recorridos culturales y turismo familiar."
+  },
+  {
+    "id": "catedral-de-toluca",
+    "text": "Catedral de Toluca",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/toluca/catedral-1.webp",
+    "image2": "../src/assets/img/destinos-img/toluca/catedral-2.webp",
+    "image3": "../src/assets/img/destinos-img/toluca/catedral-3.webp",
+    "image4": "../src/assets/img/destinos-img/toluca/catedral-4.webp",
+    "title": "Catedral de San José de Toluca",
+    "description": "¿Por qué visitarla? Uno de los recintos religiosos más importantes del Estado de México. Su arquitectura neoclásica, su imponente fachada y sus detalles artísticos la convierten en una parada obligatoria para quienes disfrutan del arte sacro y la historia."
+  },
+  {
+    "id": "nevado-de-toluca",
+    "text": "Nevado de Toluca",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/toluca/nevado-1.webp",
+    "image2": "../src/assets/img/destinos-img/toluca/nevado-2.webp",
+    "image3": "../src/assets/img/destinos-img/toluca/nevado-3.webp",
+    "image4": "../src/assets/img/destinos-img/toluca/nevado-4.webp",
+    "title": "Nevado de Toluca",
+    "description": "¿Por qué visitarlo? Es uno de los volcanes más impresionantes de México. Ofrece senderos, vistas panorámicas y las famosas lagunas del Sol y la Luna. Perfecto para senderismo, foto, naturaleza y aventura."
+  },
+  {
+    "id": "portales-de-toluca",
+    "text": "Portales",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/toluca/portales-1.webp",
+    "image2": "../src/assets/img/destinos-img/toluca/portales-2.webp",
+    "image3": "../src/assets/img/destinos-img/toluca/portales-3.webp",
+    "image4": "../src/assets/img/destinos-img/toluca/portales-4.webp",
+    "title": "Portales de Toluca",
+    "description": "¿Por qué visitarlos? Son de los más largos de México y un punto emblemático de la ciudad. Aquí encontrarás antojitos, dulces típicos, comercios tradicionales y un ambiente lleno de vida. Perfecto para pasear y disfrutar el sabor local."
+  }
+]
