@@ -22,59 +22,59 @@ class CdmxApinotepa extends HTMLElement {
             </app-banner-slider>
             <app-payments></app-payments>
 
-           <section class="__section __section__destiny__destinations">
-    <app-section-title section-title="Boletos de autobús de CDMX a Chilpancingo"></app-section-title>
+          <section class="__section __section__destiny__destinations">
+    <app-section-title section-title="Boletos de autobús de CDMX a Pinotepa - Puerto Escondido"></app-section-title>
 
     <p class="__paragraph">
-        Viajar de la Ciudad de México a Acapulco Diamante en autobús es una opción cómoda y accesible. Con salidas frecuentes desde la terminal México Sur - Taxqueña, los pasajeros pueden disfrutar de un viaje seguro y confortable. Los boletos están disponibles desde $385, ofreciendo una excelente relación calidad-precio para disfrutar de las playas y el ambiente de Acapulco Diamante.
+        Viajar de la Ciudad de México a Pinotepa - Puerto Escondido en autobús es una opción cómoda y accesible. Con salidas desde la terminal México Sur - Taxqueña, los pasajeros pueden disfrutar de un viaje seguro y confortable. Los boletos están disponibles desde $815, ofreciendo una excelente relación calidad-precio para quienes buscan explorar la costa oaxaqueña.
     </p>
 
     <p class="__subtitle__destinos">¿Desde qué terminales sale?</p>
     <p class="__paragraph">
-        Los autobuses que conectan la Ciudad de México con Acapulco Diamante parten principalmente desde la terminal México Sur - Taxqueña. Esta terminal es conocida por su fácil acceso y por ofrecer una variedad de servicios para los viajeros, incluyendo áreas de espera cómodas y opciones de comida, garantizando un inicio de viaje sin complicaciones.
+        Los autobuses que cubren la ruta de CDMX a Pinotepa - Puerto Escondido parten desde la terminal México Sur - Taxqueña. Esta terminal es una de las más importantes de la Ciudad de México, ofreciendo múltiples servicios y comodidades para los viajeros. Asegúrate de llegar con tiempo suficiente para abordar tu autobús sin contratiempos.
     </p>
 
     <p class="__subtitle__destinos">¿En qué horarios sale?</p>
     <p class="__paragraph">
-        Los autobuses hacia Acapulco Diamante tienen 4 horarios con salidas programadas cada 3 horas, lo que permite a los viajeros elegir el horario que mejor se adapte a sus necesidades. Esta frecuencia asegura que siempre haya una opción conveniente. Es recomendable verificar los horarios específicos con antelación para planificar de manera eficiente.
+        Los autobuses hacia Pinotepa - Puerto Escondido tienen dos horarios de salida diarios. Estos horarios están diseñados para ofrecer flexibilidad a los viajeros, permitiéndoles elegir el momento que mejor se adapte a sus necesidades. Es recomendable verificar los horarios específicos al momento de comprar tus boletos, ya que pueden variar según la temporada.
     </p>
 
     <p class="__subtitle__destinos">¿Qué precio tiene?</p>
     <p class="__paragraph">
-        El precio de los boletos comienza desde $385. Este costo competitivo incluye un viaje en autobuses modernos y bien equipados, con asientos cómodos, aire acondicionado y entretenimiento a bordo, lo que hace que el trayecto sea relajante y agradable.
+        El precio de los boletos de autobús de CDMX a Pinotepa - Puerto Escondido comienza desde $815. Este costo refleja la calidad del servicio y las comodidades ofrecidas a bordo. Los autobuses están equipados con asientos reclinables, aire acondicionado y entretenimiento a bordo, asegurando un viaje placentero.
     </p>
 
-    <p class="__subtitle__destinos">¿Qué hacer en Acapulco Diamante?</p>
+    <p class="__subtitle__destinos">¿Qué hacer en Pinotepa - Puerto Escondido?</p>
     <p class="__paragraph">
-        Acapulco Diamante es un destino de renombre. Entre los puntos más destacados están la Playa Revolcadero, ideal para surfistas, y el centro comercial La Isla para compras de lujo. Además, puedes explorar la Laguna de Tres Palos, un lugar perfecto para actividades acuáticas y observación de aves.
+        Pinotepa - Puerto Escondido es un destino turístico popular por sus hermosas playas y vibrante cultura. Algunos puntos de interés incluyen: Playa Zicatela, famosa por sus olas e ideal para surfistas; Laguna de Manialtepec, un lugar perfecto para observar aves y disfrutar de paseos en kayak; y el Centro de Puerto Escondido, que ofrece una variedad de restaurantes y tiendas locales.
     </p>
 
-    <p class="__subtitle__destinos">Explorando Acapulco Diamante</p>
+    <p class="__subtitle__destinos">Explora Pinotepa - Puerto Escondido</p>
     <p class="__paragraph">
-        Además de sus playas, ofrece una gran oferta cultural y gastronómica. Los turistas pueden disfrutar de restaurantes de mariscos frescos, cocina internacional, campos de golf de clase mundial y spas de lujo, perfectos para unas vacaciones inolvidables.
+        Además de sus playas, Pinotepa - Puerto Escondido ofrece una rica experiencia cultural. Puedes visitar mercados locales, disfrutar de la gastronomía oaxaqueña y participar en festivales tradicionales. Este destino es ideal para quienes buscan una mezcla de relajación y aventura.
     </p>
 
-    <p class="__subtitle__destinos">¿Por qué elegir Costaline para tu viaje?</p>
+    <p class="__subtitle__destinos">Compra tus boletos de autobús en Costaline</p>
     <p class="__paragraph">
-        Costaline se destaca por su alta calidad. Sus autobuses cuentan con tecnología de punta, asientos reclinables y un servicio al cliente excepcional, asegurando una experiencia satisfactoria desde la compra del boleto hasta la llegada a tu destino.
+        Adquirir tus boletos de autobús a Pinotepa - Puerto Escondido con Costaline garantiza un viaje de calidad. Sus autobuses están equipados con todas las comodidades necesarias para un trayecto confortable. Además, Costaline ofrece un servicio al cliente excepcional, asegurando que tu experiencia de viaje sea inolvidable.
     </p>
 
     <app-section-title section-title="Preguntas frecuentes"></app-section-title>
 
-    <p class="__subtitle__destinos">¿Cuánto dura el viaje de CDMX a Acapulco Diamante?</p>
-    <p class="__paragraph">Generalmente dura entre 5 y 6 horas, dependiendo del tráfico y las condiciones de la carretera.</p>
+    <p class="__subtitle__destinos">¿Cuánto dura el viaje de CDMX a Pinotepa - Puerto Escondido?</p>
+    <p class="__paragraph">El tiempo de viaje puede variar, pero generalmente dura entre 12 y 14 horas, dependiendo del tráfico y las condiciones del camino.</p>
 
-    <p class="__subtitle__destinos">¿Es necesario reservar los boletos con anticipación?</p>
-    <p class="__paragraph">Se recomienda hacerlo, especialmente en temporadas altas o fines de semana, para asegurar disponibilidad y mejores horarios.</p>
+    <p class="__subtitle__destinos">¿Es necesario reservar con anticipación?</p>
+    <p class="__paragraph">Se recomienda reservar con anticipación, especialmente durante temporadas altas, para asegurar tu lugar y elegir el horario que mejor te convenga.</p>
 
     <p class="__subtitle__destinos">¿Qué servicios ofrecen los autobuses de Costaline?</p>
-    <p class="__paragraph">Ofrecen aire acondicionado, asientos reclinables, entretenimiento a bordo y sanitarios.</p>
+    <p class="__paragraph">Los autobuses de Costaline ofrecen asientos reclinables, aire acondicionado, entretenimiento a bordo y sanitarios, asegurando un viaje cómodo y placentero.</p>
 
     <p class="__subtitle__destinos">¿Puedo llevar equipaje adicional?</p>
-    <p class="__paragraph">Sí, pero es importante verificar las políticas específicas al momento de la compra para evitar inconvenientes.</p>
+    <p class="__paragraph">Costaline permite llevar equipaje adicional, pero es importante verificar las políticas específicas de equipaje al momento de la compra del boleto.</p>
 
-    <p class="__subtitle__destinos">¿Hay descuentos para estudiantes o personas mayores?</p>
-    <p class="__paragraph">Sí, Costaline ofrece descuentos especiales presentando la identificación correspondiente al momento de la compra.</p>
+    <p class="__subtitle__destinos">¿Hay descuentos disponibles para estudiantes o personas mayores?</p>
+    <p class="__paragraph">Costaline ofrece descuentos para estudiantes y personas mayores. Es recomendable consultar las condiciones y presentar la documentación necesaria al momento de la compra.</p>
 </section>
             
             <app-modal-multi-image></app-modal-multi-image>
