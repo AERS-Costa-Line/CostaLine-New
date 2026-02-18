@@ -153,15 +153,15 @@
 		<!-- Scripts -->
 
 		<script src="../src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="../app.js?v=1.0.0"></script>
+		<script type="module" src="../app.js?v=1.0.2"></script>
 
 		<!-- Stylesheets -->
 
 		<!-- CSS All Components -->
 		<link
-			rel="stylesheet"
-			href="../src/styles/css/css-pages/page-destiny.min.css?v=1.0.7"
-		/>
+      rel="stylesheet"
+      href="../src/styles/css/css-pages/page-destinos-landings.min.css?v=1.2.1"
+    />
 
 		<!-- CSS widget de reservamos -->
 		<link
@@ -181,7 +181,7 @@
 		<app-modal-travelpass></app-modal-travelpass>
 		<app-modal-doters></app-modal-doters>
 		<main>
-			<page-acapulco-diamante></page-acapulco-diamante>
+			<page-ruta-cdmx-a-chilpancingo></page-ruta-cdmx-a-chilpancingo>
 		</main>
 		<app-footer></app-footer>
 		<app-cookies-policy></app-cookies-policy>

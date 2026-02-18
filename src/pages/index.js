@@ -171,3 +171,46 @@ import "./doters/page-doters.js?v=1.0.1";
 
 /*----------------PAGINAS-SUBE---------------------------------*/
 import "./estudiantes/page-cdmx-a-acapulco-diamante.js";
+import "./estudiantes/page-cdmx-a-acapulco-papagayo.js";
+import "./estudiantes/page-cdmx-a-altamirano.js";
+import "./estudiantes/page-cdmx-a-chilpancingo-acapulco.js";
+import "./estudiantes/page-cdmx-a-chilpancingo.js";
+import "./estudiantes/page-cdmx-a-iguala.js";
+import "./estudiantes/page-cdmx-a-taxco.js";
+
+/* Ejecutivos */
+import "./ejecutivos/page-cdmx-a-acapulco-diamante.js";
+import "./ejecutivos/page-cdmx-a-acapulco-papagayo.js";
+import "./ejecutivos/page-chilpancingo-a-acapulco.js";
+
+/* Personal */
+import "./personal/page-acapulco-a-lazaro-cardenas.js";
+import "./personal/page-cdmx-a-acapulco-diamante.js";
+import "./personal/page-cdmx-a-acapulco-papagayo.js";
+import "./personal/page-cdmx-a-altamirano.js";
+import "./personal/page-cdmx-a-chilpancingo-acapulco.js";
+import "./personal/page-cdmx-a-chilpancingo.js";
+import "./personal/page-cdmx-a-iguala.js";
+import "./personal/page-cdmx-a-lazaro-cardenas.js";
+import "./personal/page-cdmx-a-taxco.js";
+import "./personal/page-chilpancingo-a-acapulco.js";
+
+/* Placer */
+import "./placer/page-cdmx-a-acapulco-diamante.js";
+import "./placer/page-cdmx-a-acapulco-papagayo.js";
+import "./placer/page-cdmx-a-chilpancingo-acapulco.js";
+import "./placer/page-cdmx-a-pinotepa-puerto-escondido.js";
+import "./placer/page-cdmx-a-taxco.js";
+
+/* Personal */
+import "./rutas/page-acapulco-a-lazaro-cardenas.js";
+import "./rutas/page-cdmx-a-acapulco-diamante.js";
+import "./rutas/page-cdmx-a-acapulco-papagayo.js";
+import "./rutas/page-cdmx-a-altamirano.js";
+import "./rutas/page-cdmx-a-chilpancingo-acapulco.js";
+import "./rutas/page-cdmx-a-chilpancingo.js";
+import "./rutas/page-cdmx-a-iguala.js";
+import "./rutas/page-cdmx-a-lazaro-cardenas.js";
+import "./rutas/page-cdmx-a-pinotepa-puerto-escondido.js";
+import "./rutas/page-cdmx-a-taxco.js";
+import "./rutas/page-chilpancingo-a-acapulco.js";
