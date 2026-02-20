@@ -82,4 +82,4 @@ class CdmxAlazaroC extends HTMLElement {
         `;
 	}
 }
-customElements.define("page-ruta-pers-cdmx-a-lazaro-cardenas", CdmxAlazaroC);
+customElements.define("page-ruta-cdmx-a-lazaro-cardenas", CdmxAlazaroC);
