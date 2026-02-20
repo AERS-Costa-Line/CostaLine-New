@@ -5,10 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title -->
-		<title>Boletos de Autobús a Acapulco | Costa Line AERS</title>
+		<title>Ruta CDMX a Lázaro Cárdenas | Compra tu Boleto | Costa Line</title>
 
 		<!-- Meta Description -->
-		<meta name="description" content="" />
+		<meta name="description" content="Conoce la ruta directa a Lázaro Cárdenas desde CDMX (Terminal Poniente). Consulta horarios, precios y compra tu boleto en línea fácil y seguro. ¡Viaja hoy!" />
 
 		<!-- Meta Keywords -->
 		<meta name="keywords" content="" />
@@ -25,46 +25,13 @@
 		/>
 
 		<meta name="author" content="Costa Line AERS" />
-		<meta name="robots" content="index, follow" />
+		<meta name="robots" content="noindex">
 		<meta name="googlebot" content="index, follow" />
 		<meta name="sitemap" content="/sitemap.xml" />
 
 		<meta name="theme-color" content="#06255b" />
 
-		<!-- Structured Data Migas De Pan -->
-		<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@type": "BreadcrumbList",
-				"itemListElement": [
-					{
-						"@type": "ListItem",
-						"position": 1,
-						"name": "Inicio",
-						"item": "https://costaline.com.mx/"
-					},
-					{
-						"@type": "ListItem",
-						"position": 2,
-						"name": "Boletos de Autobús a Acapulco ",
-						"item": "https://costaline.com.mx/boletos-autobus/acapulco.html"
-					}
-				]
-			}
-		</script>
-		<script type="application/ld+json">
-			{
-				"@context": "https://schema.org",
-				"@type": "WebSite",
-				"url": "https://costaline.com.mx/",
-				"potentialAction": {
-					"@type": "SearchAction",
-					"target": "https://costaline.com.mx/destinos/autobus-a-{search_term_string}.html",
-					"query-input": "required name=search_term_string"
-				}
-			}
-		</script>
-		<!-- End Structured Data -->
+
 		<!-- Favicons for various devices for SEO and UX -->
 
 		<!-- Apple Touch Icons -->
@@ -168,8 +135,61 @@
 			rel="stylesheet"
 			href="https://widgets.reservamos.mx/search/5.23.6/search.css?v=5.18.0"
 		/>
+
+
+		<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BusTrip",
+  "name": "Ruta de Autobús de CDMX a Lázaro Cárdenas, Michoacán",
+  "description": "Información y compra de boletos para la ruta directa de Costa Line desde la Ciudad de México (Terminal Poniente) a Lázaro Cárdenas.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Costa Line"
+  },
+  "departureBusStop": {
+    "@type": "BusStation",
+    "name": "Terminal de Autobuses de Poniente (Observatorio), CDMX"
+  },
+  "arrivalBusStop": {
+    "@type": "BusStation",
+    "name": "Terminal de Autobuses de Lázaro Cárdenas"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "MXN",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.costaline.com.mx/rutas/cdmx-a-lazaro-cardenas",
+    "seller": {
+      "@type": "Organization",
+      "name": "Costa Line"
+    }
+  }
+}
+</script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9MW4HF');</script>
+<!-- End Google Tag Manager -->
+
+
 	</head>
 	<body>
+
+		
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
 		<app-header
 			logo='{
         "src": "../src/assets/img/logos/logo.svg", 
