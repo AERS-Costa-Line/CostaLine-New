@@ -6,15 +6,15 @@
 		"title": "Puntos Doters"
 	},
 	{
-		"href": "../../../",
-		"imageSrc": "../src/assets/img/mosaicos/costa-30+5.webp",
-		"imageAlt": "Flayer de descuentos ida y regreso de 5-10-2025",
-		"title": "Descuentos ida y regreso 5% más 10%"
+		"href": "./promociones/mas-komodo.html",
+		"imageSrc": "../src/assets/img/mosaicos/costa-+komodo.webp",
+		"imageAlt": "Mosaico promocional del servicio de +Komodo",
+		"title": "Programa +Komodo"
 	},
 	{
-		"href": "../../servicios/compra-con-kueski-pay.html",
-		"imageSrc": "../src/assets/img/mosaicos/costa-kueski.webp",
-		"imageAlt": "Compra con Kueski Pay",
-		"title": "Compra con Kueski Pay"
+		"href": "./servicios/packmultienlace",
+		"imageSrc": "../src/assets/img/mosaicos/costa-pack.webp",
+		"imageAlt": "Mosaico promocional del servicio de Multienlace",
+		"title": "Servicio de paqueteria Pack Multienlace"
 	}
 ]

@@ -4,6 +4,8 @@ import "./home/page-home.js?v=1.0.9";
 import "./page-site-map.js?v=1.0.2";
 import "./page-404.js?v=1.0.2";
 
+
+
 /*----------------PAGINAS-ENGLISH---------------------------------*/
 
 import "./english/app-home-english.js?v=1.0.2";
@@ -86,6 +88,9 @@ import "./destinos/page-autobus-a-tepotzotlan.js?v=1.0.2";
 import "./destinos/page-autobus-a-toluca.js?v=1.0.2";
 
 
+
+
+
 import "./page-preguntas-frecuentes.js?v=1.0.2";
 
 //PACK MULTIENLACE
@@ -110,6 +115,15 @@ import "./boletos-autobus/page-donde-comprar-etn.js?v=1.0.2";
 
 import "./destinos/page-destinos.js?v=1.0.2";
 
+
+//DESCUENTOS
+
+import "./descuentos/page-descuentos.js";
+import "./descuentos/viajero-anticipado/page-anticipado.js";
+
+
+
+
 //SERVICIOS
 
 import "./servicios/page-pago-oxxo.js?v=1.0.2";
@@ -126,6 +140,7 @@ import "./promociones/page-descuentos-navidenos.js?v=1.0.2"
 import "./promociones/dinamica-gana-boletos-para-el-cine.js?v=1.0.2"
 import "./promociones/page-descuentos-semana-santa.js?v=1.0.2";
 
+
 //LEGAL
 import "./legal/page-atencion-a-clientes.js?v=1.0.2";
 
@@ -141,7 +156,7 @@ import "./legal/terminos-condiciones/page-travelpass.js?v=1.0.2";
 import "./legal/terminos-condiciones/page-viajero-protegido.js?v=1.0.2";
 import "./legal/terminos-condiciones/page-viajero-protegido-plus.js?v=1.0.2";
 import "./legal/terminos-condiciones/page-viajero-protegido-lujo.js?v=1.0.2";
-import "./legal/terminos-condiciones/page-viajero-anticipado.js?v=1.0.2";
+
 
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 

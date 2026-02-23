@@ -10,6 +10,7 @@ import "../../components/app-blog.js";
 import "../../components/app-img-shop-left.js";
 import "../../components/app-section-title.js";
 
+
 class PageHome extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
@@ -21,10 +22,11 @@ class PageHome extends HTMLElement {
 
                 {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/banner/web/aca-diamante-web.webp", "mediumImage": "../../src/assets/img/banner/tablet/aca-diamante-tablet.webp","smallImage": "../../src/assets/img/banner/movil/aca-diamante-mobile.webp", "link": "#index.html/banner2"},
                 
-                {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/banner/web/chil-aca-web.webp", "mediumImage": "../../src/assets/img/banner/tablet/chil-aca-tablet.webp","smallImage": "../../src/assets/img/banner/movil/chil-aca-mobile.webp", "link": "#index.html/banner3"}
+                {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/banner/web/home-viajero-web.webp", "mediumImage": "../../src/assets/img/banner/tablet/chil-aca-tablet.webp","smallImage": "../../src/assets/img/banner/movil/chil-aca-mobile.webp", "link": "/descuentos/viajero-anticipado.html"}
                 ]'
             >
             </app-banner-slider>
+            <h1>Conectamos tus sueños con tu próximo destino</h1>
             <app-payments></app-payments>
             <app-destinations-grid
                 titlesText='[
@@ -62,11 +64,17 @@ class PageHome extends HTMLElement {
                 cards-data-src="../../src/data/other-services-loyalty-cards.json"
             >
             </app-other-services>
-            <app-other-services
-                title-data-src="../../src/data/other-services-general-titles.json"
-                cards-data-src="../../src/data/other-services-general-cards.json"
-            >
-            </app-other-services>
+            <section class="__section __section__FATQs">
+                <app-section-title section-title="Preguntas Frecuentes de tu Viaje en Autobús"></app-section-title>
+               <article class="__grid-cards-container__dropdown" id="dropdowns-container">
+                    <app-dropdown items-src="../src/data/dropdown-preguntas-home.json"></app-dropdown>
+                </article>
+            </section>
+
+       
+
+
+
             <app-blog></app-blog>
         `;
 	}

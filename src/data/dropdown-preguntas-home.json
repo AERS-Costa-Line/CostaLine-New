@@ -1,0 +1,22 @@
+[
+  {
+    "title-dropdown": "¿Cuál es la forma más fácil y rápida de comprar mis boletos de autobús?",
+    "content-dropdown": "La forma más rápida y segura es comprar en línea aquí mismo, en nuestro sitio web oficial; también en nuestra app, centro telefónico y taquillas. Puedes buscar tus boletos de autobús desde CDMX a nuestros principales destinos como Acapulco, Taxco, Chilpancingo y Zihuatanejo, seleccionar tus asientos y pagar en solo unos minutos. ¡Así evitas filas y aseguras tu lugar!"
+  },
+  {
+    "title-dropdown": "¿Desde qué terminales en la CDMX salen sus autobuses?",
+    "content-dropdown": "Operamos principalmente desde las dos terminales más importantes de la Ciudad de México, dependiendo de tu destino: desde la Terminal del Sur (Taxqueña) para rutas hacia Guerrero y Morelos (Acapulco, Taxco, Zihuatanejo, etc.), en la Terminal Norte para destinos como Acapulco, Chilpancingi, Lázaro Cárdenas, etc. y desde la Terminal de Poniente (Observatorio) para destinos como Acapulco, Chilpancingo e Iguala. Te recomendamos verificar la terminal al momento de tu compra."
+  },
+  {
+    "title-dropdown": "¿Ofrecen alguna tarifa especial para estudiantes o maestros?",
+    "content-dropdown": "¡Sí! Contamos con tarifas preferenciales para estudiantes y maestros durante los periodos vacacionales oficiales establecidos por la SEP. Para hacerla válida, es necesario presentar tu credencial vigente al momento de la compra en nuestras taquillas y al abordar. ¡Es un beneficio pensado para ti!"
+  },
+  {
+    "title-dropdown": "¿Mi viaje y mi equipaje están protegidos?",
+    "content-dropdown": "Sí, tu tranquilidad es nuestra prioridad. Todos nuestros pasajeros viajan con el seguro de viajero \"Viajero Protegido\" incluido en su boleto, que ampara gastos médicos y equipaje documentado. Si buscas una cobertura aún mayor, te invitamos a conocer nuestro servicio Viajero Protegido Plus."
+  },
+  {
+    "title-dropdown": "¿Puedo facturar mi boleto de autobús?",
+    "content-dropdown": "¡Claro! Puedes generar tu factura electrónica (CFDI) de forma muy sencilla en nuestro portal de facturación en línea. Solo necesitas tener a la mano tu número de boleto y tus datos fiscales. El proceso es rápido y puedes hacerlo desde la comodidad de tu casa u oficina."
+  }
+]
