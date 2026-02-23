@@ -51,14 +51,14 @@ function closeProfileModal() {
 function redirectToLogin() {
   safeSetStyleDisplay("modalDoters-logo", "none");
   window.location.href =
-    "https://auth.doters.com/v2/?clientId=etn-web&clientSecret=NTEx51n22xZK&language=es-MX&redirectUri=https://one-api.etn.com.mx/api/v2/doters/providers-login/etn";
+    "https://auth.doters.com/v2/?clientId=costaline-web&clientSecret=CLST1zy9845x&language=es-MX&redirectUri=https://one-api.costaline.com.mx/api/v2/doters/providers-login/costaline&utm_source=WebCostaline&utm_medium=Modal2Doters&utm_campaign=RegistroDoters&utm_term=DotersRegistroModal2&utm_content=DotersCostalineInicioSesi%C3%B3n";
 }
 
 // Función para redireccionar al unirse
 function redirectToRegister() {
   safeSetStyleDisplay("modalDoters-logo", "none");
   window.location.href =
-    "https://auth.doters.com/v2/?clientId=etn-web&clientSecret=NTEx51n22xZK&language=es-MX&redirectUri=https://one-api.etn.com.mx/api/v2/doters/providers-login/etn";
+    "https://auth.doters.com/v2/?clientId=costaline-web&clientSecret=CLST1zy9845x&language=es-MX&redirectUri=https://one-api.costaline.com.mx/api/v2/doters/providers-login/costaline&register=1&utm_source=WebCostaline&utm_medium=Modal2Doters&utm_campaign=RegistroDoters&utm_term=DotersRegistroModal2&utm_content=DotersCostalineRegistro";
 }
 
 // Función para obtener la información del perfil del usuario

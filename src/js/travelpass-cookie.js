@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		// Esta función solo actualiza el HTML interno del botón de escritorio
 		if (loginIconDesktop) {
 			loginIconDesktop.innerHTML = profileData
-				? `<a href="#" id="open-profile-modal-link"><img src="https://costaline.com.mx/gho-test/gho-img-web/iconos/icono-travel-pass.webp" class="icono-travel" alt="Monedero Electrónico" title="Perfil Monedero Electrónico"> Hola, ${profileData.name}</a>`
+				? `<a href="#" id="open-profile-modal-link"><img src="../../src/assets/img/logos/logo-monedero-electronico.webp" class="icono-travel" alt="Monedero Electrónico" title="Perfil Monedero Electrónico"> Hola, ${profileData.name}</a>`
 				: `<a href="#" id="open-login-modal-link"><img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Iniciar sesión en Monedero Electrónico" title="Ingresa a Monedero Electrónico" width="100" height="32" style="cursor: pointer;"></a>`;
 		}
 	}
