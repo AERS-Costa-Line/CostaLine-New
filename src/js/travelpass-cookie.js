@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
      */
     function renderLoggedOutState() {
         if (loginIconDesktop) {
-            loginIconDesktop.innerHTML = `<a href="#" class="open-login-modal-link"><img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Iniciar sesión en Monedero Electrónico" title="Ingresa a Monedero Electrónico" width="100" height="32" style="cursor: pointer;"></a>`;
+            loginIconDesktop.innerHTML = `<a href="#" class="open-login-modal-link"><img src="./src/assets/img/logos/logo-monedero-electronico.webp" alt="Iniciar sesión en Monedero Electrónico" title="Ingresa a Monedero Electrónico" width="100" height="32" style="cursor: pointer;"></a>`;
         }
         openLoginModalTriggers.forEach(trigger => {
             trigger.removeEventListener("click", openProfileModal);
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
      */
     function renderLoggedInState(profileData) {
         if (loginIconDesktop) {
-            loginIconDesktop.innerHTML = `<a href="#" class="nombre-monedero"><img src="../../src/assets/img/logos/logo-monedero-electronico.webp" class="icono-travel" alt="Monedero Electrónico" title="Perfil Monedero Electrónico"> Hola, ${profileData.name}</a>`;
+            loginIconDesktop.innerHTML = `<a href="#" class="nombre-monedero"><img src="./src/assets/img/logos/logo-monedero-electronico.webp" class="icono-travel" alt="Monedero Electrónico" title="Perfil Monedero Electrónico"> Hola, ${profileData.name}</a>`;
         }
         userNameElement.textContent = `Nombre: ${profileData.name}`;
         userBalanceElement.textContent = `Saldo: ${profileData.balance !== undefined ? profileData.balance : "N/A"} MXN`;
