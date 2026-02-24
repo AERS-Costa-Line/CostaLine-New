@@ -177,7 +177,7 @@ import "../components/app-destiny-slider.js?v=1.0.2";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookie.js?v=1.2.4";
+import "../js/travelpass-cookie.js?v=1.2.5";
 
 
 /* Doters */
