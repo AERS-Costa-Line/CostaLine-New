@@ -1,146 +1,119 @@
-// Helper function to safely set style.display
-function safeSetStyleDisplay(elementId, displayValue) {
-  const element = document.getElementById(elementId);
-  if (element) {
-    element.style.display = displayValue;
-  } else {
-    // console.warn(`Element with ID '${elementId}' not found. Cannot set display to '${displayValue}'.`);
-  }
-}
+/**
+ * Este script ahora espera a que el componente 'app-header' esté listo
+ * antes de ejecutarse. Esto soluciona el problema de que el script
+ * no encuentre los botones del header a tiempo.
+ */
+customElements.whenDefined('app-header').then(() => {
 
-// Helper function to safely set innerHTML
-function safeSetInnerHTML(elementId, htmlValue) {
-  const element = document.getElementById(elementId);
-  if (element) {
-    element.innerHTML = htmlValue;
-  }
-}
+    // Helper function to get an element safely.
+    const getEl = (id) => document.getElementById(id);
 
-// Helper function to safely set textContent (using innerText as per original, though textContent is often preferred)
-function safeSetTextContent(elementId, textValue) {
-  const element = document.getElementById(elementId);
-  if (element) {
-    element.innerText = textValue;
-  }
-}
+    // --- Funciones de tu script original, mantenidas para consistencia ---
 
-// Helper function to safely attach onclick
-function safeSetOnClick(elementId, handler) {
-  const element = document.getElementById(elementId);
-  if (element) {
-    element.onclick = handler;
-  }
-}
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(";").shift() || null;
+        return null;
+    }
 
-// Función para abrir el modal de inicio de sesión
-function openLoginModal() {
-  safeSetStyleDisplay("modalDoters-loginModal", "flex"); // app-modal-doters uses 'flex'
-}
+    function openProfileModal() {
+        const profileModal = getEl("modalDoters-profileModal");
+        if (profileModal) profileModal.style.display = "flex";
+    }
 
-// Función para cerrar el modal de inicio de sesión
-function closeLoginModal() {
-  safeSetStyleDisplay("modalDoters-loginModal", "none");
-}
+    function logoutDoters() {
+        console.log("Intentando cerrar sesión...");
+        const domains = [".etn.com.mx", ".costaline.com.mx", window.location.hostname];
+        domains.forEach(domain => {
+            document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${domain}; path=/;`;
+        });
+        document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+        window.location.href = "https://auth.doters.com/v2/logout?post_logout_redirect_uri=https://viaje.etn.com.mx/sso/logout&client_id=etn-web";
+    }
 
-// Función para cerrar el modal de perfil
-function closeProfileModal() {
-  safeSetStyleDisplay("modalDoters-profileModal", "none");
-}
+    // --- Lógica Principal Corregida ---
 
-// Función para redireccionar al iniciar sesión
-function redirectToLogin() {
-  safeSetStyleDisplay("modalDoters-logo", "none");
-  window.location.href =
-    "https://auth.doters.com/v2/?clientId=costaline-web&clientSecret=CLST1zy9845x&language=es-MX&redirectUri=https://one-api.costaline.com.mx/api/v2/doters/providers-login/costaline&utm_source=WebCostaline&utm_medium=Modal2Doters&utm_campaign=RegistroDoters&utm_term=DotersRegistroModal2&utm_content=DotersCostalineInicioSesi%C3%B3n";
-}
+    /**
+     * Esta es la nueva función clave. Obtiene los datos del perfil y
+     * modifica DIRECTAMENTE los botones correctos del header.
+     */
+    function fetchAndRenderUserProfile() {
+        // IDs reales de los botones en tu app-header.js
+        const dotersButtonDesktop = getEl("openDotersModal");
+        const dotersButtonMobile = getEl("openDotersModalMovil");
 
-// Función para redireccionar al unirse
-function redirectToRegister() {
-  safeSetStyleDisplay("modalDoters-logo", "none");
-  window.location.href =
-    "https://auth.doters.com/v2/?clientId=costaline-web&clientSecret=CLST1zy9845x&language=es-MX&redirectUri=https://one-api.costaline.com.mx/api/v2/doters/providers-login/costaline&register=1&utm_source=WebCostaline&utm_medium=Modal2Doters&utm_campaign=RegistroDoters&utm_term=DotersRegistroModal2&utm_content=DotersCostalineRegistro";
-}
+        if (!dotersButtonDesktop || !dotersButtonMobile) {
+            console.error("No se encontraron los botones de Doters en el header.");
+            return;
+        }
 
-// Función para obtener la información del perfil del usuario
-function fetchUserProfile() {
-  safeSetStyleDisplay("modalDoters-logo", "none");
+        const token = getCookie("token");
+        if (!token) {
+            // Estado SIN sesión: Asegurarse de que ambos botones muestren el logo.
+            dotersButtonDesktop.innerHTML = `<img src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">`;
+            dotersButtonMobile.innerHTML = `<img src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">`;
+            return;
+        }
 
-  fetch("https://one-api.etn.com.mx/api/v2/doters/profile", {
-    method: "GET",
-    headers: {
-      Authorization: `Bearer ${getCookie("token")}`, // Obtén el token de la cookie
-    },
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      const welcomeMessage = document.getElementById(
-        "modalDoters-welcomeMessage"
-      );
-      if (welcomeMessage) {
-        // Use a unique ID for the span to avoid conflict with the one in the profile modal
-        welcomeMessage.innerHTML = `<i class="icon-user-info doters-basic doters-bigger"></i> Bienvenido, <span id="modalDoters-welcomeUsernameSpan" style="cursor: pointer; font-weight: 700;">${data.first_name}</span>`;
-        welcomeMessage.style.display = "block";
-        safeSetOnClick("modalDoters-welcomeUsernameSpan", openProfileModal);
-      }
+        // Estado CON sesión: Buscar perfil y actualizar los botones.
+        fetch("https://one-api.etn.com.mx/api/v2/doters/profile", {
+            method: "GET",
+            headers: { Authorization: `Bearer ${token}` },
+        })
+        .then(response => {
+            if (!response.ok) {
+                // Si el token es inválido, borra la cookie y refresca la página para mostrar el estado de logout.
+                document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;`;
+                window.location.reload();
+                throw new Error('Token inválido');
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data && data.first_name) {
+                // Construir el HTML del saludo
+                const welcomeHTML = `
+                    <div style="display: flex; align-items: center; text-decoration: none; color: inherit; white-space: nowrap;">
+                        <i class="icon-user-info doters-basic doters-bigger" style="margin-right: 8px;"></i> 
+                        Bienvenido, <strong style="margin-left: 4px;">${data.first_name}</strong>
+                    </div>`;
 
-      // Asignar los datos al modal de perfil
-      safeSetTextContent("modalDoters-username", `${data.first_name}`); // Targets span in profile modal
-      safeSetTextContent("modalDoters-dotersId", data.doters_id);
-      safeSetTextContent("modalDoters-availablePoints", data.available_points);
+                // Reemplazar el contenido de AMBOS botones con el saludo
+                dotersButtonDesktop.innerHTML = welcomeHTML;
+                dotersButtonMobile.innerHTML = welcomeHTML;
 
-      // Mostrar el botón de cerrar sesión
-      const logoutButton = document.getElementById("modalDoters-logoutButton");
-      if (logoutButton) {
-        logoutButton.style.display = "block";
-        logoutButton.onclick = logoutDoters;
-      }
-    })
-    .catch((error) => {
-      console.error("Error fetching user profile:", error);
-      // If profile fetch fails, show the logo again and hide welcome message
-      safeSetStyleDisplay("modalDoters-logo", "block");
-      safeSetStyleDisplay("modalDoters-welcomeMessage", "none");
-    });
-}
+                // Añadir evento de clic a los botones para abrir el modal de perfil
+                dotersButtonDesktop.onclick = (e) => { e.preventDefault(); openProfileModal(); };
+                dotersButtonMobile.onclick = (e) => { e.preventDefault(); openProfileModal(); };
+                
+                // Rellenar los datos del modal de perfil
+                const usernameSpan = getEl("modalDoters-username");
+                const dotersIdSpan = getEl("modalDoters-dotersId");
+                const pointsSpan = getEl("modalDoters-availablePoints");
+                const logoutButton = getEl("modalDoters-logoutButton");
 
-// Función para abrir el modal de perfil del usuario
-function openProfileModal() {
-  safeSetStyleDisplay("modalDoters-profileModal", "block"); // Original was 'block', component uses 'block'
-}
+                if (usernameSpan) usernameSpan.innerText = data.first_name;
+                if (dotersIdSpan) dotersIdSpan.innerText = data.doters_id;
+                if (pointsSpan) pointsSpan.innerText = data.available_points;
+                if (logoutButton) {
+                    logoutButton.style.display = "inline-block";
+                    logoutButton.onclick = logoutDoters;
+                }
+            } else {
+                throw new Error("Datos de perfil inválidos");
+            }
+        })
+        .catch(error => {
+            console.error("Error al obtener el perfil de Doters:", error);
+            // Si algo falla, se asegura de mostrar el estado de logout.
+            dotersButtonDesktop.innerHTML = `<img src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">`;
+            dotersButtonMobile.innerHTML = `<img src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">`;
+        });
+    }
 
-// Función para cerrar sesión y redirigir
-function logoutDoters() {
-  console.log("Intentando cerrar sesión...");
+    // --- Punto de Entrada ---
+    // Esta es la única línea que se ejecuta al inicio.
+    fetchAndRenderUserProfile();
 
-  // Eliminar la cookie
-  // Asegúrate de que el dominio y la ruta coincidan con cómo se estableció la cookie.
-  // Si la cookie se estableció para .costaline.com.mx (como en travelpass-cookie.js), usa ese dominio.
-  // Si se estableció para .etn.com.mx, el código original está bien.
-  // Por ahora, mantendré el dominio original del script, pero verifica esto.
-  const domain = ".etn.com.mx"; // o ".costaline.com.mx" si es el caso
-  document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${domain}; path=/; SameSite=None; Secure`;
-  document.cookie = `token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=${window.location.hostname}; path=/; SameSite=None; Secure`; // Fallback for localhost or different domains
-  document.cookie =
-    "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; SameSite=None; Secure"; // Fallback without domain
-
-  // Redirigir al usuario después del cierre de sesión
-  window.location.href =
-    "https://auth.doters.com/v2/logout?post_logout_redirect_uri=https://viaje.etn.com.mx/sso/logout&client_id=etn-web";
-}
-
-// Función para obtener la cookie
-function getCookie(name) {
-  const value = `; ${document.cookie}`;
-  const parts = value.split(`; ${name}=`);
-  if (parts.length === 2) return parts.pop().split(";").shift() || null;
-  return null;
-}
-
-// Llamar a la función fetchUserProfile si ya hay una cookie válida
-if (getCookie("token")) {
-  safeSetStyleDisplay("modalDoters-logo", "none");
-  fetchUserProfile();
-} else {
-  safeSetStyleDisplay("modalDoters-logo", "block");
-  safeSetStyleDisplay("modalDoters-welcomeMessage", "none");
-}
+});
