@@ -52,8 +52,8 @@ class AppHeader extends HTMLElement {
 					<img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 				</button>
 				<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Iniciar sesión Doters">
-					<img src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
-				</button>
+  <img id="modalDoters-logo" src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
+</button>
 				<a class="li__languaje desktop-languaje" href="../../../english/" aria-label="Cambiar idioma">
 					<img src='../../src/assets/img/icons-img/USA_Flag.webp' alt="English" loading="lazy">
 				</a>
@@ -110,8 +110,12 @@ class AppHeader extends HTMLElement {
 								<img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 							</button>
 							<button id="openDotersModalMovil" class="btn-doters" aria-label="Iniciar sesión Doters">
-								<img src="../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
-							</button>
+  <img id="modalDoters-logo-movil" src="../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+</button>
+
+
+<!-- IMPORTANTE: debe existir este contenedor en tu header (o en tu HTML) -->
+<div id="modalDoters-welcomeMessage" style="display:none;"></div>
 						</li>
 					</ul>
 				</div>
@@ -402,35 +406,38 @@ class AppHeader extends HTMLElement {
 
 	// Ejemplo conceptual de cómo se usaría en app-header.js
 	_initDotersModals() {
-		const openModalButtonDesktop = this.querySelector("#openDotersModal"); // Botón en el header para desktop
-		const openModalButtonMovil = this.querySelector("#openDotersModalMovil"); // Botón en el header para móvil
+  const openModalButtonDesktop = this.querySelector("#openDotersModal");
+  const openModalButtonMovil = this.querySelector("#openDotersModalMovil");
 
-		// Asumimos que solo hay UNA instancia de app-modal-doters en la página.
-		// Si tienes más, necesitarás una forma más específica de seleccionarlo (ej. por un ID único en el tag <app-modal-doters id="miModalUnico">).
-		const dotersModalElement = document.querySelector("app-modal-doters");
+  const loginModal = document.querySelector("app-modal-doters");
+  const profileModal = document.querySelector("modal-doters-profile");
 
-		if (dotersModalElement) {
-			const openAction = () => {
-				if (typeof dotersModalElement.open === "function") {
-					dotersModalElement.open();
-				} else {
-					console.error(
-						"El método open() no está disponible en el elemento app-modal-doters.",
-						dotersModalElement,
-					);
-				}
-			};
+  const openAction = () => {
+    const hasToken = typeof getCookie === "function" && !!getCookie("token");
 
-			if (openModalButtonDesktop) {
-				openModalButtonDesktop.addEventListener("click", openAction);
-			}
-			if (openModalButtonMovil) {
-				openModalButtonMovil.addEventListener("click", openAction);
-			}
-		} else {
-			console.warn("Elemento <app-modal-doters> no encontrado en el DOM.");
-		}
-	}
+    if (hasToken) {
+      // Abrir perfil
+      if (profileModal && typeof profileModal.open === "function") {
+        profileModal.open();
+      } else {
+        // fallback por id si no existe open()
+        const el = document.getElementById("modalDoters-profileModal");
+        if (el) el.style.display = "block";
+      }
+    } else {
+      // Abrir login
+      if (loginModal && typeof loginModal.open === "function") {
+        loginModal.open();
+      } else {
+        const el = document.getElementById("modalDoters-loginModal");
+        if (el) el.style.display = "flex";
+      }
+    }
+  };
+
+  openModalButtonDesktop?.addEventListener("click", openAction);
+  openModalButtonMovil?.addEventListener("click", openAction);
+}
 
 	_initScrollBehavior() {
 		window.addEventListener("scroll", function (event) {
