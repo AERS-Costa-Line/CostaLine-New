@@ -1,1 +1,1 @@
-import "./src/pages/index.js?v=1.2.5";
+import "./src/pages/index.js?v=1.2.6";
