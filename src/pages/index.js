@@ -1,6 +1,6 @@
 /*-------------PAGINAS PRINCIPALES -------------------------*/
 
-import "./home/page-home.js?v=1.1.1";
+import "./home/page-home.js?v=1.1.2";
 import "./page-site-map.js?v=1.0.2";
 import "./page-404.js?v=1.0.2";
 
