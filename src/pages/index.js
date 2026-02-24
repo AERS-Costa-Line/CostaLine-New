@@ -1,6 +1,6 @@
 /*-------------PAGINAS PRINCIPALES -------------------------*/
 
-import "./home/page-home.js?v=1.0.9";
+import "./home/page-home.js?v=1.1.1";
 import "./page-site-map.js?v=1.0.2";
 import "./page-404.js?v=1.0.2";
 
@@ -177,7 +177,7 @@ import "../components/app-destiny-slider.js?v=1.0.2";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookie.js?v=1.0.3";
+import "../js/travelpass-cookie.js?v=1.1.0";
 
 
 /* Doters */
