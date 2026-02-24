@@ -88,6 +88,10 @@ function closeProfileModal() {
 function fetchUserProfile() {
   const token = getCookie("token");
 
+  console.log("[DOTERS] origin:", location.origin);
+console.log("[DOTERS] cookie raw:", document.cookie);
+console.log("[DOTERS] token:", token);
+
   if (!token) {
     console.log("No existe token en cookies");
     return;

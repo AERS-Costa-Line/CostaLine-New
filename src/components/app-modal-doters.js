@@ -111,14 +111,33 @@ class AppModalDoters extends HTMLElement {
 		}
 	}
 
-	redirectToLogin() {
+redirectToLogin() {
+  const redirectUri = encodeURIComponent(
+    "https://one-api.costaline.com.mx/api/v2/doters/providers-login/costaline"
+  );
+
   window.location.href =
-    "https://auth.doters.com/v2/?clientId=costaline-web&clientSecret=CLST1zy9845x&language=es-MX&redirectUri=https://one-api.costaline.com.mx/api/v2/doters/providers-login/costaline&utm_source=WebCostaline&utm_medium=Modal2Doters&utm_campaign=RegistroDoters&utm_term=DotersRegistroModal2&utm_content=DotersCostalineInicioSesi%C3%B3n";
+    `https://auth.doters.com/v2/?clientId=costaline-web` +
+    `&clientSecret=CLST1zy9845x` +
+    `&language=es-MX` +
+    `&redirectUri=${redirectUri}` +
+    `&utm_source=WebCostaline&utm_medium=Modal2Doters&utm_campaign=RegistroDoters` +
+    `&utm_term=DotersRegistroModal2&utm_content=DotersCostalineInicioSesi%C3%B3n`;
 }
 
-	redirectToRegister() {
+redirectToRegister() {
+  const redirectUri = encodeURIComponent(
+    "https://one-api.costaline.com.mx/api/v2/doters/providers-login/costaline"
+  );
+
   window.location.href =
-    "https://auth.doters.com/v2/?clientId=costaline-web&clientSecret=CLST1zy9845x&language=es-MX&redirectUri=https://one-api.costaline.com.mx/api/v2/doters/providers-login/costaline&register=1&utm_source=WebCostaline&utm_medium=Modal2Doters&utm_campaign=RegistroDoters&utm_term=DotersRegistroModal2&utm_content=DotersCostalineRegistro";
+    `https://auth.doters.com/v2/?clientId=costaline-web` +
+    `&clientSecret=CLST1zy9845x` +
+    `&language=es-MX` +
+    `&redirectUri=${redirectUri}` +
+    `&register=1` +
+    `&utm_source=WebCostaline&utm_medium=Modal2Doters&utm_campaign=RegistroDoters` +
+    `&utm_term=DotersRegistroModal2&utm_content=DotersCostalineRegistro`;
 }
 
 	_trapFocus(event) {
