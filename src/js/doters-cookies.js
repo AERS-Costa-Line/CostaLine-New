@@ -73,13 +73,46 @@ function showLoggedInUI(firstName) {
 }
 
 // ---------- Modal perfil ----------
-function ensureProfileComponentExists() {
-  let profileModal = document.querySelector("modal-doters-profile");
-  if (!profileModal) {
-    profileModal = document.createElement("modal-doters-profile");
-    document.body.appendChild(profileModal);
-  }
-  return profileModal;
+function ensureProfileFallbackModalExists() {
+  // Si el componente ya pintó el modal interno, no hacemos nada
+  if (byId("modalDoters-profileModal")) return;
+
+  // Inyecta un modal fallback con los IDs que tu fetchUserProfile() ya rellena
+  const wrap = document.createElement("div");
+  wrap.innerHTML = `
+    <div id="modalDoters-profileModal"
+      style="display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+             background-color:rgba(0,0,0,0.5); z-index:99999;">
+      <div style="background:white; margin:10% auto; padding:20px; width:min(520px, 92%);
+                  border-radius:8px; text-align:center;">
+        <h2>Perfil de Usuario</h2>
+        <p><strong>Nombre:</strong> <span id="modalDoters-username"></span></p>
+        <p><strong>ID Doters:</strong> <span id="modalDoters-dotersId"></span></p>
+        <p><strong>Puntos Disponibles:</strong> <span id="modalDoters-availablePoints"></span></p>
+
+        <button id="modalDoters-logoutButton"
+          style="display:block; padding:10px 20px; background-color:red; color:white;
+                 border:none; border-radius:5px; cursor:pointer; margin:10px auto;">
+          Cerrar Sesión
+        </button>
+
+        <button id="modalDoters-closeProfileBtn"
+          style="padding:10px 20px; background-color:gray; color:white;
+                 border:none; border-radius:5px; cursor:pointer;">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(wrap);
+
+  // Cerrar
+  byId("modalDoters-closeProfileBtn")?.addEventListener("click", closeProfileModal);
+
+  // Logout
+  const logoutBtn = byId("modalDoters-logoutButton");
+  if (logoutBtn) logoutBtn.onclick = logoutDoters;
 }
 
 // Asegura que el modal interno tenga z-index alto (por si algo lo tapa)
@@ -116,47 +149,58 @@ function wireLogoutButton() {
 }
 
 async function openProfileModal() {
-  // 1) Crea/asegura tag
-  ensureProfileComponentExists();
-
-  // 2) Espera a que el custom element esté definido (CLAVE)
-  if (window.customElements?.whenDefined) {
-    try {
-      await window.customElements.whenDefined("modal-doters-profile");
-    } catch (e) {
-      // no-op
-    }
-  }
-
-  // 3) Ahora ya debería estar upgradeado y tener connectedCallback + open()
-  const profileModal = ensureProfileComponentExists();
-
-  // 4) refresca datos por si acaso
+  // Siempre intenta refrescar datos por si cambió el token o el profile
   if (typeof fetchUserProfile === "function") {
     fetchUserProfile();
   }
 
-  // 5) conecta logout
-  wireLogoutButton();
-
-  // 6) abre modal
-  if (profileModal && typeof profileModal.open === "function") {
-    profileModal.open();
-  } else {
-    // fallback: si por algo no existe open(), abre por id (si ya fue renderizado)
-    setDisplay("modalDoters-profileModal", "block");
+  // Asegura que exista el tag del componente (si tu script sí está)
+  let profileModal = document.querySelector("modal-doters-profile");
+  if (!profileModal) {
+    profileModal = document.createElement("modal-doters-profile");
+    document.body.appendChild(profileModal);
   }
 
-  bumpProfileZIndex();
-}
+  // Espera el define PERO con timeout (para no quedar colgado)
+  const waitDefined = (name, ms = 250) => {
+    if (!window.customElements?.whenDefined) return Promise.resolve(false);
+    return Promise.race([
+      window.customElements.whenDefined(name).then(() => true),
+      new Promise((resolve) => setTimeout(() => resolve(false), ms)),
+    ]);
+  };
 
+  const defined = await waitDefined("modal-doters-profile", 250);
+
+  // Si NO está definido (script no cargó), usa fallback real
+  if (!defined) {
+    ensureProfileFallbackModalExists();
+    setDisplay("modalDoters-profileModal", "block");
+    // Asegura logout
+    byId("modalDoters-logoutButton") && (byId("modalDoters-logoutButton").onclick = logoutDoters);
+    return;
+  }
+
+  // Si ya está definido, intenta abrir vía método
+  profileModal = document.querySelector("modal-doters-profile");
+  if (profileModal && typeof profileModal.open === "function") {
+    profileModal.open();
+    // z-index por seguridad
+    const inner = profileModal.querySelector("#modalDoters-profileModal");
+    if (inner) inner.style.zIndex = "99999";
+    return;
+  }
+
+  // Fallback por ID si el componente existe pero no trae open()
+  ensureProfileFallbackModalExists();
+  setDisplay("modalDoters-profileModal", "block");
+}
 function closeProfileModal() {
   const profileModal = document.querySelector("modal-doters-profile");
   if (profileModal && typeof profileModal.close === "function") {
     profileModal.close();
-  } else {
-    setDisplay("modalDoters-profileModal", "none");
   }
+  setDisplay("modalDoters-profileModal", "none"); // cierra fallback o el modal interno si existe
 }
 
 window.openProfileModal = window.openProfileModal || openProfileModal;
@@ -205,18 +249,20 @@ async function fetchUserProfile() {
 window.fetchUserProfile = window.fetchUserProfile || fetchUserProfile;
 
 // ---------- Delegación de click (CORREGIDA con closest) ----------
-document.addEventListener("click", (e) => {
-  const target = e.target;
+document.addEventListener(
+  "click",
+  (e) => {
+    const hit = e.target?.closest?.(
+      "#modalDoters-welcomeMessage, #modalDoters-welcomeMessageMovil, #modalDoters-welcomeUsernameSpan, #modalDoters-welcomeUsernameSpanMovil"
+    );
 
-  const hit = target?.closest?.(
-    "#modalDoters-welcomeMessage, #modalDoters-welcomeMessageMovil, #modalDoters-welcomeUsernameSpan, #modalDoters-welcomeUsernameSpanMovil"
-  );
-
-  if (hit) {
-    e.preventDefault();
-    openProfileModal();
-  }
-});
+    if (hit) {
+      e.preventDefault();
+      openProfileModal();
+    }
+  },
+  true // <-- CAPTURING
+);
 
 // ---------- Init robusto ----------
 function initDoters(tries = 60) {
