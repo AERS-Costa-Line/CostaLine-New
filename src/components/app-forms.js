@@ -112,7 +112,7 @@ class AppForms extends HTMLElement {
 
             // ¡¡¡LÍNEA CORREGIDA!!!
             // La barra al inicio (/) le dice al navegador que busque desde la raíz del sitio web.
-            fetch('/php/enviar_formulario.php', { 
+            fetch('https://costaline.com.mx/web2026/php/enviar_formulario.php', { 
                 method: 'POST',
                 body: formData
             })

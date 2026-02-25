@@ -142,7 +142,7 @@ import "./promociones/page-descuentos-semana-santa.js?v=1.0.2";
 
 
 //LEGAL
-import "./legal/page-atencion-a-clientes.js?v=1.0.3";
+import "./legal/page-atencion-a-clientes.js?v=1.0.4";
 
 //--Avisos Privacidad
 import "./legal/avisos-privacidad/page-aviso-de-privacidad.js?v=1.0.2";
