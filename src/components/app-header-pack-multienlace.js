@@ -27,7 +27,7 @@ class AppHeaderPackMultienlace extends HTMLElement {
                             </ul>
                         </li>
                         <li><a href="../../servicios/pack-multienlace/cotizador-paqueteria.html" aria-label="Modificar itinerario" tabindex="0">Cotizador</a></li>
-                        <li><a href="../../servicios/pack-multienlace/facturacion-paqueteria.html" aria-label="Modificar itinerario" tabindex="0">Facturación</a></li>
+                        <li><a href="../../servicios/facturacion.html" aria-label="Modificar itinerario" tabindex="0">Facturación</a></li>
 
                         </ul>
             </nav>  
@@ -53,7 +53,7 @@ class AppHeaderPackMultienlace extends HTMLElement {
                         </ul>
                     </li>
                     <li><a href="../../servicios/pack-multienlace/cotizador-paqueteria.html" aria-label="Modificar itinerario" tabindex="0">Cotizador</a></li>
-                    <li><a href="../../servicios/pack-multienlace/facturacion-paqueteria.html" aria-label="Modificar itinerario" tabindex="0">Facturación</a></li>
+                    <li><a href="../../servicios/pack-multienlace/politicas-de-envio.html" aria-label="Modificar itinerario" tabindex="0">Facturación</a></li>
 
                 </ul>
             </div>

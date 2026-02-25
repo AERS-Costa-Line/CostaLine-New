@@ -224,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</main>
 		<app-footer></app-footer>
 		<app-cookies-policy></app-cookies-policy>
-		<app-button-whats></app-button-whats>
+		
 		<app-button-eva-trip></app-button-eva-trip>
 		<script src="../src/js/doters-cookies.js?v=1.2.1"></script>
 		<!-- JS widget de reservamos -->
