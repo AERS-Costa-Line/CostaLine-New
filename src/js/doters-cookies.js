@@ -81,7 +81,7 @@ function showLoggedInUI(firstName) {
   if (btnD) {
     btnD.style.display = "inline-block";
     btnD.innerHTML = `
-      <a href="#" class="nombre-doters" style="display:inline-flex; align-items:center; gap:8px; text-decoration:none;">
+      <a href="#" class="nombre-doters">
         <img src='../../src/assets/img/doters/doter-verde.webp' class="icono-doters" alt="Doters" title="Perfil Doters" loading="lazy">
         Hola, <span style="font-weight:700;">${safeName}</span>
       </a>
@@ -97,7 +97,7 @@ function showLoggedInUI(firstName) {
   if (btnM) {
     btnM.style.display = "inline-block";
     btnM.innerHTML = `
-      <a href="#" class="nombre-doters" style="display:inline-flex; align-items:center; gap:8px; text-decoration:none;">
+      <a href="#" class="nombre-doters">
         <img src='../../src/assets/img/doters/doter-verde.webp' class="icono-doters" alt="Doters" title="Perfil Doters" loading="lazy">
         <span style="font-weight:700;">${safeName}</span>
       </a>
