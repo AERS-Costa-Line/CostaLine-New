@@ -36,8 +36,6 @@ function getCookie(name) {
   if (parts.length === 2) return parts.pop().split(";").shift() || null;
   return null;
 }
-
-// Hacemos accesibles estas funciones si el header las usa
 window.getCookie = window.getCookie || getCookie;
 
 // ---------- UI states ----------
@@ -56,8 +54,8 @@ function showLoggedInUI(firstName) {
   setDisplay("openDotersModal", "none");
   setDisplay("openDotersModalMovil", "none");
 
-  // Pintar username desktop (FORZANDO ESTILOS PARA QUE SE VEA)
-  const desktop = document.getElementById("modalDoters-welcomeMessage");
+  // Desktop
+  const desktop = byId("modalDoters-welcomeMessage");
   if (desktop) {
     desktop.style.display = "inline-flex";
     desktop.style.alignItems = "center";
@@ -66,18 +64,11 @@ function showLoggedInUI(firstName) {
 
     desktop.innerHTML =
       `<i class="icon-user-info doters-basic doters-bigger"></i>` +
-      `<span id="modalDoters-welcomeUsernameSpan" style="font-weight:700;">${firstName || ""}</span>`;
-
-    const span = document.getElementById("modalDoters-welcomeUsernameSpan");
-    if (span) span.onclick = openProfileModal;
-    // También que el contenedor complete sea clickeable
-    desktop.onclick = openProfileModal;
-  } else {
-    console.warn("[DOTERS] No existe #modalDoters-welcomeMessage en el DOM");
+      `Bienvenido, <span id="modalDoters-welcomeUsernameSpan" style="font-weight:700; cursor:pointer;">${firstName || ""}</span>`;
   }
 
-  // Pintar username mobile
-  const mobile = document.getElementById("modalDoters-welcomeMessageMovil");
+  // Mobile
+  const mobile = byId("modalDoters-welcomeMessageMovil");
   if (mobile) {
     mobile.style.display = "inline-flex";
     mobile.style.alignItems = "center";
@@ -86,16 +77,9 @@ function showLoggedInUI(firstName) {
 
     mobile.innerHTML =
       `<i class="icon-user-info doters-basic doters-bigger"></i>` +
-      `<span id="modalDoters-welcomeUsernameSpanMovil" style="font-weight:700;">${firstName || ""}</span>`;
-
-    const spanM = document.getElementById("modalDoters-welcomeUsernameSpanMovil");
-    if (spanM) spanM.onclick = openProfileModal;
-    mobile.onclick = openProfileModal;
-  } else {
-    console.warn("[DOTERS] No existe #modalDoters-welcomeMessageMovil en el DOM");
+      `<span id="modalDoters-welcomeUsernameSpanMovil" style="font-weight:700; cursor:pointer;">${firstName || ""}</span>`;
   }
 }
-
 
 // ---------- Modal perfil open/close ----------
 function ensureProfileComponentExists() {
@@ -107,8 +91,31 @@ function ensureProfileComponentExists() {
   return profileModal;
 }
 
+function wireLogoutButton() {
+  // Intenta dentro del componente
+  const profileModal = document.querySelector("modal-doters-profile");
+  const logoutBtn =
+    profileModal?.querySelector?.("#modalDoters-logoutButton") ||
+    byId("modalDoters-logoutButton");
+
+  if (logoutBtn) {
+    logoutBtn.style.display = "block";
+    logoutBtn.onclick = logoutDoters;
+  }
+}
+
 function openProfileModal() {
+  // Asegura que existe el componente
   const profileModal = ensureProfileComponentExists();
+
+  // Asegura que el botón logout quede funcional
+  wireLogoutButton();
+
+  // Si el modal se abre y los datos aún no están, intentamos refrescar profile
+  if (typeof fetchUserProfile === "function") {
+    fetchUserProfile();
+  }
+
   if (profileModal && typeof profileModal.open === "function") {
     profileModal.open();
   } else {
@@ -130,7 +137,6 @@ window.closeProfileModal = window.closeProfileModal || closeProfileModal;
 
 // ---------- Logout ----------
 function deleteTokenCookie() {
-  // Borrar en dominio y fallback sin dominio
   document.cookie =
     "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.costaline.com.mx; path=/;";
   document.cookie =
@@ -148,43 +154,71 @@ window.logoutDoters = window.logoutDoters || logoutDoters;
 // ---------- Profile fetch ----------
 async function fetchUserProfile() {
   const token = getCookie("token");
-  if (!token) return;
 
-  const res = await fetch("https://one-api.costaline.com.mx/api/v2/doters/profile", {
-    headers: { Authorization: `Bearer ${token}` }
-  });
+  if (!token) {
+    showLoggedOutUI();
+    return;
+  }
+
+  let res;
+  try {
+    res = await fetch(DOTERS_URL_PROFILE, {
+      method: "GET",
+      headers: { Authorization: `Bearer ${token}` },
+    });
+  } catch (e) {
+    console.error("[DOTERS] fetch error:", e);
+    // si hay error de red/cors, no tumbes la UI, pero tampoco ocultes
+    showLoggedOutUI();
+    return;
+  }
 
   if (!res.ok) {
-    // si falla, NO ocultes el logo
-    setDisplay("openDotersModal", "inline-block");
-    setDisplay("openDotersModalMovil", "inline-block");
-    setDisplay("modalDoters-welcomeMessage", "none");
-    setDisplay("modalDoters-welcomeMessageMovil", "none");
+    console.warn("[DOTERS] profile status:", res.status);
+    // token inválido -> limpia y vuelve a logged out
+    deleteTokenCookie();
+    showLoggedOutUI();
     return;
   }
 
   const data = await res.json();
 
-  // ahora sí, como ya tienes data, ocultas logo y muestras username
-  setDisplay("openDotersModal", "none");
-  setDisplay("openDotersModalMovil", "none");
+  // UI logged in (username)
+  showLoggedInUI(data.first_name || "");
 
-  const el = document.getElementById("modalDoters-welcomeMessage");
-  if (el) {
-    el.style.display = "inline-flex";
-    el.innerHTML = `Bienvenido, <span id="modalDoters-welcomeUsernameSpan" style="font-weight:700;cursor:pointer;">${data.first_name}</span>`;
-    document.getElementById("modalDoters-welcomeUsernameSpan").onclick = openProfileModal;
-  }
+  // Pinta datos en modal de perfil
+  setText("modalDoters-username", data.first_name || "");
+  setText("modalDoters-dotersId", data.doters_id || "");
+  setText("modalDoters-availablePoints", data.available_points ?? "");
 
-  const elM = document.getElementById("modalDoters-welcomeMessageMovil");
-  if (elM) {
-    elM.style.display = "inline-flex";
-    elM.innerHTML = `<span id="modalDoters-welcomeUsernameSpanMovil" style="font-weight:700;cursor:pointer;">${data.first_name}</span>`;
-    document.getElementById("modalDoters-welcomeUsernameSpanMovil").onclick = openProfileModal;
-  }
+  // Asegura logout button
+  wireLogoutButton();
 }
 
 window.fetchUserProfile = window.fetchUserProfile || fetchUserProfile;
+
+// ---------- Delegación de click (clave) ----------
+document.addEventListener("click", (e) => {
+  const t = e.target;
+
+  // Click username desktop/mobile
+  if (
+    t?.id === "modalDoters-welcomeUsernameSpan" ||
+    t?.id === "modalDoters-welcomeUsernameSpanMovil"
+  ) {
+    e.preventDefault();
+    openProfileModal();
+  }
+
+  // Click en el contenedor (por si clican fuera del span)
+  if (
+    t?.id === "modalDoters-welcomeMessage" ||
+    t?.id === "modalDoters-welcomeMessageMovil"
+  ) {
+    e.preventDefault();
+    openProfileModal();
+  }
+});
 
 // ---------- Init robusto ----------
 function initDoters(tries = 60) {
@@ -204,7 +238,7 @@ function initDoters(tries = 60) {
 
 document.addEventListener("DOMContentLoaded", () => initDoters());
 
-// Importante para Safari / BFCache (regreso del login)
+// Safari / BFCache (regreso del login)
 window.addEventListener("pageshow", () => initDoters());
 
 // Watch corto por si token aparece después del render del header
