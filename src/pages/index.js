@@ -183,6 +183,7 @@ import "../js/travelpass-cookie.js?v=1.2.8";
 /* Doters */
 
 import "./doters/page-doters.js?v=1.0.1";
+import "./doters/boleto-doters/page-boleto-doters.js?v=1.0.1";
 
 /*----------------PAGINAS-SUBE---------------------------------*/
 import "./estudiantes/page-cdmx-a-acapulco-diamante.js";
