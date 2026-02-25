@@ -402,35 +402,46 @@ class AppHeader extends HTMLElement {
 
 	// Ejemplo conceptual de cómo se usaría en app-header.js
 	_initDotersModals() {
-		const openModalButtonDesktop = this.querySelector("#openDotersModal"); // Botón en el header para desktop
-		const openModalButtonMovil = this.querySelector("#openDotersModalMovil"); // Botón en el header para móvil
+  const openModalButtonDesktop = this.querySelector("#openDotersModal");
+  const openModalButtonMovil = this.querySelector("#openDotersModalMovil");
 
-		// Asumimos que solo hay UNA instancia de app-modal-doters en la página.
-		// Si tienes más, necesitarás una forma más específica de seleccionarlo (ej. por un ID único en el tag <app-modal-doters id="miModalUnico">).
-		const dotersModalElement = document.querySelector("app-modal-doters");
+  const ensureLogin = () => {
+    let el = document.querySelector("app-modal-doters");
+    if (!el) {
+      el = document.createElement("app-modal-doters");
+      document.body.appendChild(el);
+    }
+    return el;
+  };
 
-		if (dotersModalElement) {
-			const openAction = () => {
-				if (typeof dotersModalElement.open === "function") {
-					dotersModalElement.open();
-				} else {
-					console.error(
-						"El método open() no está disponible en el elemento app-modal-doters.",
-						dotersModalElement,
-					);
-				}
-			};
+  const ensureProfile = () => {
+    let el = document.querySelector("modal-doters-profile");
+    if (!el) {
+      el = document.createElement("modal-doters-profile");
+      document.body.appendChild(el);
+    }
+    return el;
+  };
 
-			if (openModalButtonDesktop) {
-				openModalButtonDesktop.addEventListener("click", openAction);
-			}
-			if (openModalButtonMovil) {
-				openModalButtonMovil.addEventListener("click", openAction);
-			}
-		} else {
-			console.warn("Elemento <app-modal-doters> no encontrado en el DOM.");
-		}
-	}
+  const openAction = () => {
+    const hasToken = typeof window.getCookie === "function" && !!window.getCookie("token");
+    if (hasToken) {
+      const profile = ensureProfile();
+      profile?.open?.();
+    } else {
+      const login = ensureLogin();
+      login?.open?.();
+    }
+  };
+
+  openModalButtonDesktop?.addEventListener("click", openAction);
+  openModalButtonMovil?.addEventListener("click", openAction);
+
+  // Al renderizar header, si hay token, refresca header y pinta username
+  if (typeof window.fetchUserProfile === "function" && typeof window.getCookie === "function") {
+    if (window.getCookie("token")) window.fetchUserProfile();
+  }
+}
 
 	_initScrollBehavior() {
 		window.addEventListener("scroll", function (event) {
