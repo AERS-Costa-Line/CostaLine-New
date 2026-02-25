@@ -1,6 +1,6 @@
 /*-------------PAGINAS PRINCIPALES -------------------------*/
 
-import "./home/page-home.js?v=1.2.2";
+import "./home/page-home.js?v=1.2.3";
 import "./page-site-map.js?v=1.0.2";
 import "./page-404.js?v=1.0.2";
 
@@ -160,7 +160,7 @@ import "./legal/terminos-condiciones/page-viajero-protegido-lujo.js?v=1.0.2";
 
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
-import "../components/app-header.js?v=1.0.9";
+import "../components/app-header.js?v=1.1.0";
 import "../components/app-cookies-policy.js?v=1.0.2";
 import "../components/app-modal-travelpass.js?v=1.0.2";
 import "../components/app-button-whats.js?v=1.0.2";

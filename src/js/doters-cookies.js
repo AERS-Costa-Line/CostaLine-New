@@ -39,37 +39,78 @@ window.getCookie = window.getCookie || getCookie;
 
 // ---------- UI states ----------
 function showLoggedOutUI() {
-  setDisplay("openDotersModal", "inline-block");
-  setDisplay("openDotersModalMovil", "inline-block");
+  // Desktop button (logo)
+  const btnD = byId("openDotersModal");
+  if (btnD) {
+    btnD.style.display = "inline-block";
+    btnD.innerHTML = `
+      <img id="modalDoters-logo" src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
+    `;
+    btnD.onclick = () => {
+      // abre modal login (tu lógica ya la tienes en app-header / ensureLogin)
+      const login = document.querySelector("app-modal-doters") || document.createElement("app-modal-doters");
+      if (!login.isConnected) document.body.appendChild(login);
+      login?.open?.();
+    };
+  }
+
+  // Mobile button (logo)
+  const btnM = byId("openDotersModalMovil");
+  if (btnM) {
+    btnM.style.display = "inline-block";
+    btnM.innerHTML = `
+      <img id="modalDoters-logoMovil" src="../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+    `;
+    btnM.onclick = () => {
+      const login = document.querySelector("app-modal-doters") || document.createElement("app-modal-doters");
+      if (!login.isConnected) document.body.appendChild(login);
+      login?.open?.();
+    };
+  }
+
+  // Ya NO usamos los contenedores externos de username
   setDisplay("modalDoters-welcomeMessage", "none");
   setDisplay("modalDoters-welcomeMessageMovil", "none");
 }
 
 function showLoggedInUI(firstName) {
-  setDisplay("openDotersModal", "none");
-  setDisplay("openDotersModalMovil", "none");
+  const safeName = firstName || "";
 
-  const desktop = byId("modalDoters-welcomeMessage");
-  if (desktop) {
-    desktop.style.display = "inline-flex";
-    desktop.style.alignItems = "center";
-    desktop.style.gap = "8px";
-    desktop.style.cursor = "pointer";
-    desktop.innerHTML =
-      `<i class="icon-user-info doters-basic doters-bigger"></i>` +
-      `Bienvenido, <span id="modalDoters-welcomeUsernameSpan" style="font-weight:700; cursor:pointer;">${firstName || ""}</span>`;
+  // Desktop: username dentro del mismo botón
+  const btnD = byId("openDotersModal");
+  if (btnD) {
+    btnD.style.display = "inline-block";
+    btnD.innerHTML = `
+      <a href="#" class="nombre-doters" style="display:inline-flex; align-items:center; gap:8px; text-decoration:none;">
+        <img src='../../src/assets/img/logos/doters.svg' class="icono-doters" alt="Doters" title="Perfil Doters" loading="lazy">
+        Hola, <span style="font-weight:700;">${safeName}</span>
+      </a>
+    `;
+    btnD.onclick = (e) => {
+      e?.preventDefault?.();
+      openProfileModal();
+    };
   }
 
-  const mobile = byId("modalDoters-welcomeMessageMovil");
-  if (mobile) {
-    mobile.style.display = "inline-flex";
-    mobile.style.alignItems = "center";
-    mobile.style.gap = "8px";
-    mobile.style.cursor = "pointer";
-    mobile.innerHTML =
-      `<i class="icon-user-info doters-basic doters-bigger"></i>` +
-      `<span id="modalDoters-welcomeUsernameSpanMovil" style="font-weight:700; cursor:pointer;">${firstName || ""}</span>`;
+  // Mobile: username dentro del mismo botón
+  const btnM = byId("openDotersModalMovil");
+  if (btnM) {
+    btnM.style.display = "inline-block";
+    btnM.innerHTML = `
+      <a href="#" class="nombre-doters" style="display:inline-flex; align-items:center; gap:8px; text-decoration:none;">
+        <img src='../../src/assets/img/logos/doters.svg' class="icono-doters" alt="Doters" title="Perfil Doters" loading="lazy">
+        <span style="font-weight:700;">${safeName}</span>
+      </a>
+    `;
+    btnM.onclick = (e) => {
+      e?.preventDefault?.();
+      openProfileModal();
+    };
   }
+
+  // Oculta los contenedores externos (ya no se usan)
+  setDisplay("modalDoters-welcomeMessage", "none");
+  setDisplay("modalDoters-welcomeMessageMovil", "none");
 }
 
 // ---------- Modal perfil ----------
@@ -248,21 +289,6 @@ async function fetchUserProfile() {
 
 window.fetchUserProfile = window.fetchUserProfile || fetchUserProfile;
 
-// ---------- Delegación de click (CORREGIDA con closest) ----------
-document.addEventListener(
-  "click",
-  (e) => {
-    const hit = e.target?.closest?.(
-      "#modalDoters-welcomeMessage, #modalDoters-welcomeMessageMovil, #modalDoters-welcomeUsernameSpan, #modalDoters-welcomeUsernameSpanMovil"
-    );
-
-    if (hit) {
-      e.preventDefault();
-      openProfileModal();
-    }
-  },
-  true // <-- CAPTURING
-);
 
 // ---------- Init robusto ----------
 function initDoters(tries = 60) {
