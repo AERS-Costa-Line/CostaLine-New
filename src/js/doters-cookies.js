@@ -42,7 +42,7 @@ window.getCookie = window.getCookie || getCookie;
 
 // ---------- UI states ----------
 function showLoggedOutUI() {
-  // Mostrar botones Doters
+  // Mostrar botones Doters (logo)
   setDisplay("openDotersModal", "inline-block");
   setDisplay("openDotersModalMovil", "inline-block");
 
@@ -52,32 +52,50 @@ function showLoggedOutUI() {
 }
 
 function showLoggedInUI(firstName) {
-  // Ocultar botones Doters completos (desktop + mobile)
+  // Ocultar botones completos
   setDisplay("openDotersModal", "none");
   setDisplay("openDotersModalMovil", "none");
 
-  // Pintar username desktop
-  const desktop = byId("modalDoters-welcomeMessage");
+  // Pintar username desktop (FORZANDO ESTILOS PARA QUE SE VEA)
+  const desktop = document.getElementById("modalDoters-welcomeMessage");
   if (desktop) {
+    desktop.style.display = "inline-flex";
+    desktop.style.alignItems = "center";
+    desktop.style.gap = "8px";
+    desktop.style.cursor = "pointer";
+
     desktop.innerHTML =
-      `<i class="icon-user-info doters-basic doters-bigger"></i> Bienvenido, ` +
-      `<span id="modalDoters-welcomeUsernameSpan" style="cursor:pointer;font-weight:700;">${firstName}</span>`;
-    desktop.style.display = "block";
-    const span = byId("modalDoters-welcomeUsernameSpan");
+      `<i class="icon-user-info doters-basic doters-bigger"></i>` +
+      `<span id="modalDoters-welcomeUsernameSpan" style="font-weight:700;">${firstName || ""}</span>`;
+
+    const span = document.getElementById("modalDoters-welcomeUsernameSpan");
     if (span) span.onclick = openProfileModal;
+    // También que el contenedor complete sea clickeable
+    desktop.onclick = openProfileModal;
+  } else {
+    console.warn("[DOTERS] No existe #modalDoters-welcomeMessage en el DOM");
   }
 
   // Pintar username mobile
-  const mobile = byId("modalDoters-welcomeMessageMovil");
+  const mobile = document.getElementById("modalDoters-welcomeMessageMovil");
   if (mobile) {
+    mobile.style.display = "inline-flex";
+    mobile.style.alignItems = "center";
+    mobile.style.gap = "8px";
+    mobile.style.cursor = "pointer";
+
     mobile.innerHTML =
-      `<i class="icon-user-info doters-basic doters-bigger"></i> ` +
-      `<span id="modalDoters-welcomeUsernameSpanMovil" style="cursor:pointer;font-weight:700;">${firstName}</span>`;
-    mobile.style.display = "block";
-    const spanM = byId("modalDoters-welcomeUsernameSpanMovil");
+      `<i class="icon-user-info doters-basic doters-bigger"></i>` +
+      `<span id="modalDoters-welcomeUsernameSpanMovil" style="font-weight:700;">${firstName || ""}</span>`;
+
+    const spanM = document.getElementById("modalDoters-welcomeUsernameSpanMovil");
     if (spanM) spanM.onclick = openProfileModal;
+    mobile.onclick = openProfileModal;
+  } else {
+    console.warn("[DOTERS] No existe #modalDoters-welcomeMessageMovil en el DOM");
   }
 }
+
 
 // ---------- Modal perfil open/close ----------
 function ensureProfileComponentExists() {
@@ -131,41 +149,48 @@ window.logoutDoters = window.logoutDoters || logoutDoters;
 async function fetchUserProfile() {
   const token = getCookie("token");
 
+  // OJO: NO ocultamos nada aquí. Solo pintamos cuando tengamos éxito.
   if (!token) {
+    console.log("[DOTERS] No existe token en cookies");
     showLoggedOutUI();
     return;
   }
 
   try {
-    const res = await fetch(DOTERS_URL_PROFILE, {
+    const res = fetch("https://one-api.costaline.com.mx/api/v2/doters/profile", {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
 
+    console.log("[DOTERS] profile status:", res.status);
+
     if (!res.ok) {
-      // Token inválido/expirado
-      deleteTokenCookie();
+      // Si token inválido/expirado → volvemos a estado no logueado
+      deleteTokenCookie?.();
       showLoggedOutUI();
       return;
     }
 
     const data = await res.json();
+    console.log("[DOTERS] profile data:", data);
 
-    // Header (desktop + mobile)
+    // ✅ Solo aquí ocultamos logo y mostramos username
     showLoggedInUI(data.first_name || "");
 
-    // Modal perfil
+    // Pintar datos en modal perfil
     setText("modalDoters-username", data.first_name || "");
     setText("modalDoters-dotersId", data.doters_id || "");
     setText("modalDoters-availablePoints", data.available_points ?? "");
 
-    const logoutButton = byId("modalDoters-logoutButton");
+    const logoutButton = document.getElementById("modalDoters-logoutButton");
     if (logoutButton) {
       logoutButton.style.display = "block";
       logoutButton.onclick = logoutDoters;
+    } else {
+      console.warn("[DOTERS] No existe #modalDoters-logoutButton en el DOM");
     }
   } catch (e) {
-    // CORS/red/etc.
+    console.error("[DOTERS] profile fetch error:", e);
     showLoggedOutUI();
   }
 }
