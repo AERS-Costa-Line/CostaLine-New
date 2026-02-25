@@ -1,6 +1,5 @@
 // =====================================================
 // DOTERS - Cookie + UI (Desktop y Mobile)
-// URLs fijas (tal como las proporcionaste)
 // =====================================================
 
 // ---------- URLs oficiales ----------
@@ -40,48 +39,40 @@ window.getCookie = window.getCookie || getCookie;
 
 // ---------- UI states ----------
 function showLoggedOutUI() {
-  // Mostrar botones Doters (logo)
   setDisplay("openDotersModal", "inline-block");
   setDisplay("openDotersModalMovil", "inline-block");
-
-  // Ocultar username
   setDisplay("modalDoters-welcomeMessage", "none");
   setDisplay("modalDoters-welcomeMessageMovil", "none");
 }
 
 function showLoggedInUI(firstName) {
-  // Ocultar botones completos
   setDisplay("openDotersModal", "none");
   setDisplay("openDotersModalMovil", "none");
 
-  // Desktop
   const desktop = byId("modalDoters-welcomeMessage");
   if (desktop) {
     desktop.style.display = "inline-flex";
     desktop.style.alignItems = "center";
     desktop.style.gap = "8px";
     desktop.style.cursor = "pointer";
-
     desktop.innerHTML =
       `<i class="icon-user-info doters-basic doters-bigger"></i>` +
       `Bienvenido, <span id="modalDoters-welcomeUsernameSpan" style="font-weight:700; cursor:pointer;">${firstName || ""}</span>`;
   }
 
-  // Mobile
   const mobile = byId("modalDoters-welcomeMessageMovil");
   if (mobile) {
     mobile.style.display = "inline-flex";
     mobile.style.alignItems = "center";
     mobile.style.gap = "8px";
     mobile.style.cursor = "pointer";
-
     mobile.innerHTML =
       `<i class="icon-user-info doters-basic doters-bigger"></i>` +
       `<span id="modalDoters-welcomeUsernameSpanMovil" style="font-weight:700; cursor:pointer;">${firstName || ""}</span>`;
   }
 }
 
-// ---------- Modal perfil open/close ----------
+// ---------- Modal perfil ----------
 function ensureProfileComponentExists() {
   let profileModal = document.querySelector("modal-doters-profile");
   if (!profileModal) {
@@ -91,8 +82,28 @@ function ensureProfileComponentExists() {
   return profileModal;
 }
 
+// Asegura que el modal interno tenga z-index alto (por si algo lo tapa)
+function bumpProfileZIndex() {
+  const profileModal = document.querySelector("modal-doters-profile");
+  const inner = profileModal?.querySelector?.("#modalDoters-profileModal") || byId("modalDoters-profileModal");
+  if (inner) inner.style.zIndex = "99999";
+}
+
+function deleteTokenCookie() {
+  document.cookie =
+    "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.costaline.com.mx; path=/;";
+  document.cookie =
+    "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+}
+
+function logoutDoters() {
+  deleteTokenCookie();
+  closeProfileModal();
+  window.location.href = DOTERS_URL_LOGOUT;
+}
+window.logoutDoters = window.logoutDoters || logoutDoters;
+
 function wireLogoutButton() {
-  // Intenta dentro del componente
   const profileModal = document.querySelector("modal-doters-profile");
   const logoutBtn =
     profileModal?.querySelector?.("#modalDoters-logoutButton") ||
@@ -104,23 +115,39 @@ function wireLogoutButton() {
   }
 }
 
-function openProfileModal() {
-  // Asegura que existe el componente
+async function openProfileModal() {
+  // 1) Crea/asegura tag
+  ensureProfileComponentExists();
+
+  // 2) Espera a que el custom element esté definido (CLAVE)
+  if (window.customElements?.whenDefined) {
+    try {
+      await window.customElements.whenDefined("modal-doters-profile");
+    } catch (e) {
+      // no-op
+    }
+  }
+
+  // 3) Ahora ya debería estar upgradeado y tener connectedCallback + open()
   const profileModal = ensureProfileComponentExists();
 
-  // Asegura que el botón logout quede funcional
-  wireLogoutButton();
-
-  // Si el modal se abre y los datos aún no están, intentamos refrescar profile
+  // 4) refresca datos por si acaso
   if (typeof fetchUserProfile === "function") {
     fetchUserProfile();
   }
 
+  // 5) conecta logout
+  wireLogoutButton();
+
+  // 6) abre modal
   if (profileModal && typeof profileModal.open === "function") {
     profileModal.open();
   } else {
+    // fallback: si por algo no existe open(), abre por id (si ya fue renderizado)
     setDisplay("modalDoters-profileModal", "block");
   }
+
+  bumpProfileZIndex();
 }
 
 function closeProfileModal() {
@@ -134,22 +161,6 @@ function closeProfileModal() {
 
 window.openProfileModal = window.openProfileModal || openProfileModal;
 window.closeProfileModal = window.closeProfileModal || closeProfileModal;
-
-// ---------- Logout ----------
-function deleteTokenCookie() {
-  document.cookie =
-    "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.costaline.com.mx; path=/;";
-  document.cookie =
-    "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-}
-
-function logoutDoters() {
-  deleteTokenCookie();
-  closeProfileModal();
-  window.location.href = DOTERS_URL_LOGOUT;
-}
-
-window.logoutDoters = window.logoutDoters || logoutDoters;
 
 // ---------- Profile fetch ----------
 async function fetchUserProfile() {
@@ -168,14 +179,12 @@ async function fetchUserProfile() {
     });
   } catch (e) {
     console.error("[DOTERS] fetch error:", e);
-    // si hay error de red/cors, no tumbes la UI, pero tampoco ocultes
     showLoggedOutUI();
     return;
   }
 
   if (!res.ok) {
     console.warn("[DOTERS] profile status:", res.status);
-    // token inválido -> limpia y vuelve a logged out
     deleteTokenCookie();
     showLoggedOutUI();
     return;
@@ -183,7 +192,6 @@ async function fetchUserProfile() {
 
   const data = await res.json();
 
-  // UI logged in (username)
   showLoggedInUI(data.first_name || "");
 
   // Pinta datos en modal de perfil
@@ -191,30 +199,20 @@ async function fetchUserProfile() {
   setText("modalDoters-dotersId", data.doters_id || "");
   setText("modalDoters-availablePoints", data.available_points ?? "");
 
-  // Asegura logout button
   wireLogoutButton();
 }
 
 window.fetchUserProfile = window.fetchUserProfile || fetchUserProfile;
 
-// ---------- Delegación de click (clave) ----------
+// ---------- Delegación de click (CORREGIDA con closest) ----------
 document.addEventListener("click", (e) => {
-  const t = e.target;
+  const target = e.target;
 
-  // Click username desktop/mobile
-  if (
-    t?.id === "modalDoters-welcomeUsernameSpan" ||
-    t?.id === "modalDoters-welcomeUsernameSpanMovil"
-  ) {
-    e.preventDefault();
-    openProfileModal();
-  }
+  const hit = target?.closest?.(
+    "#modalDoters-welcomeMessage, #modalDoters-welcomeMessageMovil, #modalDoters-welcomeUsernameSpan, #modalDoters-welcomeUsernameSpanMovil"
+  );
 
-  // Click en el contenedor (por si clican fuera del span)
-  if (
-    t?.id === "modalDoters-welcomeMessage" ||
-    t?.id === "modalDoters-welcomeMessageMovil"
-  ) {
+  if (hit) {
     e.preventDefault();
     openProfileModal();
   }
@@ -237,8 +235,6 @@ function initDoters(tries = 60) {
 }
 
 document.addEventListener("DOMContentLoaded", () => initDoters());
-
-// Safari / BFCache (regreso del login)
 window.addEventListener("pageshow", () => initDoters());
 
 // Watch corto por si token aparece después del render del header
@@ -249,5 +245,5 @@ const watcher = setInterval(() => {
     clearInterval(watcher);
     initDoters();
   }
-  if (ticks >= 25) clearInterval(watcher); // ~5s
+  if (ticks >= 25) clearInterval(watcher);
 }, 200);
