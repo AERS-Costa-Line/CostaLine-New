@@ -23,16 +23,16 @@ try {
     // --- CONFIGURACIÓN DEL SERVIDOR DE CORREO (SMTP) ---
     // ¡¡¡AQUÍ DEBES PONER TUS DATOS REALES!!!
     $mail->isSMTP();
-    $mail->Host       = 'smtp.example.com';
+    $mail->Host       = 'ssl://smtp.gmail.com:465';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'tu_usuario@example.com';
-    $mail->Password   = 'tu_contraseña_muy_secreta';
+    $mail->Username   = 'webmaster.etn@gmail.com';
+    $mail->Password   = 'MUG-1ETN-2/85etn.1';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+    $mail->Port       = 465;
 
     // --- CONFIGURACIÓN DEL MENSAJE ---
-    $mail->setFrom('tu_usuario@example.com', 'Sitio Web - Contacto'); 
-    $mail->addAddress('correo_donde_recibes@dominio.com', 'Administrador'); 
+    $mail->setFrom('webmaster.etn@gmail.com', 'Sitio Web - Contacto'); 
+    $mail->addAddress('ubg.mario@gmail.com', 'Administrador'); 
 
     // Recolectar datos del formulario
     $nombre = strip_tags($_POST['nombre'] ?? 'No proporcionado');
