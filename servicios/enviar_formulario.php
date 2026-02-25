@@ -1,4 +1,10 @@
 <?php
+// --- INICIO: CÓDIGO PARA MOSTRAR ERRORES DETALLADOS ---
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+// --- FIN: CÓDIGO PARA MOSTRAR ERRORES DETALLADOS ---
+
 // Usar las clases de PHPMailer
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
