@@ -1,3 +1,5 @@
+// Archivo: raiz/src/components/app-forms.js
+
 class AppForms extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -11,6 +13,7 @@ class AppForms extends HTMLElement {
     }
 
     setFormData(formDataJson) {
+        // ... (todo el método setFormData se queda igual)
         const formContainer = this.querySelector('.dynamic-form');
         if (!formContainer) {
             console.error("Contenedor de formulario '.dynamic-form' no encontrado en app-forms.");
@@ -28,6 +31,7 @@ class AppForms extends HTMLElement {
     }
 
     renderForm(formDataJson) {
+        // ... (casi todo el método renderForm se queda igual, excepto el fetch)
         const form = this.querySelector('.dynamic-form');
         const statusMessage = this.querySelector('.form-status-message');
         if (!form) return;
@@ -38,7 +42,7 @@ class AppForms extends HTMLElement {
             return;
         }
 
-        form.innerHTML = ''; // Limpiar mensaje de carga
+        form.innerHTML = ''; 
 
         formDataJson.forEach((field, index) => {
             const fieldWrapper = document.createElement('div');
@@ -98,15 +102,17 @@ class AppForms extends HTMLElement {
         submitButton.classList.add('submit-button');
         form.appendChild(submitButton);
 
-        // --- INICIO DE LA NUEVA FUNCIONALIDAD ---
+        // --- INICIO DE LA MODIFICACIÓN IMPORTANTE ---
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita que la página se recargue
+            event.preventDefault(); 
             statusMessage.textContent = 'Enviando...';
             statusMessage.style.color = 'gray';
 
             const formData = new FormData(form);
 
-            fetch('../../php/enviar_formulario.php', { // El script PHP que crearemos
+            // ¡¡¡LÍNEA CORREGIDA!!!
+            // La barra al inicio (/) le dice al navegador que busque desde la raíz del sitio web.
+            fetch('/php/enviar_formulario.php', { 
                 method: 'POST',
                 body: formData
             })
@@ -115,7 +121,7 @@ class AppForms extends HTMLElement {
                 if (data.success) {
                     statusMessage.textContent = '¡Mensaje enviado con éxito!';
                     statusMessage.style.color = 'green';
-                    form.reset(); // Limpia el formulario
+                    form.reset(); 
                 } else {
                     statusMessage.textContent = 'Error al enviar: ' + data.message;
                     statusMessage.style.color = 'red';
@@ -127,7 +133,7 @@ class AppForms extends HTMLElement {
                 statusMessage.style.color = 'red';
             });
         });
-        // --- FIN DE LA NUEVA FUNCIONALIDAD ---
+        // --- FIN DE LA MODIFICACIÓN IMPORTANTE ---
     }
 }
 
