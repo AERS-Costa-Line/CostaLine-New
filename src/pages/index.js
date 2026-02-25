@@ -184,6 +184,15 @@ import "../js/travelpass-cookie.js?v=1.2.8";
 
 import "./doters/page-doters.js?v=1.0.1";
 import "./doters/boleto-doters/page-boleto-doters.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-1.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-2.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-3.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-4.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-5.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-6.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-7.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-8.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-9.js?v=1.0.1";
 
 /*----------------PAGINAS-SUBE---------------------------------*/
 import "./estudiantes/page-cdmx-a-acapulco-diamante.js";

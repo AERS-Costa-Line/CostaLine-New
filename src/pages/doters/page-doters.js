@@ -1,4 +1,4 @@
-/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+/*--------------IMPORT COMPONENTS FROM DOTERS PAGE -----------------*/
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-destinations-grid.js";

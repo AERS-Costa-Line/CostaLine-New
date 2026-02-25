@@ -27,7 +27,7 @@ class PageTravelpass extends HTMLElement {
 </section>
 
 <section class="__sections __section-img">
-    <img src="../src/assets/img/logos/logo-monedero-electronico.webp" alt="Travelpass" class="img-logo">
+    <img src="../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Travelpass" class="img-logo">
 </section>
 
 <section class="__sections">
