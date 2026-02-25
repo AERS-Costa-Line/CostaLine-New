@@ -52,8 +52,11 @@ class AppHeader extends HTMLElement {
 					<img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 				</button>
 				<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Iniciar sesión Doters">
-					<img src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
-				</button>
+  <img id="modalDoters-logo" src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
+</button>
+
+<!-- Username desktop (se muestra cuando hay token) -->
+<div id="modalDoters-welcomeMessage" class="doters-welcome" style="display:none;"></div>
 				<a class="li__languaje desktop-languaje" href="../../../english/" aria-label="Cambiar idioma">
 					<img src='../../src/assets/img/icons-img/USA_Flag.webp' alt="English" loading="lazy">
 				</a>
@@ -110,8 +113,11 @@ class AppHeader extends HTMLElement {
 								<img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 							</button>
 							<button id="openDotersModalMovil" class="btn-doters" aria-label="Iniciar sesión Doters">
-								<img src="../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
-							</button>
+  <img id="modalDoters-logoMovil" src="../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+</button>
+
+<!-- Username mobile (se muestra cuando hay token) -->
+<div id="modalDoters-welcomeMessageMovil" class="doters-welcome" style="display:none;"></div>
 						</li>
 					</ul>
 				</div>

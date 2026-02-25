@@ -148,50 +148,39 @@ window.logoutDoters = window.logoutDoters || logoutDoters;
 // ---------- Profile fetch ----------
 async function fetchUserProfile() {
   const token = getCookie("token");
+  if (!token) return;
 
-  // OJO: NO ocultamos nada aquí. Solo pintamos cuando tengamos éxito.
-  if (!token) {
-    console.log("[DOTERS] No existe token en cookies");
-    showLoggedOutUI();
+  const res = await fetch("https://one-api.costaline.com.mx/api/v2/doters/profile", {
+    headers: { Authorization: `Bearer ${token}` }
+  });
+
+  if (!res.ok) {
+    // si falla, NO ocultes el logo
+    setDisplay("openDotersModal", "inline-block");
+    setDisplay("openDotersModalMovil", "inline-block");
+    setDisplay("modalDoters-welcomeMessage", "none");
+    setDisplay("modalDoters-welcomeMessageMovil", "none");
     return;
   }
 
-  try {
-    const res = fetch("https://one-api.costaline.com.mx/api/v2/doters/profile", {
-      method: "GET",
-      headers: { Authorization: `Bearer ${token}` },
-    });
+  const data = await res.json();
 
-    console.log("[DOTERS] profile status:", res.status);
+  // ahora sí, como ya tienes data, ocultas logo y muestras username
+  setDisplay("openDotersModal", "none");
+  setDisplay("openDotersModalMovil", "none");
 
-    if (!res.ok) {
-      // Si token inválido/expirado → volvemos a estado no logueado
-      deleteTokenCookie?.();
-      showLoggedOutUI();
-      return;
-    }
+  const el = document.getElementById("modalDoters-welcomeMessage");
+  if (el) {
+    el.style.display = "inline-flex";
+    el.innerHTML = `Bienvenido, <span id="modalDoters-welcomeUsernameSpan" style="font-weight:700;cursor:pointer;">${data.first_name}</span>`;
+    document.getElementById("modalDoters-welcomeUsernameSpan").onclick = openProfileModal;
+  }
 
-    const data = await res.json();
-    console.log("[DOTERS] profile data:", data);
-
-    // ✅ Solo aquí ocultamos logo y mostramos username
-    showLoggedInUI(data.first_name || "");
-
-    // Pintar datos en modal perfil
-    setText("modalDoters-username", data.first_name || "");
-    setText("modalDoters-dotersId", data.doters_id || "");
-    setText("modalDoters-availablePoints", data.available_points ?? "");
-
-    const logoutButton = document.getElementById("modalDoters-logoutButton");
-    if (logoutButton) {
-      logoutButton.style.display = "block";
-      logoutButton.onclick = logoutDoters;
-    } else {
-      console.warn("[DOTERS] No existe #modalDoters-logoutButton en el DOM");
-    }
-  } catch (e) {
-    console.error("[DOTERS] profile fetch error:", e);
-    showLoggedOutUI();
+  const elM = document.getElementById("modalDoters-welcomeMessageMovil");
+  if (elM) {
+    elM.style.display = "inline-flex";
+    elM.innerHTML = `<span id="modalDoters-welcomeUsernameSpanMovil" style="font-weight:700;cursor:pointer;">${data.first_name}</span>`;
+    document.getElementById("modalDoters-welcomeUsernameSpanMovil").onclick = openProfileModal;
   }
 }
 
