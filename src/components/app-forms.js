@@ -106,7 +106,7 @@ class AppForms extends HTMLElement {
 
             const formData = new FormData(form);
 
-            fetch('enviar_formulario.php', { // El script PHP que crearemos
+            fetch('../../php/enviar_formulario.php', { // El script PHP que crearemos
                 method: 'POST',
                 body: formData
             })
