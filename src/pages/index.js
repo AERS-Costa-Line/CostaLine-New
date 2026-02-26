@@ -8,6 +8,8 @@ import "./page-404.js?v=1.0.2";
 
 /*----------------PAGINAS-ENGLISH---------------------------------*/
 
+import "./english/terminals-tickets-offices/terminals-tickets-offices.js?v=1.0.2";
+
 import "./english/app-home-english.js?v=1.0.2";
 import "./english/legal/page-terms-conditions.js?v=1.0.2";
 import "./english/legal/page-privacy-policy.js?v=1.0.2";
@@ -47,6 +49,20 @@ import "./english/bus-tickets/page-taxco.js?v=1.0.2";
 import "./english/bus-tickets/page-zihuatanejo.js?v=1.0.2";
 import "./english/bus-tickets/page-toluca.js?v=1.0.2";
 import "./english/bus-tickets/page-zihuatanejo.js?v=1.0.2";
+
+import "./english/doters/page-doters-english.js?v=1.0.2";
+import "./english/doters/doters-ticket/page-doters-ticket.js?v=1.0.2";
+
+import "./english/doters/doters-ticket/groups/page-group-1.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-2.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-3.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-4.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-5.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-6.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-7.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-8.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-9.js?v=1.0.2";
+
 
 /*----------------------------PAGINAS-LANDINGS----------------------------------------*/
 

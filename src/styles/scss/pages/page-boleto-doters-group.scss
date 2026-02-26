@@ -4,11 +4,14 @@
 // Import components
 @use '../_06-components/header' as *;
 @use '../_06-components/footer' as *;
-@use '../_06-components/modal-doters' as *;
-@use '../_06-components/modalDoters' as *;
+@use '../_06-components/modal-doters';
+@use '../_06-components/modalDoters';
 @use '../_06-components/cotiza' as *;
 @use '../_06-components/cookies-policy' as *;
 @use '../_06-components/button-eva-trip' as *;
+
+// Import utilities
+@use '../_07-utilities/utilities' as *;
 
 
 .main-container {

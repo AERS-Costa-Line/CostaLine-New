@@ -68,6 +68,8 @@ class AppCarouselBanners extends HTMLElement {
       benefits = [],
       avatar = null,
       color = "green",
+      // allow overriding the label shown above the benefits list
+      benefitsTitle = "Beneficios",
     } = card;
 
     return `
@@ -82,7 +84,7 @@ class AppCarouselBanners extends HTMLElement {
           ${
             benefits.length
               ? `
-              <p class="subtitle__card-doters">Beneficios</p>
+              <p class="subtitle__card-doters">${benefitsTitle}</p>
               <ul class="list__card-doters">
                 ${benefits.map((item) => `<li>${item}</li>`).join("")}
               </ul>
