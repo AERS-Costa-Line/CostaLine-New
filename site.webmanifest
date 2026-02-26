@@ -34,11 +34,6 @@
         "src": "/favicon-16x16.png",
         "type": "image/png",
         "sizes": "16x16"
-      },
-      {
-        "src": "/safari-pinned-tab.svg",
-        "type": "image/png",
-        "sizes": "144x144"
       }
     ],
     "dir": "auto",
