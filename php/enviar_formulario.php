@@ -26,7 +26,7 @@ try {
     $mail->Host       = 'ssl://smtp.gmail.com:465';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'webmaster.etn@gmail.com';
-    $mail->Password   = 'izygxyyafcqrdjqm'';
+    $mail->Password   = 'izygxyyafcqrdjqm';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port       = 465;
 
