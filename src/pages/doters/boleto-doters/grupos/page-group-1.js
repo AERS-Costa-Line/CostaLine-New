@@ -1,4 +1,3 @@
-
 class PageGroupOne extends HTMLElement {
   connectedCallback() {
     // 1. Definimos todas las rutas en un array de strings.
@@ -43,17 +42,21 @@ class PageGroupOne extends HTMLElement {
       "Petacalco a El Polvorín",
       "México Central Norte a Técpan de Galeana",
       "Técpan de Galeana a México Central Norte",
-      "México Central Sur a Técpan de Galeana"
+      "México Central Sur a Técpan de Galeana",
     ];
 
     // 2. Usamos .map() para transformar cada string del array en un bloque de HTML.
     //    .join('') une todos los bloques en un solo string.
-    const routesHtml = routes.map(route => `
+    const routesHtml = routes
+      .map(
+        (route) => `
       <div class="route-item">
           <span>${route}</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
       </div>
-    `).join('');
+    `,
+      )
+      .join("");
 
     // 3. Inyectamos el HTML generado dinámicamente en la plantilla principal.
     this.innerHTML = `
@@ -70,7 +73,7 @@ class PageGroupOne extends HTMLElement {
         </section>
 
         <div class="footer-nav">
-            <a href="/boleto-doters" class="btn-route btn-back">
+            <a href="../" class="btn-route btn-back">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
                 Regresar
             </a>
@@ -80,4 +83,4 @@ class PageGroupOne extends HTMLElement {
   }
 }
 
-customElements.define('page-group-one', PageGroupOne);
+customElements.define("page-group-one", PageGroupOne);
