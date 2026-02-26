@@ -1,8 +1,6 @@
 @use '../_01-settings/variables' as *;
 @use '../_02-tools/mixin' as *;
 @use "./travelpass-styles" as *;
-@use './_06-components/modal-doters' as *;
-@use './_06-components/modalDoters' as *;
 
 header {
     position: fixed;

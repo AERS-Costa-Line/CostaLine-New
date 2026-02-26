@@ -46,7 +46,7 @@ class PageDoters extends HTMLElement {
                     "title": "Haz de cada punto un viaje inolvidable",
                     "description": "Convierte tus <strong>Puntos Doters</strong> en aventuras inolvidables que te llevarán a descubrir nuevos destinos, vivir experiencias únicas y crear recuerdos que durarán para siempre. Cada punto que acumulas es una oportunidad para acercarte a tu próximo viaje, a esa escapada que tanto sueñas o a la experiencia que siempre quisiste disfrutar.",
                     "buttonText": "Boleto Doters",
-                    "buttonLink": "https://costaline.com.mx/boleto-doters/",
+                    "buttonLink": "./boleto-doters/",
                     "buttonIcon": "../../src/assets/img/doters/doter-green.webp"
                 }
                 ]'></app-card-left-description>
