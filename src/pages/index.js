@@ -8,6 +8,8 @@ import "./page-404.js?v=1.0.2";
 
 /*----------------PAGINAS-ENGLISH---------------------------------*/
 
+import "./english/terminals-tickets-offices/terminals-tickets-offices.js?v=1.0.2";
+
 import "./english/app-home-english.js?v=1.0.2";
 import "./english/legal/page-terms-conditions.js?v=1.0.2";
 import "./english/legal/page-privacy-policy.js?v=1.0.2";
