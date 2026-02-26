@@ -10,8 +10,8 @@
     justify-content: center;
     width: 100%;
     margin-top: 16rem; // 13rem
-    
-        transition: all $transition-slow;
+
+    transition: all $transition-slow;
 
     &.hidden {
         transform: translateY(-5%);

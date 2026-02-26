@@ -15,7 +15,7 @@ class AppBannerSlider extends HTMLElement {
                         </picture>
                     </a>
                   </div>
-                `
+                `,
       )
       .join("");
 
@@ -32,9 +32,9 @@ class AppBannerSlider extends HTMLElement {
         .map(
           (_, index) => `
         <div class="indicator" data-index="${index}" role="button" tabindex="0" aria-label="Ir a la diapositiva ${
-            index + 1
-          }"></div>
-    `
+          index + 1
+        }"></div>
+    `,
         )
         .join("");
 

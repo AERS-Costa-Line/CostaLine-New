@@ -15,6 +15,7 @@
 @use '../_06-components/card-right-description';
 @use '../_06-components/card-left-description';
 @use '../_06-components/carousel-banners';
+@use '../_06-components/button-eva-trip' as *;
 
 // Import utilities
 @use '../_07-utilities/utilities' as *;
@@ -198,9 +199,10 @@
     .__section__taquilla-exclusiva__explication__img {
         width: 30%;
         height: auto;
+
         @include media("md") {
-                width: 50%;
-            }
+            width: 50%;
+        }
     }
 
 }
