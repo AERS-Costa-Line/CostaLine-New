@@ -1,0 +1,30 @@
+[
+    {
+      "imageSrc": "../../src/assets/img/doters/doter-1.webp",
+      "imageAlt": "Log in and buy:",
+      "number": "01",
+      "title": "Resolve any question about your account:",
+      "text": "Buy online or at any participating brand's establishments. The more you buy, the more you accumulate!",
+      "logoSrc": "../../src/assets/img/doters/doter-yellow.webp",
+      "logoAlt": "Logo Doters Amarillo"
+    },
+    {
+    "imageSrc": "../../src/assets/img/doters/doter-2.webp",
+    "imageAlt": "Accumulate Doters Points",
+    "number": "02",
+    "title": "Accumulate:",
+    "text": "Earn Doters Points with each of your purchases. Remember that each purchase gives you Doters Points",
+    "logoSrc": "../../src/assets/img/doters/doter-red.webp",
+    "logoAlt": "Logo Doters Amarillo"
+    },
+    {
+        "imageSrc": "../../src/assets/img/doters/doter-3.webp",
+        "imageAlt": "Use and enjoy Doters Points",
+        "number": "03",
+        "title": "Use and enjoy:",
+        "text": "Use your Doters Points to get all kinds of rewards. It's very easy!",
+        "logoSrc": "../../src/assets/img/doters/doter-blue.webp",
+        "logoAlt": "Logo Doters Amarillo"
+    }
+  ]
+  
