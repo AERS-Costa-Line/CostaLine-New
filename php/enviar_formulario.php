@@ -28,7 +28,7 @@ try {
     $mail->Username   = 'webmaster.etn@gmail.com';
     $mail->Password   = 'izygxyyafcqrdjqm'';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-    $mail->Port       = 587;
+    $mail->Port       = 465;
 
     // --- CONFIGURACIÓN DEL MENSAJE ---
     $mail->setFrom('webmaster.etn@gmail.com', 'Sitio Web - Contacto'); 
