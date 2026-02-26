@@ -1,5 +1,14 @@
 class AppFaqs extends HTMLElement {
 	connectedCallback() {
+		const escapeHTML = (str) => {
+			if (str === null || str === undefined) {
+				return "";
+			}
+			const div = document.createElement("div");
+			div.textContent = str;
+			return div.innerHTML;
+		};
+
 		const title = this.getAttribute("title") || "Preguntas Frecuentes";
 		const faqsData = this.getAttribute("faqs");
 		let faqs = [];
@@ -14,17 +23,21 @@ class AppFaqs extends HTMLElement {
 
 		this.innerHTML = `
       <section class="faq-section">
-        <h2 class="__section-title">${title}</h2>
+        <h2 class="__section-title">${escapeHTML(title)}</h2>
         <article class="faq-list">
-          ${faqs.map((faq) => `
+          ${faqs
+						.map(
+							(faq) => `
             <details class="faq-item">
               <summary class="faq-item__summary">
-                <span class="faq-item__question">${faq.question}</span>
+                <span class="faq-item__question">${escapeHTML(faq.question)}</span>
                 <span class="icon-arrow-down faq-item__icon material-symbols-outlined"></span>
               </summary>
-              <p class="faq-item__answer">${faq.answer}</p>
+              <div class="faq-item__answer">${faq.answer}</div>
             </details>
-          `,).join("")}
+          `,
+						)
+						.join("")}
         </article>
       </section>
     `;
