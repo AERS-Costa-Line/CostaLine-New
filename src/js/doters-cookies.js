@@ -44,11 +44,14 @@ function showLoggedOutUI() {
   if (btnD) {
     btnD.style.display = "inline-block";
     btnD.innerHTML = `
-      <img id="modalDoters-logo" src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
+      <!-- use root-relative path so it works regardless of page depth -->
+      <img id="modalDoters-logo" src="../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
     `;
     btnD.onclick = () => {
       // abre modal login (tu lógica ya la tienes en app-header / ensureLogin)
-      const login = document.querySelector("app-modal-doters") || document.createElement("app-modal-doters");
+      const login =
+        document.querySelector("app-modal-doters") ||
+        document.createElement("app-modal-doters");
       if (!login.isConnected) document.body.appendChild(login);
       login?.open?.();
     };
@@ -59,10 +62,13 @@ function showLoggedOutUI() {
   if (btnM) {
     btnM.style.display = "inline-block";
     btnM.innerHTML = `
-      <img id="modalDoters-logoMovil" src="../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+      <!-- same root-relative fix for mobile button -->
+      <img id="modalDoters-logoMovil" src="../../..src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
     `;
     btnM.onclick = () => {
-      const login = document.querySelector("app-modal-doters") || document.createElement("app-modal-doters");
+      const login =
+        document.querySelector("app-modal-doters") ||
+        document.createElement("app-modal-doters");
       if (!login.isConnected) document.body.appendChild(login);
       login?.open?.();
     };
@@ -82,7 +88,7 @@ function showLoggedInUI(firstName) {
     btnD.style.display = "inline-block";
     btnD.innerHTML = `
       <a href="#" class="nombre-doters">
-        <img src='../../src/assets/img/doters/doter-verde.webp' class="icono-doters" alt="Doters" title="Perfil Doters" loading="lazy">
+        <img src="/src/assets/img/doters/doter-verde.webp" class="icono-doters" alt="Doters" title="Perfil Doters" loading="lazy">
         Hola, <span style="font-weight:700;">${safeName}</span>
       </a>
     `;
@@ -98,7 +104,7 @@ function showLoggedInUI(firstName) {
     btnM.style.display = "inline-block";
     btnM.innerHTML = `
       <a href="#" class="nombre-doters">
-        <img src='../../src/assets/img/doters/doter-verde.webp' class="icono-doters" alt="Doters" title="Perfil Doters" loading="lazy">
+        <img src="/src/assets/img/doters/doter-verde.webp" class="icono-doters" alt="Doters" title="Perfil Doters" loading="lazy">
         <span style="font-weight:700;">${safeName}</span>
       </a>
     `;
@@ -149,7 +155,10 @@ function ensureProfileFallbackModalExists() {
   document.body.appendChild(wrap);
 
   // Cerrar
-  byId("modalDoters-closeProfileBtn")?.addEventListener("click", closeProfileModal);
+  byId("modalDoters-closeProfileBtn")?.addEventListener(
+    "click",
+    closeProfileModal,
+  );
 
   // Logout
   const logoutBtn = byId("modalDoters-logoutButton");
@@ -159,15 +168,16 @@ function ensureProfileFallbackModalExists() {
 // Asegura que el modal interno tenga z-index alto (por si algo lo tapa)
 function bumpProfileZIndex() {
   const profileModal = document.querySelector("modal-doters-profile");
-  const inner = profileModal?.querySelector?.("#modalDoters-profileModal") || byId("modalDoters-profileModal");
+  const inner =
+    profileModal?.querySelector?.("#modalDoters-profileModal") ||
+    byId("modalDoters-profileModal");
   if (inner) inner.style.zIndex = "99999";
 }
 
 function deleteTokenCookie() {
   document.cookie =
     "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.costaline.com.mx; path=/;";
-  document.cookie =
-    "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
 
 function logoutDoters() {
@@ -218,7 +228,8 @@ async function openProfileModal() {
     ensureProfileFallbackModalExists();
     setDisplay("modalDoters-profileModal", "block");
     // Asegura logout
-    byId("modalDoters-logoutButton") && (byId("modalDoters-logoutButton").onclick = logoutDoters);
+    byId("modalDoters-logoutButton") &&
+      (byId("modalDoters-logoutButton").onclick = logoutDoters);
     return;
   }
 
@@ -288,7 +299,6 @@ async function fetchUserProfile() {
 }
 
 window.fetchUserProfile = window.fetchUserProfile || fetchUserProfile;
-
 
 // ---------- Init robusto ----------
 function initDoters(tries = 60) {

@@ -35,6 +35,20 @@ import "./english/destinations/page-boletos-de-autobus-a-taxco.js?v=1.0.2";
 import "./english/destinations/page-boletos-de-autobus-a-tepotzotlan.js?v=1.0.2";
 import "./english/destinations/page-boletos-de-autobus-a-toluca.js?v=1.0.2";
 
+import "./english/doters/page-doters-english.js?v=1.0.2";
+import "./english/doters/doters-ticket/page-doters-ticket.js?v=1.0.2";
+
+import "./english/doters/doters-ticket/groups/page-group-1.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-2.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-3.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-4.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-5.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-6.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-7.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-8.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-9.js?v=1.0.2";
+
+
 /*----------------------------PAGINAS-LANDINGS----------------------------------------*/
 import "./page-terminales-taquillas.js?v=1.0.2";
 import "./page-salidas-charters.js?v=1.0.2";
