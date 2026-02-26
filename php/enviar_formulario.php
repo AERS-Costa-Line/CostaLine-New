@@ -31,8 +31,8 @@ try {
     $mail->Port       = 465;
 
     // --- CONFIGURACIÓN DEL MENSAJE ---
-    $mail->setFrom('webmaster.etn@gmail.com', 'Sitio Web - Contacto'); 
-    $mail->addAddress('ubg.mario@gmail.com', 'Administrador'); 
+    $mail->setFrom('webmaster.etn@gmail.com', 'Mensaje desde Atn a Clientes Web Costa Line'); 
+    $mail->addAddress('webmaster.etn@gmail.com', 'Administrador'); 
 
     // --- RECOLECTAMOS LOS DATOS USANDO LOS NOMBRES CORRECTOS DEL JSON ---
     $nombre = strip_tags($_POST['name'] ?? 'No proporcionado'); // <--- CORREGIDO
