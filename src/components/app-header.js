@@ -49,16 +49,16 @@ class AppHeader extends HTMLElement {
 					</ul>
 				</nav>
 				<button id="login-icon" class="btn-travelpass desktop-travelpass js-open-travelpass-login-modal" aria-label="Iniciar sesión TravelPass">
-					<img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
+					<img src="../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 				</button>
 				<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Iniciar sesión Doters">
-  <img id="modalDoters-logo" src='../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
+  <img id="modalDoters-logo" src='../../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
 </button>
 
 <!-- Username desktop (se muestra cuando hay token) -->
 <div id="modalDoters-welcomeMessage" class="doters-welcome" style="display:none;"></div>
 				<a class="li__languaje desktop-languaje" href="../../../english/" aria-label="Cambiar idioma">
-					<img src='../../src/assets/img/icons-img/USA_Flag.webp' alt="English" loading="lazy">
+					<img src='../../../src/assets/img/icons-img/USA_Flag.webp' alt="English" loading="lazy">
 				</a>
 				<button class="container-menu-hamburguer" id="hamburger-icon" aria-label="Abrir menú">
 					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 72 72">
@@ -69,7 +69,7 @@ class AppHeader extends HTMLElement {
 					<ul>
 						<li class="lili__languaje">
 							<a class="a__languaje" href="../../../../english/" aria-label="Cambiar idioma">
-								<img src='../../src/assets/img/icons-img/USA_Flag.webp' alt="English" loading="lazy">
+								<img src='../../../src/assets/img/icons-img/USA_Flag.webp' alt="English" loading="lazy">
 							</a>
 						</li>
 						<li><a href="../../../">Inicio</a></li>
@@ -110,10 +110,10 @@ class AppHeader extends HTMLElement {
 						</li>
 						<li class="li__login">
 							<button id="login-icon" class="btn-travelpass btn-travelpass__submenu js-open-travelpass-login-modal" aria-label="Iniciar sesión TravelPass">
-								<img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
+								<img src="../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 							</button>
 							<button id="openDotersModalMovil" class="btn-doters" aria-label="Iniciar sesión Doters">
-  <img id="modalDoters-logoMovil" src="../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+  <img id="modalDoters-logoMovil" src="../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
 </button>
 
 <!-- Username mobile (se muestra cuando hay token) -->
@@ -122,6 +122,9 @@ class AppHeader extends HTMLElement {
 					</ul>
 				</div>
 			</header>
+			
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
 		`;
 
 		this.openDesktopSubmenuInstance = null;

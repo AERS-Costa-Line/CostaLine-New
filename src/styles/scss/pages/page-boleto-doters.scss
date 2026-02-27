@@ -1,0 +1,136 @@
+@use '../core' as *;
+@use '../_01-settings/variables' as *;
+@use '../_02-tools/mixin' as *;
+
+// Import components
+
+@use '../_06-components/header' as *;
+@use '../_06-components/footer' as *;
+@use '../_06-components/cotiza' as *;
+@use '../_06-components/cookies-policy' as *;
+@use '../_06-components/button-eva-trip' as *;
+@use '../_06-components/modal-doters';
+@use '../_06-components/modalDoters';
+
+// Import utilities
+@use '../_07-utilities/utilities' as *;
+
+
+.main-container {
+  max-width: 920px;
+  margin: auto;
+  padding-inline: $spacing-lg;
+}
+
+.content-header h1 {
+  color: $primary-color;
+  font-size: clamp(1.75em, 4vw, 2.5em);
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: $spacing-lg;
+  border-bottom: 2px solid $primary-color;
+  padding-bottom: $spacing-md;
+}
+
+.content-section {
+  margin-bottom: $spacing-xl;
+}
+
+.content-section h2 {
+  color: $light-text-header;
+  font-size: clamp(1.5em, 3.5vw, 2em);
+  margin-bottom: $spacing-md;
+}
+
+/* --- Listas y Párrafos --- */
+ol,
+ul {
+  padding-left: $spacing-lg;
+}
+
+li {
+  margin-bottom: $spacing-md;
+}
+
+p.note {
+  font-size: 0.9em;
+  color: $light-text-subtle;
+  background-color: $bg-card-primary;
+  padding: $spacing-md;
+  border-radius: $radius-md;
+  border-left: 4px solid $secondary-color;
+  margin-top: $spacing-lg;
+}
+
+
+/* --- Estilos de Tabla Modernos --- */
+.table-wrapper {
+  border-radius: $radius-lg;
+  overflow: hidden;
+  /* Para que los bordes redondeados se apliquen a la tabla */
+  margin: $spacing-lg 0;
+  border: 1px solid $light-border;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  background-color: $bg-card-primary;
+  color: $primary-color;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+th,
+td {
+  padding: $spacing-md $spacing-lg;
+  border-bottom: 1px solid $light-border;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+  /* Elimina la última línea */
+}
+
+tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* --- Botón para Ver Rutas --- */
+.btn-route {
+  display: inline-block;
+  background-color: $primary-color;
+  color: $white;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $radius-md;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9em;
+  transition: background-color $transition-fast, transform $transition-fast;
+}
+
+.btn-route:hover {
+  background-color: $blue-hover;
+  transform: translateY(-2px);
+  box-shadow: $shadow-medium;
+}
+
+/* --- Estilos de Enlaces --- */
+a {
+  color: $brand-color;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.btn-route:hover {
+  text-decoration: none;
+  /* Evita el subrayado en el botón */
+}

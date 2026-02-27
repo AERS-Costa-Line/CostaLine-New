@@ -8,6 +8,8 @@ import "./page-404.js?v=1.0.2";
 
 /*----------------PAGINAS-ENGLISH---------------------------------*/
 
+import "./english/terminals-tickets-offices/terminals-tickets-offices.js?v=1.0.2";
+
 import "./english/app-home-english.js?v=1.0.2";
 import "./english/legal/page-terms-conditions.js?v=1.0.2";
 import "./english/legal/page-privacy-policy.js?v=1.0.2";
@@ -35,7 +37,36 @@ import "./english/destinations/page-boletos-de-autobus-a-taxco.js?v=1.0.2";
 import "./english/destinations/page-boletos-de-autobus-a-tepotzotlan.js?v=1.0.2";
 import "./english/destinations/page-boletos-de-autobus-a-toluca.js?v=1.0.2";
 
+
+/*----------------------------PAGES-BUS-TICKETS----------------------------------------*/
+
+import "./english/bus-tickets/page-acapulco.js?v=1.0.2";
+import "./english/bus-tickets/page-aeropuerto-aifa.js?v=1.0.2";
+import "./english/bus-tickets/page-chilpancingo.js?v=1.0.2";
+import "./english/bus-tickets/page-ciudad-de-mexico.js?v=1.0.2";
+import "./english/bus-tickets/page-cuernavaca.js?v=1.0.2";
+import "./english/bus-tickets/page-taxco.js?v=1.0.2";
+import "./english/bus-tickets/page-zihuatanejo.js?v=1.0.2";
+import "./english/bus-tickets/page-toluca.js?v=1.0.2";
+import "./english/bus-tickets/page-zihuatanejo.js?v=1.0.2";
+
+import "./english/doters/page-doters-english.js?v=1.0.2";
+import "./english/doters/doters-ticket/page-doters-ticket.js?v=1.0.2";
+
+import "./english/doters/doters-ticket/groups/page-group-1.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-2.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-3.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-4.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-5.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-6.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-7.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-8.js?v=1.0.2";
+import "./english/doters/doters-ticket/groups/page-group-9.js?v=1.0.2";
+
+
 /*----------------------------PAGINAS-LANDINGS----------------------------------------*/
+
+
 import "./page-terminales-taquillas.js?v=1.0.2";
 import "./page-salidas-charters.js?v=1.0.2";
 
@@ -88,9 +119,6 @@ import "./destinos/page-autobus-a-tepotzotlan.js?v=1.0.2";
 import "./destinos/page-autobus-a-toluca.js?v=1.0.2";
 
 
-
-
-
 import "./page-preguntas-frecuentes.js?v=1.0.2";
 
 //PACK MULTIENLACE
@@ -120,8 +148,6 @@ import "./destinos/page-destinos.js?v=1.0.2";
 
 import "./descuentos/page-descuentos.js";
 import "./descuentos/viajero-anticipado/page-anticipado.js";
-
-
 
 
 //SERVICIOS
@@ -183,6 +209,16 @@ import "../js/travelpass-cookie.js?v=1.2.8";
 /* Doters */
 
 import "./doters/page-doters.js?v=1.0.1";
+import "./doters/boleto-doters/page-boleto-doters.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-1.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-2.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-3.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-4.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-5.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-6.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-7.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-8.js?v=1.0.1";
+import "./doters/boleto-doters/grupos/page-group-9.js?v=1.0.1";
 
 /*----------------PAGINAS-SUBE---------------------------------*/
 import "./estudiantes/page-cdmx-a-acapulco-diamante.js";
