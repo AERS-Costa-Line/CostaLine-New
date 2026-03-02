@@ -99,22 +99,11 @@
 		<!-- End Favicon -->
 
 		<link rel="manifest" href="/site.webmanifest" />
-		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#06255b" />
+		
 		<meta name="msapplication-TileColor" content="#06255b" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
 
-		<!-- Open Graph -->
-
-		<meta
-			property="og:title"
-			content="Boletos de Autobús a Acapulco  | Costa Line AERS"
-		/>
-		<meta property="og:description" content="" />
-		<meta
-			property="og:image"
-			content="https://www.costaline.com.mx/gho-img/carrusel/Bw_Rio_Tiber_Mor_Uruapan_costaline.webp"
-		/>
-		<!-- End Open Graph -->
+		
 
 		<!-- Scripts -->
 

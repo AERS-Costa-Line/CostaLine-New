@@ -20,11 +20,9 @@ class AppCookiesPolicy extends HTMLElement {
                 Puedes personalizar tu configuración haciendo clic en Administrar preferencias.
 
               </p>
-              <p>Para obtener más información, consulta nuestra <a href="#">Política de cookies</a>.</p>
             </div>
             <div class="policy-info__btns">
               <button id="allow-get-cookies" role="button" aria-label="Aceptar todas las cookies" tabindex="0">Aceptar todas las cookies</button>
-              <button role="button" aria-label="Administrar preferencias" tabindex="0">Administrar preferencias</button>
             </div>
           </div>
         </section>
