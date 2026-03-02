@@ -33,7 +33,7 @@ Redirect 301 /boletos-de-autobus.html https://costaline.com.mx/boletos-autobus
 Redirect 301 /guia-de-descuentos/ https://costaline.com.mx/descuentos
 Redirect 301 /donde-comprar-costaline.html https://costaline.com.mx/boletos-autobus/donde-comprar-costa.html
 Redirect 301 /taquillas.html https://costaline.com.mx/terminales-taquillas
-Redirect 301 /servicios/salas-de-espera.html https://costaline.com.mx/servicios/salas-de-espera.html
+Redirect 301 /salas-de-espera-vip.html https://costaline.com.mx/servicios/salas-de-espera.html
 Redirect 301 /servicios-a-bordo.html https://costaline.com.mx/servicios/servicio-a-bordo.html
 Redirect 301 /promociones.html https://costaline.com.mx/promociones
 Redirect 301 /pago-referenciado-oxxo.html https://costaline.com.mx/servicios/pago-referenciado-oxxo.html
