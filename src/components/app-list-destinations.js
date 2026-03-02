@@ -1,6 +1,6 @@
 class AppListDestinations extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
       <div class="main-container">
         <h2 class="accordion-title">
           Destinos con Costa Line
@@ -9,7 +9,7 @@ class AppListDestinations extends HTMLElement {
         <section id="accordion-panel" class="destinations-list panel" aria-labelledby="accordion-button">
           <article class="region_column" role="region">
             <h3 id="region-bajio">
-              <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
+              <img src="./src/assets/icons/svgs/pin.svg" alt="" width="1" height="1" loading="lazy"/>
               CDMX y Zona Metropólitana
             </h3>
             <ul class="region_column__list-cities">
@@ -75,7 +75,7 @@ class AppListDestinations extends HTMLElement {
 
           <article class="region_column" role="region">
             <h3 id="region-centro">
-              <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
+              <img src="./src/assets/icons/svgs/pin.svg" alt="" width="1" height="1" loading="lazy"/>
               Corredor Guerrero
             </h3>
             <ul class="region_column__list-cities">
@@ -154,7 +154,7 @@ class AppListDestinations extends HTMLElement {
 
           <article class="region_column" role="region">
             <h3 id="region-centro">
-              <img src="./src/assets/img/destinos-img/pin.svg" alt="" width="1" height="1" loading="lazy"/>
+              <img src="./src/assets/icons/svgs/pin.svg" alt="" width="1" height="1" loading="lazy"/>
               Rutas regionales
             </h3>
             <ul class="region_column__list-cities">
@@ -215,35 +215,35 @@ class AppListDestinations extends HTMLElement {
       </div>
     `;
 
-    let acc = this.querySelectorAll(".accordion-title");
-    let button = this.querySelectorAll("#accordion-button");
+		let acc = this.querySelectorAll(".accordion-title");
+		let button = this.querySelectorAll("#accordion-button");
 
-    function checkWindowsSize(acc) {
-      const w = window.innerWidth;
-      let firstPanel = acc[0].nextElementSibling;
+		function checkWindowsSize(acc) {
+			const w = window.innerWidth;
+			let firstPanel = acc[0].nextElementSibling;
 
-      if (w >= 835) {
-        firstPanel.classList.add("open");
-        button[0].setAttribute("aria-expanded", "true");
-      } else {
-        firstPanel.classList.remove("open");
-        button[0].setAttribute("aria-expanded", "false");
-      }
-    }
+			if (w >= 835) {
+				firstPanel.classList.add("open");
+				button[0].setAttribute("aria-expanded", "true");
+			} else {
+				firstPanel.classList.remove("open");
+				button[0].setAttribute("aria-expanded", "false");
+			}
+		}
 
-    checkWindowsSize(acc);
+		checkWindowsSize(acc);
 
-    window.addEventListener("resize", () => checkWindowsSize(acc));
+		window.addEventListener("resize", () => checkWindowsSize(acc));
 
-    for (let i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active-item");
-        let panel = this.nextElementSibling;
-        panel.classList.toggle("open");
-        const isExpanded = panel.classList.contains("open");
-        button[i].setAttribute("aria-expanded", isExpanded.toString());
-      });
-    }
-  }
+		for (let i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active-item");
+				let panel = this.nextElementSibling;
+				panel.classList.toggle("open");
+				const isExpanded = panel.classList.contains("open");
+				button[i].setAttribute("aria-expanded", isExpanded.toString());
+			});
+		}
+	}
 }
 customElements.define("app-list-destinations", AppListDestinations);

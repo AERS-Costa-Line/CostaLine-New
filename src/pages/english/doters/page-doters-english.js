@@ -15,8 +15,8 @@ import "../../../components/app-carousel-banners.js";
 import "../../../js/slick.js?v=1.0.2";
 
 class PageDotersEnglish extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
             <app-cotiza lang="en"></app-cotiza>
 
                         <app-modal-doters></app-modal-doters>
@@ -24,7 +24,7 @@ class PageDotersEnglish extends HTMLElement {
             
             <app-banner-slider
 					slides-data='[
-					{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/doters-web.webp","mediumImage": "../../src/assets/img/banner/tablet/doters-tablet.webp", "smallImage": "../../src/assets/img/banner/movil/doters-mobile.webp", "link": "#index.html/banner1"}]'
+					{"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-viaja-con-puntos-doters.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-viaja-con-puntos-doters.webp", "smallImage": "../../src/assets/img/banner/movil/banner-doters.webp", "link": "#index.html/banner1"}]'
 			>
 			</app-banner-slider>
             <section class="__section__taquilla-exclusiva__ask">
@@ -139,6 +139,6 @@ class PageDotersEnglish extends HTMLElement {
             
     
         `;
-  }
+	}
 }
 customElements.define("page-doters-english", PageDotersEnglish);

@@ -19,7 +19,7 @@ class DinamicaDescuentoCine extends HTMLElement {
       </div>
 
       <app-banner-image
-        image-src="../src/assets/img/banner/promociones/web/desc-tempo-nav-estudiantes-prof.webp"
+        image-src="../src/assets/img/banner/promociones/web/banner-desctuentos-temporada-navideña-estudiantes-50-profesores-25.webp"
         image-alt="Banner promocional de descuento de temporada para estudiantes y profesores"
       ></app-banner-image>
       

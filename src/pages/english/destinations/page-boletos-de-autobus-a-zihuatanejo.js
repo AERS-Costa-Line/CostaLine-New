@@ -6,13 +6,13 @@ import "../../../components/app-description-destination.js";
 import "../../../components/app-explore-section.js";
 
 class PageBusTicketsToZihuatanejo extends HTMLElement {
-  async connectedCallback() {
-    this.innerHTML = `
+	async connectedCallback() {
+		this.innerHTML = `
           <app-cotiza></app-cotiza>
           <app-modal-doters></app-modal-doters>
           <div class="__first-section">
             <app-banner-image
-              image-src="../../src/assets/img/english/destinations/zihuatanejo/banner-zihuatanejo-e.webp"
+              image-src="../../src/assets/img/english/destinations/zihuatanejo/banners/banner-bienvenido-a-zihuatanejo.webp"
               image-alt="Promotional banner for Iguala"
             ></app-banner-image>
           </div>
@@ -59,28 +59,28 @@ class PageBusTicketsToZihuatanejo extends HTMLElement {
             <app-destiny-slider src="../../src/data/english/destiny-slider-data.json"></app-destiny-slider>
           </section>
         `;
-    this._loadExploreSectionData();
-  }
+		this._loadExploreSectionData();
+	}
 
-  async _loadExploreSectionData() {
-    try {
-      const response = await fetch(
-        "../../src/data/english/destinations/zihuatanejo/cards-explore-section.json"
-      );
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const cardsData = await response.json();
-      const exploreSection = this.querySelector("app-explore-section");
-      if (exploreSection) {
-        exploreSection.setAttribute("cards-data", JSON.stringify(cardsData));
-      }
-    } catch (error) {
-      console.error("Could not load explore section data:", error);
-    }
-  }
+	async _loadExploreSectionData() {
+		try {
+			const response = await fetch(
+				"../../src/data/english/destinations/zihuatanejo/cards-explore-section.json",
+			);
+			if (!response.ok) {
+				throw new Error(`HTTP error! status: ${response.status}`);
+			}
+			const cardsData = await response.json();
+			const exploreSection = this.querySelector("app-explore-section");
+			if (exploreSection) {
+				exploreSection.setAttribute("cards-data", JSON.stringify(cardsData));
+			}
+		} catch (error) {
+			console.error("Could not load explore section data:", error);
+		}
+	}
 }
 customElements.define(
-  "page-boletos-de-autobus-a-zihuatanejo",
-  PageBusTicketsToZihuatanejo
+	"page-boletos-de-autobus-a-zihuatanejo",
+	PageBusTicketsToZihuatanejo,
 );

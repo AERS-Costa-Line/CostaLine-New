@@ -15,9 +15,9 @@ class PageDescuentos extends HTMLElement {
 
              <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/web/3-clics-web.webp","mediumImage": "../src/assets/img/banner/tablet/3-clics-tablet.webp", "smallImage": "../src/assets/img/banner/movil/3-clics-mobile.webp", "link": "#index.html/banner1"},
-                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/banner/web/aca-diamante-web.webp", "mediumImage": "../src/assets/img/banner/tablet/aca-diamante-tablet.webp","smallImage": "../src/assets/img/banner/movil/aca-diamante-mobile.webp", "link": "#index.html/banner2"},
-                {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/banner/web/chil-aca-web.webp", "mediumImage": "../src/assets/img/banner/tablet/chil-aca-tablet.webp","smallImage": "../src/assets/img/banner/movil/chil-aca-mobile.webp", "link": "#index.html/banner3"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/web/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp","mediumImage": "../src/assets/img/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp", "smallImage": "../src/assets/img/banner/movil/banner-3-clics.webp", "link": "#index.html/banner1"},
+                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/banner/web/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp", "mediumImage": "../src/assets/img/banner/tablet/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp","smallImage": "../src/assets/img/banner/movil/banner-aca-diamante.webp", "link": "#index.html/banner2"},
+                {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/banner/web/banner-viaja-de-chilpancingo-a-acapulco-diamante-descuento-10-de-regreso.webp", "mediumImage": "../src/assets/img/banner/tablet/banner-viaja-de-chilpancingo-a-acapulco-diamante-descuento-10-de-regreso.webp","smallImage": "../src/assets/img/banner/movil/banner-chil-aca.webp", "link": "#index.html/banner3"}
                 ]'
             >
             </app-banner-slider>
@@ -39,7 +39,7 @@ class PageDescuentos extends HTMLElement {
               <app-section-title section-title="Descuentos de Temporadas"></app-section-title>
                   <article class="__article__banner">
                       <h3 class="__article-title">Buen fin </h3>
-                      <a class="__article-banner-link" href="../../../buen-fin/index.html">  <img src="../src/assets/img/banner/promociones/web/buen-fin-web.webp" alt="Atencion a clientes"> </a>
+                      <a class="__article-banner-link" href="../../../buen-fin/index.html">  <img src="../src/assets/img/banner/promociones/web/banner-buen-fin-descuento-55.webp" alt="Atencion a clientes"> </a>
                   </article>
               <app-section-title section-title="Convenios"></app-section-title>
                   <article class="__article__guide">

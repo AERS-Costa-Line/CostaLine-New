@@ -8,15 +8,15 @@ import "../js/slick.js?v=1.0.2";
 import "../components/app-destinations-table.js";
 
 class PageKueskiPay extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
         <app-cotiza></app-cotiza>
 
             <app-modal-doters></app-modal-doters>
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/costa-kueski-web.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/costa-kueski-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/costa-kueski-mobile.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-costa-kueski-pay-boleto-en-quincenas-sin-tarjeta.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/costa-kueski-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/costa-kueski-mobile.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
@@ -94,7 +94,7 @@ class PageKueskiPay extends HTMLElement {
 
            
     `;
-  }
+	}
 }
 
 customElements.define("page-kueski-pay", PageKueskiPay);

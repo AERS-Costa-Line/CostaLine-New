@@ -15,7 +15,7 @@ class PageTravelpass extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/web/costa-line-monedero-electronico.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/buen-fin-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/buen-fin-mobile.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/web/banner-viaja-con-monedero-electronico-de-acapulco-a-chilpancingo.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/banner-buen-fin-55-descuento.webp", "smallImage": "../src/assets/img/banner/promociones/movil/banner-buen-fin-descunto-55.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>

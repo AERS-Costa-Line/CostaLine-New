@@ -10,7 +10,6 @@ import "../../components/app-blog.js";
 import "../../components/app-img-shop-left.js";
 import "../../components/app-section-title.js";
 
-
 class PageHome extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
@@ -18,11 +17,11 @@ class PageHome extends HTMLElement {
             <app-modal-doters></app-modal-doters>
              <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/3-clics-web.webp","mediumImage": "../../src/assets/img/banner/tablet/3-clics-tablet.webp", "smallImage": "../../src/assets/img/banner/movil/3-clics-mobile.webp", "link": "#index.html/banner1"},
+                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp", "smallImage": "../../src/assets/img/banner/movil/banner-3-clics.webp", "link": "#index.html/banner1"},
 
-                {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/banner/web/aca-diamante-web.webp", "mediumImage": "../../src/assets/img/banner/tablet/aca-diamante-tablet.webp","smallImage": "../../src/assets/img/banner/movil/aca-diamante-mobile.webp", "link": "#index.html/banner2"},
+                {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/banner/web/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp", "mediumImage": "../../src/assets/img/banner/tablet/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp","smallImage": "../../src/assets/img/banner/movil/banner-aca-diamante.webp", "link": "#index.html/banner2"},
                 
-                {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/banner/web/home-viajero-web.webp", "mediumImage": "../../src/assets/img/banner/tablet/chil-aca-tablet.webp","smallImage": "../../src/assets/img/banner/movil/chil-aca-mobile.webp", "link": "/descuentos/viajero-anticipado.html"}
+                {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/banner/web/banner-viajero-anticipado-descuento-60.webp", "mediumImage": "../../src/assets/img/banner/tablet/banner-viaja-de-chilpancingo-a-acapulco-diamante-descuento-10-de-regreso.webp","smallImage": "../../src/assets/img/banner/movil/banner-chil-aca.webp", "link": "/descuentos/viajero-anticipado.html"}
                 ]'
             >
             </app-banner-slider>
@@ -33,15 +32,15 @@ class PageHome extends HTMLElement {
                 {"id": "title1", "title": "¿Aún no sabes a dónde viajar?", "text": "Conoce nuestros destinos Costa Line y elige tu lugar favorito"}
                 ]'
                 destinations='[
-                {"id": "destination1", "title": "Acapulco", "content": "Disfruta de sus playas doradas, noches llenas de vida y la magia de la Quebrada.", "image": "./src/assets/img/destinos-img/acapulco.webp", "link": "./boletos-autobus/acapulco.html"},
+                {"id": "destination1", "title": "Acapulco", "content": "Disfruta de sus playas doradas, noches llenas de vida y la magia de la Quebrada.", "image": "./src/assets/img/destinos-img/acapulco/acapulco.webp", "link": "./boletos-autobus/acapulco.html"},
         
-                {"id": "destination2", "title": "Chilpancingo", "content": "Visita esta Joya colonial llena de historia, sabores y magia.", "image": "./src/assets/img/destinos-img/morelia.webp", "link": "./boletos-autobus/chilpancingo.html"},
+                {"id": "destination2", "title": "Chilpancingo", "content": "Visita esta Joya colonial llena de historia, sabores y magia.", "image": "./src/assets/img/destinos-img/morelia/morelia-dentro.webp", "link": "./boletos-autobus/chilpancingo.html"},
         
-                {"id": "destination3", "title": "Taxco", "content": "Sumergete en este laberinto de plata y encanto colonial.", "image": "./src/assets/img/destinos-img/taxco.webp", "link": "./boletos-autobus/taxco.html"},
+                {"id": "destination3", "title": "Taxco", "content": "Sumergete en este laberinto de plata y encanto colonial.", "image": "./src/assets/img/destinos-img/taxco/taxco-cuevas.webp", "link": "./boletos-autobus/taxco.html"},
                 
-                {"id": "destination5", "title": "Cuernavaca", "content": "Cuernavaca: La ciudad de la eterna primavera, donde el sol abraza y la historia inspira.", "image": "./src/assets/img/destinos-img/cuernavaca.webp", "link": "./boletos-autobus/cuernavaca.html"},
+                {"id": "destination5", "title": "Cuernavaca", "content": "Cuernavaca: La ciudad de la eterna primavera, donde el sol abraza y la historia inspira.", "image": "./src/assets/img/destinos-img/cuernavaca/cuernavaca.webp", "link": "./boletos-autobus/cuernavaca.html"},
         
-                {"id": "destination4", "title": "Zihuatanejo", "content": "Déjate cautivar por la magia colonial de Guanajuato.", "image": "./src/assets/img/destinos-img/ixtapa.webp", "link": "./boletos-autobus/zihuatanejo.html"}
+                {"id": "destination4", "title": "Zihuatanejo", "content": "Déjate cautivar por la magia colonial de Guanajuato.", "image": "./src/assets/img/destinos-img/ixtapa/ixtapa-panoramica.webp", "link": "./boletos-autobus/zihuatanejo.html"}
                 ]'
             >
             </app-destinations-grid>

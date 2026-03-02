@@ -9,8 +9,8 @@ import "../../components/app-grid-text.js";
 import "../../js/slick.js?v=1.0.0";
 
 class AppHomeEnglish extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
       <app-cotiza></app-cotiza>
       <app-modal-doters></app-modal-doters>
       <div class="__first-section">
@@ -43,9 +43,9 @@ class AppHomeEnglish extends HTMLElement {
         <app-banner-promotional
           link-href="#"
           image-alt="Banner promocional de Viajero Protegido"
-          image-src="../../src/assets/img/banner/english/viajero/banner-viajero-protegido.webp"
-          image-src-tablet="../../src/assets/img/banner/english/viajero/banner-viajero-protegido-tablet.webp"
-          image-src-mobile="../../src/assets/img/banner/english/viajero/banner-viajero-protegido-mobile.webp"
+          image-src="../../src/assets/img/banner/english/viajero/web/banner-viajero-protegido.webp"
+          image-src-tablet="../../src/assets/img/banner/english/viajero/tablet/banner-viajero-protegido.webp"
+          image-src-mobile="../../src/assets/img/banner/english/viajero/mobile/banner-viajero-protegido.webp"
         ></app-banner-promotional>
       </section>
 
@@ -67,6 +67,6 @@ class AppHomeEnglish extends HTMLElement {
       </section>
 
     `;
-  }
+	}
 }
 customElements.define("app-home-english", AppHomeEnglish);

@@ -58,7 +58,7 @@ class AppHeader extends HTMLElement {
 <!-- Username desktop (se muestra cuando hay token) -->
 <div id="modalDoters-welcomeMessage" class="doters-welcome" style="display:none;"></div>
 				<a class="li__languaje desktop-languaje" href="../../../english/" aria-label="Cambiar idioma">
-					<img src='../../../src/assets/img/icons-img/USA_Flag.webp' alt="English" loading="lazy">
+					<img src='../../../src/assets/icons/icons-img/USA_Flag.webp' alt="English" loading="lazy">
 				</a>
 				<button class="container-menu-hamburguer" id="hamburger-icon" aria-label="Abrir menú">
 					<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 72 72">
@@ -69,7 +69,7 @@ class AppHeader extends HTMLElement {
 					<ul>
 						<li class="lili__languaje">
 							<a class="a__languaje" href="../../../../english/" aria-label="Cambiar idioma">
-								<img src='../../../src/assets/img/icons-img/USA_Flag.webp' alt="English" loading="lazy">
+								<img src='../../../src/assets/icons/icons-img/USA_Flag.webp' alt="English" loading="lazy">
 							</a>
 						</li>
 						<li><a href="../../../">Inicio</a></li>
@@ -410,43 +410,46 @@ class AppHeader extends HTMLElement {
 	}
 
 	// Ejemplo conceptual de cómo se usaría en app-header.js
-_initDotersModals() {
-  const openModalButtonDesktop = this.querySelector("#openDotersModal");
-  const openModalButtonMovil = this.querySelector("#openDotersModalMovil");
+	_initDotersModals() {
+		const openModalButtonDesktop = this.querySelector("#openDotersModal");
+		const openModalButtonMovil = this.querySelector("#openDotersModalMovil");
 
-  const ensureLogin = () => {
-    let el = document.querySelector("app-modal-doters");
-    if (!el) {
-      el = document.createElement("app-modal-doters");
-      document.body.appendChild(el);
-    }
-    return el;
-  };
+		const ensureLogin = () => {
+			let el = document.querySelector("app-modal-doters");
+			if (!el) {
+				el = document.createElement("app-modal-doters");
+				document.body.appendChild(el);
+			}
+			return el;
+		};
 
-  const openAction = () => {
-    const hasToken =
-      typeof window.getCookie === "function" && !!window.getCookie("token");
+		const openAction = () => {
+			const hasToken =
+				typeof window.getCookie === "function" && !!window.getCookie("token");
 
-    if (hasToken) {
-      // CLAVE: usa el open robusto
-      if (typeof window.openProfileModal === "function") {
-        window.openProfileModal();
-      }
-      return;
-    }
+			if (hasToken) {
+				// CLAVE: usa el open robusto
+				if (typeof window.openProfileModal === "function") {
+					window.openProfileModal();
+				}
+				return;
+			}
 
-    const login = ensureLogin();
-    login?.open?.();
-  };
+			const login = ensureLogin();
+			login?.open?.();
+		};
 
-  openModalButtonDesktop?.addEventListener("click", openAction);
-  openModalButtonMovil?.addEventListener("click", openAction);
+		openModalButtonDesktop?.addEventListener("click", openAction);
+		openModalButtonMovil?.addEventListener("click", openAction);
 
-  // refresca UI si hay token
-  if (typeof window.fetchUserProfile === "function" && typeof window.getCookie === "function") {
-    if (window.getCookie("token")) window.fetchUserProfile();
-  }
-}
+		// refresca UI si hay token
+		if (
+			typeof window.fetchUserProfile === "function" &&
+			typeof window.getCookie === "function"
+		) {
+			if (window.getCookie("token")) window.fetchUserProfile();
+		}
+	}
 
 	_initScrollBehavior() {
 		window.addEventListener("scroll", function (event) {

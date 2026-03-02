@@ -16,7 +16,7 @@ class PageFestivalViajes extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/festival-web.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/festival-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/festival-mobile.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-festival-de-viajes-descuento-55.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/banner-festival-de-viajes-50-descuento.webp", "smallImage": "../src/assets/img/banner/promociones/movil/banner-festival-de-viajes-50-desc-mayo.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
