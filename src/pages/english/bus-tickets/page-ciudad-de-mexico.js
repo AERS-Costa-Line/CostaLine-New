@@ -22,7 +22,6 @@ import "../../../components/app-modal-image.js";
 class PageCiudadDeMexicoEnglish extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
 
 <app-banner-slider
   slides-data='[

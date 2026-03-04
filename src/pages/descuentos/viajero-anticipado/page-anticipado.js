@@ -19,7 +19,6 @@ import "../../../components/app-dropdown.js"; // Importar el componente dropdown
 class PageAnticipado extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
 
             <app-modal-doters></app-modal-doters>
 

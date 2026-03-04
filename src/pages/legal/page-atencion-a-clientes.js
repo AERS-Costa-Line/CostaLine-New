@@ -18,7 +18,6 @@ import "../../components/app-forms.js";
 class PageAtencionAClientes extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
 
             <app-modal-doters></app-modal-doters>
 

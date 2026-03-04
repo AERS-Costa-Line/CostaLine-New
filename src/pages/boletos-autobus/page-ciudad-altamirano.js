@@ -15,7 +15,6 @@ import "../../components/app-section-title.js";
 class PageCiudadAltamirano extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
             <app-banner-slider
             slides-data='[
                 {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp", "smallImage": "../../src/assets/img/banner/movil/banner-3-clics.webp", "link": "#index.html/banner1"},

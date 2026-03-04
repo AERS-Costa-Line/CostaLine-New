@@ -21,7 +21,6 @@ import "../../../../js/slick.min.js?v=1.0.2";
 class PageTerminalsTicketsOffices extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
 
             <app-modal-doters></app-modal-doters>
 

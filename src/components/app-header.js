@@ -2,6 +2,7 @@
 
 import "../components/app-modal-travelpass.js?v=1.0.2";
 import "../components/app-modal-doters.js?v=1.0.2";
+import "../components/app-cotiza.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
@@ -127,6 +128,7 @@ class AppHeader extends HTMLElement {
 				
 			<app-modal-travelpass></app-modal-travelpass>
 			<app-modal-doters></app-modal-doters>
+      <app-cotiza></app-cotiza>
 		`;
 
 		this.openDesktopSubmenuInstance = null;

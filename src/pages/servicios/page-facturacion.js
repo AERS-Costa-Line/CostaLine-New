@@ -18,7 +18,6 @@ import "../../components/app-table-pets.js";
 class PageFacturacion extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
 
             <app-modal-doters></app-modal-doters>
 
