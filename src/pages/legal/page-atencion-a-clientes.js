@@ -20,7 +20,6 @@ class PageAtencionAClientes extends HTMLElement {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
 
-            
 
             <div class="__panthom_space"></div>
 

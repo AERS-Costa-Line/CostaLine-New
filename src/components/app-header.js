@@ -127,7 +127,6 @@ class AppHeader extends HTMLElement {
 				
 			<app-modal-travelpass></app-modal-travelpass>
 			<app-modal-doters></app-modal-doters>
-      <app-cotiza></app-cotiza>
 		`;
 
 		this.openDesktopSubmenuInstance = null;
