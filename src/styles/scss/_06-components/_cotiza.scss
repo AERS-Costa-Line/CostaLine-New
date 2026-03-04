@@ -23,6 +23,14 @@
   &.visible {
     transform: translateY(0);
   }
+  
+}
+
+.titulo-widget {
+  color: #fff;
+  font-size: 1rem; // Mantiene la variable existente
+  padding: 2px;
+  text-align: center;
 }
 
 @media screen and (max-width:900px) {

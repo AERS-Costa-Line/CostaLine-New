@@ -14,16 +14,11 @@ class PageAcercaDeNosotros extends HTMLElement {
 
             <app-modal-doters></app-modal-doters>
 
-            <app-banner-slider
-                slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/buen-fin-web.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/buen-fin-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/buen-fin-mobile.webp", "link": "#index.html/banner1"}
-                ]'
-            >
-            </app-banner-slider>
+            <section class="__first-section">
+                <app-payments></app-payments>
+            </section>
 
-            <app-payments></app-payments>
-
-            <section class="__section">
+            <section class="__sections">
                 <app-section-title section-title="Acerca de nosotros"></app-section-title>
             </section>
 

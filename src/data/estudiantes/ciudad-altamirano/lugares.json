@@ -1,0 +1,46 @@
+[
+    {
+      "id": "rio-cutzamala",
+      "text": "Río Cutzamala",
+      "className": "card-wide",
+      "backgroundImage": "../src/assets/img/destinos-img/cd-altamirano/rio-cutzamala.webp",
+      "image2":"../src/assets/img/destinos-img/cd-altamirano/rio-cutzamala-2.webp",
+      "image3":"../src/assets/img/destinos-img/cd-altamirano/rio-cutzamala-3.webp",
+      "image4":"../src/assets/img/destinos-img/cd-altamirano/rio-cutzamala-4.webp",
+      "title": "Río Cutzamala",
+      "description": "¿Por qué visitarlo? El Río Cutzamala (Malecón de Altamirano) es un lugar perfecto para relajarse y disfrutar del ambiente tranquilo de la región. Con su paseo ribereño, es ideal para caminar al atardecer, probar antojitos locales como quesadillas y pozole, o incluso dar un paseo en lancha. Los fines de semana se llena de familias y vendedores ambulantes, creando un ambiente festivo. Además, su cercanía al centro lo hace accesible y es uno de los pocos espacios públicos donde los turistas pueden conectar con la vida cotidiana de los altamiranenses."
+    },
+    {
+      "id": "zocalo-ciudad-altamirano",
+      "text": "Zocalo de Ciudad Altamirano",
+      "className": "card-tall",
+      "backgroundImage": "../src/assets/img/destinos-img/cd-altamirano/zocalo-cd-altamirano.webp",
+      "image2":"../src/assets/img/destinos-img/cd-altamirano/zocalo-cd-altamirano-2.webp",
+      "image3":"../src/assets/img/destinos-img/cd-altamirano/zocalo-cd-altamirano-3.webp",
+      "image4":"../src/assets/img/destinos-img/cd-altamirano/zocalo-cd-altamirano-4.webp",
+      "title": "Zocalo de Ciudad Altamirano",
+      "description": "¿Por qué visitarla? El Zócalo de Ciudad Altamirano es el corazón social y cultural de la ciudad, un lugar lleno de vida donde convergen tradición y vida cotidiana. Rodeado de portales, pequeños comercios y el emblemático Templo de San Juan Bautista, es ideal para probar nieves artesanales, café de olla o antojitos como gorditas y enchiladas. Los fines de semana, la plaza se anima con música, familias y eventos culturales, mientras que sus bancas y jardines ofrecen un espacio para relajarse bajo la sombra de árboles. Es el punto de partida para explorar la esencia de Altamirano: sencillo, auténtico y lleno de calidez guerrerense. Un must para vivir el ritmo local."
+    },
+    {
+      "id": "mercado-municipal",
+      "text": "Mercado Municipal",
+      "className": "",
+      "backgroundImage": "../src/assets/img/destinos-img/cd-altamirano/mercado-municipal.webp",
+      "image2":"../src/assets/img/destinos-img/cd-altamirano/mercado-municipal-2.webp",
+      "image3":"../src/assets/img/destinos-img/cd-altamirano/mercado-municipal-3.webp",
+      "image4":"../src/assets/img/destinos-img/cd-altamirano/mercado-municipal-4.webp",
+      "title": "Mercado Municipal",
+      "description": "¿Por qué visitarla? El Mercado Municipal de Ciudad Altamirano es una experiencia sensorial que captura la esencia de la Tierra Caliente guerrerense. Aquí los aromas de barbacoa de chivo, pozole verde y tamales de iguana te guiarán entre puestos llenos de color, donde productores locales ofrecen desde especias hasta artesanías. Es el mejor lugar para probar platillos auténticos como las carnitas estilo Guerrero o los atoles de sabores, preparados al instante. Más que un sitio de compras, es un espacio de encuentro social donde la calidez de su gente y las historias detrás de cada puesto revelan la identidad cultural de la región."
+    },
+    {
+      "id": "catedral-cd-altamirano",
+      "text": "Catedral de Ciudad Altamirano",
+      "className": "",
+      "backgroundImage": "../src/assets/img/destinos-img/cd-altamirano/catedral-cd-altamirano.webp",
+      "image2":"../src/assets/img/destinos-img/cd-altamirano/catedral-cd-altamirano-2.webp",
+      "image3":"../src/assets/img/destinos-img/cd-altamirano/catedral-cd-altamirano-3.webp",
+      "image4":"../src/assets/img/destinos-img/cd-altamirano/catedral-cd-altamirano-4.webp",
+      "title": "Catedral de Ciudad Altamirano",
+      "description": "¿Por qué visitarla? La Catedral de Ciudad Altamirano, también conocida como la Catedral de San Juan Bautista, es un imponente hito arquitectónico y un importante centro espiritual en la región. Construida a mediados del siglo XX, su fachada combina elementos neogóticos y modernos. Los visitantes pueden admirar sus altas torres, el rosetón central y los detalles ornamentales que narran pasajes bíblicos. En su interior, la luz natural que se filtra a través de los vitrales ilumina el altar mayor y las naves, creando un ambiente de recogimiento y belleza. La catedral es un punto de referencia para la comunidad y un testimonio de la fe y la historia de Ciudad Altamirano."
+    }
+  ]

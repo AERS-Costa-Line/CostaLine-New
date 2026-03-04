@@ -1,0 +1,46 @@
+[
+  {
+    "id": "playa-el-palmar",
+    "text": "Playa El Palmar",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/ixtapa/playa-el-palmar.webp",
+    "image2": "../src/assets/img/destinos-img/ixtapa/playa-el-palmar-2.webp",
+    "image3": "../src/assets/img/destinos-img/ixtapa/playa-el-palmar-3.webp",
+    "image4": "../src/assets/img/destinos-img/ixtapa/playa-el-palmar-4.webp",
+    "title": "Playa El Palmar",
+    "description": "Playa El Palmar es la playa principal de Ixtapa y una de las más visitadas por su amplitud, su vista abierta al Pacífico y su ambiente turístico. Es ideal para caminar por la orilla, relajarse bajo palapas y disfrutar del día frente al mar. A lo largo de la playa encontrarás restaurantes y servicios, además de opciones para realizar actividades acuáticas y recorridos en la zona hotelera."
+  },
+  {
+    "id": "playa-la-ropa",
+    "text": "Playa La Ropa",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/ixtapa/playa-la-ropa.webp",
+    "image2": "../src/assets/img/destinos-img/ixtapa/playa-la-ropa-2.webp",
+    "image3": "../src/assets/img/destinos-img/ixtapa/playa-la-ropa-3.webp",
+    "image4": "../src/assets/img/destinos-img/ixtapa/playa-la-ropa-4.webp",
+    "title": "Playa La Ropa",
+    "description": "Playa La Ropa es una de las playas más reconocidas de Zihuatanejo por su ambiente tranquilo y su oleaje moderado, ideal para nadar y pasar el día en familia. Es una excelente opción para quienes buscan un entorno más relajado, con restaurantes a la orilla del mar, actividades como kayak o paddleboard y un paisaje perfecto para disfrutar del atardecer."
+  },
+  {
+    "id": "mercado-de-artesanias",
+    "text": "Mercado de Artesanías Ixtapa",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/ixtapa/mercado-artesanias-ixtapa.webp",
+    "image2": "../src/assets/img/destinos-img/ixtapa/mercado-artesanias-ixtapa-2.webp",
+    "image3": "../src/assets/img/destinos-img/ixtapa/mercado-artesanias-ixtapa-3.webp",
+    "image4": "../src/assets/img/destinos-img/ixtapa/mercado-artesanias-ixtapa-4.webp",
+    "title": "Mercado de Artesanías Ixtapa",
+    "description": "El Mercado de Artesanías de Ixtapa es un punto recomendado para quienes desean llevar recuerdos tradicionales de la región. Aquí puedes encontrar textiles, joyería, artículos de playa, productos hechos a mano y artesanías típicas de Guerrero. Es una visita ideal para recorrer con calma, conocer el trabajo de artesanos locales y encontrar piezas representativas del destino."
+  },
+  {
+    "id": "isla-ixtapa",
+    "text": "Isla Ixtapa",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/ixtapa/isla-ixtapa.webp",
+    "image2": "../src/assets/img/destinos-img/ixtapa/isla-ixtapa-2.webp",
+    "image3": "../src/assets/img/destinos-img/ixtapa/isla-ixtapa-3.webp",
+    "image4": "../src/assets/img/destinos-img/ixtapa/isla-ixtapa-4.webp",
+    "title": "Isla Ixtapa",
+    "description": "Isla Ixtapa es una de las experiencias más recomendadas para quienes visitan Ixtapa Zihuatanejo. Se llega en lancha desde Playa Linda y es ideal para pasar un día completo entre playa, mar y gastronomía local. La isla cuenta con varias zonas para nadar, relajarse y disfrutar de mariscos frescos en restaurantes frente al mar, además de áreas tranquilas perfectas para familias."
+  }
+]

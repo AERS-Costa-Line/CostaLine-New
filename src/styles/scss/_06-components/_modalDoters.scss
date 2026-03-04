@@ -80,7 +80,7 @@
 #modalDoters-welcomeMessage {
     display: none;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 0px;
     color: #333;
 
     span {
@@ -91,10 +91,12 @@
 
 #modalDoters-logo {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
 
     img {
         max-width: 150px;
         height: auto;
     }
 }
+
+

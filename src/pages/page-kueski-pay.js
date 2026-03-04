@@ -8,15 +8,15 @@ import "../js/slick.js?v=1.0.2";
 import "../components/app-destinations-table.js";
 
 class PageKueskiPay extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
         <app-cotiza></app-cotiza>
 
             <app-modal-doters></app-modal-doters>
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/costa-kueski-web.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/costa-kueski-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/costa-kueski-mobile.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-costa-kueski-pay-boleto-en-quincenas-sin-tarjeta.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/costa-kueski-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/costa-kueski-mobile.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
@@ -27,7 +27,7 @@ class PageKueskiPay extends HTMLElement {
                 <app-section-title section-title="Compra tus boletos de autobús con Kueski Pay"></app-section-title>
             </section>
 
-            <p class="__welcome-text">
+            <p style="width: 90%; margin: auto; text-align: center;" class="__welcome-text">
                 Ahora en Costa Line te ofrecemos una nueva forma de pago flexible y segura con Kueski Pay. Esta opción te permite adquirir tus boletos de autobús sin necesidad de tarjeta de crédito, pagando después en cómodos plazos.
             </p>
 
@@ -94,7 +94,7 @@ class PageKueskiPay extends HTMLElement {
 
            
     `;
-  }
+	}
 }
 
 customElements.define("page-kueski-pay", PageKueskiPay);

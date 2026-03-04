@@ -1,0 +1,80 @@
+/*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+import "../../components/app-banner-slider.js";
+import "../../components/app-payments.js";
+import "../../components/app-section-title.js";
+import "../../components/app-card-open-modal.js";
+import "../../components/app-dropdown.js";
+import "../../components/app-card-destination-opacity.js";
+import "../../components/app-slider-opacity.js";
+import "../../components/app-modal-multi-image.js";
+import "../../components/app-modal-image.js";
+import "../../components/app-destiny-grid.js";
+import "../../js/slick.js?v=1.0.0";
+
+class AutobusAMexicoPoniente extends HTMLElement {
+	async connectedCallback() {
+		this.innerHTML = `
+      <app-cotiza></app-cotiza>
+
+      <app-banner-slider
+          slides-data='[
+          {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-ciudad-de-mexico.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-ciudad-de-mexico.webp", "smallImage": "../../src/assets/img/banner/movil/banner-ciudad-de-mexico.webp", "link": "#index.html/banner1"}]'
+      >
+      </app-banner-slider>
+
+      <app-payments></app-payments>
+
+<section class="__section __section__destiny__destinations">
+  <app-section-title section-title="Viaja a México Poniente en autobús con Costa Line"></app-section-title>
+  <p class="__subtitle__destinos">Terminal de Autobuses México Poniente (Observatorio)</p>
+  <p class="__paragraph">La Terminal de Autobuses México Poniente, conocida como Observatorio, es una de las centrales más importantes del poniente de la Ciudad de México por su ubicación estratégica y su conexión con distintas zonas urbanas. Costa Line te permite viajar desde y hacia México Poniente en autobús con un servicio cómodo y seguro, ideal para quienes buscan una opción práctica para trasladarse desde CDMX hacia destinos clave. Ya sea por turismo, trabajo o visitas familiares, esta terminal es un punto de salida conveniente para planear tu viaje.</p>
+  <p class="__subtitle__destinos">¿Qué debes considerar al viajar desde México Poniente?</p>
+  <p class="__paragraph">Te recomendamos llegar con anticipación para ubicar tu sala de abordaje, andén y hora de salida. Observatorio cuenta con accesos desde transporte público y vialidades principales, lo que facilita la llegada desde diferentes zonas de la ciudad. Si viajas con equipaje, considera tiempo adicional para moverte dentro de la terminal y abordar con calma. Comprar tus boletos en línea también te ayuda a planear tu traslado con mayor tranquilidad.</p>
+</section>
+
+
+
+      <section class="__section__grid" id="destiny-grid-section">
+          <app-destiny-grid grid-src="../../src/data/destinos/mexico-poniente/lugares.json"></app-destiny-grid>
+      </section>
+
+      <p class="__subtitle__destinos">Gastronomía</p>
+      <section class="__section __section__cdmx__food">
+            <p class="__paragraph__xl">En los alrededores de la Terminal México Poniente (Observatorio) puedes encontrar una oferta gastronómica muy variada, ideal para comer antes de viajar o al llegar a CDMX. Desde antojitos mexicanos y comida corrida, hasta cafeterías y opciones más modernas en zonas cercanas como Tacubaya y Santa Fe. Es una excelente área para disfrutar sabores tradicionales de la ciudad sin alejarte demasiado de la terminal.</p>
+          <article class="container-cards__food">
+              <app-card-open-modal cards-data-src="../../src/data/destinos/mexico-poniente/platillos.json"></app-card-open-modal>
+          </article>
+      </section>
+
+      <section class="cta">
+          <div class="container">
+             <h2 class="cta__title">¡Viaja desde y hacia México Poniente (Observatorio) con Costa Line!</h2>
+            <p class="cta__subtitle">Planea tu traslado con anticipación y viaja de forma cómoda, segura y accesible desde una de las terminales más importantes del poniente de CDMX.</p>
+            <a href="../../boletos-autobus/mexico-poniente.html" class="btn btn--primary btn--large" target="_blank" rel="noopener noreferrer" aria-label="Comprar boletos" tabindex="0">Consulta horarios y compra tu boleto</a>
+          </div>
+      </section>
+
+      <section class="__section __section__destiny__ask">
+          <app-section-title section-title="Preguntas Frecuentes"></app-section-title>
+          <article class="__grid-cards-container__dropdown" id="dropdowns-container">
+              <app-dropdown items-src="../../src/data/destinos/mexico-poniente/dropdown-preguntas-frecuentes.json"></app-dropdown>
+          </article>
+      </section>
+
+      <section class="__section __section__cdmx__other">
+          <app-section-title section-title="Otros destinos"></app-section-title>
+          <article class="container-slider-other">
+              <app-slider-opacity destinations-src="../../src/data/destinos/card-opacity-destinations.json"></app-slider-opacity>
+          </article>
+      </section>
+
+      <app-modal-multi-image></app-modal-multi-image>
+      <app-modal-image></app-modal-image>
+
+      <app-cookies-policy></app-cookies-policy>
+      
+      <app-button-eva-trip></app-button-eva-trip>
+    `;
+	}
+}
+customElements.define("page-autobus-a-mexico-poniente", AutobusAMexicoPoniente);

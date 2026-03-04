@@ -7,10 +7,11 @@ import "../../components/app-banner-promotional.js";
 import "../../components/app-card-left-description.js";
 import "../../components/app-grid-text.js";
 import "../../js/slick.js?v=1.0.0";
+import "../../js/slick.min.js?v=1.0.2";
 
 class AppHomeEnglish extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
+	connectedCallback() {
+		this.innerHTML = `
       <app-cotiza></app-cotiza>
       <app-modal-doters></app-modal-doters>
       <div class="__first-section">
@@ -21,17 +22,17 @@ class AppHomeEnglish extends HTMLElement {
         <!-- Grid here -->
         <app-destinations-grid-english
           destinations='[
-            {"id": "destination1", "title": "Acapulco", "content": "Where the ocean and excitement never sleep.", "image": "../../src/assets/img/destinos-img/grid-english/acapulco-background.webp", "link": "../english/destinations/boletos-de-autobus-a-acapulco.html"},
+            {"id": "destination1", "title": "Acapulco", "content": "Where the ocean and excitement never sleep.", "image": "../../src/assets/img/destinos-img/grid-english/acapulco-background.webp", "link": "../english/destinations/bus-to-acapulco.html"},
 
-            {"id": "destination2", "title": "Chilpancingo", "content": "Living tradition in the heart of Guerrero", "image": "../../src/assets/img/destinos-img/grid-english/chilpancingo-background.webp", "link": "../english/destinations/boletos-de-autobus-a-chilpancingo.html"},
+            {"id": "destination2", "title": "Chilpancingo", "content": "Living tradition in the heart of Guerrero", "image": "../../src/assets/img/destinos-img/grid-english/chilpancingo-background.webp", "link": "../english/destinations/bus-to-chilpancingo.html"},
 
-            {"id": "destination3", "title": "Taxco", "content": "Where silver shines and legends live on.", "image": "../../src/assets/img/destinos-img/grid-english/taxco-background.webp", "link": "../english/destinations/boletos-de-autobus-a-taxco.html"},
+            {"id": "destination3", "title": "Taxco", "content": "Where silver shines and legends live on.", "image": "../../src/assets/img/destinos-img/grid-english/taxco-background.webp", "link": "../english/destinations/bus-to-taxco.html"},
 
-            {"id": "destination4", "title": "Cuernavaca", "content": "A year-round haven of sun and serenity.", "image": "../../src/assets/img/destinos-img/grid-english/cuernavaca-background.webp", "link": "../english/destinations/boletos-de-autobus-a-cuernavaca.html"},
+            {"id": "destination4", "title": "Cuernavaca", "content": "A year-round haven of sun and serenity.", "image": "../../src/assets/img/destinos-img/grid-english/cuernavaca-background.webp", "link": "../english/destinations/bus-to-cuernavaca.html"},
 
-            {"id": "destination5", "title": "Ixtapa Zihuatanejo", "content": "Two souls, one paradise by the sea.", "image": "../../src/assets/img/destinos-img/grid-english/zihuatanejo-background.webp", "link": "../english/destinations/boletos-de-autobus-a-zihuatanejo.html"},
+            {"id": "destination5", "title": "Ixtapa Zihuatanejo", "content": "Two souls, one paradise by the sea.", "image": "../../src/assets/img/destinos-img/grid-english/zihuatanejo-background.webp", "link": "../english/destinations/bus-to-zihuatanejo.html"},
 
-            {"id": "destination6", "title": "Iguala", "content": "Where Mexico’s history comes to life.", "image": "../../src/assets/img/destinos-img/grid-english/iguala-background.webp", "link": "../english/destinations/boletos-de-autobus-a-iguala.html"}
+            {"id": "destination6", "title": "Iguala", "content": "Where Mexico’s history comes to life.", "image": "../../src/assets/img/destinos-img/grid-english/iguala-background.webp", "link": "../english/destinations/bus-to-iguala.html"}
             ]'
         ></app-destinations-grid-english>
       </section>
@@ -43,9 +44,9 @@ class AppHomeEnglish extends HTMLElement {
         <app-banner-promotional
           link-href="#"
           image-alt="Banner promocional de Viajero Protegido"
-          image-src="../../src/assets/img/banner/english/viajero/banner-viajero-protegido.webp"
-          image-src-tablet="../../src/assets/img/banner/english/viajero/banner-viajero-protegido-tablet.webp"
-          image-src-mobile="../../src/assets/img/banner/english/viajero/banner-viajero-protegido-mobile.webp"
+          image-src="../../src/assets/img/banner/english/viajero/web/banner-viajero-protegido.webp"
+          image-src-tablet="../../src/assets/img/banner/english/viajero/tablet/banner-viajero-protegido.webp"
+          image-src-mobile="../../src/assets/img/banner/english/viajero/mobile/banner-viajero-protegido.webp"
         ></app-banner-promotional>
       </section>
 
@@ -67,6 +68,6 @@ class AppHomeEnglish extends HTMLElement {
       </section>
 
     `;
-  }
+	}
 }
 customElements.define("app-home-english", AppHomeEnglish);

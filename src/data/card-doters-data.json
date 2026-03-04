@@ -1,0 +1,30 @@
+[
+    {
+      "imageSrc": "../src/assets/img/doters/doter-1.webp",
+      "imageAlt": "Inicia sesión y compra:",
+      "number": "01",
+      "title": "Resolver cualquier duda sobre tu cuenta:",
+      "text": "Compra en Internet o en cualquiera de los establecimientos de las marcas participantes. ¡Mientras más compras, más acumulas!",
+      "logoSrc": "../src/assets/img/doters/doter-yellow.webp",
+      "logoAlt": "Logo Doters Amarillo"
+    },
+    {
+    "imageSrc": "../src/assets/img/doters/doter-2.webp",
+    "imageAlt": "Doters dudas",
+    "number": "02",
+    "title": "Acumula:",
+    "text": "Consigue puntos Doters con cada una de tus compras. Recuerda que cada compra te da Puntos Doters",
+    "logoSrc": "../src/assets/img/doters/doter-red.webp",
+    "logoAlt": "Logo Doters Amarillo"
+    },
+    {
+        "imageSrc": "../src/assets/img/doters/doter-3.webp",
+        "imageAlt": "Doters dudas",
+        "number": "03",
+        "title": "Utiliza y disfruta:",
+        "text": "Utiliza tus Puntos Doters para conseguir todo tipo de recompensas.¡Es facilísimo!",
+        "logoSrc": "../src/assets/img/doters/doter-blue.webp",
+        "logoAlt": "Logo Doters Amarillo"
+    }
+  ]
+  

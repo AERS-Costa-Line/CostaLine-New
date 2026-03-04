@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es-MX">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title -->
+		<title>Servicio Ejecutivo: CDMX a Acapulco Papagayo | Costa Line</title>
+
+		<!-- Meta Description -->
+		<meta name="description" content="Disfruta del máximo confort en nuestra ruta ejecutiva a Acapulco Papagayo (Costera). Asientos reclinables, más espacio y servicio premium. ¡Compra tu boleto ahora!" />
+
+		<!-- Meta Keywords -->
+		<meta name="keywords" content="" />
+
+		<meta name="language" content="Español" />
+		<link
+			rel="canonical"
+			href="https://costaline.com.mx/boletos-autobus/acapulco.html"
+		/>
+		<link
+			rel="alternate"
+			href="https://costaline.com.mx/english/boletos-autobus/acapulco.html"
+			hreflang="en-US"
+		/>
+
+		<meta name="author" content="Costa Line AERS" />
+		<meta name="robots" content="noindex">
+		<meta name="googlebot" content="index, follow" />
+		<meta name="sitemap" content="/sitemap.xml" />
+
+		<meta name="theme-color" content="#06255b" />
+
+
+		<!-- Favicons for various devices for SEO and UX -->
+
+		<!-- Apple Touch Icons -->
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="/apple-touch-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="/apple-touch-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="/apple-touch-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="/apple-touch-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="/apple-touch-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="/apple-touch-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="/apple-touch-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/apple-touch-icon-180x180.png"
+		/>
+		<!-- End Apple Touch Icons -->
+
+		<!-- Android Icons -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="512x512"
+			href="/android-chrome-512x512.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="/android-chrome-192x192.png"
+		/>
+		<!-- End Android Icons -->
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<!-- End Favicon -->
+
+		<link rel="manifest" href="/site.webmanifest" />
+		
+		<meta name="msapplication-TileColor" content="#06255b" />
+		<meta name="msapplication-config" content="/browserconfig.xml" />
+
+		
+
+		<!-- Scripts -->
+
+		<script src="../src/js/jquery.min.js?v=1.0.0"></script>
+		<script type="module" src="../app.js?v=1.0.2"></script>
+
+		<!-- Stylesheets -->
+
+		<!-- CSS All Components -->
+		<link
+      rel="stylesheet"
+      href="../src/styles/css/css-pages/page-destinos-landings.min.css?v=1.2.1"
+    />
+
+		<!-- CSS widget de reservamos -->
+		<link
+			rel="stylesheet"
+			href="https://widgets.reservamos.mx/search/5.23.6/search.css?v=5.18.0"
+		/>
+
+
+		<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BusTrip",
+  "name": "Servicio de Autobús Ejecutivo: CDMX a Acapulco Papagayo",
+  "description": "Viaja en primera clase con el servicio ejecutivo de Costa Line a Acapulco Papagayo. Disfruta de beneficios premium como asientos tipo cama y atención personalizada.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Costa Line"
+  },
+  "departureBusStop": {
+    "@type": "BusStation",
+    "name": "Terminal de Autobuses del Sur (Taxqueña), CDMX"
+  },
+  "arrivalBusStop": {
+    "@type": "BusStation",
+    "name": "Terminal Acapulco Papagayo (Costera)"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "MXN",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.costaline.com.mx/ejecutivos/cdmx-a-acapulco-papagayo",
+    "seller": {
+      "@type": "Organization",
+      "name": "Costa Line"
+    }
+  }
+}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9MW4HF');</script>
+<!-- End Google Tag Manager -->
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KFMMCC7');</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+	</head>
+
+	<body>
+
+
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFMMCC7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+
+
+		<app-header
+			logo='{
+        "src": "../src/assets/img/logos/logo.svg", 
+        "alt": "Logo de Costa Line",
+        "href": "../../../"
+      }'
+		>
+		</app-header>
+		<app-modal-travelpass></app-modal-travelpass>
+		<app-modal-doters></app-modal-doters>
+		<main>
+			<page-eje-cdmx-a-acapulco-papagayo></page-eje-cdmx-a-acapulco-papagayo>
+		</main>
+		<app-footer></app-footer>
+		<app-cookies-policy></app-cookies-policy>
+		
+		<app-button-eva-trip></app-button-eva-trip>
+		<script src="../src/js/doters-cookies.js?v=1.2.1"></script>
+		<!-- JS widget de reservamos -->
+		<script src="https://widgets.reservamos.mx/search/5.23.6/search.js?v=5.18.0"></script>
+	</body>
+</html>

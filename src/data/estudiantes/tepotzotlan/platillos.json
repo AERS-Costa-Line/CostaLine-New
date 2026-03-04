@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Barbacoa de Borrego",
+    "description": "Uno de los platillos más tradicionales del Estado de México. La barbacoa de Tepotzotlán se prepara en horno de tierra, lo que le da un sabor ahumado inigualable. Se sirve con consomé, tortillas hechas a mano, cebolla y salsa borracha.",
+    "imageSrc": "../src/assets/img/platillos/tepotzotlan/barbacoa-borrego.webp",
+    "imageModal": "../src/assets/img/platillos/tepotzotlan/barbacoa-borrego-m.webp",
+    "altText": "Barbacoa de Borrego",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Quesadillas de Guisos",
+    "description": "Las tradicionales quesadillas de Tepotzotlán se preparan en comal con masa recién hecha. Puedes encontrarlas con huitlacoche, flor de calabaza, chicharrón prensado, papa con chorizo o queso fresco. Son un imperdible en el centro del pueblo.",
+    "imageSrc": "../src/assets/img/platillos/tepotzotlan/quesadillas-guisos.webp",
+    "imageModal": "../src/assets/img/platillos/tepotzotlan/quesadillas-guisos-m.webp",
+    "altText": "Quesadillas de Guisos",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Mixiotes",
+    "description": "Carne marinada en chiles y especias, envuelta en la película delgada del maguey y cocida al vapor. Es uno de los platillos más tradicionales de la región y se suele acompañar con arroz rojo y frijoles de la olla.",
+    "imageSrc": "../src/assets/img/platillos/tepotzotlan/mixiotes.webp",
+    "imageModal": "../src/assets/img/platillos/tepotzotlan/mixiotes-m.webp",
+    "altText": "Mixiotes",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tamales de Frijol",
+    "description": "Un clásico de Tepotzotlán. Se preparan con masa suave rellena de frijol molido y se envuelven en hoja de maguey, lo que aporta un aroma ahumado muy característico. Tradicionales en desayunos y ferias del pueblo.",
+    "imageSrc": "../src/assets/img/platillos/tepotzotlan/tamales-frijol.webp",
+    "imageModal": "../src/assets/img/platillos/tepotzotlan/tamales-frijol-m.webp",
+    "altText": "Tamales de Frijol",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Gorditas de Nata",
+    "description": "Dulce tradicional que encontrarás en el centro y en la feria de Tepotzotlán. Se elaboran con nata, harina y azúcar, y se cocinan en comal hasta quedar esponjadas. Perfectas para acompañar café de olla.",
+    "imageSrc": "../src/assets/img/platillos/tepotzotlan/gorditas-nata.webp",
+    "imageModal": "../src/assets/img/platillos/tepotzotlan/gorditas-nata-m.webp",
+    "altText": "Gorditas de Nata",
+    "linkText": "Ver..."
+  }
+]

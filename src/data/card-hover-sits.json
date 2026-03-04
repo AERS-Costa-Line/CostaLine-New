@@ -1,59 +1,70 @@
-
-  [
-  {
-    "title": "24 Pantallas LCD en Portabulto",
-    "iconSrc": "../../../src/assets/img/icons-img/tele.png"
-  },{
-    "title": "8 Salidas de Emergencia",
-    "iconSrc": "../../../src/assets/img/icons-img/salida-emergencia.png"
-  },{
-    "title": "Cinturon de Seguridad",
-    "iconSrc": "../../../src/assets/img/icons-img/cinturon.png"
-  },{
-    "title": "Asientos Comodos",
-    "iconSrc": "../../../src/assets/img/icons-img/asiento.png"
-  },{
-    "title": "Maletero",
-    "iconSrc": "../../../src/assets/img/icons-img/equipaje.png"
-  },{
-    "title": "Aire Acondicionado",
-    "iconSrc": "../../../src/assets/img/icons-img/aire.png"
-  },{
-    "title": "Iluminacion",
-    "iconSrc": "../../../src/assets/img/icons-img/luz.png"
-  },{
-    "title": "Baño de Mujeres",
-    "iconSrc": "../../../src/assets/img/icons-img/mujer.png"
-  },{
-    "title": "Baño de hombres",
-    "iconSrc": "../../../src/assets/img/icons-img/hombre.png"
-  }
-
-
-  ,{
-    "title": "8 Salidas de Emergencia",
-    "iconSrc": "../../../src/assets/img/icons-img/salida-emergencia.png"
-  },{
-    "title": "Cinturon de Seguridad",
-    "iconSrc": "../../../src/assets/img/icons-img/cinturon.png"
-  },{
-    "title": "Asientos Comodos",
-    "iconSrc": "../../../src/assets/img/icons-img/asiento.png"
-  },{
-    "title": "Maletero",
-    "iconSrc": "../../../src/assets/img/icons-img/equipaje.png"
-  },{
-    "title": "Aire Acondicionado",
-    "iconSrc": "../../../src/assets/img/icons-img/aire.png"
-  },{
-    "title": "Iluminacion",
-    "iconSrc": "../../../src/assets/img/icons-img/luz.png"
-  },{
-    "title": "Baño de Mujeres",
-    "iconSrc": "../../../src/assets/img/icons-img/mujer.png"
-  },{
-    "title": "Baño de hombres",
-    "iconSrc": "../../../src/assets/img/icons-img/hombre.png"
-  }
-  
+[
+	{
+		"title": "24 Pantallas LCD en Portabulto",
+		"iconSrc": "../../../src/assets/icons/icons-img/tele.png"
+	},
+	{
+		"title": "8 Salidas de Emergencia",
+		"iconSrc": "../../../src/assets/icons/icons-img/salida-emergencia.png"
+	},
+	{
+		"title": "Cinturon de Seguridad",
+		"iconSrc": "../../../src/assets/icons/icons-img/cinturon.png"
+	},
+	{
+		"title": "Asientos Comodos",
+		"iconSrc": "../../../src/assets/icons/icons-img/asiento.png"
+	},
+	{
+		"title": "Maletero",
+		"iconSrc": "../../../src/assets/icons/icons-img/equipaje.png"
+	},
+	{
+		"title": "Aire Acondicionado",
+		"iconSrc": "../../../src/assets/icons/icons-img/aire.png"
+	},
+	{
+		"title": "Iluminacion",
+		"iconSrc": "../../../src/assets/icons/icons-img/luz.png"
+	},
+	{
+		"title": "Baño de Mujeres",
+		"iconSrc": "../../../src/assets/icons/icons-img/mujer.png"
+	},
+	{
+		"title": "Baño de hombres",
+		"iconSrc": "../../../src/assets/icons/icons-img/hombre.png"
+	},
+	{
+		"title": "8 Salidas de Emergencia",
+		"iconSrc": "../../../src/assets/icons/icons-img/salida-emergencia.png"
+	},
+	{
+		"title": "Cinturon de Seguridad",
+		"iconSrc": "../../../src/assets/icons/icons-img/cinturon.png"
+	},
+	{
+		"title": "Asientos Comodos",
+		"iconSrc": "../../../src/assets/icons/icons-img/asiento.png"
+	},
+	{
+		"title": "Maletero",
+		"iconSrc": "../../../src/assets/icons/icons-img/equipaje.png"
+	},
+	{
+		"title": "Aire Acondicionado",
+		"iconSrc": "../../../src/assets/icons/icons-img/aire.png"
+	},
+	{
+		"title": "Iluminacion",
+		"iconSrc": "../../../src/assets/icons/icons-img/luz.png"
+	},
+	{
+		"title": "Baño de Mujeres",
+		"iconSrc": "../../../src/assets/icons/icons-img/mujer.png"
+	},
+	{
+		"title": "Baño de hombres",
+		"iconSrc": "../../../src/assets/icons/icons-img/hombre.png"
+	}
 ]

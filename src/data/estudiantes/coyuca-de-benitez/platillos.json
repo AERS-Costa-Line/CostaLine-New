@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Caldo de langosta o jaiba",
+    "description": "El caldo de langosta o jaiba de Coyuca de Benítez es un manjar costeño que captura la esencia del Pacífico. Preparado con mariscos frescos, tomate, cebolla, ajo y hierbas como epazote, se sirve humeante con un toque de lima. Ideal para disfrutar en palapas playeras al atardecer, este platillo —sabroso y reconfortante— es el alma de la gastronomía local.",
+    "imageSrc": "../src/assets/img/platillos/coyuca-de-benitez/caldo-de-langosta.webp",
+    "imageModal": "../src/assets/img/platillos/coyuca-de-benitez/caldo-de-langosta-m.webp",
+    "altText": "Caldo de langosta o jaiba",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tostadas de marlín",
+    "description": "Las tostadas de marlín de Coyuca de Benítez son un clásico playerero. Base crujiente de tortilla frita cubierta con marlín desmenuzado (ahumado o cocido), frijoles refritos, lechuga, crema fresca y salsa picante. Se acompañan con limón y aguacate, ofreciendo un explosión de texturas y sabores marinos. ¡Imperdibles en puestos costeros!",
+    "imageSrc": "../src/assets/img/platillos/coyuca-de-benitez/tostadas-de-marlin.webp",
+    "imageModal": "../src/assets/img/platillos/coyuca-de-benitez/tostadas-de-marlin-m.webp",
+    "altText": "Tostadas de marlín",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Chilate de pollo",
+    "description": "El chilate de pollo de Coyuca de Benítez es una herencia afrodescendiente con raíces prehispánicas. Este caldo especiado combina pollo, cacao, canela, chile guajillo y maíz, creando un balance único entre lo dulce y lo picante. Tradicionalmente se sirve en jícaras con tamales nejos, reflejando la fusión cultural de la Costa Chica guerrerense.",
+    "imageSrc": "../src/assets/img/platillos/coyuca-de-benitez/chilate-de-pollo.webp",
+    "imageModal": "../src/assets/img/platillos/coyuca-de-benitez/chilate-de-pollo-m.webp",
+    "altText": "Chilate de pollo",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Cocadas",
+    "description": "Las cocadas de Coyuca de Benítez son dulces emblemáticos de la Costa Grande. Elaboradas con coco fresco rallado, leche condensada y a veces piloncillo, se hornean hasta dorarse o se preparan en versión blanda. Su textura chewy y aroma a coco tostado las hace irresistibles, especialmente cuando se venden en puestos callejeros junto al mar.",
+    "imageSrc": "../src/assets/img/platillos/coyuca-de-benitez/cocadas.webp",
+    "imageModal": "../src/assets/img/platillos/coyuca-de-benitez/cocadas-m.webp",
+    "altText": "Cocadas",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tuba bebida",
+    "description": "La tuba de Coyuca de Benítez es una bebida ancestral fermentada, extraída de la savia dulce de la palma de coco. Con un sabor agridulce único, se sirve fría con trozos de manzana, cacahuate y a veces un toque de canela. Refrescante y energética, es tradición en fiestas locales y puestos playeros, donde se disfruta como un elixir natural del trópico.",
+    "imageSrc": "../src/assets/img/platillos/coyuca-de-benitez/tuba-bebida.webp",
+    "imageModal": "../src/assets/img/platillos/coyuca-de-benitez/tuba-bebida-m.webp",
+    "altText": "Tuba bebida",
+    "linkText": "Ver..."
+  }
+]

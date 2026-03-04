@@ -1,0 +1,48 @@
+[
+    {
+      "id": "plaza-civica-tecpan",
+      "text": "Plaza Cívica de Tecpan",
+      "className": "card-wide",
+      "backgroundImage": "../src/assets/img/destinos-img/tecpan/plaza-civica-1.webp",
+      "image2": "../src/assets/img/destinos-img/tecpan/plaza-civica-2.webp",
+      "image3": "../src/assets/img/destinos-img/tecpan/plaza-civica-3.webp",
+      "image4": "../src/assets/img/destinos-img/tecpan/plaza-civica-4.webp",
+      "title": "Plaza Cívica de Tecpan",
+      "description": "¿Por qué visitarla? Es el centro de la vida social y cultural del pueblo. Aquí se realizan ferias, conciertos y celebraciones cívicas. Además, es un excelente punto de partida para recorrer Tecpan."
+    },
+    {
+      "id": "laguna-de-mitla",
+      "text": "Laguna de Mitla",
+      "className": "card-tall",
+      "backgroundImage": "../src/assets/img/destinos-img/tecpan/laguna-mitla-1.webp",
+      "image2": "../src/assets/img/destinos-img/tecpan/laguna-mitla-2.webp",
+      "image3": "../src/assets/img/destinos-img/tecpan/laguna-mitla-3.webp",
+      "image4": "../src/assets/img/destinos-img/tecpan/laguna-mitla-4.webp",
+      "title": "Laguna de Mitla",
+      "description": "¿Por qué visitarla? Esta laguna rodeada de manglares y naturaleza es perfecta para un paseo en lancha o avistamiento de aves. Es un lugar tranquilo que conecta con la biodiversidad del municipio."
+    },
+    {
+      "id": "mirador-tecpan",
+      "text": "Mirador de Tecpan",
+      "className": "",
+      "backgroundImage": "../src/assets/img/destinos-img/tecpan/mirador-tecpan-1.webp",
+      "image2": "../src/assets/img/destinos-img/tecpan/mirador-tecpan-2.webp",
+      "image3": "../src/assets/img/destinos-img/tecpan/mirador-tecpan-3.webp",
+      "image4": "../src/assets/img/destinos-img/tecpan/mirador-tecpan-4.webp",
+      "title": "Mirador de Tecpan de Galeana",
+      "description": "¿Por qué visitarlo? El Mirador de Tecpan es el lugar ideal para disfrutar de una vista panorámica del municipio y sus alrededores. Desde aquí se pueden observar paisajes montañosos, zonas urbanas y parte del río. Es perfecto para tomarse un respiro, tomar fotografías o simplemente contemplar la belleza natural de Guerrero."
+    }
+    ,
+    {
+      "id": "rio-tecpan",
+      "text": "Río Tecpan",
+      "className": "",
+      "backgroundImage": "../src/assets/img/destinos-img/tecpan/rio-tecpan-1.webp",
+      "image2": "../src/assets/img/destinos-img/tecpan/rio-tecpan-2.webp",
+      "image3": "../src/assets/img/destinos-img/tecpan/rio-tecpan-3.webp",
+      "image4": "../src/assets/img/destinos-img/tecpan/rio-tecpan-4.webp",
+      "title": "Río Tecpan",
+      "description": "¿Por qué visitarlo? Atraviesa la ciudad y es muy frecuentado para nadar, convivir o descansar. Hay espacios accesibles desde el centro y zonas más naturales a pocos kilómetros, ideales para una escapada refrescante."
+    }
+  ]
+  

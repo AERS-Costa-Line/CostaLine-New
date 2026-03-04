@@ -1,0 +1,49 @@
+[
+    {
+      "id": "fuerte-san-diego",
+      "text": "Fuerte de San Diego",
+      "className": "card-wide",
+      "backgroundImage": "../src/assets/img/destinos-img/acapulco/fuerte-san-diego.webp",
+      "image2":"../src/assets/img/destinos-img/acapulco/fuerte-san-diego-2.webp",
+      "image3":"../src/assets/img/destinos-img/acapulco/fuerte-san-diego-3.webp",
+      "image4":"../src/assets/img/destinos-img/acapulco/fuerte-san-diego-4.webp",
+      "title": "Fuerte de San Diego",
+      "description": "¿Por qué visitarlo? El Fuerte de San Diego es un bastión histórico convertido en el Museo Histórico de Acapulco, dedicado a preservar el legado marítimo y comercial del puerto. Los visitantes pueden explorar sus salas de exhibición, conocer la fascinante historia de la Nao de China, los ataques de piratas y la importancia de Acapulco a lo largo de los siglos. Además de su riqueza histórica, su posición estratégica ofrece vistas espectaculares de la bahía, convirtiéndolo en un hito cultural imprescindible."
+    },
+    {
+      "id": "costera-miguel-aleman",
+      "text": "Costera Miguel Alemán",
+      "className": "card-tall",
+      "backgroundImage": "../src/assets/img/destinos-img/acapulco/costera-miguel-aleman.webp",
+      "image2":"../src/assets/img/destinos-img/acapulco/costera-miguel-aleman-2.webp",
+      "image3":"../src/assets/img/destinos-img/acapulco/costera-miguel-aleman-3.webp",
+      "image4":"../src/assets/img/destinos-img/acapulco/costera-miguel-aleman-4.webp",
+      "title": "Costera Miguel Alemán",
+      "description": "¿Por qué visitarla? La Costera Miguel Alemán es el alma moderna de Acapulco, un deslumbrante corredor conocido por su energía y su espectacular vista a la bahía. Los visitantes pueden pasear por su malecón, con acceso directo a playas doradas, explorar mercados de artesanías, boutiques y disfrutar de la animada escena social en sus famosos restaurantes y clubes. La Costera es también el pulso de la ciudad, albergando eventos y la fiesta continua que caracteriza a Acapulco."
+    },
+    {
+      "id": "playa-condesa",
+      "text": "Playa Condesa",
+      "className": "",
+      "backgroundImage": "../src/assets/img/destinos-img/acapulco/playa-condesa.webp",
+      "image2":"../src/assets/img/destinos-img/acapulco/playa-condesa-2.webp",
+      "image3":"../src/assets/img/destinos-img/acapulco/playa-condesa-3.webp",
+      "image4":"../src/assets/img/destinos-img/acapulco/playa-condesa-4.webp",
+      "title": "Playa Condesa",
+      "description": "¿Por qué visitarla? Playa Condesa, ubicada en el corazón de la Zona Dorada de Acapulco, es el vibrante epicentro de la vida social y la diversión. Esta icónica franja de arena dorada, famosa por su ambiente enérgico y su oleaje moderado, alberga numerosos clubes de playa y restaurantes. Los visitantes pueden disfrutar de una visita llena de acción, practicando todo tipo de deportes acuáticos. Se puede acceder fácilmente a la playa y, para una vista inigualable, se puede tomar un paseo en parasailing, que ofrece impresionantes panorámicas de toda la bahía."
+    },
+    {
+      "id": "quebrada-acapulco",
+      "text": "La Quebrada de Acapulco",
+      "className": "",
+      "backgroundImage": "../src/assets/img/destinos-img/acapulco/quebrada-acapulco.webp",
+      "image2":"../src/assets/img/destinos-img/acapulco/quebrada-acapulco-2.webp",
+      "image3":"../src/assets/img/destinos-img/acapulco/quebrada-acapulco-3.webp",
+      "image4":"../src/assets/img/destinos-img/acapulco/quebrada-acapulco-4.webp",
+      "title": "Quebrada de Acapulco",
+      "description": "La Quebrada, ubicada en la zona tradicional de Acapulco, es un espectáculo icónico dedicado a la tradición y valentía de sus mundialmente famosos clavadistas. Situada en un acantilado de 45 metros, la atracción ofrece demostraciones en vivo donde los clavadistas realizan impresionantes saltos al mar, un ritual que se ha transmitido por generaciones. Los visitantes también pueden disfrutar de vistas panorámicas del espectáculo y del Océano Pacífico desde el mirador público."
+    }
+  ]
+
+
+  

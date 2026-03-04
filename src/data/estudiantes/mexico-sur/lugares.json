@@ -1,0 +1,46 @@
+[
+  {
+    "id": "coyoacan-centro",
+    "text": "Coyoacán",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/coyoacan.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/coyoacan-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/coyoacan-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/coyoacan-4.webp",
+    "title": "Coyoacán",
+    "description": "Coyoacán es uno de los barrios más tradicionales y visitados del sur de la Ciudad de México, ideal por su cercanía con Taxqueña. Aquí puedes caminar por plazas históricas, calles empedradas, mercados y zonas culturales. Es una excelente opción si llegas con tiempo o si quieres aprovechar tu visita en CDMX con un plan tranquilo, auténtico y lleno de historia."
+  },
+  {
+    "id": "museo-frida-kahlo",
+    "text": "Casa Azul",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/casa-azul.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/casa-azul-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/casa-azul-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/casa-azul-4.webp",
+    "title": "Museo Frida Kahlo (Casa Azul)",
+    "description": "La Casa Azul es uno de los museos más emblemáticos de la Ciudad de México y un punto cultural imperdible en la zona sur. Aquí podrás conocer la vida y obra de Frida Kahlo, además de apreciar piezas, objetos personales y espacios que forman parte de la historia artística del país. Es una visita recomendada si buscas un plan cultural cercano a Taxqueña."
+  },
+  {
+    "id": "xochimilco",
+    "text": "Xochimilco",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/xochimilco.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/xochimilco-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/xochimilco-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/xochimilco-4.webp",
+    "title": "Xochimilco",
+    "description": "Xochimilco es uno de los lugares más representativos del sur de CDMX por sus tradicionales trajineras, canales y ambiente festivo. Es ideal para quienes buscan una experiencia turística auténtica, con música, comida típica y un recorrido diferente. Su ubicación al sur lo convierte en una excelente opción para complementar tu visita si viajas desde Taxqueña."
+  },
+  {
+    "id": "unam-ciudad-universitaria",
+    "text": "Ciudad Universitaria",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/cdmx/ciudad-universitaria.webp",
+    "image2": "../src/assets/img/destinos-img/cdmx/ciudad-universitaria-2.webp",
+    "image3": "../src/assets/img/destinos-img/cdmx/ciudad-universitaria-3.webp",
+    "image4": "../src/assets/img/destinos-img/cdmx/ciudad-universitaria-4.webp",
+    "title": "UNAM y Ciudad Universitaria",
+    "description": "Ciudad Universitaria es uno de los espacios culturales y arquitectónicos más importantes de la ciudad. Además de su valor histórico, es un lugar ideal para recorrer, conocer murales emblemáticos y visitar museos o espacios culturales. Su cercanía con el sur de CDMX la hace una excelente alternativa si llegas o sales desde Taxqueña."
+  }
+]

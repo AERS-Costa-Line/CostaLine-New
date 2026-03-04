@@ -42,3 +42,11 @@
         transition: transform 0.8s ease;
     }
 }
+
+
+p.titulo-widget {
+  color: #003b73;
+  font-size: 1.2rem; // Mantiene la variable existente
+  padding: 5px;
+  text-align: center;
+}

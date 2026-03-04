@@ -15,7 +15,7 @@ class PageTerminosHotSale extends HTMLElement {
 
         <app-banner-slider
             slides-data='[
-            {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/hot-sale-web.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/hot-sale-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/hot-sale-mobile.webp", "link": "#index.html/banner1"}
+            {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-hot-sale-descuento-50.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/banner-hot-sale-50-descuento.webp", "smallImage": "../src/assets/img/banner/promociones/movil/banner-hot-sale-50-descuento.webp", "link": "#index.html/banner1"}
             ]'
         >
         </app-banner-slider>

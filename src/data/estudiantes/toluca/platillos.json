@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Tacos de Chorizo Verde",
+    "description": "Uno de los sabores más característicos de Toluca. El famoso chorizo verde se prepara con hierbas, chile poblano y especias que le dan su color y aroma únicos. Se sirve en tacos con cebolla, cilantro y salsa al gusto.",
+    "imageSrc": "../src/assets/img/platillos/toluca/chorizo-verde.webp",
+    "imageModal": "../src/assets/img/platillos/toluca/chorizo-verde-m.webp",
+    "altText": "Tacos de Chorizo Verde",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Quesadillas de Plaza",
+    "description": "Las tradicionales quesadillas toluqueñas se preparan en comal con masa recién hecha y una gran variedad de guisos: papa con chorizo, flor de calabaza, huitlacoche, tinga, longaniza y más. Un clásico en los Portales.",
+    "imageSrc": "../src/assets/img/platillos/toluca/quesadillas-plaza.webp",
+    "imageModal": "../src/assets/img/platillos/toluca/quesadillas-plaza-m.webp",
+    "altText": "Quesadillas de Plaza",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Tacos de Cecina",
+    "description": "La cecina toluqueña es delgada, suave y con un toque salado característico. Se sirve asada, acompañada de nopales, guacamole y tortillas recién hechas. Un imperdible para los amantes de los sabores tradicionales.",
+    "imageSrc": "../src/assets/img/platillos/toluca/cecina.webp",
+    "imageModal": "../src/assets/img/platillos/toluca/cecina-m.webp",
+    "altText": "Tacos de Cecina",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Atole de Guayaba",
+    "description": "Una bebida tradicional que no puede faltar en Toluca, especialmente en temporada fría. Se prepara con guayaba fresca, piloncillo y masa, logrando un sabor dulce, espeso y muy reconfortante.",
+    "imageSrc": "../src/assets/img/platillos/toluca/atole-guayaba.webp",
+    "imageModal": "../src/assets/img/platillos/toluca/atole-guayaba-m.webp",
+    "altText": "Atole de Guayaba",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Dulces de Cajeta y Camote",
+    "description": "En los Portales encontrarás una gran variedad de dulces típicos: camotes, cocadas, palanquetas, jamoncillos y más. Son elaborados de forma artesanal y son un recuerdo perfecto de la visita a Toluca.",
+    "imageSrc": "../src/assets/img/platillos/toluca/dulces-tipicos.webp",
+    "imageModal": "../src/assets/img/platillos/toluca/dulces-tipicos-m.webp",
+    "altText": "Dulces Típicos de Toluca",
+    "linkText": "Ver..."
+  }
+]

@@ -8,22 +8,12 @@ class AppModalTravelpass extends HTMLElement {
             <button class="close" class="close" id="close-login-modal"><span>&times;</span></button>
             <div class="card-modal">
               <div class="modal-header">
-                  <img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Logotipo TravelPass" title="Monedero Electrónico Formulario" width="100" height="32" class="modal-logo"> 
+                  <img src="../../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Logotipo TravelPass" title="Monedero Electrónico Formulario" width="100" height="32" class="modal-logo"> 
               </div>
 
               <div>
                 <h2 class="titulo-2">¡Bienvenido!</h2>
                 <h3 class="subtitle">Ingresa tu cuenta a Travelpass</h3>
-              </div>
-
-              <!-- Selector de marca -->
-              <div id="brand-selector" class="brand-selector">
-                  <button type="button" class="brand-btn" data-brand="surdejalisco">
-                      <img src="https://rsrvms-vanda-prod.s3.us-east-1.amazonaws.com/funnel/test/surdejalisco.png" class="__image__button-size" alt="Sur de Jalisco">
-                  </button>
-                  <button type="button" class="brand-btn" data-brand="pegasso">
-                      <img src="../../src/assets/img/gho-img/logos/logo_Pegasso.webp" class="__image__button-size" alt="Viajero">
-                  </button>
               </div>
               
               <form id="login-form" class="__login-form">
@@ -39,7 +29,7 @@ class AppModalTravelpass extends HTMLElement {
 
               <div class="__card-footer">
                 <a class="w-modal-link color-1 center" href="../../../servicios/monedero-electronico.html">Conoce aquí&nbsp; <span class="bold"> ¿Qué es Monedero Electrónico?</span></a>
-                <a id="register-link" class="w-modal-link color-1" href="#">¿No tienes cuenta? <span class="bold"> Regístrate</span></a>
+                <a id="register-link" class="w-modal-link color-1" href="https://travelpass.costaline.com.mx/signup?_gl=1*1ucixgp*_gcl_au*MTE5NTUxODc1MS4xNzY5MDMwOTg3">¿No tienes cuenta? <span class="bold"> Regístrate</span></a>
                 <div id="message" class="message"></div>
               </div>
             </div>

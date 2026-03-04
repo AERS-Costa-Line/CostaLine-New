@@ -1,0 +1,93 @@
+@use '../_01-settings/variables' as *;
+
+// --- Acordeón de FAQ / Tips ---
+
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem 0;
+  ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin: 10px 0;
+      color: #333333cc;
+  
+      li {
+        margin-bottom: 5px;
+      }
+    }
+
+  .__section-title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 980px;
+    width: 100%;
+    gap: 1rem; // space-y-4
+  }
+
+  .faq-item {
+    padding: 1rem; // p-4
+    border-radius: 0.5rem; // rounded-lg
+    background-color: $white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+    body.dark & {
+      background-color: rgba($dark-bg, 0.5);
+    }
+
+    &__summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 1.125rem; // text-lg
+      font-weight: 700;
+      color: $primary-color;
+      list-style: none; // Oculta flecha de <details>
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      body.dark & {
+        color: white;
+      }
+    }
+
+    &__icon {
+      transition: transform 0.3s ease;
+    }
+
+    &[open]>.faq-item__summary .faq-item__icon {
+      transform: rotate(180deg);
+    }
+
+    &__answer {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s ease-in-out, margin-top 0.3s ease-in-out;
+      color: rgba($light-text, 0.8);
+
+      body.dark & {
+        color: rgba($dark-text-base, 0.8);
+      }
+
+      >div {
+        overflow: hidden;
+      }
+    }
+
+    &[open] .faq-item__answer {
+      grid-template-rows: 1fr;
+      margin-top: 0.5rem;
+    }
+  }
+}

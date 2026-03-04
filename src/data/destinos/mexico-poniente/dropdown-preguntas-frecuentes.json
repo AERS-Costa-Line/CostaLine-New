@@ -1,0 +1,142 @@
+[
+  {
+    "title-dropdown": "¿A qué hora sale el primer autobús desde México Poniente (Observatorio) con Costa Line?",
+    "content-dropdown": {
+      "type": "paragraph",
+      "text": "Los horarios pueden variar según el destino, la fecha y la disponibilidad. Te recomendamos consultar las salidas disponibles en la plataforma de compra para ver el primer horario del día."
+    }
+  },
+  {
+    "title-dropdown": "¿Cuáles son las rutas de autobús más populares desde México Poniente (Observatorio)?",
+    "content-dropdown": {
+      "type": "list",
+      "items": [
+        "México Poniente → Acapulco",
+        "México Poniente → Chilpancingo",
+        "México Poniente → Iguala",
+        "México Poniente → Cuernavaca"
+      ]
+    }
+  },
+  {
+    "title-dropdown": "¿Cuánto cuesta el pasaje saliendo desde México Poniente (Observatorio)?",
+    "content-dropdown": {
+      "type": "paragraph",
+      "text": "La tarifa puede variar según el destino, la fecha de viaje y la disponibilidad. Te recomendamos consultar el precio actualizado al momento de comprar tus boletos en línea."
+    }
+  },
+  {
+    "title-dropdown": "¿Qué debo considerar al viajar desde la Terminal México Poniente (Observatorio)?",
+    "content-dropdown": {
+      "type": "list",
+      "items": [
+        "Llega con anticipación para ubicar sala, andén y hora de salida",
+        "Ten a la mano tu boleto y una identificación oficial",
+        "Si viajas con equipaje, considera tiempo adicional para abordar",
+        "Revisa con anticipación tu punto de salida y horario",
+        "Compra en línea para asegurar tu lugar con mayor facilidad"
+      ]
+    }
+  },
+  {
+    "title-dropdown": "¿Dónde puedo comprar boletos de autobús en México Poniente (Observatorio) con CostaLine?",
+    "content-dropdown": {
+      "type": "list",
+      "items": [
+        "Taquillas CostaLine AERS",
+        {
+          "text": "Aplicación móvil CostaLine AERS Disponible en",
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://play.google.com/store/apps/details?id=mx.com.iamsa.costaline&hl=es&pli=1"
+            },
+            {
+              "label": "App Store",
+              "url": "https://apps.apple.com/mx/app/costa-line/id1486185563"
+            }
+          ]
+        },
+        {
+          "text": "Contact Center CostaLine AERS marcando al",
+          "phones": [
+            { "label": "800 0037 635", "tel": "018000037635" },
+            { "label": "800 2490 460", "tel": "018002490460" }
+          ]
+        },
+        {
+          "text": "Oxxo. Consulta detalles.",
+          "link": "https://costaline.com.mx/pago-referenciado-oxxo.html"
+        },
+        "Visita nuestros puntos de venta.",
+        "Agencias afiliadas."
+      ]
+    }
+  },
+  {
+    "title-dropdown": "¿Cómo es el viaje en autobús saliendo desde México Poniente (Observatorio)?",
+    "content-dropdown": {
+      "type": "complex",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Viajar desde la Terminal México Poniente (Observatorio) es una opción práctica para quienes se ubican en el poniente de la Ciudad de México. La duración y el costo del viaje dependen del destino, el horario y la disponibilidad. Te recomendamos consultar los detalles al momento de comprar."
+        },
+        {
+          "type": "table",
+          "headers": ["Día", "Horario"],
+          "rows": [
+            ["Costo del viaje de autobús:", "Depende del destino"],
+            ["Descuento viajero anticipado:", "Disponible según ruta y fecha"],
+            ["Boleto abierto:", "Disponible según condiciones de compra"],
+            ["Horas de viaje:", "Depende del destino y tráfico"],
+            ["Viajes directos:", "Consulta disponibilidad por ruta"],
+            ["Primer salida:", "Consulta horarios en la plataforma"],
+            ["Segunda salida:", "Consulta horarios en la plataforma"],
+            ["Amenidades:", "Baños - TV - Boleto electrónico"]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title-dropdown": "¿Con cuánta anticipación debo llegar a México Poniente (Observatorio)?",
+    "content-dropdown": {
+      "type": "paragraph",
+      "text": "Te recomendamos llegar al menos 30 a 45 minutos antes de tu salida para ubicar tu sala de abordaje, andén y viajar sin contratiempos."
+    }
+  },
+  {
+    "title-dropdown": "¿Cómo llegar a la Terminal México Poniente (Observatorio)?",
+    "content-dropdown": {
+      "type": "paragraph",
+      "text": "Puedes llegar en transporte público, taxi o vehículo particular. La Terminal México Poniente es un punto estratégico del poniente de CDMX con acceso desde vialidades principales."
+    }
+  },
+  {
+    "title-dropdown": "¿Cuál es la forma más práctica de comprar boletos para viajar desde México Poniente?",
+    "content-dropdown": {
+      "type": "complex",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Para planear tu viaje con mayor facilidad, puedes comprar tus boletos con anticipación y revisar promociones disponibles:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Compra tu boleto redondo en nuestra página web y obtén descuento en tu viaje de regreso. Consulta rutas disponibles",
+              "links": [
+                {
+                  "label": "Terminos y condiciones",
+                  "url": "http://costaline-nueva.local/nosotros/terminos-condiciones.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Tacos al Pastor (estilo CDMX)",
+    "description": "Una de las opciones más representativas y prácticas antes o después de tu vuelo. El taco al pastor es rápido, accesible y fácil de encontrar en zonas cercanas al AIFA y en rutas de conexión hacia CDMX.",
+    "imageSrc": "../src/assets/img/platillos/aifa/tacos-pastor1.webp",
+    "imageModal": "../src/assets/img/platillos/aifa/tacos-pastor2.webp",
+    "altText": "Tacos al Pastor estilo Ciudad de México",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Barbacoa (Hidalgo / EdoMex)",
+    "description": "Ideal para un desayuno tradicional. La barbacoa es un platillo típico de la región centro del país, muy popular en zonas cercanas al AIFA por su cercanía con Hidalgo y el Estado de México.",
+    "imageSrc": "../src/assets/img/platillos/aifa/barbacoa1.webp",
+    "imageModal": "../src/assets/img/platillos/aifa/barbacoa2.webp",
+    "altText": "Barbacoa tradicional cerca del AIFA",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Quesadillas y antojitos mexicanos",
+    "description": "Una opción clásica para comer algo rápido antes de viajar. Quesadillas, sopes, tlacoyos y otros antojitos forman parte de la gastronomía tradicional que conecta CDMX y el Estado de México.",
+    "imageSrc": "../src/assets/img/platillos/aifa/antojitos1.webp",
+    "imageModal": "../src/assets/img/platillos/aifa/antojitos2.webp",
+    "altText": "Quesadillas y antojitos mexicanos",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Pan dulce y café",
+    "description": "Perfecto para quienes viajan temprano. El pan dulce acompañado de café es una tradición muy presente en CDMX y el Estado de México, ideal para un desayuno ligero antes de entrar al aeropuerto.",
+    "imageSrc": "../src/assets/img/platillos/aifa/pan-cafe1.webp",
+    "imageModal": "../src/assets/img/platillos/aifa/pan-cafe2.webp",
+    "altText": "Pan dulce y café tradicional cerca del AIFA",
+    "linkText": "Ver..."
+  }
+]

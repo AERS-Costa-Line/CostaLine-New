@@ -98,8 +98,9 @@
         border: 2px solid $primary-color;
         position: relative;
         overflow: hidden;
+
         @media (max-width: 992px) {
-        width: 90%;
+            width: 90%;
         }
 
         .__container__title {

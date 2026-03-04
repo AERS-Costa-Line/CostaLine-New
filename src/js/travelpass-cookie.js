@@ -1,242 +1,190 @@
 document.addEventListener("DOMContentLoaded", function () {
-	const loginIconDesktop = document.getElementById("login-icon"); // Botón de escritorio para actualización visual
-	const loginModal = document.getElementById("modalTravelPass");
-	const openLoginModalTriggers = document.querySelectorAll(
-		".js-open-travelpass-login-modal",
-	); // Todos los botones que abren el modal
-	const profileModal = document.getElementById("modalTravelPassLogueado");
-	const loginForm = document.getElementById("login-form");
-	const message = document.getElementById("message");
-	const userNameElement = document.getElementById("user-name");
-	const userBalanceElement = document.getElementById("user-balance");
-	const logoutLink = document.getElementById("logout-link");
-	const brandButtons = document.querySelectorAll(".brand-btn");
-	const brandInput = document.getElementById("brand");
-	const miCuentaBtn = document.getElementById("miCuentaBtn");
-	const registerLink = document.getElementById("register-link");
-	const infoLink = document.getElementById("info-link");
+    // --- 1. SELECCIÓN DE ELEMENTOS Y CONFIGURACIÓN ---
+    const loginModal = document.getElementById("modalTravelPass");
+    const profileModal = document.getElementById("modalTravelPassLogueado");
+    const loginForm = document.getElementById("login-form");
 
-	const loginUrl = "https://one-api.costaline.com.mx/api/v2/ewallet/login";
-	const profileUrl = "https://one-api.costaline.com.mx/api/v2/ewallet/profile";
+    // Si los modales principales no existen, detenemos la ejecución para evitar errores.
+    if (!loginModal || !profileModal || !loginForm) {
+        console.error("No se encontraron los elementos esenciales del modal. El script no se ejecutará.");
+        return;
+    }
 
-	const dashboardUrls = {
-		surdejalisco:
-			"https://travelpass-sur-de-jalisco.costaline.com.mx/dashboard",
-		pegasso: "https://travelpass-pegasso.costaline.com.mx/dashboard",
-	};
+    const openLoginModalTriggers = document.querySelectorAll(".js-open-travelpass-login-modal");
+    const loginIconDesktop = document.getElementById("login-icon");
+    const message = document.getElementById("message");
+    const userNameElement = document.getElementById("user-name");
+    const userBalanceElement = document.getElementById("user-balance");
+    const logoutLink = document.getElementById("logout-link");
+    const brandInput = document.getElementById("brand");
+    const miCuentaBtn = document.getElementById("miCuentaBtn");
 
-	const registerUrls = {
-		surdejalisco: "https://travelpass-sur-de-jalisco.costaline.com.mx/signup",
-		pegasso: "https://travelpass-pegasso.costaline.com.mx/signup",
-	};
+    const loginUrl = "https://one-api.costaline.com.mx/api/v2/ewallet/login";
+    const profileUrl = "https://one-api.costaline.com.mx/api/v2/ewallet/profile";
 
-	const infoUrls = {
-		surdejalisco:
-			"https://www.costaline.com.mx/sur-de-jalisco/travel-pass.html",
-		pegasso: "https://www.costaline.com.mx/pegasso/travel-pass.html",
-	};
+    // --- 2. FUNCIONES DE MANEJO DE COOKIES ---
+    // (Estas funciones estaban bien, no requerían cambios mayores)
+    function setCookie(name, value, days = 7) {
+        const date = new Date();
+        date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+        document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/; domain=costaline.com.mx; SameSite=None; Secure`;
+    }
 
-	// Funciones para manejo de cookies
-	function setCookie(name, value, days = 7) {
-		const date = new Date();
-		date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-		document.cookie = `${name}=${value}; expires=${date.toUTCString()}; path=/; domain=costaline.com.mx; SameSite=None; Secure`;
-	}
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+        return null;
+    }
 
-	function getCookie(name) {
-		return (
-			document.cookie
-				.split("; ")
-				.find((row) => row.startsWith(name))
-				?.split("=")[1] || null
-		);
-	}
+    function deleteCookie(name) {
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=costaline.com.mx; SameSite=None; Secure`;
+    }
 
-	function deleteCookie(name) {
-		document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=costaline.com.mx; SameSite=None; Secure`;
-	}
+    const getToken = () => getCookie("costapassToken");
+    const setToken = (token) => setCookie("costapassToken", token, 7);
+    const removeToken = () => deleteCookie("costapassToken");
 
-	function getToken() {
-		return getCookie("costapassToken");
-	}
+    // --- 3. FUNCIONES PARA MANEJAR EL ESTADO DE LA UI ---
+    // (Hemos centralizado la lógica de la UI en estas funciones)
 
-	function setToken(token) {
-		setCookie("costapassToken", token, 7);
-	}
+    /**
+     * Configura la UI para el estado "sesión no iniciada".
+     * Muestra el ícono de login y asigna el evento para abrir el modal de inicio de sesión.
+     */
+    function renderLoggedOutState() {
+        if (loginIconDesktop) {
+            loginIconDesktop.innerHTML = `<a href="#" class="open-login-modal-link"><img src="../../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Iniciar sesión en Monedero Electrónico" title="Ingresa a Monedero Electrónico" width="100" height="32" style="cursor: pointer;"></a>`;
+        }
+        openLoginModalTriggers.forEach(trigger => {
+            trigger.removeEventListener("click", openProfileModal);
+            trigger.addEventListener("click", openLoginModal);
+        });
+    }
 
-	function removeToken() {
-		deleteCookie("costapassToken");
-	}
+    /**
+     * Configura la UI para el estado "sesión iniciada".
+     * Muestra el saludo al usuario, rellena sus datos y asigna el evento para abrir el modal de perfil.
+     */
+    function renderLoggedInState(profileData) {
+        if (loginIconDesktop) {
+            loginIconDesktop.innerHTML = `<a href="#" class="nombre-monedero"><img src="../../../../src/assets/img/logos/logo-monedero-electronico.webp" class="icono-travel" alt="Monedero Electrónico" title="Perfil Monedero Electrónico"> Hola, ${profileData.name}</a>`;
+        }
+        userNameElement.textContent = `Nombre: ${profileData.name}`;
+        userBalanceElement.textContent = `Saldo: ${profileData.balance !== undefined ? profileData.balance : "N/A"} MXN`;
 
-	function closeModals() {
-		loginModal.style.display = "none";
-		profileModal.style.display = "none";
-	}
+        openLoginModalTriggers.forEach(trigger => {
+            trigger.removeEventListener("click", openLoginModal);
+            trigger.addEventListener("click", openProfileModal);
+        });
+    }
+    
+    // --- 4. MANEJADORES DE EVENTOS PARA MODALES ---
+    const closeModals = () => {
+        loginModal.style.display = "none";
+        profileModal.style.display = "none";
+    };
 
-	// Manejadores de eventos para abrir los modales
-	const openLoginModalStatic = function (event) {
-		event.preventDefault();
-		closeModals();
-		if (loginModal) loginModal.style.display = "flex";
-	};
+    const openLoginModal = (event) => {
+        event.preventDefault();
+        closeModals();
+        loginModal.style.display = "flex";
+    };
 
-	const openProfileModalStatic = function (event) {
-		event.preventDefault();
-		closeModals();
-		if (profileModal) profileModal.style.display = "flex";
-	};
+    const openProfileModal = (event) => {
+        event.preventDefault();
+        closeModals();
+        profileModal.style.display = "flex";
+    };
 
-	function updateLoginIcon(profileData) {
-		// Esta función solo actualiza el HTML interno del botón de escritorio
-		if (loginIconDesktop) {
-			loginIconDesktop.innerHTML = profileData
-				? `<a href="#" id="open-profile-modal-link"><img src="https://costaline.com.mx/gho-test/gho-img-web/iconos/icono-travel-pass.webp" class="icono-travel" alt="Monedero Electrónico" title="Perfil Monedero Electrónico"> Hola, ${profileData.name}</a>`
-				: `<a href="#" id="open-login-modal-link"><img src="../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Iniciar sesión en Monedero Electrónico" title="Ingresa a Monedero Electrónico" width="100" height="32" style="cursor: pointer;"></a>`;
-		}
-	}
-	function checkSession() {
-		const token = getToken();
-		if (token) {
-			fetch(profileUrl, {
-				method: "GET",
-				headers: { Authorization: `Bearer ${token}` },
-			})
-				.then((response) => response.json())
-				.then((profileData) => {
-					if (profileData.name) {
-						updateLoginIcon(profileData);
-						userNameElement.textContent = `Nombre: ${profileData.name}`;
-						userBalanceElement.textContent = `Saldo: ${
-							profileData.balance !== undefined ? profileData.balance : "N/A"
-						} MXN`;
-						// Adjuntar el manejador para abrir el modal de perfil a todos los triggers
-						openLoginModalTriggers.forEach((trigger) => {
-							trigger.removeEventListener("click", openLoginModalStatic); // Limpiar listener anterior
-							trigger.removeEventListener("click", openProfileModalStatic); // Limpiar listener anterior
-							trigger.addEventListener("click", openProfileModalStatic);
-						});
-					} else {
-						removeToken(); // Si los datos del perfil no son válidos, limpiar el token
-						updateLoginIcon(null);
-						// Adjuntar el manejador para abrir el modal de login a todos los triggers
-						openLoginModalTriggers.forEach((trigger) => {
-							trigger.removeEventListener("click", openProfileModalStatic); // Limpiar listener anterior
-							trigger.removeEventListener("click", openLoginModalStatic); // Limpiar listener anterior
-							trigger.addEventListener("click", openLoginModalStatic);
-						});
-					}
-				})
-				.catch(() => {
-					updateLoginIcon(null);
-					// Adjuntar el manejador para abrir el modal de login a todos los triggers en caso de error
-					openLoginModalTriggers.forEach((trigger) => {
-						trigger.removeEventListener("click", openProfileModalStatic);
-						trigger.removeEventListener("click", openLoginModalStatic);
-						trigger.addEventListener("click", openLoginModalStatic);
-					});
-				});
-		} else {
-			updateLoginIcon(null);
-			// Adjuntar el manejador para abrir el modal de login a todos los triggers
-			openLoginModalTriggers.forEach((trigger) => {
-				trigger.removeEventListener("click", openProfileModalStatic);
-				trigger.removeEventListener("click", openLoginModalStatic);
-				trigger.addEventListener("click", openLoginModalStatic);
-			});
-		}
-	}
+    // --- 5. LÓGICA PRINCIPAL DE SESIÓN ---
+    
+    /**
+     * Revisa si existe un token, lo valida contra la API
+     * y llama a la función correspondiente para renderizar la UI.
+     */
+    function checkSession() {
+        const token = getToken();
+        if (!token) {
+            renderLoggedOutState();
+            return;
+        }
 
-	// Actualiza enlace de registro
-	function updateRegisterLink() {
-		const selectedBrand = brandInput.value;
-		if (registerUrls[selectedBrand]) {
-			registerLink.href = registerUrls[selectedBrand];
-		}
-	}
+        fetch(profileUrl, {
+            method: "GET",
+            headers: { Authorization: `Bearer ${token}` },
+        })
+        .then(response => {
+            if (!response.ok) throw new Error('Token inválido o error de red');
+            return response.json();
+        })
+        .then(data => {
+            if (data && data.name) {
+                renderLoggedInState(data);
+            } else {
+                removeToken();
+                renderLoggedOutState();
+            }
+        })
+        .catch(() => {
+            removeToken();
+            renderLoggedOutState();
+        });
+    }
 
-	// Actualiza enlace de "¿Qué es Monedero Electrónico?"
-	function updateInfoLink() {
-		const selectedBrand = brandInput.value;
-		if (infoUrls[selectedBrand]) {
-			infoLink.href = infoUrls[selectedBrand];
-		}
-	}
+    // --- 6. ASIGNACIÓN DE EVENTOS INICIALES ---
 
-	// Selector de marca
-	brandButtons.forEach((button) => {
-		button.addEventListener("click", function () {
-			brandButtons.forEach((btn) => btn.classList.remove("selected"));
-			this.classList.add("selected");
-			brandInput.value = this.dataset.brand;
+    // Evento para el formulario de login
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const brand = brandInput.value;
 
-			updateRegisterLink();
-			updateInfoLink();
-		});
-	});
+        fetch(loginUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password, brand }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.token) {
+                setToken(data.token);
+                localStorage.setItem("userBrand", brand);
+                closeModals();
+                checkSession(); // Re-validamos la sesión para actualizar toda la UI.
+            } else {
+                message.textContent = data.message || "Inicio de sesión fallido. Verifica tus credenciales.";
+                message.style.color = "red";
+            }
+        })
+        .catch(() => {
+            message.textContent = "Ocurrió un error al iniciar sesión.";
+            message.style.color = "red";
+        });
+    });
 
-	// Envío del formulario de login
-	loginForm.addEventListener("submit", function (event) {
-		event.preventDefault();
-		const email = document.getElementById("email").value.trim();
-		const password = document.getElementById("password").value.trim();
-		const brand = brandInput.value;
+    // Evento para el botón de logout
+    logoutLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        removeToken();
+        localStorage.removeItem("userBrand"); // Limpiamos también el localStorage
+        closeModals();
+        renderLoggedOutState(); // ¡LA SOLUCIÓN! Restaura el estado de "sesión no iniciada"
+    });
 
-		fetch(loginUrl, {
-			method: "POST",
-			headers: { "Content-Type": "application/json" },
-			body: JSON.stringify({ email, password, brand }),
-		})
-			.then((response) => response.json())
-			.then((data) => {
-				if (data.token) {
-					setToken(data.token);
-					localStorage.setItem("userBrand", brand);
-					message.textContent = "Inicio de sesión exitoso!";
-					message.style.color = "green";
-					checkSession();
-					loginModal.style.display = "none";
-				} else {
-					message.textContent =
-						"Inicio de sesión fallido. Verifica tus credenciales.";
-					message.style.color = "red";
-				}
-			})
-			.catch(() => {
-				message.textContent = "Ocurrió un error al iniciar sesión.";
-				message.style.color = "red";
-			});
-	});
+    // Otros eventos (cerrar modales, "Mi Cuenta")
+    if (miCuentaBtn) {
+        miCuentaBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.open("https://travelpass.costaline.com.mx/dashboard", "_blank");
+        });
+    }
 
-	logoutLink.addEventListener("click", function (event) {
-		event.preventDefault();
-		removeToken();
-		updateLoginIcon(null);
-		closeModals();
-	});
+    document.getElementById("close-login-modal")?.addEventListener("click", closeModals);
+    document.getElementById("close-profile-modal")?.addEventListener("click", closeModals);
 
-	if (miCuentaBtn) {
-		miCuentaBtn.addEventListener("click", function (event) {
-			event.preventDefault();
-			const userBrand = localStorage.getItem("userBrand");
-			if (userBrand && dashboardUrls[userBrand]) {
-				window.open(dashboardUrls[userBrand], "_blank");
-			}
-		});
-	}
-
-	document
-		.getElementById("close-login-modal")
-		?.addEventListener("click", function () {
-			loginModal.style.display = "none";
-		});
-
-	document
-		.getElementById("close-profile-modal")
-		?.addEventListener("click", function () {
-			profileModal.style.display = "none";
-		});
-
-	updateRegisterLink();
-	updateInfoLink();
-	checkSession();
+    // --- 7. INICIO ---
+    // Comprobar la sesión al cargar la página
+    checkSession();
 });

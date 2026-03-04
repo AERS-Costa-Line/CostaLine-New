@@ -28,7 +28,7 @@
     & .section__destinations__text {
       width: 100%;
       text-align: center;
-      color: $black; // #000
+      color: $black !important; // #000
       font-size: $fs-p; // Mantiene la variable existente
     }
 
@@ -99,14 +99,17 @@
           text-shadow: 3px 3px 5px $transparent-black; // rgba(0, 0, 0, 0.8)
           background-color: $transparent-black; // rgba(0, 0, 0, 0.25)
           position: relative;
-          color: $white; // #fff
 
           & .destinations__item__text__title {
             font-size: clamp(1.2em, 2vw, 1.5em); // Mantiene el valor original
+            color: $white !important; // #fff
+            text-align: left;
           }
 
           & .destinations__item__text__content {
             font-size: clamp(1.1em, 1.3vw, 1.3em); // Mantiene el valor original
+            color: $white !important; // #
+            text-align: left;
           }
         }
 
@@ -226,11 +229,15 @@
                   width: 100%;
                   font-weight: bolder;
                   font-size: clamp(1.2em, 2vw, 1.5em);
+                  color: $white !important; // #fff
+                  text-align: left;
                 }
 
                 .destinations__item__text__content {
                   width: 100%;
                   font-size: clamp(1.1em, 1.3vw, 1.3em);
+                  color: $white !important; // #fff
+                  text-align: left;
                 }
               }
             }
@@ -399,11 +406,15 @@
                   width: 100%;
                   font-weight: bolder;
                   font-size: clamp(1.2em, 2vw, 1.5em);
+                  color: $white !important; // #fff
+                  text-align: left;
                 }
 
                 .destinations__item__text__content {
                   width: 100%;
                   font-size: clamp(1.1em, 1.3vw, 1.3em);
+                  color: $white !important; // #fff
+                  text-align: left;
                 }
               }
             }
@@ -517,11 +528,15 @@
                 width: 100%;
                 font-weight: bolder;
                 font-size: $fs-h3;
+                color: $white !important; // #fff
+                text-align: left;
               }
 
               .destinations__item__text__content {
                 width: 100%;
                 font-size: $fs-p;
+                color: $white !important; // #fff
+                text-align: left;
               }
             }
           }

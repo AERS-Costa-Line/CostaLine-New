@@ -1,0 +1,223 @@
+@use '../core' as*;
+@use '../_01-settings/variables' as *;
+
+// Import components
+@use '../_06-components/header' as *;
+@use '../_06-components/footer' as *;
+@use '../_06-components/modal-doters';
+@use '../_06-components/modalDoters';
+@use '../_06-components/cotiza' as *;
+@use '../_06-components/cookies-policy' as *;
+@use '../_06-components/button-eva-trip' as *;
+
+// Import utilities
+@use '../_07-utilities/utilities' as *;
+
+
+.main-container {
+  max-width: 920px;
+  margin: auto;
+  padding-inline: $spacing-lg;
+}
+
+.content-header {
+  h1 {
+    color: $primary-color;
+    font-size: clamp(1.75em, 4vw, 2.5em);
+    text-align: center;
+    margin-top: 4.5rem;
+    margin-bottom: $spacing-sm; // Reducido para acercar el subtítulo
+    border-bottom: none; // Eliminamos el borde para un look más limpio
+    padding-bottom: 0;
+  }
+  
+  // NUEVO: Subtítulo para dar contexto
+  .subtitle {
+    text-align: center;
+    color: $gray-dark;
+    font-size: $fs-p;
+    margin-top: 0;
+    margin-bottom: $spacing-xl;
+  }
+}
+
+.content-section {
+  margin-bottom: $spacing-xl;
+}
+
+.content-section h2 {
+  color: $light-text-header;
+  font-size: clamp(1.5em, 3.5vw, 2em);
+  margin-bottom: $spacing-md;
+}
+
+/* --- Listas y Párrafos --- */
+ol,
+ul {
+  padding-left: $spacing-lg;
+}
+
+li {
+  margin-bottom: $spacing-md;
+}
+
+p.note {
+  font-size: 0.9em;
+  color: $light-text-subtle;
+  background-color: $bg-card-primary;
+  padding: $spacing-md;
+  border-radius: $radius-md;
+  border-left: 4px solid $secondary-color;
+  margin-top: $spacing-lg;
+}
+
+
+/* --- Estilos de Tabla Modernos --- */
+.table-wrapper {
+  border-radius: $radius-lg;
+  overflow: hidden;
+  /* Para que los bordes redondeados se apliquen a la tabla */
+  margin: $spacing-lg 0;
+  border: 1px solid $light-border;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+thead {
+  background-color: $bg-card-primary;
+  color: $primary-color;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+th,
+td {
+  padding: $spacing-md $spacing-lg;
+  border-bottom: 1px solid $light-border;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+  /* Elimina la última línea */
+}
+
+tbody tr:hover {
+  background-color: #fafafa;
+}
+
+/* --- Botón para Ver Rutas --- */
+.btn-route {
+  display: inline-block;
+  background-color: $primary-color;
+  color: $white;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $radius-md;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9em;
+  transition: background-color $transition-fast, transform $transition-fast;
+}
+
+.btn-route:hover {
+  background-color: $blue-hover;
+  transform: translateY(-2px);
+  box-shadow: $shadow-medium;
+}
+
+/* --- Estilos de Enlaces --- */
+a {
+  color: $brand-color;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a.btn-route:hover {
+  text-decoration: none;
+  /* Evita el subrayado en el botón */
+}
+
+/* --- NUEVO: Cuadrícula para la lista de rutas --- */
+.routes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Una columna por defecto para móviles */
+  gap: $spacing-lg;
+}
+
+/* --- NUEVO: Estilo para cada elemento de ruta --- */
+.route-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  padding: $spacing-md $spacing-lg;
+  border-radius: $radius-lg; // Bordes más redondeados
+  border: 1px solid $light-border;
+  font-weight: 700;
+  color: $text-primary-color;
+  box-shadow: $shadow-light;
+  transition: transform $transition-fast, box-shadow $transition-fast, border-color $transition-fast;
+
+  &:hover {
+    transform: translateY(-5px); // Efecto de elevación más notorio
+    box-shadow: $shadow-dark;   // Sombra más fuerte
+    border-color: $primary-color;
+    cursor: default; // O 'pointer' si estas tarjetas son enlaces
+
+    // Animación del icono al pasar el cursor
+    svg {
+      transform: translateX(5px);
+      color: $primary-color;
+    }
+  }
+  
+  // Estilo del icono SVG
+  svg {
+    color: $gray-dark;
+    transition: transform $transition-fast, color $transition-fast;
+  }
+}
+
+// --- NUEVO: Contenedor para la navegación inferior ---
+.footer-nav {
+  text-align: center;
+  margin-top: $spacing-xxl;
+  margin-bottom: $spacing-xl;
+}
+
+// --- NUEVO: Estilo para el botón de regresar ---
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-sm;
+  background-color: $gray-light;
+  color: $gray-dark;
+  
+  &:hover {
+    background-color: $gray-dark;
+    color: $white;
+  }
+}
+
+/* --- Media Query para pantallas más grandes (tabletas y escritorio) --- */
+@media (min-width: 768px) {
+  .routes-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas en tabletas */
+  }
+}
+
+@media (min-width: 1025px) {
+  .routes-grid {
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas en escritorio */
+  }
+}

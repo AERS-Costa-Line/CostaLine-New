@@ -34,6 +34,7 @@
   a img {
     width: auto;
     height: 100%;
+    vertical-align: middle;
   }
   img {
     width: auto;
@@ -43,6 +44,11 @@
   &:hover {
     transform: scale(1.1);
   }
+}
+
+a.nombre-monedero{
+      text-wrap-mode: nowrap;
+      vertical-align: middle;
 }
 
 .btn-travelpass__submenu {

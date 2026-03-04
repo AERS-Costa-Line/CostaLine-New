@@ -1,0 +1,46 @@
+[
+  {
+    "id": "laguna-de-coyuca",
+    "text": "Laguna de Coyuca de Benítez",
+    "className": "card-wide",
+    "backgroundImage": "../src/assets/img/destinos-img/coyuca-de-benitez/laguna-coyuca.webp",
+    "image2": "../src/assets/img/destinos-img/coyuca-de-benitez/laguna-coyuca-2.webp",
+    "image3": "../src/assets/img/destinos-img/coyuca-de-benitez/laguna-coyuca-3.webp",
+    "image4": "../src/assets/img/destinos-img/coyuca-de-benitez/laguna-coyuca-4.webp",
+    "title": "Laguna de Coyuca de Benítez",
+    "description": "¿Por qué visitarla? La Laguna de Coyuca de Benítez, ubicada cerca de Acapulco, es un impresionante oasis natural. Este cuerpo de agua dulce, separado del océano Pacífico por una estrecha franja de tierra, alberga una rica biodiversidad. Los visitantes pueden realizar paseos en lancha para admirar la exuberante vegetación, observar aves acuáticas y disfrutar de la tranquilidad del entorno. Se ofrecen recorridos guiados que explican la importancia ecológica de la laguna y su impacto en la vida de la comunidad local. Además, los restaurantes a orillas de la laguna ofrecen deliciosos platillos de mariscos frescos, complementando la experiencia con sabores auténticos de la región."
+  },
+  {
+    "id": "cascada-el-salto",
+    "text": "Cascada el Salto",
+    "className": "card-tall",
+    "backgroundImage": "../src/assets/img/destinos-img/coyuca-de-benitez/cascada-el-salto.webp",
+    "image2": "../src/assets/img/destinos-img/coyuca-de-benitez/cascada-el-salto-2.webp",
+    "image3": "../src/assets/img/destinos-img/coyuca-de-benitez/cascada-el-salto-3.webp",
+    "image4": "../src/assets/img/destinos-img/coyuca-de-benitez/cascada-el-salto-4.webp",
+    "title": "Cascada el Salto",
+    "description": "¿Por qué visitarla? La Cascada El Salto, cerca de Coyuca de Benítez, es un impresionante espectáculo natural de agua y roca. Esta cascada, alimentada por un río que serpentea entre la vegetación tropical, ofrece un refrescante escape del calor costero. Los visitantes pueden disfrutar de la vista del agua que cae desde las alturas, nadar en las pozas naturales que se forman en la base de la cascada y explorar los alrededores a través de senderos en la selva. Se puede contratar a guías locales para conocer la flora y fauna de la zona y disfrutar de la aventura de manera segura. La cascada es un lugar ideal para conectar con la naturaleza y disfrutar de un día de aventura y relajación."
+  },
+  {
+    "id": "el-carrizal",
+    "text": "El Carrizal",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/coyuca-de-benitez/el-carrizal.webp",
+    "image2": "../src/assets/img/destinos-img/coyuca-de-benitez/el-carrizal-2.webp",
+    "image3": "../src/assets/img/destinos-img/coyuca-de-benitez/el-carrizal-3.webp",
+    "image4": "../src/assets/img/destinos-img/coyuca-de-benitez/el-carrizal-4.webp",
+    "title": "El Carrizal",
+    "description": "¿Por qué visitarlo? El Carrizal de Coyuca de Benítez es un impresionante paraje natural que invita a la tranquilidad y la conexión con la naturaleza. Este pequeño pueblo pesquero, ubicado a orillas de la laguna de Coyuca, ofrece una atmósfera relajada y auténtica. Los visitantes pueden disfrutar de paseos en lancha por la laguna, observar la gran variedad de aves acuáticas, probar la deliciosa gastronomía local basada en mariscos frescos, o simplemente relajarse en sus playas de arena dorada. Se pueden contratar guías locales para realizar recorridos y aprender sobre la cultura y la historia de la región. El Carrizal es un destino ideal para escapar del bullicio de la ciudad y disfrutar de la belleza natural y la hospitalidad de su gente."
+  },
+  {
+    "id": "barra-de-coyuca",
+    "text": "Barra de Coyuca",
+    "className": "",
+    "backgroundImage": "../src/assets/img/destinos-img/coyuca-de-benitez/barra-de-coyuca.webp",
+    "image2": "../src/assets/img/destinos-img/coyuca-de-benitez/barra-de-coyuca-2.webp",
+    "image3": "../src/assets/img/destinos-img/coyuca-de-benitez/barra-de-coyuca-3.webp",
+    "image4": "../src/assets/img/destinos-img/coyuca-de-benitez/barra-de-coyuca-4.webp",
+    "title": "Barra de Coyuca",
+    "description": "¿Por qué visitarla? La Barra de Coyuca, en Coyuca de Benítez, es un impresionante encuentro entre la laguna y el mar. Este punto, donde la laguna de Coyuca se une al Océano Pacífico, ofrece un espectáculo natural único y hermosas playas vírgenes. Los visitantes pueden disfrutar de la tranquilidad de la laguna, practicar deportes acuáticos, observar la vida silvestre local, y contemplar espectaculares puestas de sol sobre el mar. Se pueden contratar paseos en lancha que recorren los manglares y llevan a las playas desiertas. Además, los restaurantes a orillas de la barra ofrecen deliciosos platillos de mariscos frescos, complementando la experiencia con sabores locales. La Barra de Coyuca es un destino ideal para quienes buscan un escape tranquilo en contacto con la naturaleza."
+  }
+]

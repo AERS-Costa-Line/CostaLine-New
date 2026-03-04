@@ -1,0 +1,178 @@
+[
+  {
+    "title-dropdown": "¿A qué hora sale el primer autobús de la Ciudad de México a Zihuatanejo?",
+    "content-dropdown": {
+      "type": "paragraph",
+      "text": "Los horarios pueden variar según la fecha de viaje y la disponibilidad. Te recomendamos consultar las salidas disponibles en la plataforma de compra para ver el primer horario del día hacia Zihuatanejo."
+    }
+  },
+  {
+    "title-dropdown": "¿Cuáles son las rutas de autobús más populares con destino a Zihuatanejo?",
+    "content-dropdown": {
+      "type": "list",
+      "items": [
+        "CDMX, Central Sur (Taxqueña)",
+        "CDMX, Central Norte",
+        "México Tepotzotlán",
+        "Cuernavaca"
+      ]
+    }
+  },
+  {
+    "title-dropdown": "¿Cuánto cuesta el pasaje de la Ciudad de México a Zihuatanejo?",
+    "content-dropdown": {
+      "type": "paragraph",
+      "text": "La tarifa puede variar según temporada, ruta y disponibilidad. Te recomendamos consultar el precio actualizado directamente en nuestra plataforma de compra."
+    }
+  },
+  {
+    "title-dropdown": "¿Qué lugares visitar en Zihuatanejo e Ixtapa?",
+    "content-dropdown": {
+      "type": "list",
+      "items": [
+        "Playa La Ropa",
+        "Playa Las Gatas",
+        "Paseo del Pescador",
+        "Centro de Zihuatanejo",
+        "Isla Ixtapa",
+        "Marina Ixtapa"
+      ]
+    }
+  },
+  {
+    "title-dropdown": "¿Dónde puedo comprar boletos de autobús a Zihuatanejo con CostaLine?",
+    "content-dropdown": {
+      "type": "list",
+      "items": [
+        "Taquillas CostaLine AERS",
+        {
+          "text": "Aplicación móvil CostaLine AERS Disponible en",
+          "links": [
+            {
+              "label": "Google Play",
+              "url": "https://play.google.com/store/apps/details?id=mx.com.iamsa.costaline&hl=es&pli=1"
+            },
+            {
+              "label": "App Store",
+              "url": "https://apps.apple.com/mx/app/costa-line/id1486185563"
+            }
+          ]
+        },
+        {
+          "text": "Contact Center CostaLine AERS marcando al",
+          "phones": [
+            { "label": "800 0037 635", "tel": "018000037635" },
+            { "label": "800 2490 460", "tel": "018002490460" }
+          ]
+        },
+        {
+          "text": "Oxxo. Consulta detalles.",
+          "link": "https://costaline.com.mx/pago-referenciado-oxxo.html"
+        },
+        "Visita nuestros puntos de venta.",
+        "Agencias afiliadas."
+      ]
+    }
+  },
+  {
+    "title-dropdown": "¿Cómo es el viaje de Ciudad de México a Zihuatanejo?",
+    "content-dropdown": {
+      "type": "complex",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El viaje en autobús de Ciudad de México a Zihuatanejo puede variar en duración y costo según el punto de salida, la ruta y la fecha. Te recomendamos consultar los detalles al momento de comprar para elegir el horario que mejor se adapte a tu itinerario."
+        },
+        {
+          "type": "table",
+          "headers": ["Día", "Horario"],
+          "rows": [
+            ["Costo del viaje de autobús:", "Consulta tarifa al comprar"],
+            ["Descuento viajero anticipado:", "Disponible según ruta y fecha"],
+            ["Boleto abierto:", "Disponible según condiciones de compra"],
+            ["Horas de viaje:", "Depende de la ruta y tráfico"],
+            ["Viajes directos:", "Consulta disponibilidad por ruta"],
+            ["Primer salida:", "Consulta horarios en la plataforma"],
+            ["Segunda salida:", "Consulta horarios en la plataforma"],
+            ["Amenidades:", "Baños - TV - Boleto electrónico"]
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "title-dropdown": "¿Cuánto cuesta un boleto de Taxqueña a Zihuatanejo?",
+    "content-dropdown": {
+      "type": "paragraph",
+      "text": "El costo puede variar según temporada y disponibilidad. Te recomendamos consultar la tarifa actualizada para la ruta Taxqueña → Zihuatanejo directamente en la plataforma de compra."
+    }
+  },
+  {
+    "title-dropdown": "¿Cómo viajar de Ciudad de México a Zihuatanejo?",
+    "content-dropdown": {
+      "type": "paragraph",
+      "text": "Puedes tomar un autobús desde terminales de CDMX como Central Sur (Taxqueña) o Central Norte. Al comprar en línea podrás consultar horarios, puntos de salida y opciones disponibles para tu fecha de viaje."
+    }
+  },
+  {
+    "title-dropdown": "¿Cuál es la forma más barata de viajar en autobús de la Ciudad de México a Zihuatanejo?",
+    "content-dropdown": {
+      "type": "complex",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Compra tus boletos en CostaLine y revisa estas promociones disponibles:"
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "15% de descuento: Compra tu boleto redondo en nuestra página web y obtén un 15% de descuento en tu viaje de regreso. Consulta ",
+              "links": [
+                {
+                  "label": "Terminos y condiciones",
+                  "url": "https://costaline.com.mx/promociones"
+                }
+              ]
+            },
+            {
+              "text": "10% de descuento: Ahora tu compra de boleto redondo en taquillas tiene un 10% de descuento. Consulta términos y condiciones.",
+              "links": [
+                {
+                  "label": "Terminos y condiciones",
+                  "url": "https://costaline.com.mx/promociones"
+                }
+              ]
+            },
+            {
+              "text": "Viajero anticipado: Obtén hasta un 60% de descuento, conoce la tarifa de viajero anticipado. Consulta términos y condiciones.",
+              "links": [
+                {
+                  "label": "Terminos y condiciones",
+                  "url": "https://costaline.com.mx/promociones"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "images",
+          "images": [
+            {
+              "../src": "../src/assets/img/logos/descuento-15.webp",
+              "alt": "descuento 15%"
+            },
+            {
+              "../src": "../src/assets/img/logos/descuento-10.webp",
+              "alt": "descuento 10%"
+            },
+            {
+              "../src": "../src/assets/img/logos/logo-viajero-anticipado.webp",
+              "alt": "Bus 3"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

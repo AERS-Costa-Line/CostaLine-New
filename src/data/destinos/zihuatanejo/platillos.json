@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Tiritas de jurel",
+    "description": "Las tiritas de jurel son uno de los platillos más representativos de Zihuatanejo. Se preparan con pescado fresco cortado en tiras y marinado con limón, cebolla y chile, logrando un sabor cítrico y ligeramente picante. Tradicionalmente se sirven con tostadas o totopos, ideales para disfrutar junto al mar.",
+    "imageSrc": "../src/assets/img/platillos/ixtapa/tiritas-de-jurel.webp",
+    "imageModal": "../src/assets/img/platillos/ixtapa/tiritas-de-jurel-m.webp",
+    "altText": "Tiritas de jurel",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Ceviche de coco",
+    "description": "El ceviche de coco es una opción fresca y muy popular en la costa de Guerrero. Combina pescado o mariscos marinados en limón con ingredientes como jitomate, cebolla y cilantro, y en algunas versiones se integra coco para aportar un toque tropical. Es ideal como entrada o platillo ligero en un día de playa.",
+    "imageSrc": "../src/assets/img/platillos/ixtapa/ceviche-de-coco.webp",
+    "imageModal": "../src/assets/img/platillos/ixtapa/ceviche-de-coco-m.webp",
+    "altText": "Ceviche de coco",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Camarones al tamarindo",
+    "description": "Los camarones al tamarindo destacan por su mezcla de sabores dulces y ácidos. Se preparan con camarones salteados en una salsa de tamarindo con especias, y suelen servirse acompañados de arroz. Es un platillo muy solicitado en Ixtapa Zihuatanejo por su sabor y estilo costeño.",
+    "imageSrc": "../src/assets/img/platillos/ixtapa/camarones-al-tamarindo.webp",
+    "imageModal": "../src/assets/img/platillos/ixtapa/camarones-al-tamarindo-m.webp",
+    "altText": "Camarones al tamarindo",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Chilate de pollo",
+    "description": "El chilate de pollo es un platillo tradicional de Guerrero, ideal para quienes buscan una comida más completa. Se trata de un caldo preparado con pollo, arroz y vegetales, sazonado con chile y especias que le dan un sabor característico. Es una excelente opción para complementar la gastronomía de mar con cocina regional.",
+    "imageSrc": "../src/assets/img/platillos/ixtapa/chilate-de-pollo.webp",
+    "imageModal": "../src/assets/img/platillos/ixtapa/chilate-m.webp",
+    "altText": "Chilate de pollo",
+    "linkText": "Ver..."
+  },
+  {
+    "title": "Garnachas Zihuatanejenses",
+    "description": "Las garnachas son uno de los antojitos más tradicionales de la región. Se preparan con tortillas pequeñas fritas y se acompañan con carne deshebrada, queso, cebolla y salsa. Son una opción ideal para probar un sabor local más allá de los mariscos, especialmente en recorridos por el centro de Zihuatanejo.",
+    "imageSrc": "../src/assets/img/platillos/ixtapa/garnachas-zihuatanejenses.webp",
+    "imageModal": "../src/assets/img/platillos/ixtapa/garnachas-zihuatanejenses-m.webp",
+    "altText": "Garnachas Zihuatanejenses",
+    "linkText": "Ver..."
+  }
+]

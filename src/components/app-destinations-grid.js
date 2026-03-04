@@ -24,7 +24,7 @@ class AppDestinationsGrid extends HTMLElement {
 
     this.actualizarClases = this.actualizarClases.bind(this);
     window.addEventListener("resize", this.actualizarClases);
-    // Ejecutar actualización una vez al cargar
+
     this.actualizarClases();
   }
 
@@ -56,22 +56,14 @@ class AppDestinationsGrid extends HTMLElement {
       .map(
         (destination, index) => `
           <div class="destinations__item slide"
-              style="background-image: url('${
-                destination.image
-              }'); grid-area: item${index + 1};">
-            <a href="${
-              destination.link || "./#"
-            }"
+              style="background-image: url('${destination.image}'); grid-area: item${index + 1};">
+            <a href="${destination.link || "./#"}"
               class="destinations__item__text destination__item__text--slide"
               rel="noopener noreferrer"
               aria-label="Ir a ${destination.title}"
               title="Ir a ${destination.title}">
-              <h3 class="destinations__item__text__title">${
-                destination.title
-              }</h3>
-              <p class="destinations__item__text__content">${
-                destination.content
-              }</p>
+              <h3 class="destinations__item__text__title">${destination.title}</h3>
+              <p class="destinations__item__text__content">${destination.content}</p>
             </a>
           </div>
       `
@@ -85,25 +77,32 @@ class AppDestinationsGrid extends HTMLElement {
     const prevButton = this.querySelector(".prev");
     const nextButton = this.querySelector(".next");
 
-    if (!destinationsContainer || !destinationsWrapper) return;
+    if (!destinationsContainer || !destinationsWrapper || !prevButton || !nextButton) return;
 
     const isMobile = window.innerWidth <= 440;
-    //const isMobileLandScape = window.innerWidth && window.innerWidth <=440 > window.innerHeight && window.innerHeight <= 956;
-    const isMobileLandScape =
-      window.innerWidth <= 1024 && window.innerWidth > window.innerHeight;
+    const isMobileLandScape = window.innerWidth <= 1024 && window.innerWidth > window.innerHeight;
+
+    // ✅ Guard: obtenemos jQuery y verificamos slick
+    const $ = window.jQuery;
+    const hasSlick = !!($?.fn?.slick);
 
     if (isMobile || isMobileLandScape) {
-      if (!destinationsContainer.classList.contains("slider-container")) {
-        destinationsContainer.classList.add("slider-container");
-      }
-      destinationsWrapper.classList.remove(
-        "section__destinations__container__grid"
-      );
+      destinationsContainer.classList.add("slider-container");
+      destinationsWrapper.classList.remove("section__destinations__container__grid");
       destinationsWrapper.classList.add("slider");
+
+      // Si slick NO existe, no inicializamos slider (evita el error)
+      if (!hasSlick) {
+        console.warn("Slick no está disponible. Falta cargar slick.min.js o el orden de scripts está mal.");
+        prevButton.style.display = "none";
+        nextButton.style.display = "none";
+        return;
+      }
 
       prevButton.style.display = "block";
       nextButton.style.display = "block";
 
+      // ✅ Ya es seguro usar $
       if (!$(destinationsWrapper).hasClass("slick-initialized")) {
         $(destinationsWrapper).slick({
           centerMode: true,
@@ -119,33 +118,33 @@ class AppDestinationsGrid extends HTMLElement {
         prevButton.onclick = () => $(destinationsWrapper).slick("slickPrev");
         nextButton.onclick = () => $(destinationsWrapper).slick("slickNext");
 
-        function updateSlideTabindex() {
+        const updateSlideTabindex = () => {
           $(destinationsWrapper)
-            .find(
-              '.slick-slide[aria-hidden="true"] a, .slick-cloned[aria-hidden="true"] a'
-            )
+            .find('.slick-slide[aria-hidden="true"] a, .slick-cloned[aria-hidden="true"] a')
             .attr("tabindex", -1);
+
           $(destinationsWrapper)
-            .find(
-              '.slick-slide[aria-hidden="false"] a, .slick-cloned[aria-hidden="false"] a'
-            )
+            .find('.slick-slide[aria-hidden="false"] a, .slick-cloned[aria-hidden="false"] a')
             .attr("tabindex", 0);
-        }
+        };
 
-        $(destinationsWrapper).on(
-          "afterChange init reInit",
-          updateSlideTabindex
-        );
-
+        $(destinationsWrapper).on("afterChange init reInit", updateSlideTabindex);
         setTimeout(updateSlideTabindex, 100);
       }
     } else {
-      if ($(destinationsWrapper).hasClass("slick-initialized")) {
+      // Desktop / grid
+
+      // ✅ Solo si slick existe hacemos unslick y usamos $
+      if (hasSlick && $(destinationsWrapper).hasClass("slick-initialized")) {
         $(destinationsWrapper).slick("unslick");
       }
 
-      // Limpia cualquier tabindex residual en modo grid
-      $(destinationsWrapper).find("a").attr("tabindex", 0);
+      // Limpia tabindex residual (si hay jQuery úsalo, si no, hazlo en vanilla)
+      if ($) {
+        $(destinationsWrapper).find("a").attr("tabindex", 0);
+      } else {
+        destinationsWrapper.querySelectorAll("a").forEach((a) => a.setAttribute("tabindex", "0"));
+      }
 
       destinationsContainer.classList.remove("slider-container");
       destinationsWrapper.classList.remove("slider");
@@ -154,10 +153,7 @@ class AppDestinationsGrid extends HTMLElement {
       const destinations = JSON.parse(destinationsData);
       const gridClass = this.getGridClass(destinations.length);
 
-      destinationsWrapper.classList.add(
-        "section__destinations__container__grid",
-        gridClass
-      );
+      destinationsWrapper.classList.add("section__destinations__container__grid", gridClass);
       destinationsWrapper.innerHTML = this.renderDestinations(destinations);
 
       prevButton.style.display = "none";
@@ -165,4 +161,5 @@ class AppDestinationsGrid extends HTMLElement {
     }
   }
 }
+
 customElements.define("app-destinations-grid", AppDestinationsGrid);

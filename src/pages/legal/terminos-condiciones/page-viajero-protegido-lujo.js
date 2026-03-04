@@ -15,7 +15,7 @@ class PageViajeroProtegidoLujo extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/viajero-protegido-web.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/viajero-protegido-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/viajero-protegido-mobile.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-viajero-protegido-seguro-de-viaje.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/viajero-protegido-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/viajero-protegido-mobile.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
@@ -26,13 +26,15 @@ class PageViajeroProtegidoLujo extends HTMLElement {
                 <app-section-title section-title="Términos y condiciones LUJO"></app-section-title>
             </section>
 
-            <div class="btn-group-pages">
-                <a class="btn-enable" href="../../../servicios/viajero-protegido.html" class="__btn">Servicio Basico</a>
-                <a class="btn-disable" class="__btn">Servicio Lujo</a> 
-                <a class="btn-enable" href="../../../servicios/viajero-protegido-plus.html" class="__btn">Servicio de Plus</a> 
-            </div>
+            <section class="__sections __btn-group-pages">
+                <div>
+                    <a class="btn-enable" href="../../../servicios/viajero-protegido.html" class="__btn">Servicio Basico</a>
+                    <a class="btn-disable" class="__btn">Servicio Lujo</a> 
+                    <a class="btn-enable" href="../../../servicios/viajero-protegido-plus.html" class="__btn">Servicio de Plus</a> 
+                </div>
 
-            <h3 class="__title__section">Condiciones Generales IAMSA Básico</h3>
+                <h3 class="__title__section">Condiciones Generales IAMSA Básico</h3>
+            </section>
 
             <section class="__sections">
                 <article class="__bg-blue">
