@@ -1,3 +1,11 @@
+/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
+
+import "../../../components/english/app-header-english.js?v=1.0.2";
+import "../../../components/english/app-footer-english.js?v=1.0.2";
+import "../../../components/app-banner-multi-image.js?v=1.0.2";
+import "../../../components/app-card-image-tag-text.js?v=1.0.2";
+import "../../../components/app-destiny-slider.js?v=1.0.2";
+
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../../components/app-cotiza.js";
 import "../../../components/app-section-title.js";
@@ -5,9 +13,13 @@ import "../../../components/app-banner-image.js";
 import "../../../components/app-description-destination.js";
 import "../../../components/app-explore-section.js";
 
+/*-------------------------SCRIPTS---------------------------*/
+
+import "../js/travelpass-cookie.js?v=1.2.8";
+
 class PageBusTicketsToCdAltamirano extends HTMLElement {
-  async connectedCallback() {
-    this.innerHTML = `
+	async connectedCallback() {
+		this.innerHTML = `
           <app-cotiza></app-cotiza>
           <app-modal-doters></app-modal-doters>
           <div class="__first-section">
@@ -59,28 +71,28 @@ class PageBusTicketsToCdAltamirano extends HTMLElement {
             <app-destiny-slider src="../../src/data/english/destiny-slider-data.json"></app-destiny-slider>
           </section>
         `;
-    this._loadExploreSectionData();
-  }
+		this._loadExploreSectionData();
+	}
 
-  async _loadExploreSectionData() {
-    try {
-      const response = await fetch(
-        "../../src/data/english/destinations/ciudad-altamirano/cards-explore-section.json"
-      );
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const cardsData = await response.json();
-      const exploreSection = this.querySelector("app-explore-section");
-      if (exploreSection) {
-        exploreSection.setAttribute("cards-data", JSON.stringify(cardsData));
-      }
-    } catch (error) {
-      console.error("Could not load explore section data:", error);
-    }
-  }
+	async _loadExploreSectionData() {
+		try {
+			const response = await fetch(
+				"../../src/data/english/destinations/ciudad-altamirano/cards-explore-section.json",
+			);
+			if (!response.ok) {
+				throw new Error(`HTTP error! status: ${response.status}`);
+			}
+			const cardsData = await response.json();
+			const exploreSection = this.querySelector("app-explore-section");
+			if (exploreSection) {
+				exploreSection.setAttribute("cards-data", JSON.stringify(cardsData));
+			}
+		} catch (error) {
+			console.error("Could not load explore section data:", error);
+		}
+	}
 }
 customElements.define(
-  "page-boletos-de-autobus-a-cd-altamirano",
-  PageBusTicketsToCdAltamirano
+	"page-boletos-de-autobus-a-cd-altamirano",
+	PageBusTicketsToCdAltamirano,
 );

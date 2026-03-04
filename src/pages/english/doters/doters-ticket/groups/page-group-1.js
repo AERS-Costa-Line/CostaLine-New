@@ -1,65 +1,79 @@
-class PageGroupOneEnglish extends HTMLElement {
-  connectedCallback() {
-    // 1. Definimos todas las rutas en un array de strings.
-    const routes = [
-      "México Central Norte a Pochutla",
-      "Pochutla a México Central Norte",
-      "México Central Sur a Pochutla",
-      "Pochutla a México Central Sur",
-      "Puerto Escondido a México Central Norte",
-      "México Central Norte a Puerto Escondido",
-      "México Central Sur a Puerto Escondido",
-      "Puerto Escondido a México Central Sur",
-      "Lázaro Cárdenas a México Central Norte",
-      "México Central Norte a Lázaro Cárdenas",
-      "Lázaro Cárdenas a México Central Sur",
-      "México Central Sur a Lázaro Cárdenas",
-      "México Central Norte a Zihuatanejo",
-      "Zihuatanejo a México Central Norte",
-      "México Central Sur a Zihuatanejo",
-      "Zihuatanejo a México Central Sur",
-      "México Central Norte a Pinotepa Nacional",
-      "Pinotepa Nacional a México Central Norte",
-      "México Central Sur a Pinotepa Nacional",
-      "Pinotepa Nacional a México Central Sur",
-      "Lázaro Cárdenas a El Polvorín",
-      "México Central Norte a Petatlán",
-      "Petatlán a México Central Norte",
-      "México Central Sur a Petatlán",
-      "Petatlán a México Central Sur",
-      "México Central Sur a San Luis La Loma",
-      "San Luis La Loma a México Central Sur",
-      "Zihuatanejo a El Polvorín",
-      "Atoyac de Álvarez a México Central Sur",
-      "México Central Sur a Atoyac de Álvarez",
-      "Atoyac de Álvarez a México Central Norte",
-      "México Central Norte a Atoyac de Álvarez",
-      "México Central Norte a San Luis San Pedro",
-      "San Luis San Pedro a México Central Norte",
-      "México Central Sur a San Luis San Pedro",
-      "San Luis San Pedro a México Central Sur",
-      "Petatlán a El Polvorín",
-      "Petacalco a El Polvorín",
-      "México Central Norte a Técpan de Galeana",
-      "Técpan de Galeana a México Central Norte",
-      "México Central Sur a Técpan de Galeana",
-    ];
+/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
 
-    // 2. Usamos .map() para transformar cada string del array en un bloque de HTML.
-    //    .join('') une todos los bloques en un solo string.
-    const routesHtml = routes
-      .map(
-        (route) => `
+import "../../../../../components/english/app-header-english.js?v=1.0.2";
+import "../../../../../components/english/app-footer-english.js?v=1.0.2";
+import "../../../../../components/app-banner-multi-image.js?v=1.0.2";
+import "../../../../../components/app-card-image-tag-text.js?v=1.0.2";
+import "../../../../../components/app-destiny-slider.js?v=1.0.2";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+
+/*-------------------------SCRIPTS---------------------------*/
+
+import "../js/travelpass-cookie.js?v=1.2.8";
+
+class PageGroupOneEnglish extends HTMLElement {
+	connectedCallback() {
+		// 1. Definimos todas las rutas en un array de strings.
+		const routes = [
+			"México Central Norte a Pochutla",
+			"Pochutla a México Central Norte",
+			"México Central Sur a Pochutla",
+			"Pochutla a México Central Sur",
+			"Puerto Escondido a México Central Norte",
+			"México Central Norte a Puerto Escondido",
+			"México Central Sur a Puerto Escondido",
+			"Puerto Escondido a México Central Sur",
+			"Lázaro Cárdenas a México Central Norte",
+			"México Central Norte a Lázaro Cárdenas",
+			"Lázaro Cárdenas a México Central Sur",
+			"México Central Sur a Lázaro Cárdenas",
+			"México Central Norte a Zihuatanejo",
+			"Zihuatanejo a México Central Norte",
+			"México Central Sur a Zihuatanejo",
+			"Zihuatanejo a México Central Sur",
+			"México Central Norte a Pinotepa Nacional",
+			"Pinotepa Nacional a México Central Norte",
+			"México Central Sur a Pinotepa Nacional",
+			"Pinotepa Nacional a México Central Sur",
+			"Lázaro Cárdenas a El Polvorín",
+			"México Central Norte a Petatlán",
+			"Petatlán a México Central Norte",
+			"México Central Sur a Petatlán",
+			"Petatlán a México Central Sur",
+			"México Central Sur a San Luis La Loma",
+			"San Luis La Loma a México Central Sur",
+			"Zihuatanejo a El Polvorín",
+			"Atoyac de Álvarez a México Central Sur",
+			"México Central Sur a Atoyac de Álvarez",
+			"Atoyac de Álvarez a México Central Norte",
+			"México Central Norte a Atoyac de Álvarez",
+			"México Central Norte a San Luis San Pedro",
+			"San Luis San Pedro a México Central Norte",
+			"México Central Sur a San Luis San Pedro",
+			"San Luis San Pedro a México Central Sur",
+			"Petatlán a El Polvorín",
+			"Petacalco a El Polvorín",
+			"México Central Norte a Técpan de Galeana",
+			"Técpan de Galeana a México Central Norte",
+			"México Central Sur a Técpan de Galeana",
+		];
+
+		// 2. Usamos .map() para transformar cada string del array en un bloque de HTML.
+		//    .join('') une todos los bloques en un solo string.
+		const routesHtml = routes
+			.map(
+				(route) => `
       <div class="route-item">
           <span>${route}</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
       </div>
     `,
-      )
-      .join("");
+			)
+			.join("");
 
-    // 3. Inyectamos el HTML generado dinámicamente en la plantilla principal.
-    this.innerHTML = `
+		// 3. Inyectamos el HTML generado dinámicamente en la plantilla principal.
+		this.innerHTML = `
       <app-modal-doters></app-modal-doters>
 
       <div class="main-container">
@@ -82,7 +96,7 @@ class PageGroupOneEnglish extends HTMLElement {
         </div>
       </div>
     `;
-  }
+	}
 }
 
 customElements.define("page-group-one-english", PageGroupOneEnglish);
