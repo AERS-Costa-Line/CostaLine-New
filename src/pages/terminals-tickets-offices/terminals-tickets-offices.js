@@ -17,7 +17,7 @@ import "../../../../components/app-dropdown.js"; // Importar el componente dropd
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookie.js?v=1.2.8";
+import "../../js/slick.js?v=1.0.2";
 
 class PageTerminalsTicketsOffices extends HTMLElement {
 	connectedCallback() {

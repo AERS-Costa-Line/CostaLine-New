@@ -13,7 +13,7 @@ class AppModalTravelpass extends HTMLElement {
 
               <div>
                 <h2 class="titulo-2">¡Bienvenido!</h2>
-                <h3 class="subtitle">Ingresa tu cuenta a Travelpass</h3>
+                <h3 class="subtitle">Ingresa tu cuenta a Monedero Electrónico</h3>
               </div>
               
               <form id="login-form" class="__login-form">

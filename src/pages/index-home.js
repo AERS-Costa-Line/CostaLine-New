@@ -19,3 +19,7 @@ import "../components/app-modal-doters.js?v=1.0.2";
 import "../js/doters-cookies.js?v=1.2.1";
 import "../js/travelpass-cookie.js?v=1.2.8";
 import "../components/app-dropdown.js?v=1.0.2";
+
+/*-------------------------SCRIPTS---------------------------*/
+
+import "../js/slick.js?v=1.0.2";

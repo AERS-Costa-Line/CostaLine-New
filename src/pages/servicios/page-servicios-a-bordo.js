@@ -18,7 +18,7 @@ import "../../components/app-card-text-bg-blue-gray.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookie.js?v=1.2.8";
+import "../../js/slick.js?v=1.0.2";
 
 class PageServiciosABordo extends HTMLElement {
 	connectedCallback() {

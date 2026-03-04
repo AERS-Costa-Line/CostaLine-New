@@ -22,7 +22,8 @@ import "../../components/app-section-title.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookie.js?v=1.2.8";
+import "../../js/slick.js?v=1.0.2";
+import "../../js/jquery.min.js?v=1.2.8";
 
 class PageHome extends HTMLElement {
 	connectedCallback() {

@@ -21,7 +21,7 @@ import "../../components/app-forms.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookie.js?v=1.2.8";
+import "../../js/slick.js?v=1.0.2";
 
 class PageRentaDeAutobuses extends HTMLElement {
 	connectedCallback() {

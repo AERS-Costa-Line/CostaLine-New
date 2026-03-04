@@ -19,7 +19,7 @@ import "../../components/app-card-title-icon.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookie.js?v=1.2.8";
+import "../../js/slick.js?v=1.0.2";
 
 class PageDestinos extends HTMLElement {
 	connectedCallback() {

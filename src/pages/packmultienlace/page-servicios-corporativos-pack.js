@@ -18,7 +18,7 @@ import "../../components/app-card-bg-secondary.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookie.js?v=1.2.8";
+import "../../js/slick.js?v=1.0.2";
 
 class PageServiciosCorporativosPack extends HTMLElement {
 	connectedCallback() {
