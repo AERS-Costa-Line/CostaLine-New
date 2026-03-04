@@ -7,6 +7,7 @@ import "../../components/app-banner-promotional.js";
 import "../../components/app-card-left-description.js";
 import "../../components/app-grid-text.js";
 import "../../js/slick.js?v=1.0.0";
+import "../../js/slick.min.js?v=1.0.2";
 
 class AppHomeEnglish extends HTMLElement {
 	connectedCallback() {
