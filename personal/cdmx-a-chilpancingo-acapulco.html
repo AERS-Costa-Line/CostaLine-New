@@ -5,12 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title -->
-		<title>Viaja a Coyuca de Benítez en Autobús | Costa Line</title>
+		<title>Viaja a Chilpancingo y Acapulco desde CDMX | Costa Line</title>
 
 		<!-- Meta Description -->
 		<meta
 			name="description"
-			content="Descubre el paraíso escondido de Coyuca de Benítez. Explora su famosa laguna, sus playas vírgenes y la Barra de Coyuca. Te decimos cómo llegar en autobús desde CDMX y qué hacer en este increíble destino de Guerrero."
+			content="¿Vas a Guerrero? Elige tu destino: Chilpancingo o Acapulco. Salidas desde CDMX (Terminal Sur). Consulta horarios y compra tu boleto en línea fácil y seguro. ¡Reserva ahora!"
 		/>
 
 		<!-- Meta Keywords -->
@@ -19,16 +19,16 @@
 		<meta name="language" content="Español" />
 		<link
 			rel="canonical"
-			href="https://costaline.com.mx/destinos/autobus-a-coyuca-de-benitez.html"
+			href="https://costaline.com.mx/boletos-autobus/acapulco.html"
 		/>
 		<link
 			rel="alternate"
-			href="https://costaline.com.mx/english/destinos/autobus-a-coyuca-de-benitez.html"
+			href="https://costaline.com.mx/english/boletos-autobus/acapulco.html"
 			hreflang="en-US"
 		/>
 
 		<meta name="author" content="Costa Line AERS" />
-		<meta name="robots" content="index, follow" />
+		<meta name="robots" content="noindex" />
 		<meta name="googlebot" content="index, follow" />
 		<meta name="sitemap" content="/sitemap.xml" />
 
@@ -106,25 +106,12 @@
 		<meta name="msapplication-TileColor" content="#06255b" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
 
-		<!-- Open Graph -->
-
-		<meta
-			property="og:title"
-			content="Viaja a Coyuca de Benitez en Autobús| Costa Line AERS"
-		/>
-		<meta property="og:description" content="" />
-		<meta
-			property="og:image"
-			content="https://www.costaline.com.mx/gho-img/carrusel/Bw_Rio_Tiber_Mor_Uruapan_costaline.webp"
-		/>
-		<!-- End Open Graph -->
-
 		<!-- Scripts -->
 
 		<!-- Components for page -->
 		<script
 			type="module"
-			src="../src/pages/destinos/page-autobus-a-coyuca-de-benitez.js?v=1.2.1"
+			src="../src/pages/personal/page-cdmx-a-chilpancingo-acapulco.js?v=1.2.1"
 			crossorigin="anonymous"
 		></script>
 
@@ -148,24 +135,40 @@
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": "Article",
-				"headline": "Guía de Viaje a Coyuca de Benítez: Un Paraíso Natural",
-				"description": "Planea tu escapada a Coyuca de Benítez. Aprende sobre la Laguna de Coyuca, dónde comer y cómo llegar fácilmente en autobús con Costa Line para una experiencia inolvidable.",
-				"author": {
+				"@type": "BusTrip",
+				"name": "Viajes en Autobús de CDMX a Chilpancingo y Acapulco",
+				"description": "Viaja cómodamente desde la Terminal del Sur (Taxqueña) de la Ciudad de México a Chilpancingo o a las terminales de Acapulco con Costa Line.",
+				"provider": {
 					"@type": "Organization",
 					"name": "Costa Line"
 				},
-				"publisher": {
-					"@type": "Organization",
-					"name": "Costa Line",
-					"logo": {
-						"@type": "ImageObject",
-						"url": "https://www.costaline.com.mx/url-del-logo.png"
-					}
+				"departureBusStop": {
+					"@type": "BusStation",
+					"name": "Terminal de Autobuses del Sur (Taxqueña), CDMX"
 				},
-				"mainEntityOfPage": {
-					"@type": "WebPage",
-					"@id": "https://www.costaline.com.mx/destinos/autobus-a-coyuca-de-benitez.html"
+				"arrivalBusStop": [
+					{
+						"@type": "BusStation",
+						"name": "Terminal de Autobuses de Chilpancingo"
+					},
+					{
+						"@type": "BusStation",
+						"name": "Terminal de Autobuses de Acapulco (Costera)"
+					},
+					{
+						"@type": "BusStation",
+						"name": "Terminal de Autobuses de Acapulco (Diamante)"
+					}
+				],
+				"offers": {
+					"@type": "Offer",
+					"priceCurrency": "MXN",
+					"availability": "https://schema.org/InStock",
+					"url": "https://www.costaline.com.mx/personal/cdmx-a-chilpancingo-acapulco",
+					"seller": {
+						"@type": "Organization",
+						"name": "Costa Line"
+					}
 				}
 			}
 		</script>
@@ -231,12 +234,15 @@
       }'
 		>
 		</app-header>
+		<app-modal-travelpass></app-modal-travelpass>
 
 		<main>
-			<page-autobus-a-coyuca-de-benitez></page-autobus-a-coyuca-de-benitez>
+			<page-pers-cdmx-a-chilpancingo-acapulco></page-pers-cdmx-a-chilpancingo-acapulco>
 		</main>
 		<app-footer></app-footer>
+		<app-cookies-policy></app-cookies-policy>
 
+		<app-button-eva-trip></app-button-eva-trip>
 		<script src="../src/js/doters-cookies.js?v=1.2.1"></script>
 		<!-- JS widget de reservamos -->
 		<script src="https://widgets.reservamos.mx/search/5.23.6/search.js?v=5.18.0"></script>

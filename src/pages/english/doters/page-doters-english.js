@@ -1,4 +1,5 @@
 /*--------------IMPORT COMPONENTS FROM DOTERS PAGE -----------------*/
+
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-payments.js";
 import "../../../components/app-destinations-grid.js";
@@ -12,8 +13,18 @@ import "../../../components/app-card-doters.js";
 import "../../../components/app-card-left-description.js";
 import "../../../components/app-card-right-description.js";
 import "../../../components/app-carousel-banners.js";
-import "../../../js/slick.js?v=1.0.2";
-import "../../../js/slick.min.js?v=1.0.2";
+
+/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
+
+import "../../../components/english/app-header-english.js?v=1.0.2";
+import "../../../components/english/app-footer-english.js?v=1.0.2";
+import "../../../components/app-banner-multi-image.js?v=1.0.2";
+import "../../../components/app-card-image-tag-text.js?v=1.0.2";
+import "../../../components/app-destiny-slider.js?v=1.0.2";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+
+/*-------------------------SCRIPTS---------------------------*/
 
 class PageDotersEnglish extends HTMLElement {
 	connectedCallback() {

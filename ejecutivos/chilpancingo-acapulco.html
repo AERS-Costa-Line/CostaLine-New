@@ -5,10 +5,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title -->
-		<title>Tarifa de Estudiante: Viaja a Acapulco Diamante | Costa Line</title>
+		<title>Servicio Ejecutivo: Chilpancingo a Acapulco | Costa Line</title>
 
 		<!-- Meta Description -->
-		<meta name="description" content="¿Eres estudiante? Paga menos en tu viaje a Acapulco Diamante desde CDMX. Muestra tu credencial vigente y accede a tu tarifa especial. ¡Asegura tu lugar en la playa!" />
+		<meta
+			name="description"
+			content="¿Viaje rápido a Acapulco? Disfruta el confort del servicio ejecutivo desde Chilpancingo. Asientos reclinables, más espacio y un viaje de lujo. ¡Compra tu boleto ahora!"
+		/>
 
 		<!-- Meta Keywords -->
 		<meta name="keywords" content="" />
@@ -25,12 +28,11 @@
 		/>
 
 		<meta name="author" content="Costa Line AERS" />
-		<meta name="robots" content="noindex">
+		<meta name="robots" content="noindex" />
 		<meta name="googlebot" content="index, follow" />
 		<meta name="sitemap" content="/sitemap.xml" />
 
 		<meta name="theme-color" content="#06255b" />
-
 
 		<!-- Favicons for various devices for SEO and UX -->
 
@@ -100,24 +102,29 @@
 		<!-- End Favicon -->
 
 		<link rel="manifest" href="/site.webmanifest" />
-		
+
 		<meta name="msapplication-TileColor" content="#06255b" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
 
-		
-
 		<!-- Scripts -->
 
-		<script src="../src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="../app.js?v=1.0.2"></script>
+		<!-- Components for page -->
+		<script
+			type="module"
+			src="../src/pages/ejecutivos/page-chilpancingo-a-acapulco.js?v=1.2.1"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- js -->
+		<script src="../src/js/jquery.min.js?v=1.0.1"></script>
 
 		<!-- Stylesheets -->
 
 		<!-- CSS All Components -->
 		<link
-      rel="stylesheet"
-      href="../src/styles/css/css-pages/page-destinos-landings.min.css?v=1.2.1"
-    />
+			rel="stylesheet"
+			href="../src/styles/css/css-pages/page-destinos-landings.min.css?v=1.2.1"
+		/>
 
 		<!-- CSS widget de reservamos -->
 		<link
@@ -125,60 +132,63 @@
 			href="https://widgets.reservamos.mx/search/5.23.6/search.css?v=5.18.0"
 		/>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BusTrip",
-  "name": "Viaje en autobús a Acapulco Diamante con Tarifa de Estudiante",
-  "description": "Tarifa especial para estudiantes en la ruta CDMX a Acapulco Diamante.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Costa Line"
-  },
-  "departureBusStop": {
-    "@type": "BusStation",
-    "name": "Terminal de Autobuses del Sur (Taxqueña), CDMX"
-  },
-  "arrivalBusStop": {
-    "@type": "BusStation",
-    "name": "Terminal Acapulco Diamante"
-  },
-  "offers": {
-    "@type": "Offer",
-    "name": "Tarifa de Estudiante",
-    "priceCurrency": "MXN",
-    "availability": "https://schema.org/InStock",
-    "eligibleCustomerType": "Student",
-    "url": "https://www.costaline.com.mx/estudiantes/cdmx-a-acapulco-diamante",
-    "seller": {
-      "@type": "Organization",
-      "name": "Costa Line"
-    }
-  }
-}
-</script>
-
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "BusTrip",
+				"name": "Servicio de Autobús Ejecutivo: Chilpancingo a Acapulco",
+				"description": "Viaja de Chilpancingo a Acapulco con la máxima comodidad y rapidez en el servicio ejecutivo de Costa Line. Una experiencia de viaje superior.",
+				"provider": {
+					"@type": "Organization",
+					"name": "Costa Line"
+				},
+				"departureBusStop": {
+					"@type": "BusStation",
+					"name": "Terminal de Autobuses de Chilpancingo"
+				},
+				"arrivalBusStop": {
+					"@type": "BusStation",
+					"name": "Terminal de Autobuses de Acapulco (Costera)"
+				},
+				"offers": {
+					"@type": "Offer",
+					"priceCurrency": "MXN",
+					"availability": "https://schema.org/InStock",
+					"url": "https://www.costaline.com.mx/ejecutivos/chilpancingo-a-acapulco",
+					"seller": {
+						"@type": "Organization",
+						"name": "Costa Line"
+					}
+				}
+			}
+		</script>
 
 		<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K9MW4HF');</script>
-<!-- End Google Tag Manager -->
-
-
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-K9MW4HF");
+		</script>
+		<!-- End Google Tag Manager -->
 	</head>
 	<body>
-
-		
 		<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
- 
-
-
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
 		<app-header
 			logo='{
@@ -189,13 +199,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		>
 		</app-header>
 		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+
 		<main>
-			<page-cdmx-a-acapulco-diamante></page-cdmx-a-acapulco-diamante>
+			<page-eje-chilpancingo-a-acapulco></page-eje-chilpancingo-a-acapulco>
 		</main>
 		<app-footer></app-footer>
 		<app-cookies-policy></app-cookies-policy>
-		
+
 		<app-button-eva-trip></app-button-eva-trip>
 		<script src="../src/js/doters-cookies.js?v=1.2.1"></script>
 		<!-- JS widget de reservamos -->

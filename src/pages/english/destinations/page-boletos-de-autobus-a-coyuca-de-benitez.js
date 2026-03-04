@@ -1,9 +1,19 @@
+/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
+
+import "../../../components/english/app-header-english.js?v=1.0.2";
+import "../../../components/english/app-footer-english.js?v=1.0.2";
+import "../../../components/app-banner-multi-image.js?v=1.0.2";
+import "../../../components/app-card-image-tag-text.js?v=1.0.2";
+import "../../../components/app-destiny-slider.js?v=1.0.2";
+
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../../components/app-cotiza.js";
 import "../../../components/app-section-title.js";
 import "../../../components/app-banner-image.js";
 import "../../../components/app-description-destination.js";
 import "../../../components/app-explore-section.js";
+
+/*-------------------------SCRIPTS---------------------------*/
 
 class PageBusTicketsToCoyucaDeBenitez extends HTMLElement {
 	async connectedCallback() {

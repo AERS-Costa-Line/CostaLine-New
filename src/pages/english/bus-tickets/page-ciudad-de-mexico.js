@@ -1,3 +1,11 @@
+/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
+
+import "../../../components/english/app-header-english.js?v=1.0.2";
+import "../../../components/english/app-footer-english.js?v=1.0.2";
+import "../../../components/app-banner-multi-image.js?v=1.0.2";
+import "../../../components/app-card-image-tag-text.js?v=1.0.2";
+import "../../../components/app-destiny-slider.js?v=1.0.2";
+
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-payments.js";
@@ -8,7 +16,8 @@ import "../../../components/app-card-destination-opacity.js";
 import "../../../components/app-slider-opacity.js";
 import "../../../components/app-modal-multi-image.js";
 import "../../../components/app-modal-image.js";
-import "../../../js/slick.js?v=1.0.0";
+
+/*-------------------------SCRIPTS---------------------------*/
 
 class PageCiudadDeMexicoEnglish extends HTMLElement {
 	async connectedCallback() {

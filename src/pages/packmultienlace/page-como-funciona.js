@@ -1,3 +1,11 @@
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
+
+import "../../components/app-header.js?v=1.1.3";
+import "../../components/app-cookies-policy.js?v=1.0.3";
+import "../../components/app-button-whats.js?v=1.0.2";
+import "../../components/app-button-eva-trip.js?v=1.0.2";
+import "../../components/app-footer.js?v=1.0.2";
+
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
@@ -7,10 +15,12 @@ import "../../components/app-header-pack-multienlace.js";
 import "../../components/app-footer-pack-multienlace.js";
 import "../../components/app-time-line-packm.js";
 
+/*-------------------------SCRIPTS---------------------------*/
+
 class PageComoFunciona extends HTMLElement {
-  async connectedCallback() {
-    // Make connectedCallback async
-    this.innerHTML = `
+	async connectedCallback() {
+		// Make connectedCallback async
+		this.innerHTML = `
         <app-cotiza></app-cotiza>
 
         <app-banner-slider
@@ -27,26 +37,26 @@ class PageComoFunciona extends HTMLElement {
         </section>
       `;
 
-    // Fetch data and pass it to the custom element
-    const dropdownQuestServicesElement = this.querySelector(
-      "app-dropdown-quest-services"
-    );
-    if (dropdownQuestServicesElement) {
-      try {
-        const response = await fetch("/src/data/dropdown-quest-services.json"); // Path to the new JSON file
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const dropdownData = await response.json();
-        dropdownQuestServicesElement.setDropdownData(dropdownData);
-      } catch (error) {
-        console.error("Error loading dropdown data:", error);
-        // Optionally display an error message in the component
-        dropdownQuestServicesElement.innerHTML =
-          "<p>Error al cargar las preguntas frecuentes.</p>";
-      }
-    }
-  }
+		// Fetch data and pass it to the custom element
+		const dropdownQuestServicesElement = this.querySelector(
+			"app-dropdown-quest-services",
+		);
+		if (dropdownQuestServicesElement) {
+			try {
+				const response = await fetch("/src/data/dropdown-quest-services.json"); // Path to the new JSON file
+				if (!response.ok) {
+					throw new Error(`HTTP error! status: ${response.status}`);
+				}
+				const dropdownData = await response.json();
+				dropdownQuestServicesElement.setDropdownData(dropdownData);
+			} catch (error) {
+				console.error("Error loading dropdown data:", error);
+				// Optionally display an error message in the component
+				dropdownQuestServicesElement.innerHTML =
+					"<p>Error al cargar las preguntas frecuentes.</p>";
+			}
+		}
+	}
 }
 
 customElements.define("page-como-funciona", PageComoFunciona);

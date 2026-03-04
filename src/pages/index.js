@@ -4,8 +4,6 @@ import "./home/page-home.js?v=1.2.9";
 import "./page-site-map.js?v=1.0.2";
 import "./page-404.js?v=1.0.2";
 
-
-
 /*----------------PAGINAS-ENGLISH---------------------------------*/
 
 import "./english/terminals-tickets-offices/terminals-tickets-offices.js?v=1.0.2";
@@ -37,7 +35,6 @@ import "./english/destinations/page-boletos-de-autobus-a-taxco.js?v=1.0.2";
 import "./english/destinations/page-boletos-de-autobus-a-tepotzotlan.js?v=1.0.2";
 import "./english/destinations/page-boletos-de-autobus-a-toluca.js?v=1.0.2";
 
-
 /*----------------------------PAGES-BUS-TICKETS----------------------------------------*/
 
 import "./english/bus-tickets/page-acapulco.js?v=1.0.2";
@@ -63,9 +60,7 @@ import "./english/doters/doters-ticket/groups/page-group-7.js?v=1.0.2";
 import "./english/doters/doters-ticket/groups/page-group-8.js?v=1.0.2";
 import "./english/doters/doters-ticket/groups/page-group-9.js?v=1.0.2";
 
-
 /*----------------------------PAGINAS-LANDINGS----------------------------------------*/
-
 
 import "./page-terminales-taquillas.js?v=1.0.2";
 import "./page-salidas-charters.js?v=1.0.2";
@@ -74,9 +69,6 @@ import "./page-acerca-de-nosotros.js?v=1.0.2";
 import "./page-ofertas-en-1-click.js?v=1.0.2";
 import "./page-festival-de-viajes.js?v=1.0.2";
 import "./page-kueski-pay.js?v=1.0.2";
-
-
-
 
 //BOLETOS AUTOBUS
 
@@ -118,7 +110,6 @@ import "./destinos/page-autobus-a-tecpan.js?v=1.0.2";
 import "./destinos/page-autobus-a-tepotzotlan.js?v=1.0.2";
 import "./destinos/page-autobus-a-toluca.js?v=1.0.2";
 
-
 import "./page-preguntas-frecuentes.js?v=1.0.2";
 
 //PACK MULTIENLACE
@@ -143,12 +134,10 @@ import "./boletos-autobus/page-donde-comprar-etn.js?v=1.0.2";
 
 import "./destinos/page-destinos.js?v=1.0.2";
 
-
 //DESCUENTOS
 
 import "./descuentos/page-descuentos.js";
 import "./descuentos/viajero-anticipado/page-anticipado.js";
-
 
 //SERVICIOS
 
@@ -162,10 +151,9 @@ import "./servicios/page-facturacion.js?v=1.0.2";
 
 import "./promociones/page-promociones.js?v=1.0.2";
 import "./promociones/page-mas-komodo.js?v=1.0.2";
-import "./promociones/page-descuentos-navidenos.js?v=1.0.2"
-import "./promociones/dinamica-gana-boletos-para-el-cine.js?v=1.0.2"
+import "./promociones/page-descuentos-navidenos.js?v=1.0.2";
+import "./promociones/dinamica-gana-boletos-para-el-cine.js?v=1.0.2";
 import "./promociones/page-descuentos-semana-santa.js?v=1.0.2";
-
 
 //LEGAL
 import "./legal/page-atencion-a-clientes.js?v=1.0.4";
@@ -183,12 +171,10 @@ import "./legal/terminos-condiciones/page-viajero-protegido.js?v=1.0.2";
 import "./legal/terminos-condiciones/page-viajero-protegido-plus.js?v=1.0.2";
 import "./legal/terminos-condiciones/page-viajero-protegido-lujo.js?v=1.0.2";
 
-
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../components/app-header.js?v=1.1.3";
 import "../components/app-cookies-policy.js?v=1.0.3";
-import "../components/app-modal-travelpass.js?v=1.0.2";
 import "../components/app-button-whats.js?v=1.0.2";
 import "../components/app-button-eva-trip.js?v=1.0.2";
 import "../components/app-footer.js?v=1.0.2";
@@ -204,7 +190,6 @@ import "../components/app-destiny-slider.js?v=1.0.2";
 /*-------------------------SCRIPTS---------------------------*/
 
 import "../js/travelpass-cookie.js?v=1.2.8";
-
 
 /* Doters */
 

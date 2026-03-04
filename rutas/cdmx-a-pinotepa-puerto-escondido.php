@@ -214,7 +214,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		>
 		</app-header>
 		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+		
 		<main>
 			<page-ruta-cdmx-a-pinotepa></page-ruta-cdmx-a-pinotepa>
 		</main>
