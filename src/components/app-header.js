@@ -2,7 +2,6 @@
 
 import "../components/app-modal-travelpass.js?v=1.0.2";
 import "../components/app-modal-doters.js?v=1.0.2";
-import "../components/app-cotiza.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 

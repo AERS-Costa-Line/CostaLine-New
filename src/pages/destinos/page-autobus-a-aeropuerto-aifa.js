@@ -21,7 +21,7 @@ import "../../components/app-destiny-grid.js";
 class AutobusAAIFA extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-			<app-cotiza></app-cotiza>
+			
             <app-banner-slider
                 slides-data='[
                 {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-acapulco.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-acapulco.webp", "smallImage": "../../src/assets/img/banner/movil/banner-acapulco.webp", "link": "#index.html/banner1"}]'

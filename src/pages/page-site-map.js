@@ -14,12 +14,10 @@ import "../components/app-section-title.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-
 class PageSiteMap extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
-      <app-modal-doters></app-modal-doters>
       <div class="space"></div>
       <section class="__section">
         <app-section-title section-title="Site Map | Costa Line AERS"></app-section-title>

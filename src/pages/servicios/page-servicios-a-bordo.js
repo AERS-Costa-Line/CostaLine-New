@@ -19,8 +19,9 @@ import "../../components/app-card-text-bg-blue-gray.js";
 class PageServiciosABordo extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
+            <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
+            
 
             <div class="__panthom_space"></div>
 

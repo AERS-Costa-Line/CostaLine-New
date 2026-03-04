@@ -20,8 +20,9 @@ import "../components/app-dropdown.js"; // Importar el componente dropdown
 class PagePreguntasFrecuentes extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
+            <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
+            
 
             <div class="__panthom_space"></div>
 

@@ -7,6 +7,7 @@ import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
+import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";

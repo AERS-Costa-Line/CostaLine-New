@@ -25,7 +25,7 @@ class PageAvisoDePrivacidad extends HTMLElement {
         </style>
         <app-cotiza></app-cotiza>
 
-        <app-modal-doters></app-modal-doters>
+        
 
         <div class="__panthom_space"></div>
 

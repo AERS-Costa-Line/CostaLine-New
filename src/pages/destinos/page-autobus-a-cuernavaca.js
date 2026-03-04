@@ -21,7 +21,7 @@ import "../../components/app-destiny-grid.js";
 class AutobusACuernavaca extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
-      <app-cotiza></app-cotiza>
+      
 
       <app-banner-slider
           slides-data='[

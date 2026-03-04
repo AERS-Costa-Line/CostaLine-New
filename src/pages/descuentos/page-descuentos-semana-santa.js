@@ -7,6 +7,7 @@ import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../components/app-cotiza.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-right-description.js";
@@ -18,7 +19,6 @@ class DescuentosSemanaSanta extends HTMLElement {
 		this.innerHTML = `
       <app-cotiza></app-cotiza>
 
-      <app-modal-doters></app-modal-doters>
 
       <div class="__first-section">
         <app-payments></app-payments>

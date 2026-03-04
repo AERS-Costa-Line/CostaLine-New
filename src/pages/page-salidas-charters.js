@@ -20,8 +20,9 @@ import "../components/app-card-text-bg-white.js";
 class PageSalidasCharters extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
+            <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
+            
 
              <app-banner-slider
                 slides-data='[

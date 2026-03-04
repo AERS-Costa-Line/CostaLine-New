@@ -20,9 +20,9 @@ import "../../components/app-card-title-icon.js";
 class PageDestinos extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-        <app-cotiza></app-cotiza>
+        
 
-        <app-modal-doters></app-modal-doters>
+        
             <div class="__panthom_space"></div>
 
 

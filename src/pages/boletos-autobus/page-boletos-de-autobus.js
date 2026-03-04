@@ -18,7 +18,8 @@ class PageBoletosDeAutobus extends HTMLElement {
 		// Establecer la estructura HTML base del componente.
 		// El contenido de __boletos-de-autobus__scrollbar se llenará dinámicamente.
 		this.innerHTML = `
-            <app-modal-doters></app-modal-doters>
+            <app-cotiza></app-cotiza>
+            
             
             <div class="__panthom_space"></div>
 

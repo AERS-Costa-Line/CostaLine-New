@@ -28,6 +28,7 @@ import "../../js/slick.js?v=1.0.2";
 class PageDoters extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
+            <app-cotiza></app-cotiza>
             
             <app-banner-slider
 					slides-data='[

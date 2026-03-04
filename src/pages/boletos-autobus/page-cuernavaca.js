@@ -7,6 +7,7 @@ import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../components/app-cotiza.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
@@ -14,6 +15,7 @@ import "../../components/app-section-title.js";
 class PageCuernavaca extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
+            <app-cotiza></app-cotiza>
 
 <app-banner-slider
   slides-data='[

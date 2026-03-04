@@ -22,7 +22,7 @@ class PageTerminosHotSale extends HTMLElement {
 		this.innerHTML = `
         <app-cotiza></app-cotiza>
 
-        <app-modal-doters></app-modal-doters>
+        
 
         <app-banner-slider
             slides-data='[

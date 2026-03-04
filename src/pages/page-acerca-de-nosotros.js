@@ -22,7 +22,7 @@ class PageAcercaDeNosotros extends HTMLElement {
 		this.innerHTML = `
         <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
+            
 
             <section class="__first-section">
                 <app-payments></app-payments>
