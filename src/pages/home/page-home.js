@@ -20,10 +20,6 @@ import "../../components/app-blog.js";
 import "../../components/app-img-shop-left.js";
 import "../../components/app-section-title.js";
 
-/*-------------------------SCRIPTS---------------------------*/
-
-import "../../js/slick.js?v=1.0.2";
-import "../../js/jquery.min.js?v=1.2.8";
 
 class PageHome extends HTMLElement {
 	connectedCallback() {

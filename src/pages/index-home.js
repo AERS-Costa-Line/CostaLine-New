@@ -22,4 +22,5 @@ import "../components/app-dropdown.js?v=1.0.2";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/slick.js?v=1.0.2";
+import "../js/slick.min.js?v=1.0.2";
+import "../js/jquery.min.js?v=1.2.8";

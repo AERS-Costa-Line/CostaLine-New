@@ -1,3 +1,8 @@
+
+/*-------------------------SCRIPTS---------------------------*/
+
+import "../js/slick.js?v=1.0.2";
+
 class AppPayments extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `<section class="payment-slider-container main-container"><div class="payment-slider" role="region"></div></section>`;
