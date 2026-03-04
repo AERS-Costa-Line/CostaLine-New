@@ -63,7 +63,7 @@ function showLoggedOutUI() {
     btnM.style.display = "inline-block";
     btnM.innerHTML = `
       <!-- same root-relative fix for mobile button -->
-      <img id="modalDoters-logoMovil" src="../../..src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+      <img id="modalDoters-logoMovil" src="../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
     `;
     btnM.onclick = () => {
       const login =

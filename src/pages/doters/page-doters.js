@@ -13,6 +13,7 @@ import "../../components/app-card-left-description.js";
 import "../../components/app-card-right-description.js";
 import "../../components/app-carousel-banners.js";
 import "../../js/slick.js?v=1.0.2";
+import "../../js/slick.min.js?v=1.0.2";
 
 class PageDoters extends HTMLElement {
 	connectedCallback() {
