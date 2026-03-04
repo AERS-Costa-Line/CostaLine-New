@@ -21,8 +21,6 @@ import "../../components/app-forms.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageRentaDeAutobuses extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

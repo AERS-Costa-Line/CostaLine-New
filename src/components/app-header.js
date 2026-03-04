@@ -1,3 +1,7 @@
+/*----------------------------- Imports Components ------------------------------*/
+
+import "../components/app-modal-travelpass.js?v=1.0.2";
+import "../components/app-modal-doters.js?v=1.0.2";
 
 /*-------------------------SCRIPTS---------------------------*/
 
@@ -27,10 +31,6 @@ class AppHeader extends HTMLElement {
 						<li><a href="https://viaje.costaline.com.mx/exchange/itinerary">Modificar itinerario</a></li>
 							</ul>
 						</li>
-
-
-
-						
 						<li><a href="../../../servicios/mas-komodo.html">Mas Komodo</a></li>
 						<li><a href="../../../servicios/monedero-electronico.html">Monedero</a></li>
 						<li><a href="../../../destinos/">Destinos</a></li>
@@ -59,11 +59,11 @@ class AppHeader extends HTMLElement {
 					<img src="../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 				</button>
 				<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Iniciar sesión Doters">
-  <img id="modalDoters-logo" src='../../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
-</button>
+					<img id="modalDoters-logo" src='../../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
+				</button>
 
-<!-- Username desktop (se muestra cuando hay token) -->
-<div id="modalDoters-welcomeMessage" class="doters-welcome" style="display:none;"></div>
+				<!-- Username desktop (se muestra cuando hay token) -->
+				<div id="modalDoters-welcomeMessage" class="doters-welcome" style="display:none;"></div>
 				<a class="li__languaje desktop-languaje" href="../../../english/" aria-label="Cambiar idioma">
 					<img src='../../../src/assets/icons/icons-img/USA_Flag.webp' alt="English" loading="lazy">
 				</a>
@@ -92,10 +92,6 @@ class AppHeader extends HTMLElement {
 						<li><a href="../../../servicios/mas-komodo.html">Más Komodo</a></li>
 						<li><a href="../../../servicios/monedero-electronico.html">Monedero</a></li>
 						<li><a href="../../../destinos/">Destinos</a></li>
-
-
-
-						
 						<li class="submenu__media-queries">
 							<a href="#" aria-haspopup="true" aria-expanded="false">Más <span class="icon-arrow-down"></span></a>
 							<ul>
@@ -120,18 +116,17 @@ class AppHeader extends HTMLElement {
 								<img src="../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 							</button>
 							<button id="openDotersModalMovil" class="btn-doters" aria-label="Iniciar sesión Doters">
-  <img id="modalDoters-logoMovil" src="../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
-</button>
-
-<!-- Username mobile (se muestra cuando hay token) -->
-<div id="modalDoters-welcomeMessageMovil" class="doters-welcome" style="display:none;"></div>
+								<img id="modalDoters-logoMovil" src="../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+							</button>
+							<!-- Username mobile (se muestra cuando hay token) -->
+							<div id="modalDoters-welcomeMessageMovil" class="doters-welcome" style="display:none;"></div>
 						</li>
 					</ul>
 				</div>
 			</header>
-			
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+				
+			<app-modal-travelpass></app-modal-travelpass>
+			<app-modal-doters></app-modal-doters>
 		`;
 
 		this.openDesktopSubmenuInstance = null;

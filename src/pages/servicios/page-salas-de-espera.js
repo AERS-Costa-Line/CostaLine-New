@@ -17,8 +17,6 @@ import "../../components/app-cards-text-image.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageSalasDeEsperaVip extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

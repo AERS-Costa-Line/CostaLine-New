@@ -17,10 +17,6 @@ import "../../components/app-img-shop-right.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-image.js";
 
-/*-------------------------SCRIPTS---------------------------*/
-
-import "../../js/slick.js?v=1.0.2";
-
 class PageDondeComprar extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

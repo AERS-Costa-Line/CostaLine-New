@@ -17,13 +17,6 @@ import "../components/app-dropdown.js"; // Importar el componente dropdown
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/travelpass-cookie.js?v=1.2.8";
-import "../js/slick.js?v=1.0.2";
-
-/*-------------------------SCRIPTS---------------------------*/
-
-import "../../js/slick.js?v=1.0.2";
-
 class PagePreguntasFrecuentes extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

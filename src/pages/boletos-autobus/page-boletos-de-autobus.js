@@ -15,10 +15,6 @@ import "../../components/app-payments.js";
 import "../../components/app-cards-text-list.js";
 import "../../components/app-section-title.js";
 
-/*-------------------------SCRIPTS---------------------------*/
-
-import "../../js/slick.js?v=1.0.2";
-
 class PageBoletosDeAutobus extends HTMLElement {
 	async connectedCallback() {
 		// Establecer la estructura HTML base del componente.

@@ -13,11 +13,8 @@ import "../../../components/app-banner-slider.js";
 import "../../../components/app-payments.js";
 import "../../../components/app-section-title.js";
 import "../../../components/app-table-pets.js";
-import "../../../js/slick.js?v=1.0.2";
 
 /*-------------------------SCRIPTS---------------------------*/
-
-import "../../js/slick.js?v=1.0.2";
 
 class PageTermsHotSale extends HTMLElement {
 	connectedCallback() {

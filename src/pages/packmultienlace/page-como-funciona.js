@@ -18,8 +18,6 @@ import "../../components/app-time-line-packm.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageComoFunciona extends HTMLElement {
 	async connectedCallback() {
 		// Make connectedCallback async

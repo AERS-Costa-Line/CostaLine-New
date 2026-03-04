@@ -17,8 +17,6 @@ import "../../components/app-forms.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PagePromociones extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

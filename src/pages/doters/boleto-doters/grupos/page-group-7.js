@@ -11,8 +11,6 @@ import "../../../../components/app-footer.js?v=1.0.2";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageGroupSeven extends HTMLElement {
 	connectedCallback() {
 		// 1. Definimos todas las rutas en un array de strings.

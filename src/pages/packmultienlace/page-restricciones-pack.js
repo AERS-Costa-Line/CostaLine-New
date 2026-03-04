@@ -18,8 +18,6 @@ import "../../components/app-card-circle.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageRestriccionesPack extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

@@ -16,8 +16,6 @@ import "../../components/app-dropdown.js"; // Importar el componente dropdown
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageMasKomodo extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

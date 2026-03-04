@@ -15,8 +15,6 @@ import "../../../components/app-explore-section.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageBusTicketsToCoyucaDeBenitez extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `

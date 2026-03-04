@@ -17,8 +17,6 @@ import "../../components/app-footer-pack-multienlace.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageCotizadorPack extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

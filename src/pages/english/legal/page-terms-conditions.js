@@ -16,8 +16,6 @@ import "../../../components/app-table-pets.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageTermsConditions extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

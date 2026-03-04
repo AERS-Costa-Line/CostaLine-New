@@ -8,9 +8,6 @@ import "../../../../../components/app-destiny-slider.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 
-/*-------------------------SCRIPTS---------------------------*/
-
-import "../../js/slick.js?v=1.0.2";
 
 class PageGroupFourEnglish extends HTMLElement {
 	connectedCallback() {

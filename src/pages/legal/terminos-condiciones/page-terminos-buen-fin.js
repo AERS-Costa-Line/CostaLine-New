@@ -17,8 +17,6 @@ import "../../../components/app-destinations-table.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../js/slick.js?v=1.0.2";
-
 class PageTerminosBuenFin extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `

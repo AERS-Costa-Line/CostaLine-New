@@ -13,10 +13,6 @@ import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 
-/*-------------------------SCRIPTS---------------------------*/
-
-import "../../js/slick.js?v=1.0.2";
-
 class PageCiudadAltamirano extends HTMLElement {
 	async connectedCallback() {
 		this.innerHTML = `
