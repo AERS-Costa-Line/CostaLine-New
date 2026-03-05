@@ -210,8 +210,17 @@
 		/>
 
 		<!-- Scripts -->
-		<script src="../src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="../app.js?v=1.0.0"></script>
+
+		<!-- Components for page -->
+		<script
+			type="module"
+			src="../../src/pages/english/home/page-home.js?v=1.2.1"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- js -->
+		<script src="../../src/js/jquery.min.js?v=1.0.1"></script>
+
 		<!-- End Scripts -->
 	</head>
 
@@ -224,15 +233,10 @@
       }'
 		>
 		</app-header-english>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
 		<main>
 			<app-home-english></app-home-english>
 		</main>
 		<app-footer-english></app-footer-english>
-		<app-cookies-policy></app-cookies-policy>
-
-		<app-button-eva-trip></app-button-eva-trip>
 
 		<!-- JS widget de reservamos -->
 		<script src="https://widgets.reservamos.mx/search/5.23.6/search.js?v=1.2.1"></script>

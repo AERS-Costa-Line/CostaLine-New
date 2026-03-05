@@ -2,9 +2,6 @@
 
 import "../../../components/english/app-header-english.js?v=1.0.2";
 import "../../../components/english/app-footer-english.js?v=1.0.2";
-import "../../../components/app-banner-multi-image.js?v=1.0.2";
-import "../../../components/app-card-image-tag-text.js?v=1.0.2";
-import "../../../components/app-destiny-slider.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
@@ -20,8 +17,6 @@ class PagePrivacyPolicy extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
         <app-cotiza></app-cotiza>
-
-        <app-modal-doters></app-modal-doters>
 
         <app-banner-slider
             slides-data='[
