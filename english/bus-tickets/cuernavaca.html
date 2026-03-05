@@ -5,12 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title -->
-		<title>Boletos de Autobús a Ciudad de México | Costa Line</title>
+		<title>Boletos de Autobús a Cuernavaca | Costa Line</title>
 
 		<!-- Meta Description -->
 		<meta
 			name="description"
-			content="Compra tus boletos de autobús a CDMX desde Acapulco, Ixtapa, Zihuatanejo y más. Llegamos a las terminales Sur (Taxqueña) y Poniente. ¡Consulta horarios y viaja hoy!"
+			content="¿Escapada a Cuernavaca? Compra tus boletos de autobús con salidas frecuentes desde CDMX (Taxqueña). Consulta precios y horarios. ¡Disfruta la eterna primavera!"
 		/>
 
 		<!-- Meta Keywords -->
@@ -19,11 +19,11 @@
 		<meta name="language" content="Español" />
 		<link
 			rel="canonical"
-			href="https://costaline.com.mx/boletos-autobus/ciudad-de-mexico.html"
+			href="https://costaline.com.mx/boletos-autobus/cuernavaca.html"
 		/>
 		<link
 			rel="alternate"
-			href="https://costaline.com.mx/english/boletos-autobus/ciudad-de-mexico.html"
+			href="https://costaline.com.mx/english/boletos-autobus/cuernavaca.html"
 			hreflang="en-US"
 		/>
 
@@ -110,7 +110,7 @@
 
 		<meta
 			property="og:title"
-			content="Boletos de Autobús a Ciudad de México  | Costa Line AERS"
+			content="Boletos de Autobús a Cuernavaca  | Costa Line AERS"
 		/>
 		<meta property="og:description" content="" />
 		<meta
@@ -121,8 +121,15 @@
 
 		<!-- Scripts -->
 
-		<script src="../../src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="../app.js?v=1.0.0"></script>
+		<!-- Components for page -->
+		<script
+			type="module"
+			src="../../src/pages/english/bus-tickets/page-cuernavaca.js?v=1.0.7"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- js -->
+		<script src="../../src/js/jquery.min.js?v=1.0.1"></script>
 
 		<!-- Stylesheets -->
 
@@ -141,19 +148,37 @@
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": "Product",
-				"name": "Boletos de Autobús a Ciudad de México",
-				"description": "Compra tus boletos de autobús a CDMX desde Acapulco, Ixtapa, Zihuatanejo y más. Llegamos a las terminales Sur (Taxqueña) y Poniente. ¡Consulta horarios y viaja hoy!",
-				"brand": {
-					"@type": "Brand",
+				"@type": "BusTrip",
+				"name": "Boletos de autobús a Cuernavaca desde CDMX",
+				"description": "¿Escapada a Cuernavaca? Compra tus boletos de autobús con salidas frecuentes desde CDMX (Taxqueña). Consulta precios y horarios. ¡Disfruta la eterna primavera!",
+				"provider": {
+					"@type": "Organization",
 					"name": "Costa Line"
 				},
-				"url": "https://www.costaline.com.mx/ciudad-de-mexico",
+				"departureBusStop": {
+					"@type": "BusStation",
+					"name": "Terminal de Autobuses del Sur (Taxqueña), CDMX",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Ciudad de México",
+						"addressCountry": "MX"
+					}
+				},
+				"arrivalBusStop": {
+					"@type": "BusStation",
+					"name": "Terminal de Autobuses de Cuernavaca",
+					"address": {
+						"@type": "PostalAddress",
+						"addressLocality": "Cuernavaca",
+						"addressRegion": "Morelos",
+						"addressCountry": "MX"
+					}
+				},
 				"offers": {
-					"@type": "AggregateOffer",
+					"@type": "Offer",
 					"priceCurrency": "MXN",
-					"lowPrice": "500",
-					"offerCount": "15",
+					"availability": "https://schema.org/InStock",
+					"url": "https://www.costaline.com.mx/cuernavaca",
 					"seller": {
 						"@type": "Organization",
 						"name": "Costa Line"
@@ -198,7 +223,7 @@
 		</app-header-english>
 
 		<main>
-			<page-ciudad-de-mexico-english></page-ciudad-de-mexico-english>
+			<page-cuernavaca-english></page-cuernavaca-english>
 		</main>
 		<app-footer></app-footer>
 

@@ -5,12 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title -->
-		<title>Boletos de Autobús a Chilpancingo | Costa Line</title>
+		<title>Boletos de Autobús al Aeropuerto AIFA | Costa Line</title>
 
 		<!-- Meta Description -->
 		<meta
 			name="description"
-			content="¿Viajas a Chilpancingo? Compra tus boletos de autobús saliendo desde CDMX (Taxqueña). Consulta precios y horarios para tu viaje. ¡Reserva fácil con Costa Line!"
+			content="¿Vuelas desde el Aeropuerto AIFA? Compra tus boletos de autobús y llega a tiempo para tu vuelo. Salidas desde CDMX (Taxqueña). ¡Viaja seguro y sin estrés!"
 		/>
 
 		<!-- Meta Keywords -->
@@ -19,11 +19,11 @@
 		<meta name="language" content="Español" />
 		<link
 			rel="canonical"
-			href="https://costaline.com.mx/boletos-autobus/chilpancingo.html"
+			href="https://costaline.com.mx/boletos-autobus/acapulco.html"
 		/>
 		<link
 			rel="alternate"
-			href="https://costaline.com.mx/english/boletos-autobus/chilpancingo.html"
+			href="https://costaline.com.mx/english/boletos-autobus/acapulco.html"
 			hreflang="en-US"
 		/>
 
@@ -110,7 +110,7 @@
 
 		<meta
 			property="og:title"
-			content="Boletos de Autobús a Chilpancingo  | Costa Line AERS"
+			content="Boletos de Autobús a Acapulco  | Costa Line AERS"
 		/>
 		<meta property="og:description" content="" />
 		<meta
@@ -121,8 +121,15 @@
 
 		<!-- Scripts -->
 
-		<script src="../../src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="../app.js?v=1.0.0"></script>
+		<!-- Components for page -->
+		<script
+			type="module"
+			src="../../src/pages/english/bus-tickets/page-aeropuerto-aifa.js?v=1.0.7"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- js -->
+		<script src="../../src/js/jquery.min.js?v=1.0.1"></script>
 
 		<!-- Stylesheets -->
 
@@ -142,8 +149,8 @@
 			{
 				"@context": "https://schema.org",
 				"@type": "BusTrip",
-				"name": "Boletos de autobús a Chilpancingo desde CDMX",
-				"description": "¿Viajas a Chilpancingo? Compra tus boletos de autobús saliendo desde CDMX (Taxqueña). Consulta precios y horarios para tu viaje. ¡Reserva fácil con Costa Line!",
+				"name": "Boletos de autobús al Aeropuerto AIFA desde CDMX",
+				"description": "¿Vuelas desde el Aeropuerto AIFA? Compra tus boletos de autobús y llega a tiempo para tu vuelo. Salidas desde CDMX (Taxqueña). ¡Viaja seguro y sin estrés!",
 				"provider": {
 					"@type": "Organization",
 					"name": "Costa Line"
@@ -158,11 +165,12 @@
 					}
 				},
 				"arrivalBusStop": {
-					"@type": "BusStation",
-					"name": "Terminal de Autobuses de Chilpancingo",
+					"@type": "Airport",
+					"name": "Aeropuerto Internacional Felipe Ángeles (AIFA)",
+					"iataCode": "NLU",
 					"address": {
 						"@type": "PostalAddress",
-						"addressLocality": "Chilpancingo de los Bravo",
+						"addressLocality": "Zumpango",
 						"addressCountry": "MX"
 					}
 				},
@@ -170,7 +178,7 @@
 					"@type": "Offer",
 					"priceCurrency": "MXN",
 					"availability": "https://schema.org/InStock",
-					"url": "https://www.costaline.com.mx/chilpancingo",
+					"url": "https://www.costaline.com.mx/aeropuerto-aifa",
 					"seller": {
 						"@type": "Organization",
 						"name": "Costa Line"
@@ -215,7 +223,7 @@
 		</app-header-english>
 
 		<main>
-			<page-chilpancingo-english></page-chilpancingo-english>
+			<page-aeropuerto-aifa-english></page-aeropuerto-aifa-english>
 		</main>
 		<app-footer></app-footer>
 

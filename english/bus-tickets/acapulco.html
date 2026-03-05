@@ -5,12 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title -->
-		<title>Boletos de Autobús a Toluca, Edomex | Costa Line</title>
+		<title>Boletos de Autobús a Acapulco | Costa Line</title>
 
 		<!-- Meta Description -->
 		<meta
 			name="description"
-			content="¿Viajas a Toluca? Compra tus boletos de autobús con salidas frecuentes desde CDMX (Poniente / Observatorio). Consulta horarios y precios. ¡Compra fácil y viaja seguro!"
+			content="Compra tus boletos de autobús a Acapulco con salidas a nuestras terminales Diamante y Maxitúnel desde CDMX. Consulta precios, horarios y viaja con comodidad. ¡Reserva hoy!"
 		/>
 
 		<!-- Meta Keywords -->
@@ -19,11 +19,11 @@
 		<meta name="language" content="Español" />
 		<link
 			rel="canonical"
-			href="https://costaline.com.mx/boletos-autobus/toluca.html"
+			href="https://costaline.com.mx/boletos-autobus/acapulco.html"
 		/>
 		<link
 			rel="alternate"
-			href="https://costaline.com.mx/english/boletos-autobus/toluca.html"
+			href="https://costaline.com.mx/english/boletos-autobus/acapulco.html"
 			hreflang="en-US"
 		/>
 
@@ -110,7 +110,7 @@
 
 		<meta
 			property="og:title"
-			content="Boletos de Autobús a Toluca  | Costa Line AERS"
+			content="Boletos de Autobús a Acapulco  | Costa Line AERS"
 		/>
 		<meta property="og:description" content="" />
 		<meta
@@ -121,8 +121,15 @@
 
 		<!-- Scripts -->
 
-		<script src="../../src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="../app.js?v=1.0.0"></script>
+		<!-- Components for page -->
+		<script
+			type="module"
+			src="../../src/pages/english/bus-tickets/page-acapulco.js?v=1.0.7"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- js -->
+		<script src="../../src/js/jquery.min.js?v=1.0.1"></script>
 
 		<!-- Stylesheets -->
 
@@ -141,37 +148,20 @@
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
-				"@type": "BusTrip",
-				"name": "Boletos de autobús a Toluca desde CDMX",
-				"description": "¿Viajas a Toluca? Compra tus boletos de autobús con salidas frecuentes desde CDMX (Poniente / Observatorio). Consulta horarios y precios. ¡Reserva fácil y viaja seguro!",
-				"provider": {
-					"@type": "Organization",
+				"@type": "Product",
+				"name": "Boletos de Autobús a Acapulco",
+				"description": "Compra tus boletos de autobús a Acapulco con salidas a nuestras terminales Diamante y Maxitúnel desde CDMX. Consulta precios, horarios y viaja con comodidad. ¡Reserva hoy!",
+				"brand": {
+					"@type": "Brand",
 					"name": "Costa Line"
 				},
-				"departureBusStop": {
-					"@type": "BusStation",
-					"name": "Terminal de Autobuses de Poniente (Observatorio), CDMX",
-					"address": {
-						"@type": "PostalAddress",
-						"addressLocality": "Ciudad de México",
-						"addressCountry": "MX"
-					}
-				},
-				"arrivalBusStop": {
-					"@type": "BusStation",
-					"name": "Terminal de Autobuses de Toluca",
-					"address": {
-						"@type": "PostalAddress",
-						"addressLocality": "Toluca de Lerdo",
-						"addressRegion": "Estado de México",
-						"addressCountry": "MX"
-					}
-				},
+				"url": "https://www.costaline.com.mx/acapulco",
 				"offers": {
-					"@type": "Offer",
+					"@type": "AggregateOffer",
 					"priceCurrency": "MXN",
-					"availability": "https://schema.org/InStock",
-					"url": "https://www.costaline.com.mx/toluca",
+					"lowPrice": "550",
+					"highPrice": "950",
+					"offerCount": "2",
 					"seller": {
 						"@type": "Organization",
 						"name": "Costa Line"
@@ -179,6 +169,7 @@
 				}
 			}
 		</script>
+
 		<!-- Google Tag Manager -->
 		<script>
 			(function (w, d, s, l, i) {
@@ -193,39 +184,12 @@
 			})(window, document, "script", "dataLayer", "GTM-K9MW4HF");
 		</script>
 		<!-- End Google Tag Manager -->
-
-		<!-- Google Tag Manager -->
-		<script>
-			(function (w, d, s, l, i) {
-				w[l] = w[l] || [];
-				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-				var f = d.getElementsByTagName(s)[0],
-					j = d.createElement(s),
-					dl = l != "dataLayer" ? "&l=" + l : "";
-				j.async = true;
-				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-				f.parentNode.insertBefore(j, f);
-			})(window, document, "script", "dataLayer", "GTM-KFMMCC7");
-		</script>
-		<!-- End Google Tag Manager -->
 	</head>
-
 	<body>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript
 			><iframe
 				src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
-				height="0"
-				width="0"
-				style="display: none; visibility: hidden"
-			></iframe
-		></noscript>
-		<!-- End Google Tag Manager (noscript) -->
-
-		<!-- Google Tag Manager (noscript) -->
-		<noscript
-			><iframe
-				src="https://www.googletagmanager.com/ns.html?id=GTM-KFMMCC7"
 				height="0"
 				width="0"
 				style="display: none; visibility: hidden"
@@ -243,7 +207,7 @@
 		</app-header-english>
 
 		<main>
-			<page-toluca-english></page-toluca-english>
+			<page-acapulco-english></page-acapulco-english>
 		</main>
 		<app-footer></app-footer>
 
