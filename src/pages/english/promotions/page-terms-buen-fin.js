@@ -21,8 +21,6 @@ class PageTermsBuenFin extends HTMLElement {
 		this.innerHTML = `
            <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
-
             <app-banner-slider
                 slides-data='[
                 {"id": "slide1", "title": "Banner 1", "image": "../../../../src/assets/img/banner/promociones/web/banner-buen-fin-descuento-55.webp","mediumImage": "../../../../src/assets/img/banner/promociones/tablet/banner-buen-fin-55-descuento.webp", "smallImage": "../../../../src/assets/img/banner/promociones/movil/banner-buen-fin-descunto-55.webp", "link": "#index.html/banner1"}
@@ -169,7 +167,7 @@ class PageTermsBuenFin extends HTMLElement {
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Seats subject to availability, check them at <a class="__link-text" href="../.../../../">www.costaline.com.mx</a> and AERS Costa Line App.
+                                Seats subject to availability, check them at <a class="__link-text" href="../../../../">www.costaline.com.mx</a> and AERS Costa Line App.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">

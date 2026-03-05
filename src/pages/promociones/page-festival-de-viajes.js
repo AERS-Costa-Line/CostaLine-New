@@ -168,7 +168,7 @@ class PageFestivalViajes extends HTMLElement {
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                               Asientos sujetos a disponibilidad, consúltalos en <a class="__link-text" href="../.../../../">www.costaline.com.mx</a> y App AERS Costaline
+                               Asientos sujetos a disponibilidad, consúltalos en <a class="__link-text" href="../../../../">www.costaline.com.mx</a> y App AERS Costaline
                             </p>
                         </li>
                         <li class="__terms-purchase-item">

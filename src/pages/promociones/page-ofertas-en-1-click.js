@@ -167,7 +167,7 @@ class PageOfertasClick extends HTMLElement {
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                               Asientos sujetos a disponibilidad, consúltalos en <a class="__link-text" href="../.../../../">www.costaline.com.mx</a> y App AERS Costa Line
+                               Asientos sujetos a disponibilidad, consúltalos en <a class="__link-text" href="../../../../">www.costaline.com.mx</a> y App AERS Costa Line
                             </p>
                         </li>
                         <li class="__terms-purchase-item">

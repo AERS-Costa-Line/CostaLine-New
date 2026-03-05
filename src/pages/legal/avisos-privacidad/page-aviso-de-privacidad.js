@@ -39,7 +39,7 @@ class PageAvisoDePrivacidad extends HTMLElement {
                         El tratamiento legítimo, controlado e informado de sus datos personales es de vital importancia para alcanzar los objetivos corporativos de AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., a través de todas las áreas del negocio reiterando nuestro compromiso con su privacidad y el derecho a la autodeterminación informativa, por lo que, en cumplimiento a lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, ponemos a su disposición nuestro AVISO DE PRIVACIDAD.
                     </p>
                     <p class="__terms-purchase-text">
-                        Aplicará para todos los productos, servicios, programas, y/o sitios web, que tenga, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., de acuerdo a la naturaleza de los Datos Personales recabados y conforme a la legislación vigente en materia de privacidad y protección de Datos Personales, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., podrá publicar nuevos Avisos de Privacidad específicos o actualizaciones y para los cuales se podrá requerir o no, el consentimiento expreso del titular de los Datos Personales, sin embargo a través de nuestra página web <a class="__link-text" href="../.../../../">www.costaline.com.mx</a> o en nuestras oficinas centrales, se hacen del conocimiento público las políticas de privacidad aplicables a los Datos Personales que nos hayan sido otorgados.
+                        Aplicará para todos los productos, servicios, programas, y/o sitios web, que tenga, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., de acuerdo a la naturaleza de los Datos Personales recabados y conforme a la legislación vigente en materia de privacidad y protección de Datos Personales, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., podrá publicar nuevos Avisos de Privacidad específicos o actualizaciones y para los cuales se podrá requerir o no, el consentimiento expreso del titular de los Datos Personales, sin embargo a través de nuestra página web <a class="__link-text" href="../../../../">www.costaline.com.mx</a> o en nuestras oficinas centrales, se hacen del conocimiento público las políticas de privacidad aplicables a los Datos Personales que nos hayan sido otorgados.
                     </p>
 
                     <h3 class="__subtitle-section">A. NOMBRE Y DOMICILIO DEL RESPONSABLE</h3>
@@ -509,7 +509,7 @@ class PageAvisoDePrivacidad extends HTMLElement {
                     </p>
 
                     <p class="__terms-purchase-text">
-                        Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, ponemos a su disposición nuestro Aviso de Privacidad Integral, en <a class="__link-text" href="../.../../../">www.costaline.com.mx</a>.
+                        Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, ponemos a su disposición nuestro Aviso de Privacidad Integral, en <a class="__link-text" href="../../../../">www.costaline.com.mx</a>.
                     </p>
                 </div>
             </article>
@@ -571,7 +571,7 @@ class PageAvisoDePrivacidad extends HTMLElement {
                     </p>
 
                     <p class="__terms-purchase-text">
-                        Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. de C.V., pone a su disposición el Aviso de Privacidad Integral, a través de nuestra página web <a class="__link-text" href="../.../../../">www.costaline.com.mx</a>.
+                        Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. de C.V., pone a su disposición el Aviso de Privacidad Integral, a través de nuestra página web <a class="__link-text" href="../../../../">www.costaline.com.mx</a>.
                     </p>
                 </div>
             </article>
@@ -584,7 +584,7 @@ class PageAvisoDePrivacidad extends HTMLElement {
                 <button class="aviso-toggle-btn" type="button">Leer</button>
                 <div class="aviso-desc">
                     <p class="__terms-purchase-text">
-                        AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., con domicilio de oficina central en <strong>avenida Heroica Escuela Naval Militar, número 220, col. Magdalena Culhuacán, alcaldía Coyoacán, CDMX, código postal 04260</strong>; quien es responsable del tratamiento de sus datos personales, en cumplimiento a lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., pone a su disposición el Aviso de Privacidad Integral en <a class="__link-text" href="../.../../../">www.costaline.com.mx</a>.
+                        AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., con domicilio de oficina central en <strong>avenida Heroica Escuela Naval Militar, número 220, col. Magdalena Culhuacán, alcaldía Coyoacán, CDMX, código postal 04260</strong>; quien es responsable del tratamiento de sus datos personales, en cumplimiento a lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares. Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., pone a su disposición el Aviso de Privacidad Integral en <a class="__link-text" href="../../../../">www.costaline.com.mx</a>.
                     </p>
                 </div>
 
@@ -600,7 +600,7 @@ class PageAvisoDePrivacidad extends HTMLElement {
                         El tratamiento legítimo, controlado e informado de sus datos personales es de vital importancia para alcanzar los objetivos corporativos de <strong>AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V.</strong>, a través de todas las áreas del negocio reiterando nuestro compromiso con su privacidad y el derecho a la autodeterminación informativa, por lo que, en cumplimiento a lo establecido en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares, ponemos a su disposición nuestro AVISO DE PRIVACIDAD.
                     </p>
                     <p class="__terms-purchase-text">
-                        Aplicará para todos los productos, servicios, programas, y/o sitios web, que tenga AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. de acuerdo a la naturaleza de los Datos Personales recabados y conforme a la legislación vigente en materia de privacidad y protección de Datos Personales, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., podrá publicar nuevos Avisos de Privacidad específicos o actualizaciones y para los cuales se podrá requerir o no, el consentimiento expreso del titular de los Datos Personales, sin embargo a través de nuestra página web <a class="__link-text" href="../.../../../">www.costaline.com.mx</a> o en nuestras oficinas centrales, se hacen del conocimiento público las políticas de privacidad aplicables a los Datos Personales que nos hayan sido otorgados.
+                        Aplicará para todos los productos, servicios, programas, y/o sitios web, que tenga AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. de acuerdo a la naturaleza de los Datos Personales recabados y conforme a la legislación vigente en materia de privacidad y protección de Datos Personales, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., podrá publicar nuevos Avisos de Privacidad específicos o actualizaciones y para los cuales se podrá requerir o no, el consentimiento expreso del titular de los Datos Personales, sin embargo a través de nuestra página web <a class="__link-text" href="../../../../">www.costaline.com.mx</a> o en nuestras oficinas centrales, se hacen del conocimiento público las políticas de privacidad aplicables a los Datos Personales que nos hayan sido otorgados.
                     </p>
 
                     <h3 class="__subtitle-section">A. NOMBRE Y DOMICILIO DEL RESPONSABLE</h3>
@@ -1283,7 +1283,7 @@ class PageAvisoDePrivacidad extends HTMLElement {
                     </p>
 
                     <p class="__terms-purchase-text">
-                        Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, ponemos a su disposición nuestro Aviso de Privacidad Integral, el cual podrá solicitar a través de nuestro correo electrónico <a class="__link-text" href="../.../../../">www.costaline.com.mx</a> o en las oficinas centrales de AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V.
+                        Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, ponemos a su disposición nuestro Aviso de Privacidad Integral, el cual podrá solicitar a través de nuestro correo electrónico <a class="__link-text" href="../../../../">www.costaline.com.mx</a> o en las oficinas centrales de AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V.
                     </p>
                 </div>
             </article>
@@ -1345,7 +1345,7 @@ class PageAvisoDePrivacidad extends HTMLElement {
                     </p>
 
                     <p class="__terms-purchase-text">
-                        Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. de C.V. pone a su disposición el Aviso de Privacidad Integral, a través de nuestra página web <a class="__link-text" href="../.../../../">www.costaline.com.mx</a>
+                        Para mayor información acerca del tratamiento, uso, transferencia y remisión de sus Datos Personales, así como de los derechos ARCO que puede hacer valer, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. de C.V. pone a su disposición el Aviso de Privacidad Integral, a través de nuestra página web <a class="__link-text" href="../../../../">www.costaline.com.mx</a>
                     </p>
                 </div>
             </article>

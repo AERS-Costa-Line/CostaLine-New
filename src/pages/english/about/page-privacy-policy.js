@@ -42,7 +42,7 @@ class PagePrivacyPolicy extends HTMLElement {
                         The legitimate, controlled, and informed processing of your personal data is of vital importance to achieve the corporate objectives of AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., across all business areas, reiterating our commitment to your privacy and the right to informational self-determination. In compliance with the Federal Law on Protection of Personal Data Held by Private Parties, we provide you with our PRIVACY NOTICE
                     </p>
                     <p class="__terms-purchase-text">
-                        This applies to all products, services, programs, and/or websites owned by AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. Depending on the nature of the personal data collected and in accordance with applicable privacy legislation, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. may publish new specific Privacy Notices or updates, which may or may not require the express consent of the data owner. However, through our website <a class="__link-text" href="../.../../../">www.costaline.com.mx</a> or at our headquarters, the privacy policies applicable to the personal data provided are made publicly available
+                        This applies to all products, services, programs, and/or websites owned by AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. Depending on the nature of the personal data collected and in accordance with applicable privacy legislation, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. may publish new specific Privacy Notices or updates, which may or may not require the express consent of the data owner. However, through our website <a class="__link-text" href="../../../../">www.costaline.com.mx</a> or at our headquarters, the privacy policies applicable to the personal data provided are made publicly available
                     </p>
 
                     <h3 class="__subtitle-section">A. NAME AND ADDRESS OF THE DATA CONTROLLER</h3>
@@ -515,7 +515,7 @@ class PagePrivacyPolicy extends HTMLElement {
                         </p>
 
                         <p class="__terms-purchase-text">
-                            For more information regarding the processing, use, transfer, and disclosure of your Personal Data, as well as the ARCO rights you can exercise, we provide our Comprehensive Privacy Notice at <a class="__link-text" href="../.../../../">www.costaline.com.mx</a>.
+                            For more information regarding the processing, use, transfer, and disclosure of your Personal Data, as well as the ARCO rights you can exercise, we provide our Comprehensive Privacy Notice at <a class="__link-text" href="../../../../">www.costaline.com.mx</a>.
                         </p>
 
                     </div>
@@ -577,7 +577,7 @@ class PagePrivacyPolicy extends HTMLElement {
                     </p>
 
                     <p class="__terms-purchase-text">
-                        For more information regarding the processing, use, transfer, and disclosure of your Personal Data, as well as the ARCO rights you may exercise, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. de C.V., provides our Comprehensive Privacy Notice through our website <a class="__link-text" href="../.../../../">www.costaline.com.mx</a>.
+                        For more information regarding the processing, use, transfer, and disclosure of your Personal Data, as well as the ARCO rights you may exercise, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. de C.V., provides our Comprehensive Privacy Notice through our website <a class="__link-text" href="../../../../">www.costaline.com.mx</a>.
                     </p>
                 </div>
             </article>
@@ -589,7 +589,7 @@ class PagePrivacyPolicy extends HTMLElement {
                 <button class="aviso-toggle-btn" type="button">Read</button>
                 <div class="aviso-desc">
                     <p class="__terms-purchase-text">
-                        AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., with its central office located at <strong>Avenida Heroica Escuela Naval Militar, number 220, Col. Magdalena Culhuacán, Coyoacán, Mexico City, postal code 04260</strong>, is responsible for the processing of your personal data, in compliance with the provisions of the Federal Law on the Protection of Personal Data Held by Private Parties. For more information about the processing, use, transfer, and disclosure of your Personal Data, as well as the ARCO rights you may exercise, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. makes available the Full Privacy Notice at <a class="__link-text" href="../.../../../">www.costaline.com.mx</a>.
+                        AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., with its central office located at <strong>Avenida Heroica Escuela Naval Militar, number 220, Col. Magdalena Culhuacán, Coyoacán, Mexico City, postal code 04260</strong>, is responsible for the processing of your personal data, in compliance with the provisions of the Federal Law on the Protection of Personal Data Held by Private Parties. For more information about the processing, use, transfer, and disclosure of your Personal Data, as well as the ARCO rights you may exercise, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. makes available the Full Privacy Notice at <a class="__link-text" href="../../../../">www.costaline.com.mx</a>.
                     </p>
                 </div>
             </article>
@@ -604,7 +604,7 @@ class PagePrivacyPolicy extends HTMLElement {
                         The legitimate, controlled, and informed processing of your personal data is of vital importance to achieving the corporate objectives of <strong>AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V.</strong>, across all business areas, reaffirming our commitment to your privacy and the right to informational self-determination. Therefore, in compliance with the provisions of the Federal Law on the Protection of Personal Data Held by Private Parties, we make our PRIVACY NOTICE available to you
                     </p>
                     <p class="__terms-purchase-text">
-                        This applies to all products, services, programs, and/or websites owned by AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., according to the nature of the Personal Data collected and in accordance with applicable privacy and data protection laws. AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. may publish new specific Privacy Notices or updates, for which the express consent of the Personal Data owner may or may not be required. However, through our website <a class="__link-text" href="../.../../../">www.costaline.com.mx</a> or at our central offices, the privacy policies applicable to the Personal Data provided to us are made publicly available
+                        This applies to all products, services, programs, and/or websites owned by AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V., according to the nature of the Personal Data collected and in accordance with applicable privacy and data protection laws. AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V. may publish new specific Privacy Notices or updates, for which the express consent of the Personal Data owner may or may not be required. However, through our website <a class="__link-text" href="../../../../">www.costaline.com.mx</a> or at our central offices, the privacy policies applicable to the Personal Data provided to us are made publicly available
                     </p>
 
                     <h3 class="__subtitle-section">A. NAME AND ADDRESS OF THE DATA CONTROLLER</h3>
@@ -1090,7 +1090,7 @@ class PagePrivacyPolicy extends HTMLElement {
                     </p>
 
                     <p class="__terms-purchase-text">
-                        For more information about the processing, use, transfer, and forwarding of your Personal Data, as well as the ARCO rights you may exercise, we provide you with our Comprehensive Privacy Notice, which you can request via our email <a class="__link-text" href="../.../../../">www.costaline.com.mx</a> or at the headquarters of AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V.
+                        For more information about the processing, use, transfer, and forwarding of your Personal Data, as well as the ARCO rights you may exercise, we provide you with our Comprehensive Privacy Notice, which you can request via our email <a class="__link-text" href="../../../../">www.costaline.com.mx</a> or at the headquarters of AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. DE C.V.
                     </p>
                 </div>
             </article>
@@ -1151,7 +1151,7 @@ class PagePrivacyPolicy extends HTMLElement {
                     </p>
 
                     <p class="__terms-purchase-text">
-                        For more information about the processing, use, transfer, and forwarding of your Personal Data, as well as the ARCO rights you may exercise, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. de C.V. provides you with the Comprehensive Privacy Notice, available through our website <a class="__link-text" href="../.../../../">www.costaline.com.mx</a>
+                        For more information about the processing, use, transfer, and forwarding of your Personal Data, as well as the ARCO rights you may exercise, AUTOTRANSPORTES ESTRELLA ROJA DEL SUR, S.A. de C.V. provides you with the Comprehensive Privacy Notice, available through our website <a class="__link-text" href="../../../../">www.costaline.com.mx</a>
                     </p>
                 </div>
             </article>

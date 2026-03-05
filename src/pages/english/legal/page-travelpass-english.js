@@ -84,7 +84,7 @@ class PageTravelpassEnglish extends HTMLElement {
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
                                 You can acquire your electronic wallet directly at Costa Line ticket offices or on our website 
-                                <a class="__link-text" href="../.../../../">www.costaline.com.mx</a>
+                                <a class="__link-text" href="../../../../">www.costaline.com.mx</a>
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
@@ -157,7 +157,7 @@ class PageTravelpassEnglish extends HTMLElement {
                         <li class="__terms-purchase-item"><p class="__terms-purchase-text">Partial payment is allowed (wallet + cash or card).</p></li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Customers can change date and time. Name changes, route changes, and service class changes are not allowed. Changes can be made online (<a class="__link-text" href="../.../../../">www.costaline.com.mx</a>) or at Costa Line offices in Chilpancingo and Acapulco.
+                                Customers can change date and time. Name changes, route changes, and service class changes are not allowed. Changes can be made online (<a class="__link-text" href="../../../../">www.costaline.com.mx</a>) or at Costa Line offices in Chilpancingo and Acapulco.
                             </p>
                         </li>
                         <li class="__terms-purchase-item"><p class="__terms-purchase-text">If multiple tickets are purchased in one transaction with Monedero Electrónico (full or partial payment), exchanges must be made for all tickets in that purchase.</p></li>
