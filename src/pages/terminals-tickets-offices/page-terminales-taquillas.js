@@ -7,29 +7,25 @@ import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../../../components/app-cotiza.js";
-import "../../../../components/app-modal-doters.js";
-import "../../../../components/app-banner-slider.js";
-import "../../../../components/app-payments.js";
-import "../../../../components/app-section-title.js";
-import "../../../../components/app-dropdown.js"; // Importar el componente dropdown
+import "../../components/app-cotiza.js";
+import "../../components/app-banner-slider.js";
+import "../../components/app-payments.js";
+import "../../components/app-section-title.js";
+import "../../components/app-dropdown.js"; // Importar el componente dropdown
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../../../../js/slick.min.js?v=1.0.2";
-
-class PageTerminalsTicketsOffices extends HTMLElement {
+class PageTerminalesTaquillas extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
             <app-cotiza></app-cotiza>
-
             
 
             <div class="__panthom_space"></div>
 
             <section class="__section __section__encuentra-taquilla">
-                <app-section-title section-title="Find your Costa Line ticket office: locations and hours"></app-section-title>
-                 <p class="__paragraph">The bus rental sector in Mexico City has experienced significant growth, reflecting the increasing demand for comfortable and secure transportation solutions for groups. From school trips to corporate travel, bus rental has become an ideal option to facilitate the mobility of large groups, offering a balance of efficiency, safety, and comfort.</p> 
+                <app-section-title section-title="Encuentra tu taquilla Costa Line: ubicaciones y horarios"></app-section-title>
+                 <p class="__paragraph">El sector de renta de autobuses en la Ciudad de México ha experimentado un crecimiento significativo, reflejando la creciente demanda de soluciones de transporte cómodas y seguras para grupos. Desde excursiones escolares hasta viajes corporativos, la renta de autobuses se ha consolidado como una opción ideal para facilitar la movilidad de grupos grandes, ofreciendo un equilibrio entre eficiencia, seguridad y confort.</p> 
                 <article class="__grid-cards-container">
                     <!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
                 </article>
@@ -37,9 +33,9 @@ class PageTerminalsTicketsOffices extends HTMLElement {
             </section>
 
             <section class="__section __section__FATQs">
-                <app-section-title section-title="Frequently Asked Questions about Costa Line ticket offices"></app-section-title>
-                <h3 class="__subtitle-center-xl">Why buy at Costa Line ticket offices?</h3>
-                <p class="__paragraph-left">Buying your tickets at Costa Line ticket offices offers multiple advantages. In addition to fast and efficient service, our offices are strategically located to make access easy from any point in the city. When you purchase at the ticket office, you have the opportunity to receive personalized advice, resolve any questions about your trip, and ensure all details are perfectly organized before departure. Also, at our offices you can access exclusive promotions and obtain up-to-date information about Costa Line schedules and the most popular destinations. Whether you're looking for "Costa Line near me" or prefer to buy your tickets directly at a Costa Line terminal, our ticket offices are the most reliable and convenient option.</p>
+                <app-section-title section-title="Preguntas frecuentes sobre las taquillas Costa Line"></app-section-title>
+                <h3 class="__subtitle-center-xl">¿Por qué comprar en las taquillas Costa Line?</h3>
+                <p class="__paragraph-left">Comprar tus boletos en las taquillas de Costa Line ofrece múltiples ventajas. Además de contar con un servicio rápido y eficiente, nuestras taquillas están estratégicamente ubicadas para facilitarte el acceso desde cualquier punto de la ciudad. Al comprar en la taquilla, tienes la posibilidad de recibir asesoría personalizada, resolver cualquier duda sobre tu viaje y asegurarte de que todos los detalles están perfectamente organizados antes de tu salida. Además, en nuestras taquillas también puedes acceder a promociones exclusivas y obtener información actualizada sobre los horarios de Costa Line y los destinos más populares. Ya sea que estés buscando Costa Line cerca de mí o prefieras comprar tus boletos directamente en una terminal de Costa Line, nuestras taquillas son la opción más confiable y conveniente.</p>
                 <article class="__grid-cards-container__dropdown" id="dropdowns-container">
                     <!-- Contenedor para los dropdowns -->
                 </article>
@@ -59,7 +55,7 @@ class PageTerminalsTicketsOffices extends HTMLElement {
 		}
 
 		try {
-			const response = await fetch("../src/data/card-image-term-taqui.json");
+			const response = await fetch("../../src/data/terminales-y-taquillas/card-image-term-taqui.json");
 			if (!response.ok) {
 				throw new Error(
 					`HTTP error! status: ${response.status} al cargar card-image-term-taqui.json`,
@@ -83,7 +79,7 @@ class PageTerminalsTicketsOffices extends HTMLElement {
 			const centerButtonDiv = document.createElement("div");
 			centerButtonDiv.classList.add("center-botton");
 			centerButtonDiv.innerHTML =
-				"<p>Costa Line bus ticket offices: main locations</p>";
+				"<p>Taquillas de autobuses Costa Line: ubicaciones principales</p>";
 			imageCardContainer.appendChild(centerButtonDiv);
 		} catch (error) {
 			console.error("Error al cargar o renderizar app-card-image:", error);
@@ -97,7 +93,7 @@ class PageTerminalsTicketsOffices extends HTMLElement {
 	async loadAndRenderDropdowns() {
 		try {
 			const response = await fetch(
-				"../src/data/dropdown-preguntas-frecuentes.json",
+				"../../src/data/dropdown-preguntas-frecuentes.json",
 			);
 			if (!response.ok) {
 				throw new Error(`HTTP error! status: ${response.status}`);
@@ -133,7 +129,4 @@ class PageTerminalsTicketsOffices extends HTMLElement {
 		});
 	}
 }
-customElements.define(
-	"page-terminals-tickets-offices",
-	PageTerminalsTicketsOffices,
-);
+customElements.define("page-terminales-taquillas", PageTerminalesTaquillas);
