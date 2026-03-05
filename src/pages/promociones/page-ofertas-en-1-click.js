@@ -1,31 +1,30 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
-import "../../../components/app-header.js?v=1.1.3";
-import "../../../components/app-cookies-policy.js?v=1.0.3";
-import "../../../components/app-button-whats.js?v=1.0.2";
-import "../../../components/app-button-eva-trip.js?v=1.0.2";
-import "../../../components/app-footer.js?v=1.0.2";
+import "../../components/app-header.js?v=1.1.3";
+import "../../components/app-cookies-policy.js?v=1.0.3";
+import "../../components/app-button-whats.js?v=1.0.2";
+import "../../components/app-button-eva-trip.js?v=1.0.2";
+import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../../components/app-cotiza.js";
-import "../../../components/app-banner-slider.js";
-import "../../../components/app-payments.js";
-import "../../../components/app-section-title.js";
-import "../../../components/app-table-pets.js";
-import "../../../components/app-destinations-table.js";
+import "../../components/app-cotiza.js";
+import "../../components/app-banner-slider.js";
+import "../../components/app-payments.js";
+import "../../components/app-section-title.js";
+import "../../components/app-destinations-table.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-class PageTerminosBuenFin extends HTMLElement {
+class PageOfertasClick extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-           <app-cotiza></app-cotiza>
+            <app-cotiza></app-cotiza>
 
             
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-buen-fin-descuento-55.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/banner-buen-fin-55-descuento.webp", "smallImage": "../src/assets/img/banner/promociones/movil/banner-buen-fin-descunto-55.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-ofertas-en-un-click-50-descuento.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/banner-ofertas-en-un-click-50-descuento.webp", "smallImage": "../src/assets/img/banner/promociones/movil/banner-ofertas-en-un-click-50-descuento.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
@@ -35,7 +34,7 @@ class PageTerminosBuenFin extends HTMLElement {
 
               
             <section class="__section">
-                <app-section-title section-title="Términos y Condiciones BUEN FIN"></app-section-title>
+                <app-section-title section-title="Términos y Condiciones Ofertas en 1 Click"></app-section-title>
             </section>
 
             <section class="__sections">
@@ -43,7 +42,7 @@ class PageTerminosBuenFin extends HTMLElement {
                        <ol class="__terms-purchase-list">
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                BUEN FIN aplica para venta en línea (App Costa Line y sitio web) y centro de contacto telefónico y se puede realizar la compra con cualquier forma de pago.
+                                Ofertas en 1 Click aplica para venta en línea (App Costa Line y sitio web) y centro de contacto telefónico y se puede realizar la compra con cualquier forma de pago.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
@@ -53,37 +52,36 @@ class PageTerminosBuenFin extends HTMLElement {
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                En las rutas definidas para BUEN FIN no se podrán vender boletos abiertos, solo confirmados. Se podrán vender boletos abiertos pero con una tarifa a precio de adulto.
+                                En las rutas definidas para Ofertas en 1 Click no se podrán vender boletos abiertos, solo confirmados. Se podrán vender boletos abiertos pero con una tarifa a precio de adulto.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Las tarifas de BUEN FIN no aplican ni son acumulables con otro tipo de descuentos o promociones.
+                                Las tarifas de Ofertas en 1 Click no aplican ni son acumulables con otro tipo de descuentos o promociones.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Las Tarifas de BUEN FIN son personales e intransferibles, para hacerla efectiva el cliente deberá presentar una identificación oficial antes de abordar el autobús, si no cumple con el requisito deberá pagar la Tarifa Completa.
+                                Las Tarifas de Ofertas en 1 Click son personales e intransferibles, para hacerla efectiva el cliente deberá presentar una identificación oficial antes de abordar el autobús, si no cumple con el requisito deberá pagar la Tarifa Completa.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                El periodo para comprar boletos de autobús y obtener la tarifa de BUEN FIN es a partir del primer minuto del día siguiente a la consulta y hasta un mes posterior. En caso de NO contar con tarifa anticipada, aplica el descuento del 10% por viaje redondo comprando en línea o bien aplica el 10% por viaje redondo comprando en taquilla.
+                                El periodo para comprar boletos de autobús y obtener la tarifa de Ofertas en 1 Click es a partir del primer minuto del día siguiente a la consulta y hasta un mes posterior. En caso de NO contar con tarifa anticipada, aplica el descuento del 15% por viaje redondo comprando en línea o bien aplica el 10% por viaje redondo comprando en taquilla.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
                                 La tarifa y los descuentos siempre estarán sujetos a disponibilidad.
                             </p>
-                        </li>
-                        <li class="__terms-purchase-item">
+                        </li><li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                La tarifa de BUEN FIN no aplica en la compra de boletos con beneficios de INAPAM, menores, estudiantes, maestros y boletos abiertos.
+                                La tarifa de Ofertas en 1 Click no aplica en la compra de boletos con beneficios de INAPAM, menores, estudiantes, maestros y boletos abiertos.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                La acumulación de puntos Doters de un boleto con tarifa de BUEN FIN, deberá calcularse sobre la tarifa que pagó el cliente en efectivo o tarjeta bancaria y/o cualquier otra forma de pago (Pagos referenciados, exceptuando los puntos). Los puntos Doters generados pueden ser utilizados como forma de pago y se apegaran las mismas políticas y restricciones de Pago con puntos de Doters.
+                                La acumulación de puntos Doters de un boleto con tarifa de Ofertas en 1 Click, deberá calcularse sobre la tarifa que pagó el cliente en efectivo o tarjeta bancaria y/o cualquier otra forma de pago (Pagos referenciados, exceptuando los puntos). Los puntos Doters generados pueden ser utilizados como forma de pago y se apegaran las mismas políticas y restricciones de Pago con puntos de Doters.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
@@ -97,11 +95,11 @@ class PageTerminosBuenFin extends HTMLElement {
 
             <section class="__sections">
                 <article class="__bg-white">
-                    <h3 class="__subtitle-section">Políticas de Pagos Referenciados BUEN FIN:</h3>
+                    <h3 class="__subtitle-section">Políticas de Pagos Referenciados Ofertas en 1 Click:</h3>
                      <ol class="__terms-purchase-list">
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Para las referencias que genere el sistema por operaciones de BUEN FIN el cliente tendrá 24 horas para realizar el pago correspondiente.
+                                Para las referencias que genere el sistema por operaciones de Ofertas en 1 Click el cliente tendrá 24 horas para realizar el pago correspondiente.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
@@ -111,7 +109,7 @@ class PageTerminosBuenFin extends HTMLElement {
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                En las reservaciones que involucren operaciones de BUEN FIN y Tarifas Completas el cliente tendrá 24 horas para realizar el pago correspondiente.
+                                En las reservaciones que involucren operaciones de Ofertas en 1 Click y Tarifas Completas el cliente tendrá 24 horas para realizar el pago correspondiente.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
@@ -121,12 +119,12 @@ class PageTerminosBuenFin extends HTMLElement {
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Las Tarifas de BUEN FIN son personales e intransferibles, para hacerla efectiva el cliente deberá presentar una identificación oficial antes de abordar el autobús, si no cumple con el requisito deberá pagar la Tarifa Completa.
+                                Las Tarifas de Ofertas en 1 Click son personales e intransferibles, para hacerla efectiva el cliente deberá presentar una identificación oficial antes de abordar el autobús, si no cumple con el requisito deberá pagar la Tarifa Completa.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                El cliente puede realizar cambios de clases de servicio, fecha y horario. Para Tarifas de Viajero Anticipado no aplica cambio de nombre de pasajero, teniendo que pagar el cliente la diferencia con la tarifa vigente en taquilla al momento de realizar el viaje.
+                                El cliente puede realizar cambios de tramos, clases de servicio, fecha y horario. Para tarifas de Ofertas en 1 Click no aplica cambio de nombre de pasajero, teniendo que pagar el cliente la diferencia con la tarifa vigente en taquilla al momento de realizar el viaje.
                             </p>
                         </li>
                     </ol>
@@ -139,27 +137,27 @@ class PageTerminosBuenFin extends HTMLElement {
                     <ol class="__terms-purchase-list">
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Para tarifas de BUEN FIN no aplica cambio de nombre de pasajero.
+                                Para tarifas de Ofertas en 1 Click no aplica cambio de nombre de pasajero.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                El cambio de itinerario de viaje (fecha u hora) se puede realizar directamente desde la página de internet (www.etn.com.mx) en la sección “modifique su itinerario” o también podrán ser realizados en taquillas y/o puntos de venta Costa Line presentando el pase de abordar y una identificación oficial vigente. Cada operación está limitada a un máximo de dos cambios por boleto.
+                                El cambio de itinerario de viaje (fecha u hora) se puede realizar directamente desde la página de internet (www.costaline.com.mx) en la sección “modifique su itinerario” o también podrán ser realizados en taquillas y/o puntos de venta AERS Costa Line presentando el pase de abordar y una identificación oficial vigente. Cada operación está limitada a un máximo de tres cambios por boleto.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                               En caso de que la tarifa vigente al momento del cambio de corrida sea mayor a la tarifa BUEN FIN pagada, el cliente deberá pagar la diferencia entre la tarifa pagada y tarifa vigente al momento del cambio de la corrida original, dicho pago podrá ser cubierto con la misma forma de pago realizada previamente. Aplica con todas las formas de pago
+                               En caso de que la tarifa vigente al momento del cambio de corrida sea mayor a la tarifa Ofertas en 1 Click pagada, el cliente deberá pagar la diferencia entre la tarifa pagada y tarifa vigente al momento del cambio de la corrida original, dicho pago podrá ser cubierto con la misma forma de pago realizada previamente. Aplica con todas las formas de pago
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                En caso de que la tarifa vigente al momento del cambio de corrida sea menor a la tarifa de BUEN FIN pagada, no habrá devoluciones.
+                                En caso de que la tarifa vigente al momento del cambio de corrida sea menor a la tarifa de Ofertas en 1 Click pagada, no habrá devoluciones.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Con la tarifa de BUEN FIN no se aceptan cancelaciones.
+                                Con la tarifa de Ofertas en 1 Click no se aceptan cancelaciones.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
@@ -187,30 +185,34 @@ class PageTerminosBuenFin extends HTMLElement {
                     <ol class="__terms-purchase-list">
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Vigencia de compra del 15-18 de noviembre 2024
+                                Vigencia de compra del 18 al 20 de febrero de 2025.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Para viajar del 6 de noviembre al 17 diciembre 2024 y del 9 enero al 15 febrero de 2025
+                                Para viajar del 19 de febrero al 13 de marzo y del 18 de marzo al 09 de abril de 2025.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                Descuentos sujeto a disponibilidad
+                                El descuento de hasta el 50% se aplica exclusivamente a las compras realizadas con 1 día de anticipación.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Descuentos sujeto a disponibilidad.
                             </p>
                         </li>
                     </ol>
                 </article>
             </section>
-            
-            <h3 class="__title__section">Rutas</h3>
 
             <section class="__sections __destinations-table-section">
                 <app-destinations-table src="../src/data/destinos-cl.json"></app-destinations-table>
             </section>
-    `;
+
+         
+        `;
 	}
 }
-
-customElements.define("page-terminos-buen-fin", PageTerminosBuenFin);
+customElements.define("page-ofertas-en-1-click", PageOfertasClick);

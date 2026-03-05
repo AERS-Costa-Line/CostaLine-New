@@ -5,10 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Title -->
-		<title>Viaja de CDMX a Acapulco Diamante | Costa Line</title>
+		<title>
+			Sol y Playa en Acapulco Papagayo | Viaje de Placer | Costa Line
+		</title>
 
 		<!-- Meta Description -->
-		<meta name="description" content="¿Listo para la playa? Viaja directo a Acapulco Diamante desde la Terminal del Sur (Taxqueña) de CDMX. Consulta horarios y compra tu boleto en línea fácil y seguro. ¡Reserva ahora!" />
+		<meta
+			name="description"
+			content="¿Listo para la escapada? Viaja a la Costera de Acapulco (Papagayo) desde CDMX. La arena, el mar y la fiesta te esperan. ¡Reserva fácil y que comiencen las vacaciones!"
+		/>
 
 		<!-- Meta Keywords -->
 		<meta name="keywords" content="" />
@@ -25,7 +30,7 @@
 		/>
 
 		<meta name="author" content="Costa Line AERS" />
-		<meta name="robots" content="noindex">
+		<meta name="robots" content="noindex" />
 		<meta name="googlebot" content="index, follow" />
 		<meta name="sitemap" content="/sitemap.xml" />
 
@@ -99,24 +104,29 @@
 		<!-- End Favicon -->
 
 		<link rel="manifest" href="/site.webmanifest" />
-		
+
 		<meta name="msapplication-TileColor" content="#06255b" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
 
-		
-
 		<!-- Scripts -->
 
-		<script src="../src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="../app.js?v=1.0.2"></script>
+		<!-- Components for page -->
+		<script
+			type="module"
+			src="../src/pages/placer/page-cdmx-a-acapulco-papagayo.js?v=1.2.1"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- js -->
+		<script src="../src/js/jquery.min.js?v=1.0.1"></script>
 
 		<!-- Stylesheets -->
 
 		<!-- CSS All Components -->
 		<link
-      rel="stylesheet"
-      href="../src/styles/css/css-pages/page-destinos-landings.min.css?v=1.2.1"
-    />
+			rel="stylesheet"
+			href="../src/styles/css/css-pages/page-destinos-landings.min.css?v=1.2.1"
+		/>
 
 		<!-- CSS widget de reservamos -->
 		<link
@@ -124,76 +134,89 @@
 			href="https://widgets.reservamos.mx/search/5.23.6/search.css?v=5.18.0"
 		/>
 
-
 		<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BusTrip",
-  "name": "Viaje en Autobús de CDMX a Acapulco Diamante",
-  "description": "Viaja cómodamente desde la Terminal del Sur (Taxqueña) de la Ciudad de México a la exclusiva zona de Acapulco Diamante con Costa Line.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Costa Line"
-  },
-  "departureBusStop": {
-    "@type": "BusStation",
-    "name": "Terminal de Autobuses del Sur (Taxqueña), CDMX"
-  },
-  "arrivalBusStop": {
-    "@type": "BusStation",
-    "name": "Terminal Acapulco Diamante"
-  },
-  "offers": {
-    "@type": "Offer",
-    "priceCurrency": "MXN",
-    "availability": "https://schema.org/InStock",
-    "url": "https://www.costaline.com.mx/personal/cdmx-a-acapulco-diamante",
-    "seller": {
-      "@type": "Organization",
-      "name": "Costa Line"
-    }
-  }
-}
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K9MW4HF');</script>
-<!-- End Google Tag Manager -->
+			{
+				"@context": "https://schema.org",
+				"@type": "BusTrip",
+				"name": "Escapada de Placer a Acapulco Papagayo (Costera)",
+				"description": "Comienza tus vacaciones en la vibrante Costera de Acapulco. Viaja cómodamente desde CDMX y prepárate para disfrutar del sol, la playa y la diversión con Costa Line.",
+				"provider": {
+					"@type": "Organization",
+					"name": "Costa Line"
+				},
+				"departureBusStop": {
+					"@type": "BusStation",
+					"name": "Terminal de Autobuses del Sur (Taxqueña), CDMX"
+				},
+				"arrivalBusStop": {
+					"@type": "BusStation",
+					"name": "Terminal Acapulco Papagayo (Costera)"
+				},
+				"offers": {
+					"@type": "Offer",
+					"priceCurrency": "MXN",
+					"availability": "https://schema.org/InStock",
+					"url": "https://www.costaline.com.mx/placer/cdmx-a-acapulco-papagayo",
+					"seller": {
+						"@type": "Organization",
+						"name": "Costa Line"
+					}
+				}
+			}
+		</script>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-K9MW4HF");
+		</script>
+		<!-- End Google Tag Manager -->
 
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KFMMCC7');</script>
-<!-- End Google Tag Manager -->
-
-
-
-
-
-
-
-
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-KFMMCC7");
+		</script>
+		<!-- End Google Tag Manager -->
 	</head>
 
 	<body>
-
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
 		<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFMMCC7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
- 
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-KFMMCC7"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
 		<app-header
 			logo='{
@@ -204,13 +227,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		>
 		</app-header>
 		<app-modal-travelpass></app-modal-travelpass>
-		
+
 		<main>
-			<page-placer-cdmx-a-acapulco-diamante></page-placer-cdmx-a-acapulco-diamante>
+			<page-placer-cdmx-a-acapulco-papagayo></page-placer-cdmx-a-acapulco-papagayo>
 		</main>
 		<app-footer></app-footer>
 		<app-cookies-policy></app-cookies-policy>
-		
+
 		<app-button-eva-trip></app-button-eva-trip>
 		<script src="../src/js/doters-cookies.js?v=1.2.1"></script>
 		<!-- JS widget de reservamos -->
