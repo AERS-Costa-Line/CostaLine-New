@@ -20,11 +20,10 @@ import "../../components/app-card-title-icon.js";
 class PageDestinos extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-        
 
-        
-            <div class="__panthom_space"></div>
+        <app-cotiza></app-cotiza>
 
+        <div class="__panthom_space"></div>
 
         <app-map></app-map>
 
