@@ -10,6 +10,33 @@ class AppCotiza extends HTMLElement {
     }
   }
 
+  addPageSpacingAfterCotiza() {
+    // Usamos un timeout para permitir que el DOM se renderice completamente, asegurando que otros componentes estén disponibles para su selección.
+    setTimeout(() => {
+      // Si el carrusel de banners existe, este manejará su propio espaciado, por lo que no hacemos nada.
+      const bannerExists = document.querySelector("app-banner-slider");
+      if (bannerExists) {
+        return;
+      }
+
+      // Si no hay banner, buscamos el primer elemento de contenido que sigue a app-cotiza.
+      let nextElement = this.nextElementSibling;
+      while (nextElement) {
+        // Ignoramos etiquetas de script u otros elementos no visibles.
+        const tagName = nextElement.tagName.toLowerCase();
+        if (tagName !== "script" && tagName !== "style") {
+          break; // Encontramos un elemento de contenido.
+        }
+        nextElement = nextElement.nextElementSibling;
+      }
+
+      // Agregamos una clase a este elemento para poder estilizarlo con CSS.
+      if (nextElement) {
+        nextElement.classList.add("content-after-cotiza");
+      }
+    }, 10);
+  }
+
   connectedCallback() {
     // determine language; default to Spanish
     const lang = (this.getAttribute("lang") || "es").toLowerCase();
@@ -65,6 +92,9 @@ class AppCotiza extends HTMLElement {
 
       </div>
           `;
+
+    this.addPageSpacingAfterCotiza();
+
     document.addEventListener("DOMContentLoaded", () => {
       const buy = document.querySelector(".cotiza");
       const searchButton = document.createElement("button");
@@ -155,3 +185,39 @@ class AppCotiza extends HTMLElement {
   }
 }
 customElements.define("app-cotiza", AppCotiza);
+
+/**
+ * Lógica global para gestionar el espaciado de la página.
+ * Se asegura de que el contenido principal no quede oculto debajo de elementos fijos como el encabezado,
+ * especialmente en páginas que no incluyen los componentes `app-cotiza` o `app-banner-slider`.
+ */
+function addPageSpacingForHeader() {
+  const hasCotiza = document.querySelector("app-cotiza");
+  const hasBanner = document.querySelector("app-banner-slider");
+
+  // Esta lógica se aplica solo si ni el cotizador ni el banner están presentes.
+  // Los otros casos son manejados por la lógica interna de esos componentes.
+  if (!hasCotiza && !hasBanner) {
+    const header = document.querySelector("header");
+    if (!header) return;
+
+    let nextElement = header.nextElementSibling;
+    while (nextElement) {
+      const tagName = nextElement.tagName.toLowerCase();
+      if (tagName !== "script" && tagName !== "style") {
+        break; // Se encontró un elemento de contenido visible.
+      }
+      nextElement = nextElement.nextElementSibling;
+    }
+
+    if (nextElement) {
+      nextElement.classList.add("content-after-header");
+    }
+  }
+}
+
+// Se ejecuta después de que el DOM esté completamente cargado para asegurar que todos los elementos estén disponibles.
+document.addEventListener("DOMContentLoaded", () => {
+  // Un pequeño retardo puede ayudar a evitar conflictos con otros scripts que se ejecutan al cargar.
+  setTimeout(addPageSpacingForHeader, 100);
+});

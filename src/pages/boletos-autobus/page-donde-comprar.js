@@ -16,11 +16,11 @@ import "../../components/app-section-title.js";
 import "../../components/app-card-image.js";
 
 class PageDondeComprar extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
     
         <app-cotiza></app-cotiza>
-        <div class="__panthom_space"></div>
+        
 
         <app-section-title section-title="¿Dónde puedo comprar Boletos de autobús en Costa Line?"></app-section-title>
        
@@ -31,46 +31,46 @@ class PageDondeComprar extends HTMLElement {
       
   
 `;
-		this.loadAndRenderShopCards();
-		this.loadAndRenderTitleIconCards();
-	}
+    this.loadAndRenderShopCards();
+    this.loadAndRenderTitleIconCards();
+  }
 
-	async loadAndRenderShopCards() {
-		try {
-			const response = await fetch("../src/data/cards-buy-options.json"); // Ruta corregida
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const cardsData = await response.json();
-			this.renderShopCards(cardsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear cards-buy-options.json:", error);
-			const container = this.querySelector("#shop-cards-container");
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar la información de los puntos de venta.</p>";
-			}
-		}
-	}
+  async loadAndRenderShopCards() {
+    try {
+      const response = await fetch("../src/data/cards-buy-options.json"); // Ruta corregida
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const cardsData = await response.json();
+      this.renderShopCards(cardsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear cards-buy-options.json:", error);
+      const container = this.querySelector("#shop-cards-container");
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar la información de los puntos de venta.</p>";
+      }
+    }
+  }
 
-	renderShopCards(cardsData) {
-		const container = this.querySelector("#shop-cards-container");
-		if (!container) {
-			console.error("El contenedor de shop-cards no fue encontrado.");
-			return;
-		}
-		container.innerHTML = "";
+  renderShopCards(cardsData) {
+    const container = this.querySelector("#shop-cards-container");
+    if (!container) {
+      console.error("El contenedor de shop-cards no fue encontrado.");
+      return;
+    }
+    container.innerHTML = "";
 
-		cardsData.forEach((data) => {
-			const cardElement = document.createElement(
-				data.type === "left" ? "app-img-shop-left" : "app-img-shop-right",
-			);
-			cardElement.setAttribute("image-src", data.imageSrc);
-			cardElement.setAttribute("alt-text", data.altText);
-			cardElement.setAttribute("card-title", data.cardTitle);
-			cardElement.setAttribute("card-link", data.linkUrl);
-			container.appendChild(cardElement);
-		});
-	}
+    cardsData.forEach((data) => {
+      const cardElement = document.createElement(
+        data.type === "left" ? "app-img-shop-left" : "app-img-shop-right",
+      );
+      cardElement.setAttribute("image-src", data.imageSrc);
+      cardElement.setAttribute("alt-text", data.altText);
+      cardElement.setAttribute("card-title", data.cardTitle);
+      cardElement.setAttribute("card-link", data.linkUrl);
+      container.appendChild(cardElement);
+    });
+  }
 }
 customElements.define("page-donde-comprar", PageDondeComprar);

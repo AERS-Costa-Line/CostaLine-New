@@ -11,6 +11,10 @@
     width: 100%;
     margin-top: 15rem; // 13rem
 
+    &.no-cotiza-presente {
+        margin-top: 5.5rem;
+    }
+
     transition: all $transition-slow;
 
     &.hidden {
@@ -144,23 +148,33 @@
         justify-content: center;
         width: 100%;
         margin-top: 10rem; // 13rem
+
+        &.no-cotiza-presente {
+            margin-top: 0rem;
+        }
     }
 }
 
 @media screen and (min-width:481px) and (max-width:900px) {
     .container__carousel {
-        margin-top: 5rem !important; // 6rem
+        margin-top: 0;
         width: 100%;
         height: auto;
-        position: relative;
+
+        &.no-cotiza-presente {
+            margin-top: 0;
+        }
     }
 }
 
 @media screen and (max-width:480px) {
     .container__carousel {
-        margin-top: 4rem !important; // 4rem
+        margin-top: 0;
         width: 100%;
         height: auto;
-        position: relative;
+
+        &.no-cotiza-presente {
+            margin-top: 0;
+        }
     }
 }

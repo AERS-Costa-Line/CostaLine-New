@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es-MX">
+<html lang="en-US">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
 		<!-- Meta Keywords -->
 		<meta name="keywords" content="" />
 
-		<meta name="language" content="Ingles" />
+		<meta name="language" content="english" />
 		<link
 			rel="canonical"
 			href="https://costaline.com.mx/english/promotions/early-traveler.html"
@@ -133,7 +133,7 @@
 		<!-- End Favicon -->
 
 		<link rel="manifest" href="/site.webmanifest" />
-		
+
 		<meta name="msapplication-TileColor" content="#06255b" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
 
@@ -151,9 +151,15 @@
 		<!-- End Open Graph -->
 
 		<!-- Scripts -->
+		 
+		<script
+			type="module"
+			src="../../src/pages/english/promotions/page-early-traveler.js?v=1.2.1"
+			crossorigin="anonymous"
+		></script>
 
-		<script src="../../src/js/jquery.min.js?v=1.0.0"></script>
-		<script type="module" src="../../app.js?v=1.0.0"></script>
+		<!-- js -->
+		<script src="../../src/js/jquery.min.js?v=1.0.1"></script>
 
 		<!-- Stylesheets -->
 
@@ -170,24 +176,19 @@
 		/>
 	</head>
 	<body>
-		<app-header
+		<app-header-english
 			logo='{
         "src": "../../src/assets/img/logos/logo.svg", 
         "alt": "Logo de Costa Line",
-        "href": "../.../../../"
+        "href": "../../../../english"
       }'
 		>
-		</app-header>
-		<app-modal-travelpass></app-modal-travelpass>
-		<app-modal-doters></app-modal-doters>
+		</app-header-english>
 		<main>
 			<page-early-traveler></page-early-traveler>
 		</main>
 		<app-footer-english></app-footer-english>
-		<app-cookies-policy></app-cookies-policy>
-		
-		<app-button-eva-trip></app-button-eva-trip>
-		<script src="../../src/js/doters-cookies.js?v=1.2.1"></script>
+
 		<!-- JS widget de reservamos -->
 		<script src="https://widgets.reservamos.mx/search/5.23.6/search.js?v=5.18.0"></script>
 	</body>

@@ -7,7 +7,7 @@ import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-
+import "../../components/app-cotiza.js?v=1.0.2";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-destinations-grid.js";
@@ -21,14 +21,12 @@ import "../../components/app-card-doters.js";
 import "../../components/app-card-left-description.js";
 import "../../components/app-card-right-description.js";
 import "../../components/app-carousel-banners.js";
-import "../../js/slick.js?v=1.0.2";
 
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageDoters extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
             
             <app-banner-slider
 					slides-data='[

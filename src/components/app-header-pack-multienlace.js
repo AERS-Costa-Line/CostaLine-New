@@ -14,7 +14,7 @@ class AppHeaderPackMultienlace extends HTMLElement {
             <nav aria-label="Menu de navegacion" >
                 
                     <ul>
-                        <li><a href="../.../../../" aria-label="Ir a inicio" tabindex="0">Costa Line</a></li>
+                        <li><a href="../../../../" aria-label="Ir a inicio" tabindex="0">Costa Line</a></li>
                         <li><a href="../../servicios/pack-multienlace/terminales-paqueteria.html" aria-label="Imprimir pase de abordar" tabindex="0">Terminales</a></li> 
                         <li class="submenu">
                           <a href="#" role="button" aria-label="Facturar su viaje" tabindex="0" aria-haspopup="true" aria-expanded="false">Detalles del servicio <span class="icon-arrow-down"></span></a>
@@ -41,7 +41,7 @@ class AppHeaderPackMultienlace extends HTMLElement {
             
             <div id="dropdown-menu" class="show">
                 <ul>
-                    <li><a href="../.../../../" aria-label="Ir a inicio">COSTA LINE</a></li>
+                    <li><a href="../../../../" aria-label="Ir a inicio">COSTA LINE</a></li>
                     <li class="submenu__media-queries">
                         <a href="#" aria-label="Facturar su viaje" aria-haspopup="true" aria-expanded="false">DETAILS DEL SERVICIO <span class="icon-arrow-down"></span></a>
                         <ul>

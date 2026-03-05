@@ -8,7 +8,7 @@ import "../../../components/app-destiny-slider.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
-import "../../../components/app-modal-doters.js";
+import "../../../components/app-card-image.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-payments.js";
 import "../../../components/app-section-title.js";
@@ -17,13 +17,9 @@ import "../../../components/app-dropdown.js"; // Importar el componente dropdown
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageTerminalsTicketsOffices extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza lang="en"></app-cotiza>
-
-            <app-modal-doters></app-modal-doters>
-
-            <div class="__panthom_space"></div>
 
             <section class="__section __section__encuentra-taquilla">
                 <app-section-title section-title="Find your Costa Line ticket office: locations and hours"></app-section-title>
@@ -44,96 +40,96 @@ class PageTerminalsTicketsOffices extends HTMLElement {
             </section>
         `;
 
-		this.loadAndRenderImageCards();
-		this.loadAndRenderDropdowns();
-	}
-	async loadAndRenderImageCards() {
-		const imageCardContainer = this.querySelector(".__grid-cards-container");
-		if (!imageCardContainer) {
-			console.error(
-				"El contenedor '.__grid-cards-container' para app-card-image no fue encontrado.",
-			);
-			return;
-		}
+    this.loadAndRenderImageCards();
+    this.loadAndRenderDropdowns();
+  }
+  async loadAndRenderImageCards() {
+    const imageCardContainer = this.querySelector(".__grid-cards-container");
+    if (!imageCardContainer) {
+      console.error(
+        "El contenedor '.__grid-cards-container' para app-card-image no fue encontrado.",
+      );
+      return;
+    }
 
-		try {
-			const response = await fetch(
-				"../../src/data/english/card-image-term-tickets.json",
-			);
-			if (!response.ok) {
-				throw new Error(
-					`HTTP error! status: ${response.status} al cargar card-image-term-tickets.json`,
-				);
-			}
-			const cardsData = await response.json();
+    try {
+      const response = await fetch(
+        "../../src/data/english/terminals-tickets-offices/card-image-term-tickets.json",
+      );
+      if (!response.ok) {
+        throw new Error(
+          `HTTP error! status: ${response.status} al cargar card-image-term-tickets.json`,
+        );
+      }
+      const cardsData = await response.json();
 
-			if (!cardsData || !Array.isArray(cardsData)) {
-				throw new Error(
-					"Formato de datos incorrecto o vacío para card-image-term-taqui.json",
-				);
-			}
+      if (!cardsData || !Array.isArray(cardsData)) {
+        throw new Error(
+          "Formato de datos incorrecto o vacío para card-image-term-taqui.json",
+        );
+      }
 
-			cardsData.forEach((data) => {
-				const cardElement = document.createElement("app-card-image");
-				imageCardContainer.appendChild(cardElement);
-				cardElement.populateCard(data);
-			});
+      cardsData.forEach((data) => {
+        const cardElement = document.createElement("app-card-image");
+        imageCardContainer.appendChild(cardElement);
+        cardElement.populateCard(data);
+      });
 
-			// Añadir el div "center-botton" después de las tarjetas
-			const centerButtonDiv = document.createElement("div");
-			centerButtonDiv.classList.add("center-botton");
-			centerButtonDiv.innerHTML =
-				"<p>Costa Line bus ticket offices: main locations</p>";
-			imageCardContainer.appendChild(centerButtonDiv);
-		} catch (error) {
-			console.error("Error al cargar o renderizar app-card-image:", error);
-			if (imageCardContainer) {
-				imageCardContainer.innerHTML =
-					"<p>Error al cargar la información de las tarjetas de imagen.</p>";
-			}
-		}
-	}
+      // Añadir el div "center-botton" después de las tarjetas
+      const centerButtonDiv = document.createElement("div");
+      centerButtonDiv.classList.add("center-botton");
+      centerButtonDiv.innerHTML =
+        "<p>Costa Line bus ticket offices: main locations</p>";
+      imageCardContainer.appendChild(centerButtonDiv);
+    } catch (error) {
+      console.error("Error al cargar o renderizar app-card-image:", error);
+      if (imageCardContainer) {
+        imageCardContainer.innerHTML =
+          "<p>Error al cargar la información de las tarjetas de imagen.</p>";
+      }
+    }
+  }
 
-	async loadAndRenderDropdowns() {
-		try {
-			const response = await fetch(
-				"../../src/data/english/dropdown-ask-term-tickets.json",
-			);
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const dropdownsData = await response.json();
-			this.renderDropdowns(dropdownsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear dropdown-data.json:", error);
-			const container = this.querySelector("#dropdowns-container");
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar las preguntas frecuentes.</p>";
-			}
-		}
-	}
+  async loadAndRenderDropdowns() {
+    try {
+      const response = await fetch(
+        "../../src/data/english/terminals-tickets-offices/dropdown-ask-term-tickets.json",
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const dropdownsData = await response.json();
+      this.renderDropdowns(dropdownsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear dropdown-data.json:", error);
+      const container = this.querySelector("#dropdowns-container");
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar las preguntas frecuentes.</p>";
+      }
+    }
+  }
 
-	renderDropdowns(dropdownsData) {
-		const container = this.querySelector("#dropdowns-container");
-		if (!container) {
-			console.error("El contenedor #dropdowns-container no fue encontrado.");
-			return;
-		}
-		container.innerHTML = ""; // Limpiar contenido previo
+  renderDropdowns(dropdownsData) {
+    const container = this.querySelector("#dropdowns-container");
+    if (!container) {
+      console.error("El contenedor #dropdowns-container no fue encontrado.");
+      return;
+    }
+    container.innerHTML = ""; // Limpiar contenido previo
 
-		dropdownsData.forEach((data) => {
-			const dropdownElement = document.createElement("app-dropdown");
-			dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
-			dropdownElement.setAttribute(
-				"content-dropdown",
-				data["content-dropdown"],
-			);
-			container.appendChild(dropdownElement);
-		});
-	}
+    dropdownsData.forEach((data) => {
+      const dropdownElement = document.createElement("app-dropdown");
+      dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
+      dropdownElement.setAttribute(
+        "content-dropdown",
+        data["content-dropdown"],
+      );
+      container.appendChild(dropdownElement);
+    });
+  }
 }
 customElements.define(
-	"page-terminals-tickets-offices",
-	PageTerminalsTicketsOffices,
+  "page-terminals-tickets-offices",
+  PageTerminalsTicketsOffices,
 );

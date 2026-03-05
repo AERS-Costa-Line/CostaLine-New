@@ -1,0 +1,617 @@
+/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
+
+import "../../../components/english/app-header-english.js?v=1.0.2";
+import "../../../components/english/app-footer-english.js?v=1.0.2";
+
+/*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
+import "../../../components/app-cotiza.js";
+import "../../../components/app-banner-slider.js";
+import "../../../components/app-payments.js";
+import "../../../components/app-section-title.js";
+import "../../../components/app-table-pets.js";
+
+/*-------------------------SCRIPTS---------------------------*/
+
+class PageTermsConditions extends HTMLElement {
+	connectedCallback() {
+		this.innerHTML = `
+            <app-cotiza></app-cotiza>
+
+            <app-banner-slider
+                slides-data='[
+                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/web/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp","mediumImage": "../../src/assets/img/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp", "smallImage": "../../src/assets/img/banner/movil/banner-3-clics.webp", "link": "#index.html/banner1"},
+                {"id": "slide2", "title": "Banner 2", "image": "../../src/assets/img/banner/web/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp", "mediumImage": "../../src/assets/img/banner/tablet/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp","smallImage": "../../src/assets/img/banner/movil/banner-aca-diamante.webp", "link": "#index.html/banner2"},
+                {"id": "slide3", "title": "Banner 3", "image": "../../src/assets/img/banner/web/banner-viaja-de-chilpancingo-a-acapulco-diamante-descuento-10-de-regreso.webp", "mediumImage": "../../src/assets/img/banner/tablet/banner-viaja-de-chilpancingo-a-acapulco-diamante-descuento-10-de-regreso.webp","smallImage": "../../src/assets/img/banner/movil/banner-chil-aca.webp", "link": "#index.html/banner3"}
+                ]'
+            >
+            </app-banner-slider>
+
+            <app-payments></app-payments>
+            
+            <section class="__section">
+                <app-section-title section-title="Terms and Conditions"></app-section-title>
+                <h3 class="__subtitle">Welcome to Costa Line</h3>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-blue">
+                    <h3 class="__subtitle-section">TICKET PURCHASE</h3>
+
+                    <p>
+                        YOU MAY PURCHASE YOUR TICKETS UP TO ONE HOUR BEFORE THE DESIRED DEPARTURE TIME.
+                    </p>
+                    
+                    <p>
+                        If you encounter any problem or have any questions during the purchase process, we offer personalized assistance through our Contact Center by calling 800 0037 635 or 800 2490 460, where we will be glad to assist you.
+                    </p>
+                    
+                    <p>
+                        Tickets or boarding passes are valid only for the date and time specified on them. Please verify this information when purchasing and keep your ticket until the end of your trip, as it grants you travel insurance coverage.
+                    </p>
+                    
+                    <p>
+                        <u>Trips missed due to failure to board the bus on time will not be refundable; refunds that apply under the Law will be processed in the same way the payment was made.</u>
+                    </p>
+                
+                </article>
+            </section>
+
+
+            <section class="__sections">
+                <article class="__bg-white">
+                    <h3 class="__subtitle-section">PAYMENT METHODS</h3>
+
+                    <p>
+                        BANK CARD (AMERICAN EXPRESS, VISA OR MASTERCARD).
+                    </p>
+                    
+                    <p>
+                        Payments with bank cards (debit and credit) supported by Visa, Mastercard, and American Express are accepted (restrictions apply).
+                    </p>
+                    
+                    <p>
+                        Electronic payments through PayPal and Mercado Pago are also accepted (restrictions apply, their use is governed by the regulations established by both PayPal and Mercado Pago for their operation).
+                    </p>
+                    
+                    <p>
+                        For payments made ONLINE, THERE ARE NO CANCELLATIONS OR REFUNDS.
+                    </p>
+                
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-blue">
+                    <h3 class="__subtitle-section">OXXO REFERENCED PAYMENTS</h3>
+                    <p>
+                        The generated reference is not a proof of payment, therefore it can never be considered valid for travel.
+                    </p>
+                    
+                    <p>
+                        For references generated by the system for Early Traveler operations, the customer will have 24 hours to make the corresponding payment.
+                    </p>
+                    
+                    <p>
+                        Payment for trip reservations with Full Fare operations may be made up to 24 hours before the bus departure.
+                    </p>
+                    
+                    <p>
+                        For reservations involving both Early Traveler and Full Fare operations, the customer will have 24 hours to complete the payment.
+                    </p>
+                    <p>
+                        After the mentioned timeframes, without exception, the reservation will be automatically canceled by the system and the seat will be released for sale.
+                    </p>
+                    
+                    <p>
+                        Early Traveler Fares are personal and non-transferable. To validate them, the customer must present an official ID before boarding the bus. If this requirement is not met, the Full Fare must be paid.
+                    </p>
+                    
+                    <p>
+                        The customer may change routes, service classes, dates, and times. For Early Traveler Fares, passenger name changes are not allowed, and the customer must pay the difference with the current fare at the ticket office at the time of travel.
+                    </p>
+                    
+                    <p>
+                        Payment of Oxxo Pay reservations may be made at any Oxxo branch by presenting the printed receipt with the reference number at the cashier to confirm the ticket. Payments will only be accepted during the store’s service hours.
+                    </p>
+                    <p>
+                        Only cash payments in a single transaction are accepted.
+                    </p>
+                    
+                    <p>
+                        Once the payment is completed, the system will automatically send the trip confirmation with the boarding pass to the email provided during registration.
+                    </p>
+                    
+                    <p>
+                        In case of any questions or clarifications regarding the service or your reservation reference number, please contact 800 0037 635 or 800 2490 460, where a representative will assist you personally.
+                    </p>
+                    
+                    <p>
+                        For referenced payments THERE ARE NO CANCELLATIONS OR REFUNDS.
+                    </p>
+                    <p>
+                        For Oxxo Pay referenced payments, only purchases up to 10,000 pesos (≈ $530 USD) will be accepted.
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-white">
+                    <h3 class="__subtitle-section">MINIMUM CHECK-IN AND BOARDING TIME</h3>
+
+                    <p>
+                        Once your purchase is completed, you must print your boarding pass or download it to your mobile device. With it, you must go directly to the waiting room (where applicable) or to the boarding area, preferably 30 minutes before departure, in order to check in your luggage and board the bus without the need for an exchange.
+                    </p>
+                    
+                    <p>
+                        If you do not have the printed boarding pass, you must provide the operation number at the time of boarding the bus.
+                    </p>
+                    
+                    <p>
+                        Tickets purchased through the Contact Center must always be collected at the counter at least 30 minutes prior to boarding the bus with all necessary requirements; otherwise, the passenger will not be able to use the service.
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-blue">
+                    <h3 class="__subtitle-section">OPEN TICKET PURCHASE</h3>
+
+                    <p>
+                        You may purchase your open ticket for a one-way trip, round trip, or with a connection.
+                    </p>
+                    
+                    <p>
+                        This type of ticket is valid for 6 months from the date of purchase and is subject to seat availability and bus-specific discounts.
+                    </p>
+                    
+                    <p>
+                        Open tickets not used within the validity period will lose all validity and may not be used, canceled, or refunded.
+                    </p>
+                    
+                    <p>
+                        The sale of open tickets is not allowed for passengers with Student or Teacher discounts.
+                    </p>
+                    
+                    <p>
+                        Open tickets purchased online can only be paid with bank cards (debit or credit) Visa, Mastercard, American Express, Electronic Payments with PayPal, Mercado Pago, Transfer Banamex, and OXXO. (Cash payments do not apply).
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-white">
+                    <h3 class="__subtitle-section">OPEN TICKET CONFIRMATION</h3>
+
+                    <p>
+                        If your open ticket was purchased online, you must access our website www.costaline.com.mx and in the “Open Ticket” section you can confirm your trip using the operation number and NIT up to two hours before the desired departure.
+                    </p>
+                    
+                    <p>
+                        The open ticket confirmation can also be requested directly at the ticket counters by presenting your printed boarding pass preferably up to one hour before the desired departure. Alternatively, you may make your reservation in advance by calling 800 0037 635 or 800 2490 460.
+                    </p>
+                    
+                    <p>
+                        Every open ticket must be confirmed in advance; otherwise, the passenger will not be able to board the bus.
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-blue">
+                    <h3 class="__subtitle-section">CHANGES AND CANCELLATIONS (ITINERARY MODIFICATION)</h3>
+                    <p>
+                        For this type of purchase (Internet), ticket cancellations are not allowed.
+                    </p>
+                    
+                    <p>
+                        Our change service has no additional cost and only a maximum of two changes per ticket may be made, including, in the case of an open ticket, its confirmation. An additional cost will only apply if the fare for the selected date is higher.
+                    </p>
+                    
+                    <p>
+                        <strong>Online Changes:</strong> You may only change dates and times. This applies only to purchases made through this channel. If you wish to modify your trip, you must access the website <a class="__link-text" href="../../../../">www.costaline.com.mx</a> and in the “Modify Your Itinerary” section, enter the operation number and NIT of your ticket. You can only change the date and time. Changes to Origin, Destination, passenger name, or passenger type are not allowed. Modifications can only be applied starting 90 minutes after your purchase and up to 90 minutes before your departure time.
+                    </p>
+                    
+                    <p>
+                        In the event that you need to change more than one ticket with a different itinerary, you may enter as many operation numbers as you wish separated by a space. If the trip includes tickets for a Minor, the itinerary change must be made by entering the operation number of the Minor’s ticket along with that of an Adult; otherwise, the system will not allow the modification if done independently.
+                    </p>
+                    
+                    <p>
+                        Changes of date, time, or route for tickets purchased online may also be made at the ticket counters or sales points of Autotransportes Estrella Roja del Sur, S.A. de C.V, Costa Line, Futura, and Turistar Ejecutivo. It is essential to present the boarding pass generated by the portal and a valid official ID (only accepted: voter ID card, professional license, driver’s license, or passport) to request the corresponding change, and you must present yourself at least one hour before departure.
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-white">
+                    <h3 class="__subtitle-section">EARLY TRAVELER (VIAJERO ANTICIPADO)</h3>
+
+                    <p>
+                        The sale of Early Traveler (Viajero Anticipado) tickets applies to online sales (website), ticket counters, company-owned sales points of Autotransportes Estrella Roja del Sur, S.A. de C.V through its bus lines Costa Line, Futura, and Turistar Ejecutivo, and the contact center. Purchases can be made with any form of payment.
+                    </p>
+                    
+                    <p>
+                        It does not apply to external channels or sales points.
+                    </p>
+                    
+                    <p>
+                        On routes defined for Early Traveler tickets, Open Tickets cannot be sold—only confirmed tickets. Open tickets may be purchased but at adult fare rates.
+                    </p>
+
+                    <p>
+                        Tickets with Early Traveler rates do not apply and cannot be combined with any other discounts or promotions. Early Traveler tickets are personal and non-transferable; to validate them, the customer must present an official ID before boarding the bus. If this requirement is not met, the Full Fare must be paid.
+                    </p>
+                    
+                    <p>
+                        The period to purchase bus tickets at the Early Traveler rate starts from the first minute of the day following the search and up to two months later, available online, at ticket counters, and via the contact center. If the Early Traveler rate is not available, a 5% discount applies for round-trip purchases at the ticket counter on the return ticket, and 5% discount for online purchases.
+                    </p>
+                    
+                    <p>
+                        Fare rates and discounts are always subject to availability.
+                    </p>
+
+                    <p>
+                        The 50% discount promotion for Viva Aerobús passengers will only apply to the adult fare. The Early Traveler rate does not apply to tickets with INAPAM benefits, minors, students, teachers, or Open Tickets.
+                    </p>
+                    
+                    <p>
+                        For references generated by the system for Early Traveler ticket operations, the customer will have 24 hours from the time of purchase to make the corresponding payment.
+                    </p>
+                    
+                    <p>
+                        Payment for Full Fare ticket reservations may be made up to 24 hours before the bus departure.
+                    </p>
+
+                    <p>
+                        For reservations involving both Early Traveler and Full Fare operations, the customer will have 24 hours from the time of purchase to complete the corresponding payment.
+                    </p>
+                    
+                    <p>
+                        After the indicated timeframes, without exception, the reservation will be automatically canceled by the system and the seat will be released for sale.
+                    </p>
+                    
+                    <p>
+                        For tickets with Early Traveler rates, passenger name changes are not allowed.
+                    </p>
+                </article>
+            </section>
+
+
+            <section class="__sections">
+                <article class="__bg-blue">
+                    <h3 class="__subtitle-section">EXCHANGE OF EARLY TRAVELER (VIAJERO ANTICIPADO) TICKETS:</h3>
+                    <p>
+                        Trip itinerary changes (date or time) can be made directly on the website (www.costaline.com.mx) in the “Modify Your Itinerary” section, or at ticket counters and/or sales points of Autotransportes Estrella Roja del Sur, S.A. de C.V through its bus lines Costa Line, Futura, and Turistar Ejecutivo, by presenting the boarding pass and a valid official ID. Each operation is limited to a maximum of three changes per ticket.
+                    </p>
+                    
+                    <p>
+                        If the fare at the time of the trip change is higher than the Early Traveler rate previously paid, the customer must pay the difference between the paid fare and the current fare at the time of changing the original trip. This payment must be made using the same payment method previously used. Applies to all forms of payment.
+                    </p>
+                    
+                    <p>
+                        If the fare at the time of the trip change is lower than the Early Traveler rate previously paid, no refunds will be issued.
+                    </p>
+                    
+                    <p>
+                        Early Traveler fares do not allow cancellations.
+                    </p>
+                    
+                    <p>
+                        For Early Traveler ticket fares, passenger name changes are not allowed.
+                    </p>
+
+                    <p>
+                        All forms of payment are accepted at ticket counters and on the website.
+                    </p>
+                    
+                    <p>
+                        Seats are subject to availability; check availability at <a class="__link-text" href="../../../../">www.costaline.com.mx</a> and at ticket counters.
+                    </p>
+                    
+                    <p>
+                        For questions or comments, please contact our Customer Service Center at 800 0037 635 or 800 2490 460.
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-white">
+                    <h3 class="__subtitle-section">COSTALINE OFFERS THE FOLLOWING DISCOUNTS (SUBJECT TO AVAILABILITY):</h3>
+                    <p>
+                        At Autotransportes Estrella Roja del Sur, S.A. de C.V, through its bus lines Costa Line, Futura, and Turistar Ejecutivo, the following discounts are offered (subject to availability):
+                    </p>
+                    <ul class="__terms-purchase-list">
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                3 Minors 50% (All year)
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                2 INAPAM 50% (All year)
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                6 Students 50% (Vacation season only)
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                2 Teachers 25% (Vacation season only)
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                2 PWD (Person with Disability) 50% (All year)
+                            </p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-blue">
+                    <h3 class="__subtitle-section">RESTRICTIONS</h3>
+                    <p>
+                        Passengers registered with the INAPAM discount must present the credential issued by this institution before boarding the bus to validate the discount. If it is not presented, the difference of the full ticket cost will be charged.
+                    </p>
+                    
+                    <p>
+                        Minor discounts only apply if the passenger is between 3 and 11 years old; children under 3 travel free, share the seat with an accompanying adult, and must board with the adult's ID. If a child appears physically older than 11, age must be verified with a birth certificate or CURP; otherwise, the full fare must be paid.
+                    </p>
+                    
+                    <p>
+                        Student and Teacher discounts are only granted during vacation periods published by the Ministry of Public Education (SEP) and apply if the person presents a valid photo ID proving active status as a Student or Teacher at the time of purchase. Failure to meet these conditions or not presenting the ID at boarding will result in charging the difference to the full ticket price.
+                    </p>
+                    
+                    <p>
+                        These discounts only apply to educational institutions officially recognized or incorporated into the SEP system.
+                    </p>
+                    
+                    <p>
+                        Autotransportes Estrella Roja del Sur, S.A. de C.V, through its bus lines Costa Line, Futura, and Turistar Ejecutivo, is not responsible for the misuse of the boarding pass, which is the sole responsibility of the person or passenger who prints it.
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-white">
+                    <h3 class="__subtitle-section">LUGGAGE DOCUMENTATION</h3>
+                    <p>
+                        Check in your luggage 30 minutes before departure.
+                    </p>
+                    <p>
+                        Luggage can be checked in up to 30 minutes before the bus departure. Each passenger may carry up to 25 kilograms of free luggage (excluding cargo). Luggage includes personal items, clothing, musical instruments, wheelchairs, bicycles, strollers, toys, and tools, which must be transported in suitcases, bags, or boxes. Only hand luggage such as laptops, small bags, and backpacks that fit in the bus compartment is allowed on board. Exceeding the allowed limit incurs a charge of 1% of the base ticket fare per extra kilogram (does not apply to discounted or promotional fares).
+                    </p>
+                    <p>
+                        The company is not responsible for luggage without tags or for personal items carried inside the bus cabin. In case of loss or theft of checked luggage, compensation will be up to the equivalent of 20 days of the general minimum wage in Mexico City.
+                    </p>
+                    <p>
+                        Passengers traveling with a pet must use a plastic or rigid transport cage (not fabric) and preferably sedate it; all pets travel in the bus luggage compartment.
+                    </p>
+                    <p>
+                        The only animals allowed in the passenger cabin are guide dogs and emotional support or companion animals, without paying an additional fee.
+                    </p>
+                    <p>
+                        In these cases, the owner must provide complete travel documentation at the time of purchase and boarding, including the original vaccination record and a medical certificate indicating the condition of the passenger (patient).
+                    </p>
+                    <p>
+                        The transport of exotic or endangered animals (birds, mammals, reptiles, and fish) is prohibited. If done, official SEMARNAT documents must be presented authorizing transport.
+                    </p>
+                    <p>
+                        The following are prohibited in both checked and hand luggage: lottery tickets (national and international), hazardous materials, psychotropic substances and narcotics (unless legally permitted), firearms and explosives, animals or perishables without proper hygiene and safety, money or bearer negotiable instruments, and any item requiring special authorization or restricted by law that lacks said authorization, as well as any item that may endanger passengers or luggage.
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-blue">
+                    <h3 class="__subtitle-section">UNACCOMPANIED MINORS BOARDING</h3>
+                    <p>
+                        Unaccompanied minors under 11 years of age will not be accepted under any circumstances. Minors traveling alone must present a responsibility letter issued by their parents or guardians, releasing the company from all liability. The minor must be between 11 and 17 years old (children older than 11 are considered capable of understanding instructions, recognizing parents or guardians, and following directions appropriate for their age). The parent or guardian must remain at the departure terminal until the bus leaves for its destination.
+                    </p>
+                </article>
+            </section>
+
+
+            <section class="__sections">
+                <article class="__bg-white">
+                    <h3 class="__subtitle-section">PETS ON BOARD:</h3>
+                    <p>
+                        Our company understands the importance of your pets for you and your loved ones. For this reason, we strive to extend our service so that pets can accompany you on your trips. Customers may bring pets as long as the organization's policies are followed.
+                    </p>
+                    <p>
+                        Customers may bring pets (dogs and cats) provided all organizational policies are met, except those established by the federal government in NOM-059-SEMARNAT-2010.
+                    </p>
+                    <p>
+                        <strong>** Transporting pets in the luggage compartment on double-decker buses is prohibited unless, in addition to the requirements, customers sign the corresponding responsibility waiver, releasing the organization from any liability regarding the pet's safety.</strong>
+                    </p>
+                    <p>
+                        The company defines three types of pets and/or service animals:
+                    </p>
+                    <ol class="__terms-purchase-list">
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Documented Pets (Luggage Compartment)
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Support Animals (Visual or Emotional Disability)
+                            </p>
+                        </li>
+                    </ol>
+                    <p>
+                        <strong>*Service dogs and/or companion animals are free of charge</strong>
+                    </p>
+                    <p>
+                        <strong>*Subject to availability</strong>
+                    </p>
+                    <p>
+                        <strong>*Emotional support pets or animals assisting visual or physical disabilities may travel without a carrier.</strong>
+                    </p>
+                    <p class="__terms-button">
+                        <a class="btn-link" target="_blank" href="https://costaline.com.mx/docpdf/CARTA-RESPONSIVA-costa.pdf">Download</a> and complete your Responsibility Form
+                    </p>
+
+                    <p><br><strong>    Documented Pets</strong></p>
+                    <p>
+                        Documented pets may travel in the luggage compartment of single-decker buses free of charge if the following requirements are met:
+                    </p>
+                    <ol type="A" class="__terms-purchase-list">
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Pets must travel in a rigid kennel that meets the following specifications:
+                            </p><br>
+                            <ul class="__terms-purchase-list">
+                                <li class="__terms-purchase-item">
+                                    <p class="__terms-purchase-text">
+                                        Maximum weight of the pet including the carrier is 32 kg (≈70.5 lbs). Maximum carrier dimensions: 128 cm long x 45 cm wide x 65 cm high. Only one pet per carrier is allowed.
+                                    </p>
+                                </li>
+                                <li class="__terms-purchase-item">
+                                    <p class="__terms-purchase-text">
+                                        The carrier must allow the pet to stand, move, and turn naturally without touching the walls.
+                                    </p>
+                                </li>
+                                <li class="__terms-purchase-item">
+                                    <p class="__terms-purchase-text">
+                                        No toys, treats, or other accessories made from ruminant ingredients are allowed; otherwise, they will be removed for disposal.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                For dogs and cats, a complete vaccination record according to the pet's age must be presented, indicating the date and validity of the rabies vaccine. Sedation is not required (consult your veterinarian).
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Dogs and cats must be at least eight weeks old and independent from their mother at the time of travel. Pets must not show signs of infectious diseases or have recent or healing wounds.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Pets will not be transported in the luggage compartment of double-decker buses to protect their health due to possible respiratory or other conditions.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                For documented pets, the passenger must complete the responsibility waiver stating that the pet's travel is the passenger's full responsibility, excluding the company from any liability regarding the pet's health or life.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p><br><strong>    Support Animals</strong></p>
+                    <p>
+                        Individuals with physical, visual, auditory, mental, or intellectual disabilities are allowed to travel with a service animal free of charge. Service animals are accepted in the passenger cabin alongside the person with a disability if the following requirements are met:
+                    </p>
+                    <p>Emotional Support Animals</p>
+                    <p>
+                        Emotional support pets must meet all requirements stipulated for pets on board.
+                    </p>
+                    <ol type="A" class="__terms-purchase-list">
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Provide a document issued at least 12 months before travel by a treating physician (psychiatrist, psychologist) or relevant institution certifying the need for an emotional support animal.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Emotional Support Animals must wear a leash, harness, and ID tag.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Maximum weight for transporting an emotional support animal is 12 kilograms (≈26.5 lbs).
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                If any of these requirements are not met, the Emotional Support Animal will be transported as a regular pet in the luggage compartment, following documented pet policies.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p><br><strong>    Visual Support Animals</strong></p>
+                    <p>
+                        Passengers with visual or mobility impairments may travel accompanied by a service animal free of charge, following these policies:
+                    </p>
+                    <ol type="A" class="__terms-purchase-list">
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Present documentation certifying the animal as a Visual Support Animal:
+                            </p><br>
+                            <ul class="__terms-purchase-list">
+                                <li class="__terms-purchase-item">
+                                    <p class="__terms-purchase-text">
+                                        Service Animal identification issued by an animal health authority or recognized organization
+                                    </p>
+                                </li>
+                                <li class="__terms-purchase-item">
+                                    <p class="__terms-purchase-text">
+                                        Documentation from a doctor or health institution treating the passenger with a disability or reduced mobility
+                                    </p>
+                                </li>
+                                <li class="__terms-purchase-item">
+                                    <p class="__terms-purchase-text">
+                                        Any other document proving the passenger requires a service animal for mobility or assistance
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Dogs must wear a collar and leash or harness at all times.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Visual support dogs should preferably use the designated cabin areas (Seats 1, 2, and 3 on single-decker buses; lower deck seats on double-decker buses).
+                            </p>
+                        </li>
+                        <p>
+                            Passengers and their visual support animals have boarding priority over other passengers.
+                        </p>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Complete vaccination record according to the pet's age, indicating rabies vaccine application date and validity.
+                            </p>
+                        </li>
+                    </ol>
+                </article>
+            </section>
+
+
+            <section class="__sections">
+                <article class="__bg-blue">
+                    <h3 class="__subtitle-section">FISCAL RECEIPT (ELECTRONIC INVOICING)</h3>
+                    <p>
+                        Boarding passes issued through this type of purchase do not have fiscal validity. If you require a fiscal receipt, you must generate it from our web portal <a class="__link-text" href="../../../../">www.costaline.com.mx</a> in the "Electronic Invoicing" section located in the top right-hand menu. You will need the ticket or boarding pass operation number, seat number, and complete fiscal information.
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-white">
+                    <h3 class="__subtitle-section">INVOICING RESTRICTIONS</h3>
+                    <p>
+                        Only confirmed tickets (not open tickets) can be invoiced within 30 calendar days from the travel date. Once the invoice is generated, no changes or cancellations can be made to the issued document. In cases where tickets are paid using a combination of cash and/or bank card, only the amount paid by cash and/or bank card can be invoiced.
+                    </p>
+                </article>
+            </section>
+
+            <section class="__sections">
+                <article class="__bg-blue">
+                    <h3 class="__subtitle-section">INVOICE RETRIEVAL</h3>
+                    <p>
+                        If you did not receive the PDF and XML files of your fiscal receipt during the invoicing process, you can retrieve them by accessing our web portal <a class="__link-text" href="../../../../">www.costaline.com.mx</a> in the "Electronic Invoicing" section, entering your RFC and email address. Once in the module, select "Consult History" and identify the document you wish to retrieve, either by resending it to your email, sending it to a different email address, or printing the invoice again.
+                    </p>
+                </article>
+            </section>
+
+        `;
+	}
+}
+customElements.define("page-terms-conditions", PageTermsConditions);

@@ -22,7 +22,7 @@ class PageBusTicketsToCdAltamirano extends HTMLElement {
           <app-modal-doters></app-modal-doters>
           <div class="__first-section">
             <app-banner-image
-              image-src="../../src/assets/img/english/destinations/ciudad-altamirano/banner-ciudad-altamirano-e.webp"
+              image-src="../../../src/assets/img/english/destinations/ciudad-altamirano/banners/banner-bienvenido-a-altamirano.webp"
               image-alt="Promotional banner for Ciudad Altamirano"
             ></app-banner-image>
           </div>

@@ -20,7 +20,7 @@ class AppHeaderEnglish extends HTMLElement {
 				</a>
 				<nav aria-label="Main menu">
 					<ul>
-						<li><a href="../../../">Home</a></li>
+						<li><a href="../../../../english">Home</a></li>
 						<li class="submenu">
 							<a href="#" role="button" aria-haspopup="true" aria-expanded="false">Billing <span class="icon-arrow-down"></span></a>
 							<ul>
@@ -56,7 +56,7 @@ class AppHeaderEnglish extends HTMLElement {
 				<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Login Doters">
 					<img src="../../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
 				</button>
-				<a class="li__languaje desktop-languaje" href="../.../../../" aria-label="Change language">
+				<a class="li__languaje desktop-languaje" href="../../../../" aria-label="Change language">
 					<img src='../../../../src/assets/icons/icons-img/MX_Flag.webp' alt="English" loading="lazy">
 				</a>
 				<button class="container-menu-hamburguer" id="hamburger-icon" aria-label="Open menu">
@@ -71,7 +71,7 @@ class AppHeaderEnglish extends HTMLElement {
 								<img src='../../../../src/assets/icons/icons-img/MX_Flag.webp' alt="English" loading="lazy">
 							</a>
 						</li>
-						<li><a href="../../../">Home</a></li>
+						<li><a href="../../../../english">Home</a></li>
 						<li class="submenu__media-queries">
 							<a href="#" aria-haspopup="true" aria-expanded="false">Billing <span class="icon-arrow-down"></span></a>
 							<ul>
@@ -101,15 +101,18 @@ class AppHeaderEnglish extends HTMLElement {
 						</li>
 						<li class="li__login">
 							<button id="login-icon-mobile" class="btn-travelpass btn-travelpass__submenu js-open-travelpass-login-modal" aria-label="Login TravelPass">
-								<img src="../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
+								<img src="../../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 							</button>
 							<button id="openDotersModalMovil" class="btn-doters" aria-label="Login Doters">
-								<img src="../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+								<img src="../../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
 							</button>
 						</li>
 					</ul>
 				</div>
 			</header>
+				
+			<app-modal-travelpass></app-modal-travelpass>
+			<app-modal-doters></app-modal-doters>
 		`;
 
 		this.openDesktopSubmenuInstance = null;

@@ -20,11 +20,10 @@ import "../../components/app-card-title-icon.js";
 class PageDestinos extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-        
 
-        
-            <div class="__panthom_space"></div>
+        <app-cotiza></app-cotiza>
 
+        <div class="__panthom_space"></div>
 
         <app-map></app-map>
 
@@ -69,231 +68,231 @@ class PageDestinos extends HTMLElement {
             </article>
         </section>
     `;
-		this.loadAndRenderCardsText();
-		this.loadAndRenderTitleIconCards();
-		this.loadAndRenderTitleIconHorariosCards();
-		this.loadAndRenderTitleIconRatesCards();
-		this.loadAndRenderTitleIconConfortCards();
-	}
+    this.loadAndRenderCardsText();
+    this.loadAndRenderTitleIconCards();
+    this.loadAndRenderTitleIconHorariosCards();
+    this.loadAndRenderTitleIconRatesCards();
+    this.loadAndRenderTitleIconConfortCards();
+  }
 
-	async loadAndRenderCardsText() {
-		const cardsContainer = this.querySelector("#grid-cards-container");
-		if (!cardsContainer) {
-			console.error(
-				'El contenedor con ID "grid-cards-container" no fue encontrado.',
-			);
-			return;
-		}
-		try {
-			const responseCardsText = await fetch("../src/data/card-text-data.json");
-			if (!responseCardsText.ok) {
-				throw new Error(
-					`Error HTTP al cargar card-text-data.json: ${responseCardsText.status}`,
-				);
-			}
-			const cardsTextData = await responseCardsText.json();
-			this.renderCardsText(cardsTextData, cardsContainer);
-			console.log("Datos de tarjetas cargados y renderizados correctamente.");
-		} catch (error) {
-			console.error(
-				"Error al cargar o renderizar los datos de tarjetas:",
-				error,
-			);
-			cardsContainer.innerHTML =
-				"<p>Error al cargar la información de las tarjetas.</p>";
-		}
-	}
+  async loadAndRenderCardsText() {
+    const cardsContainer = this.querySelector("#grid-cards-container");
+    if (!cardsContainer) {
+      console.error(
+        'El contenedor con ID "grid-cards-container" no fue encontrado.',
+      );
+      return;
+    }
+    try {
+      const responseCardsText = await fetch("../src/data/card-text-data.json");
+      if (!responseCardsText.ok) {
+        throw new Error(
+          `Error HTTP al cargar card-text-data.json: ${responseCardsText.status}`,
+        );
+      }
+      const cardsTextData = await responseCardsText.json();
+      this.renderCardsText(cardsTextData, cardsContainer);
+      console.log("Datos de tarjetas cargados y renderizados correctamente.");
+    } catch (error) {
+      console.error(
+        "Error al cargar o renderizar los datos de tarjetas:",
+        error,
+      );
+      cardsContainer.innerHTML =
+        "<p>Error al cargar la información de las tarjetas.</p>";
+    }
+  }
 
-	renderCardsText(cardsTextData, targetContainer) {
-		if (!targetContainer) {
-			console.error(
-				"Error en renderCardsText: El contenedor de destino no es válido o no fue proporcionado.",
-			);
-			return;
-		}
-		if (
-			!cardsTextData ||
-			!Array.isArray(cardsTextData) ||
-			cardsTextData.length === 0
-		) {
-			console.error(
-				"No se pudieron cargar los datos para las cards, están vacíos o el formato es incorrecto.",
-			);
-			targetContainer.innerHTML =
-				"<p>No hay datos disponibles para mostrar las cards.</p>";
-			return;
-		}
+  renderCardsText(cardsTextData, targetContainer) {
+    if (!targetContainer) {
+      console.error(
+        "Error en renderCardsText: El contenedor de destino no es válido o no fue proporcionado.",
+      );
+      return;
+    }
+    if (
+      !cardsTextData ||
+      !Array.isArray(cardsTextData) ||
+      cardsTextData.length === 0
+    ) {
+      console.error(
+        "No se pudieron cargar los datos para las cards, están vacíos o el formato es incorrecto.",
+      );
+      targetContainer.innerHTML =
+        "<p>No hay datos disponibles para mostrar las cards.</p>";
+      return;
+    }
 
-		cardsTextData.forEach((data) => {
-			const cardElement = document.createElement("app-card-text");
-			if (data.title) {
-				cardElement.setAttribute("title", data.title);
-			}
-			if (data.description) {
-				cardElement.setAttribute("description", data.description);
-			}
-			if (data.width) {
-				cardElement.setAttribute("card-width", data.width);
-			}
-			if (data.height) {
-				cardElement.setAttribute("card-height", data.height);
-			}
-			targetContainer.appendChild(cardElement);
-		});
-	}
+    cardsTextData.forEach((data) => {
+      const cardElement = document.createElement("app-card-text");
+      if (data.title) {
+        cardElement.setAttribute("title", data.title);
+      }
+      if (data.description) {
+        cardElement.setAttribute("description", data.description);
+      }
+      if (data.width) {
+        cardElement.setAttribute("card-width", data.width);
+      }
+      if (data.height) {
+        cardElement.setAttribute("card-height", data.height);
+      }
+      targetContainer.appendChild(cardElement);
+    });
+  }
 
-	async loadAndRenderTitleIconCards() {
-		try {
-			const response = await fetch("../src/data/card-title-icon.json"); // Ruta al nuevo JSON
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const cardsData = await response.json();
-			this.renderTitleIconCards(cardsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear card-title-icon.json:", error);
-			const container = this.querySelector("#title-icon-cards-container");
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar la información de las tarjetas.</p>";
-			}
-		}
-	}
+  async loadAndRenderTitleIconCards() {
+    try {
+      const response = await fetch("../src/data/card-title-icon.json"); // Ruta al nuevo JSON
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const cardsData = await response.json();
+      this.renderTitleIconCards(cardsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear card-title-icon.json:", error);
+      const container = this.querySelector("#title-icon-cards-container");
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar la información de las tarjetas.</p>";
+      }
+    }
+  }
 
-	renderTitleIconCards(cardsData) {
-		const container = this.querySelector("#title-icon-cards-container");
-		if (!container) {
-			console.error(
-				"El contenedor #title-icon-cards-container no fue encontrado.",
-			);
-			return;
-		}
-		container.innerHTML = ""; // Limpiar contenido previo
+  renderTitleIconCards(cardsData) {
+    const container = this.querySelector("#title-icon-cards-container");
+    if (!container) {
+      console.error(
+        "El contenedor #title-icon-cards-container no fue encontrado.",
+      );
+      return;
+    }
+    container.innerHTML = ""; // Limpiar contenido previo
 
-		cardsData.forEach((data) => {
-			const cardElement = document.createElement("app-card-title-icon");
-			cardElement.setAttribute("card-title", data.cardTitle);
-			cardElement.setAttribute("card-content", data.cardContent);
-			cardElement.setAttribute("card-icon", data.cardIcon); // Pasar la cadena SVG
-			container.appendChild(cardElement);
-		});
-	}
-	async loadAndRenderTitleIconHorariosCards() {
-		try {
-			const response = await fetch("../src/data/card-title-icon-horario.json"); // Ruta al nuevo JSON
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const cardsData = await response.json();
-			this.renderTitleIconCardsHorarios(cardsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear card-title-icon.json:", error);
-			const container = this.querySelector(
-				"#title-icon-cards-horarios-container",
-			);
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar la información de las tarjetas.</p>";
-			}
-		}
-	}
+    cardsData.forEach((data) => {
+      const cardElement = document.createElement("app-card-title-icon");
+      cardElement.setAttribute("card-title", data.cardTitle);
+      cardElement.setAttribute("card-content", data.cardContent);
+      cardElement.setAttribute("card-icon", data.cardIcon); // Pasar la cadena SVG
+      container.appendChild(cardElement);
+    });
+  }
+  async loadAndRenderTitleIconHorariosCards() {
+    try {
+      const response = await fetch("../src/data/card-title-icon-horario.json"); // Ruta al nuevo JSON
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const cardsData = await response.json();
+      this.renderTitleIconCardsHorarios(cardsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear card-title-icon.json:", error);
+      const container = this.querySelector(
+        "#title-icon-cards-horarios-container",
+      );
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar la información de las tarjetas.</p>";
+      }
+    }
+  }
 
-	renderTitleIconCardsHorarios(cardsData) {
-		const container = this.querySelector(
-			"#title-icon-cards-horarios-container",
-		);
-		if (!container) {
-			console.error(
-				"El contenedor #title-icon-cards-container no fue encontrado.",
-			);
-			return;
-		}
-		container.innerHTML = ""; // Limpiar contenido previo
+  renderTitleIconCardsHorarios(cardsData) {
+    const container = this.querySelector(
+      "#title-icon-cards-horarios-container",
+    );
+    if (!container) {
+      console.error(
+        "El contenedor #title-icon-cards-container no fue encontrado.",
+      );
+      return;
+    }
+    container.innerHTML = ""; // Limpiar contenido previo
 
-		cardsData.forEach((data) => {
-			const cardElement = document.createElement("app-card-title-icon");
-			cardElement.setAttribute("card-title", data.cardTitle);
-			cardElement.setAttribute("card-content", data.cardContent);
-			cardElement.setAttribute("card-icon", data.cardIcon); // Pasar la cadena SVG
-			container.appendChild(cardElement);
-		});
-	}
+    cardsData.forEach((data) => {
+      const cardElement = document.createElement("app-card-title-icon");
+      cardElement.setAttribute("card-title", data.cardTitle);
+      cardElement.setAttribute("card-content", data.cardContent);
+      cardElement.setAttribute("card-icon", data.cardIcon); // Pasar la cadena SVG
+      container.appendChild(cardElement);
+    });
+  }
 
-	async loadAndRenderTitleIconRatesCards() {
-		try {
-			const response = await fetch("../src/data/card-title-icon-rates.json"); // Ruta al nuevo JSON
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const cardsData = await response.json();
-			this.renderTitleIconCardsRates(cardsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear card-title-icon.json:", error);
-			const container = this.querySelector("#title-icon-cards-rates-container");
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar la información de las tarjetas.</p>";
-			}
-		}
-	}
+  async loadAndRenderTitleIconRatesCards() {
+    try {
+      const response = await fetch("../src/data/card-title-icon-rates.json"); // Ruta al nuevo JSON
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const cardsData = await response.json();
+      this.renderTitleIconCardsRates(cardsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear card-title-icon.json:", error);
+      const container = this.querySelector("#title-icon-cards-rates-container");
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar la información de las tarjetas.</p>";
+      }
+    }
+  }
 
-	renderTitleIconCardsRates(cardsData) {
-		const container = this.querySelector("#title-icon-cards-rates-container");
-		if (!container) {
-			console.error(
-				"El contenedor #title-icon-cards-container no fue encontrado.",
-			);
-			return;
-		}
-		container.innerHTML = ""; // Limpiar contenido previo
+  renderTitleIconCardsRates(cardsData) {
+    const container = this.querySelector("#title-icon-cards-rates-container");
+    if (!container) {
+      console.error(
+        "El contenedor #title-icon-cards-container no fue encontrado.",
+      );
+      return;
+    }
+    container.innerHTML = ""; // Limpiar contenido previo
 
-		cardsData.forEach((data) => {
-			const cardElement = document.createElement("app-card-title-icon");
-			cardElement.setAttribute("card-title", data.cardTitle);
-			cardElement.setAttribute("card-content", data.cardContent);
-			cardElement.setAttribute("card-icon", data.cardIcon); // Pasar la cadena SVG
-			container.appendChild(cardElement);
-		});
-	}
+    cardsData.forEach((data) => {
+      const cardElement = document.createElement("app-card-title-icon");
+      cardElement.setAttribute("card-title", data.cardTitle);
+      cardElement.setAttribute("card-content", data.cardContent);
+      cardElement.setAttribute("card-icon", data.cardIcon); // Pasar la cadena SVG
+      container.appendChild(cardElement);
+    });
+  }
 
-	async loadAndRenderTitleIconConfortCards() {
-		try {
-			const response = await fetch("../src/data/card-title-icon-confort.json"); // Ruta al nuevo JSON
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const cardsData = await response.json();
-			this.renderTitleIconCardsConfort(cardsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear card-title-icon.json:", error);
-			const container = this.querySelector(
-				"#title-icon-cards-confort-container",
-			);
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar la información de las tarjetas.</p>";
-			}
-		}
-	}
+  async loadAndRenderTitleIconConfortCards() {
+    try {
+      const response = await fetch("../src/data/card-title-icon-confort.json"); // Ruta al nuevo JSON
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const cardsData = await response.json();
+      this.renderTitleIconCardsConfort(cardsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear card-title-icon.json:", error);
+      const container = this.querySelector(
+        "#title-icon-cards-confort-container",
+      );
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar la información de las tarjetas.</p>";
+      }
+    }
+  }
 
-	renderTitleIconCardsConfort(cardsData) {
-		const container = this.querySelector("#title-icon-cards-confort-container");
-		if (!container) {
-			console.error(
-				"El contenedor #title-icon-cards-container no fue encontrado.",
-			);
-			return;
-		}
-		container.innerHTML = ""; // Limpiar contenido previo
+  renderTitleIconCardsConfort(cardsData) {
+    const container = this.querySelector("#title-icon-cards-confort-container");
+    if (!container) {
+      console.error(
+        "El contenedor #title-icon-cards-container no fue encontrado.",
+      );
+      return;
+    }
+    container.innerHTML = ""; // Limpiar contenido previo
 
-		cardsData.forEach((data) => {
-			const cardElement = document.createElement("app-card-title-icon");
-			cardElement.setAttribute("card-title", data.cardTitle);
-			cardElement.setAttribute("card-content", data.cardContent);
-			cardElement.setAttribute("card-icon", data.cardIcon); // Pasar la cadena SVG
-			container.appendChild(cardElement);
-		});
-	}
+    cardsData.forEach((data) => {
+      const cardElement = document.createElement("app-card-title-icon");
+      cardElement.setAttribute("card-title", data.cardTitle);
+      cardElement.setAttribute("card-content", data.cardContent);
+      cardElement.setAttribute("card-icon", data.cardIcon); // Pasar la cadena SVG
+      container.appendChild(cardElement);
+    });
+  }
 }
 
 customElements.define("page-destinos", PageDestinos);

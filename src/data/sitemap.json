@@ -1,7 +1,7 @@
 [
 	{
 		"categoria": "Home",
-		"landings": [{ "nombre": "Inicio", "url": "../.../../../" }]
+		"landings": [{ "nombre": "Inicio", "url": "../../../../" }]
 	},
 	{
 		"categoria": "Rutas y Destinos",

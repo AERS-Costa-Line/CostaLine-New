@@ -22,7 +22,7 @@ class PageBusTicketsToCuernavaca extends HTMLElement {
           <app-modal-doters></app-modal-doters>
           <div class="__first-section">
             <app-banner-image
-              image-src="../../src/assets/img/english/destinations/cuernavaca/banners/banner-bienvenido-a-coyuca-de-benitez.webp"
+              image-src="../../src/assets/img/english/destinations/cuernavaca/banners/banner-bienvenido-a-cuernavaca.webp"
               image-alt="Promotional banner for Cuernavaca"
             ></app-banner-image>
           </div>
