@@ -23,20 +23,20 @@
   &.visible {
     transform: translateY(0);
   }
-  
+
 }
 
 .titulo-widget {
   color: #fff;
-  font-size: 1rem; // Mantiene la variable existente
+  font-size: 1rem; 
   padding: 2px;
   text-align: center;
 }
 
 @media screen and (max-width:900px) {
   .cotiza {
-    position: relative;
-    /* Cambiado de sticky a relative */
+  top: 0rem;
+      position: relative;
     width: 100%;
     z-index: 9;
     transition: transform 0.8s ease;
@@ -45,8 +45,6 @@
 
 @include media("sm") {
   .cotiza {
-    top: 70px;
-    /* Asegura que quede pegado a la parte superior */
     transition: all 0.3s ease;
     transition: transform 0.8s ease;
   }

@@ -174,6 +174,18 @@ class AppBannerSlider extends HTMLElement {
       }
     }
 
+    // Lógica para ajustar el margen superior si app-cotiza no existe
+    const containerCarousel = this.querySelector(".container__carousel");
+    if (containerCarousel) {
+      // Esperar un ciclo para asegurar que todo el DOM esté listo
+      setTimeout(() => {
+        const cotizaElement = document.querySelector("app-cotiza");
+        if (!cotizaElement) {
+          containerCarousel.classList.add("no-cotiza-presente");
+        }
+      }, 0);
+    }
+
     // Lógica de scroll para el contenedor del carrusel
     const carouselWrapper = this.querySelector(".container__carousel");
     if (carouselWrapper) {

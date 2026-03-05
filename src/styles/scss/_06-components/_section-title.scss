@@ -15,8 +15,10 @@ app-section-title {
     height: 3.5rem;
     text-align: center;
     color: $white;
+    margin-top: 10px;
 
     @include media("md") {
         height: 4.5rem;
+        font-size: 1.3rem;
     }
 }

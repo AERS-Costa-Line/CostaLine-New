@@ -247,4 +247,37 @@ header {
 
     }
 
+    @media screen and (max-width: 1024px) {
+        position: sticky;
+    }
+
+}
+
+
+.content-after-cotiza {
+    margin-top: 18rem;
+}
+
+@include media("lg") {
+    .content-after-cotiza {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+    .content-after-cotiza {
+        margin-top: 0;
+    }
+}
+
+.content-after-header {
+    @media screen and (min-width: 901px) {
+        margin-top: 5.25rem; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content-after-cotiza {
+        margin-top: 0;
+    }
 }

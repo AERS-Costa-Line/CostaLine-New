@@ -16,13 +16,13 @@ import "../../../components/app-table-pets.js";
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageTerminosCondiciones extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
 
             
 
-            <div class="__panthom_space"></div>
+            
 
             
             <section class="__section">
@@ -606,17 +606,17 @@ class PageTerminosCondiciones extends HTMLElement {
                 </article>
             </section>
         `;
-		this.loadAndSetPetsTableData("#pets-table", "../src/data/table-pets.json");
-		this.loadAndSetPetsTableData(
-			"#costs-table",
-			"../src/data/table-pets-2.json",
-		);
-	}
-	async loadAndSetPetsTableData(tableElementSelector, jsonPath) {
-		const tableElement = this.querySelector(tableElementSelector);
-		const response = await fetch(jsonPath);
-		const data = await response.json();
-		tableElement.setTableData(data);
-	}
+    this.loadAndSetPetsTableData("#pets-table", "../src/data/table-pets.json");
+    this.loadAndSetPetsTableData(
+      "#costs-table",
+      "../src/data/table-pets-2.json",
+    );
+  }
+  async loadAndSetPetsTableData(tableElementSelector, jsonPath) {
+    const tableElement = this.querySelector(tableElementSelector);
+    const response = await fetch(jsonPath);
+    const data = await response.json();
+    tableElement.setTableData(data);
+  }
 }
 customElements.define("page-terminos-condiciones", PageTerminosCondiciones);
