@@ -5,12 +5,12 @@ import "../../../components/app-cookies-policy.js?v=1.0.3";
 import "../../../components/app-footer-pack-multienlace.js";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
-import "../../../../components/app-cotiza-pack.js";
-import "../../../../components/app-banner-slider.js";
-import "../../../../components/app-section-title.js";
-import "../../../../components/app-card-bg-primary.js";
-import "../../../../components/app-card-small-list.js";
-import "../../../../components/app-header-pack-multienlace.js";
+import "../../../components/app-cotiza-pack.js";
+import "../../../components/app-banner-slider.js";
+import "../../../components/app-section-title.js";
+import "../../../components/app-card-bg-primary.js";
+import "../../../components/app-card-small-list.js";
+import "../../../components/app-header-pack-multienlace.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
