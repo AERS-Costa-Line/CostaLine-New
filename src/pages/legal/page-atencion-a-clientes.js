@@ -16,12 +16,12 @@ import "../../components/app-forms.js";
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageAtencionAClientes extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
 
 
-            <div class="__panthom_space"></div>
+            
 
 
             <section class="__section __section__atencion-clientes">
@@ -42,61 +42,61 @@ class PageAtencionAClientes extends HTMLElement {
             
         `;
 
-		this.loadAndSetFormDataToAppForms();
-	}
-	//JS para renderizar los forms
-	async loadAndSetFormDataToAppForms() {
-		const appFormsElement = this.querySelector("app-forms");
-		const response = await fetch("../src/data/forms-atencion-cliente.json");
-		const formData = await response.json();
-		appFormsElement.setFormData(formData);
-	}
+    this.loadAndSetFormDataToAppForms();
+  }
+  //JS para renderizar los forms
+  async loadAndSetFormDataToAppForms() {
+    const appFormsElement = this.querySelector("app-forms");
+    const response = await fetch("../src/data/forms-atencion-cliente.json");
+    const formData = await response.json();
+    appFormsElement.setFormData(formData);
+  }
 
-	//js para renderizar componentes
-	async loadAndRenderComponentList(
-		jsonPath,
-		containerSelector,
-		componentTag,
-		dataToAttributesMapper,
-	) {
-		const container = this.querySelector(containerSelector);
-		if (!container) {
-			console.error(`El contenedor ${containerSelector} no fue encontrado.`);
-			return;
-		}
-		container.innerHTML = "";
+  //js para renderizar componentes
+  async loadAndRenderComponentList(
+    jsonPath,
+    containerSelector,
+    componentTag,
+    dataToAttributesMapper,
+  ) {
+    const container = this.querySelector(containerSelector);
+    if (!container) {
+      console.error(`El contenedor ${containerSelector} no fue encontrado.`);
+      return;
+    }
+    container.innerHTML = "";
 
-		try {
-			const response = await fetch(jsonPath);
-			if (!response.ok) {
-				throw new Error(
-					`Error HTTP! status: ${response.status} al cargar ${jsonPath}`,
-				);
-			}
-			const itemsData = await response.json();
+    try {
+      const response = await fetch(jsonPath);
+      if (!response.ok) {
+        throw new Error(
+          `Error HTTP! status: ${response.status} al cargar ${jsonPath}`,
+        );
+      }
+      const itemsData = await response.json();
 
-			if (!itemsData || !Array.isArray(itemsData) || itemsData.length === 0) {
-				console.warn(
-					`No hay datos en ${jsonPath}, están vacíos o el formato es incorrecto.`,
-				);
-				container.innerHTML = "<p>No hay datos disponibles para mostrar.</p>";
-				return;
-			}
+      if (!itemsData || !Array.isArray(itemsData) || itemsData.length === 0) {
+        console.warn(
+          `No hay datos en ${jsonPath}, están vacíos o el formato es incorrecto.`,
+        );
+        container.innerHTML = "<p>No hay datos disponibles para mostrar.</p>";
+        return;
+      }
 
-			itemsData.forEach((data) => {
-				const element = document.createElement(componentTag);
-				dataToAttributesMapper(element, data);
-				container.appendChild(element);
-			});
-		} catch (error) {
-			console.error(
-				`Error al cargar o renderizar desde ${jsonPath} en ${containerSelector}:`,
-				error,
-			);
-			if (container) {
-				container.innerHTML = `<p>Error al cargar la información desde ${jsonPath}.</p>`;
-			}
-		}
-	}
+      itemsData.forEach((data) => {
+        const element = document.createElement(componentTag);
+        dataToAttributesMapper(element, data);
+        container.appendChild(element);
+      });
+    } catch (error) {
+      console.error(
+        `Error al cargar o renderizar desde ${jsonPath} en ${containerSelector}:`,
+        error,
+      );
+      if (container) {
+        container.innerHTML = `<p>Error al cargar la información desde ${jsonPath}.</p>`;
+      }
+    }
+  }
 }
 customElements.define("page-atencion-a-clientes", PageAtencionAClientes);

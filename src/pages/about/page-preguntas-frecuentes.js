@@ -16,11 +16,11 @@ import "../../components/app-dropdown.js"; // Importar el componente dropdown
 /*-------------------------SCRIPTS---------------------------*/
 
 class PagePreguntasFrecuentes extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
 
-            <div class="__panthom_space"></div>
+            
 
 
             <section class="__section __section__FATQs">
@@ -30,6 +30,6 @@ class PagePreguntasFrecuentes extends HTMLElement {
                 </article>
             </section>
         `;
-	}
+  }
 }
 customElements.define("page-preguntas-frecuentes", PagePreguntasFrecuentes);
