@@ -27,7 +27,6 @@ import "../../components/app-carousel-banners.js";
 class PageDoters extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-            <app-cotiza></app-cotiza>
             
             <app-banner-slider
 					slides-data='[

@@ -17,12 +17,12 @@ import "../../components/app-dropdown.js"; // Importar el componente dropdown
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageTerminalesTaquillas extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
             
 
-            <div class="__panthom_space"></div>
+            
 
             <section class="__section __section__encuentra-taquilla">
                 <app-section-title section-title="Encuentra tu taquilla Costa Line: ubicaciones y horarios"></app-section-title>
@@ -43,17 +43,17 @@ class PageTerminalesTaquillas extends HTMLElement {
             </section>
         `;
 
-		this.loadAndRenderImageCards();
-		this.loadAndRenderDropdowns();
-	}
-	async loadAndRenderImageCards() {
-		const imageCardContainer = this.querySelector(".__grid-cards-container");
-		if (!imageCardContainer) {
-			console.error(
-				"El contenedor '.__grid-cards-container' para app-card-image no fue encontrado.",
-			);
-			return;
-		}
+    this.loadAndRenderImageCards();
+    this.loadAndRenderDropdowns();
+  }
+  async loadAndRenderImageCards() {
+    const imageCardContainer = this.querySelector(".__grid-cards-container");
+    if (!imageCardContainer) {
+      console.error(
+        "El contenedor '.__grid-cards-container' para app-card-image no fue encontrado.",
+      );
+      return;
+    }
 
 		try {
 			const response = await fetch("../../src/data/terminales-y-taquillas/card-image-term-taqui.json");
@@ -64,32 +64,32 @@ class PageTerminalesTaquillas extends HTMLElement {
 			}
 			const cardsData = await response.json();
 
-			if (!cardsData || !Array.isArray(cardsData)) {
-				throw new Error(
-					"Formato de datos incorrecto o vacío para card-image-term-taqui.json",
-				);
-			}
+      if (!cardsData || !Array.isArray(cardsData)) {
+        throw new Error(
+          "Formato de datos incorrecto o vacío para card-image-term-taqui.json",
+        );
+      }
 
-			cardsData.forEach((data) => {
-				const cardElement = document.createElement("app-card-image");
-				imageCardContainer.appendChild(cardElement);
-				cardElement.populateCard(data);
-			});
+      cardsData.forEach((data) => {
+        const cardElement = document.createElement("app-card-image");
+        imageCardContainer.appendChild(cardElement);
+        cardElement.populateCard(data);
+      });
 
-			// Añadir el div "center-botton" después de las tarjetas
-			const centerButtonDiv = document.createElement("div");
-			centerButtonDiv.classList.add("center-botton");
-			centerButtonDiv.innerHTML =
-				"<p>Taquillas de autobuses Costa Line: ubicaciones principales</p>";
-			imageCardContainer.appendChild(centerButtonDiv);
-		} catch (error) {
-			console.error("Error al cargar o renderizar app-card-image:", error);
-			if (imageCardContainer) {
-				imageCardContainer.innerHTML =
-					"<p>Error al cargar la información de las tarjetas de imagen.</p>";
-			}
-		}
-	}
+      // Añadir el div "center-botton" después de las tarjetas
+      const centerButtonDiv = document.createElement("div");
+      centerButtonDiv.classList.add("center-botton");
+      centerButtonDiv.innerHTML =
+        "<p>Taquillas de autobuses Costa Line: ubicaciones principales</p>";
+      imageCardContainer.appendChild(centerButtonDiv);
+    } catch (error) {
+      console.error("Error al cargar o renderizar app-card-image:", error);
+      if (imageCardContainer) {
+        imageCardContainer.innerHTML =
+          "<p>Error al cargar la información de las tarjetas de imagen.</p>";
+      }
+    }
+  }
 
 	async loadAndRenderDropdowns() {
 		try {
@@ -111,23 +111,23 @@ class PageTerminalesTaquillas extends HTMLElement {
 		}
 	}
 
-	renderDropdowns(dropdownsData) {
-		const container = this.querySelector("#dropdowns-container");
-		if (!container) {
-			console.error("El contenedor #dropdowns-container no fue encontrado.");
-			return;
-		}
-		container.innerHTML = ""; // Limpiar contenido previo
+  renderDropdowns(dropdownsData) {
+    const container = this.querySelector("#dropdowns-container");
+    if (!container) {
+      console.error("El contenedor #dropdowns-container no fue encontrado.");
+      return;
+    }
+    container.innerHTML = ""; // Limpiar contenido previo
 
-		dropdownsData.forEach((data) => {
-			const dropdownElement = document.createElement("app-dropdown");
-			dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
-			dropdownElement.setAttribute(
-				"content-dropdown",
-				data["content-dropdown"],
-			);
-			container.appendChild(dropdownElement);
-		});
-	}
+    dropdownsData.forEach((data) => {
+      const dropdownElement = document.createElement("app-dropdown");
+      dropdownElement.setAttribute("title-dropdown", data["title-dropdown"]);
+      dropdownElement.setAttribute(
+        "content-dropdown",
+        data["content-dropdown"],
+      );
+      container.appendChild(dropdownElement);
+    });
+  }
 }
 customElements.define("page-terminales-taquillas", PageTerminalesTaquillas);

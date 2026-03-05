@@ -16,13 +16,13 @@ import "../../components/app-table-pets.js";
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageFacturacion extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
 
             
 
-            <div class="__panthom_space"></div>
+            
 
             <section class="__section">
                 <app-section-title section-title="Facturación CFDI 4.0."></app-section-title>
@@ -134,6 +134,6 @@ class PageFacturacion extends HTMLElement {
 
           
         `;
-	}
+  }
 }
 customElements.define("page-facturacion", PageFacturacion);

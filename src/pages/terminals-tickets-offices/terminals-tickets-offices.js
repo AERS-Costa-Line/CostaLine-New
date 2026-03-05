@@ -1,10 +1,10 @@
-/*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
+/*-------------COMPONENTES PRINCIPALES ------------------------- */
 
-import "../../../components/english/app-header-english.js?v=1.0.2";
-import "../../../components/english/app-footer-english.js?v=1.0.2";
-import "../../../components/app-banner-multi-image.js?v=1.0.2";
-import "../../../components/app-card-image-tag-text.js?v=1.0.2";
-import "../../../components/app-destiny-slider.js?v=1.0.2";
+import "../../../components/app-header.js?v=1.1.3";
+import "../../../components/app-cookies-policy.js?v=1.0.3";
+import "../../../components/app-button-whats.js?v=1.0.2";
+import "../../../components/app-button-eva-trip.js?v=1.0.2";
+import "../../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
@@ -16,12 +16,13 @@ import "../../../components/app-dropdown.js"; // Importar el componente dropdown
 
 /*-------------------------SCRIPTS---------------------------*/
 
+
 class PageTerminalsTicketsOffices extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-            <app-cotiza lang="en"></app-cotiza>
+            <app-cotiza></app-cotiza>
 
-            <app-modal-doters></app-modal-doters>
+            
 
             
 
@@ -31,7 +32,7 @@ class PageTerminalsTicketsOffices extends HTMLElement {
                 <article class="__grid-cards-container">
                     <!-- app-card-image elements will be inserted here by loadAndRenderImageCards -->
                 </article>
-                <p class="__section-paragraph-xl">Explore more routes and destinations of Costa Line to plan your trip.</p>
+                <p class="__section-paragraph-xl">Explora más rutas y destinos de Costa Line para planificar tu viaje.</p>
             </section>
 
             <section class="__section __section__FATQs">
@@ -57,12 +58,10 @@ class PageTerminalsTicketsOffices extends HTMLElement {
     }
 
     try {
-      const response = await fetch(
-        "../../src/data/english/card-image-term-tickets.json",
-      );
+      const response = await fetch("../src/data/card-image-term-taqui.json");
       if (!response.ok) {
         throw new Error(
-          `HTTP error! status: ${response.status} al cargar card-image-term-tickets.json`,
+          `HTTP error! status: ${response.status} al cargar card-image-term-taqui.json`,
         );
       }
       const cardsData = await response.json();
@@ -97,7 +96,7 @@ class PageTerminalsTicketsOffices extends HTMLElement {
   async loadAndRenderDropdowns() {
     try {
       const response = await fetch(
-        "../../src/data/english/dropdown-ask-term-tickets.json",
+        "../src/data/dropdown-preguntas-frecuentes.json",
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
