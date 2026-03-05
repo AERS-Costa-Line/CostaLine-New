@@ -20,9 +20,6 @@ class PageTerminalesTaquillas extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <app-cotiza></app-cotiza>
-            
-
-            
 
             <section class="__section __section__encuentra-taquilla">
                 <app-section-title section-title="Encuentra tu taquilla Costa Line: ubicaciones y horarios"></app-section-title>

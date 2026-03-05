@@ -22,10 +22,6 @@ class PageTerminalsTicketsOffices extends HTMLElement {
     this.innerHTML = `
             <app-cotiza></app-cotiza>
 
-            
-
-            
-
             <section class="__section __section__encuentra-taquilla">
                 <app-section-title section-title="Find your Costa Line ticket office: locations and hours"></app-section-title>
                  <p class="__paragraph">The bus rental sector in Mexico City has experienced significant growth, reflecting the increasing demand for comfortable and secure transportation solutions for groups. From school trips to corporate travel, bus rental has become an ideal option to facilitate the mobility of large groups, offering a balance of efficiency, safety, and comfort.</p> 

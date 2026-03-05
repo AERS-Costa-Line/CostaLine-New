@@ -8,7 +8,7 @@ import "../../../components/app-destiny-slider.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../../components/app-cotiza.js";
-import "../../../components/app-modal-doters.js";
+import "../../../components/app-card-image.js";
 import "../../../components/app-banner-slider.js";
 import "../../../components/app-payments.js";
 import "../../../components/app-section-title.js";
@@ -20,10 +20,6 @@ class PageTerminalsTicketsOffices extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <app-cotiza lang="en"></app-cotiza>
-
-            <app-modal-doters></app-modal-doters>
-
-            
 
             <section class="__section __section__encuentra-taquilla">
                 <app-section-title section-title="Find your Costa Line ticket office: locations and hours"></app-section-title>
@@ -58,7 +54,7 @@ class PageTerminalsTicketsOffices extends HTMLElement {
 
     try {
       const response = await fetch(
-        "../../src/data/english/card-image-term-tickets.json",
+        "../../src/data/english/terminals-tickets-offices/card-image-term-tickets.json",
       );
       if (!response.ok) {
         throw new Error(
@@ -97,7 +93,7 @@ class PageTerminalsTicketsOffices extends HTMLElement {
   async loadAndRenderDropdowns() {
     try {
       const response = await fetch(
-        "../../src/data/english/dropdown-ask-term-tickets.json",
+        "../../src/data/english/terminals-tickets-offices/dropdown-ask-term-tickets.json",
       );
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
