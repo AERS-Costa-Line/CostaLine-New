@@ -16,7 +16,7 @@ import "../../../components/app-destinations-table.js";
 
 /*-------------------------SCRIPTS---------------------------*/
 
-class PageTravelpassEnglish extends HTMLElement {
+class PageElectronicWallet extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
         <app-cotiza></app-cotiza>
@@ -175,4 +175,4 @@ class PageTravelpassEnglish extends HTMLElement {
 	}
 }
 
-customElements.define("page-travelpass-english", PageTravelpassEnglish);
+customElements.define("page-electronic-wallet", PageElectronicWallet);
