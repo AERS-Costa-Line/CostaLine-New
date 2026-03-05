@@ -10,12 +10,9 @@ import "../../../../components/app-destiny-slider.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 
-
 class PageDotersTicket extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-                    <app-modal-doters></app-modal-doters>
-
       <div class="main-container">
         <div class="content-header">
             <h1>Doters</h1>

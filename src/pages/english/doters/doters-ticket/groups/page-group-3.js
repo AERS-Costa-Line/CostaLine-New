@@ -141,7 +141,6 @@ class PageGroupThreeEnglish extends HTMLElement {
 
 		// 3. Inyectamos el HTML generado dinámicamente en la plantilla principal.
 		this.innerHTML = `
-      <app-modal-doters></app-modal-doters>
 
       <div class="main-container">
         <div class="content-header">

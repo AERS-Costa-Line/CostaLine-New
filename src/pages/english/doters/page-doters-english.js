@@ -15,7 +15,7 @@ import "../../../components/app-card-right-description.js";
 import "../../../components/app-carousel-banners.js";
 
 /*-------------COMPONENTES PRINCIPALES ENGLISH------------------------- */
-
+import "../../../components/app-cotiza.js?v=1.0.2";
 import "../../../components/english/app-header-english.js?v=1.0.2";
 import "../../../components/english/app-footer-english.js?v=1.0.2";
 import "../../../components/app-banner-multi-image.js?v=1.0.2";
@@ -30,9 +30,6 @@ class PageDotersEnglish extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
             <app-cotiza lang="en"></app-cotiza>
-
-                        <app-modal-doters></app-modal-doters>
-
             
             <app-banner-slider
 					slides-data='[
