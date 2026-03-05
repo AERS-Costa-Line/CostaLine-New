@@ -8,7 +8,10 @@
 		<title>Nuestro Proceso de Envío: Paso a Paso | Paquetería Costa Line</title>
 
 		<!-- Meta Description -->
-		<meta name="description" content="Te explicamos nuestro proceso de envío paso a paso, desde la documentación en origen hasta la recolección en el destino. Conoce cómo cuidamos tu paquete en cada etapa para garantizar una entrega segura y puntual." />
+		<meta
+			name="description"
+			content="Te explicamos nuestro proceso de envío paso a paso, desde la documentación en origen hasta la recolección en el destino. Conoce cómo cuidamos tu paquete en cada etapa para garantizar una entrega segura y puntual."
+		/>
 
 		<!-- Meta Keywords -->
 		<meta name="keywords" content="" />
@@ -30,7 +33,6 @@
 		<meta name="sitemap" content="/sitemap.xml" />
 
 		<meta name="theme-color" content="#06255b" />
-
 
 		<!-- Favicons for various devices for SEO and UX -->
 
@@ -100,7 +102,7 @@
 		<!-- End Favicon -->
 
 		<link rel="manifest" href="/site.webmanifest" />
-		
+
 		<meta name="msapplication-TileColor" content="#06255b" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
 
@@ -115,9 +117,15 @@
 		<!-- End Open Graph -->
 
 		<!-- Scripts -->
+		<script
+			type="module"
+			src="../../src/pages/servicios/packmultienlace/page-proceso-envio.js?v=1.2.1"
+			crossorigin="anonymous"
+		></script>
 
-		<script src="../../src/js/jquery.min.js?v=1.0.2"></script>
-		<script type="module" src="../../app.js?v=1.0.2"></script>
+		<!-- js -->
+		<script src="../../src/js/jquery.min.js?v=1.0.1"></script>
+
 		<!-- Stylesheets -->
 
 		<!-- CSS All Components -->
@@ -134,87 +142,98 @@
 			href="https://widgets.reservamos.mx/search/5.23.6/search.css?v=5.18.0"
 		/>
 
-
 		<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "Cómo Funciona Nuestro Proceso de Envío de Paquetería",
-  "description": "Una guía paso a paso que detalla el proceso de envío de Costa Line, desde la recepción del paquete en la terminal de origen hasta su entrega al destinatario.",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "name": "Paso 1: Documentación y Pesaje en Origen",
-      "text": "Presenta tu paquete en el mostrador de paquetería de nuestras terminales. Lo pesaremos, mediremos y generaremos una guía de envío con todos los datos."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Paso 2: Preparación y Abordaje Seguro",
-      "text": "Tu paquete es etiquetado y almacenado de forma segura, listo para ser cargado en el compartimento de equipaje del próximo autobús disponible en la ruta."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Paso 3: Tránsito en la Ruta",
-      "text": "Tu paquete viaja de forma directa en nuestros autobuses, manejado por operadores profesionales y siguiendo la ruta más eficiente hacia el destino."
-    },
-    {
-      "@type": "HowToStep",
-      "name": "Paso 4: Recepción y Notificación en Destino",
-      "text": "Al llegar a la terminal de destino, tu paquete es descargado y registrado en nuestro sistema. Se notifica al destinatario (vía SMS, si se proporcionó el servicio) que ya puede pasar a recogerlo."
-    },
-    {
-        "@type": "HowToStep",
-        "name": "Paso 5: Entrega al Destinatario",
-        "text": "El destinatario se presenta en el mostrador con el número de guía y una identificación oficial para recibir el paquete. ¡Misión cumplida!"
-    }
-  ],
-   "publisher": {
-    "@type": "Organization",
-    "name": "Costa Line"
-  }
-}
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K9MW4HF');</script>
-<!-- End Google Tag Manager -->
+			{
+				"@context": "https://schema.org",
+				"@type": "HowTo",
+				"name": "Cómo Funciona Nuestro Proceso de Envío de Paquetería",
+				"description": "Una guía paso a paso que detalla el proceso de envío de Costa Line, desde la recepción del paquete en la terminal de origen hasta su entrega al destinatario.",
+				"step": [
+					{
+						"@type": "HowToStep",
+						"name": "Paso 1: Documentación y Pesaje en Origen",
+						"text": "Presenta tu paquete en el mostrador de paquetería de nuestras terminales. Lo pesaremos, mediremos y generaremos una guía de envío con todos los datos."
+					},
+					{
+						"@type": "HowToStep",
+						"name": "Paso 2: Preparación y Abordaje Seguro",
+						"text": "Tu paquete es etiquetado y almacenado de forma segura, listo para ser cargado en el compartimento de equipaje del próximo autobús disponible en la ruta."
+					},
+					{
+						"@type": "HowToStep",
+						"name": "Paso 3: Tránsito en la Ruta",
+						"text": "Tu paquete viaja de forma directa en nuestros autobuses, manejado por operadores profesionales y siguiendo la ruta más eficiente hacia el destino."
+					},
+					{
+						"@type": "HowToStep",
+						"name": "Paso 4: Recepción y Notificación en Destino",
+						"text": "Al llegar a la terminal de destino, tu paquete es descargado y registrado en nuestro sistema. Se notifica al destinatario (vía SMS, si se proporcionó el servicio) que ya puede pasar a recogerlo."
+					},
+					{
+						"@type": "HowToStep",
+						"name": "Paso 5: Entrega al Destinatario",
+						"text": "El destinatario se presenta en el mostrador con el número de guía y una identificación oficial para recibir el paquete. ¡Misión cumplida!"
+					}
+				],
+				"publisher": {
+					"@type": "Organization",
+					"name": "Costa Line"
+				}
+			}
+		</script>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-K9MW4HF");
+		</script>
+		<!-- End Google Tag Manager -->
 
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KFMMCC7');</script>
-<!-- End Google Tag Manager -->
-
-
-
-
-
-
-
-
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-KFMMCC7");
+		</script>
+		<!-- End Google Tag Manager -->
 	</head>
 
 	<body>
-
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
 		<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFMMCC7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
- 
-
-
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-KFMMCC7"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
 		<app-header-pack-multienlace
 			logo='{

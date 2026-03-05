@@ -8,7 +8,10 @@
 		<title>Nuestras Terminales con Servicio de Paquetería | Costa Line</title>
 
 		<!-- Meta Description -->
-		<meta name="description" content="Encuentra la terminal de Costa Line más cercana para enviar o recoger tus paquetes. Consulta las direcciones, teléfonos y horarios de nuestros módulos de paquetería en Guerrero, Morelos, CDMX y más." />
+		<meta
+			name="description"
+			content="Encuentra la terminal de Costa Line más cercana para enviar o recoger tus paquetes. Consulta las direcciones, teléfonos y horarios de nuestros módulos de paquetería en Guerrero, Morelos, CDMX y más."
+		/>
 
 		<!-- Meta Keywords -->
 		<meta name="keywords" content="" />
@@ -30,7 +33,6 @@
 		<meta name="sitemap" content="/sitemap.xml" />
 
 		<meta name="theme-color" content="#06255b" />
-
 
 		<!-- Favicons for various devices for SEO and UX -->
 
@@ -100,7 +102,7 @@
 		<!-- End Favicon -->
 
 		<link rel="manifest" href="/site.webmanifest" />
-		
+
 		<meta name="msapplication-TileColor" content="#06255b" />
 		<meta name="msapplication-config" content="/browserconfig.xml" />
 
@@ -118,9 +120,15 @@
 		<!-- End Open Graph -->
 
 		<!-- Scripts -->
+		<script
+			type="module"
+			src="../../src/pages/servicios/packmultienlace/page-terminales-pack.js?v=1.2.1"
+			crossorigin="anonymous"
+		></script>
 
-		<script src="../../src/js/jquery.min.js?v=1.0.2"></script>
-		<script type="module" src="../../app.js?v=1.0.2"></script>
+		<!-- js -->
+		<script src="../../src/js/jquery.min.js?v=1.0.1"></script>
+
 		<!-- Stylesheets -->
 
 		<!-- CSS All Components -->
@@ -144,107 +152,118 @@
 			type="text/css"
 		/>
 
-
 		<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Directorio de Terminales con Servicio de Paquetería Costa Line",
-  "description": "Encuentra la dirección, teléfono y horario de todas nuestras sucursales de paquetería.",
-  "url": "https://www.costaline.com.mx/paqueteria/terminales",
-  "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "Store",
-          "name": "Paquetería Costa Line - Terminal Taxqueña",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Av. Taxqueña 1320",
-            "addressLocality": "Ciudad de México",
-            "postalCode": "04200"
-          },
-          "telephone": "+52-55-5555-1111"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "Store",
-          "name": "Paquetería Costa Line - Terminal Acapulco Costera",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Av. Cuauhtémoc 1605",
-            "addressLocality": "Acapulco de Juárez",
-            "postalCode": "39350"
-          },
-          "telephone": "+52-744-4444-2222"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "Store",
-          "name": "Paquetería Costa Line - Terminal Chilpancingo",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Blvd. Vicente Guerrero S/N",
-            "addressLocality": "Chilpancingo de los Bravo",
-            "postalCode": "39090"
-          },
-          "telephone": "+52-747-7777-3333"
-        }
-      }
-    ]
-  }
-}
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K9MW4HF');</script>
-<!-- End Google Tag Manager -->
+			{
+				"@context": "https://schema.org",
+				"@type": "CollectionPage",
+				"name": "Directorio de Terminales con Servicio de Paquetería Costa Line",
+				"description": "Encuentra la dirección, teléfono y horario de todas nuestras sucursales de paquetería.",
+				"url": "https://www.costaline.com.mx/paqueteria/terminales",
+				"mainEntity": {
+					"@type": "ItemList",
+					"itemListElement": [
+						{
+							"@type": "ListItem",
+							"position": 1,
+							"item": {
+								"@type": "Store",
+								"name": "Paquetería Costa Line - Terminal Taxqueña",
+								"address": {
+									"@type": "PostalAddress",
+									"streetAddress": "Av. Taxqueña 1320",
+									"addressLocality": "Ciudad de México",
+									"postalCode": "04200"
+								},
+								"telephone": "+52-55-5555-1111"
+							}
+						},
+						{
+							"@type": "ListItem",
+							"position": 2,
+							"item": {
+								"@type": "Store",
+								"name": "Paquetería Costa Line - Terminal Acapulco Costera",
+								"address": {
+									"@type": "PostalAddress",
+									"streetAddress": "Av. Cuauhtémoc 1605",
+									"addressLocality": "Acapulco de Juárez",
+									"postalCode": "39350"
+								},
+								"telephone": "+52-744-4444-2222"
+							}
+						},
+						{
+							"@type": "ListItem",
+							"position": 3,
+							"item": {
+								"@type": "Store",
+								"name": "Paquetería Costa Line - Terminal Chilpancingo",
+								"address": {
+									"@type": "PostalAddress",
+									"streetAddress": "Blvd. Vicente Guerrero S/N",
+									"addressLocality": "Chilpancingo de los Bravo",
+									"postalCode": "39090"
+								},
+								"telephone": "+52-747-7777-3333"
+							}
+						}
+					]
+				}
+			}
+		</script>
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-K9MW4HF");
+		</script>
+		<!-- End Google Tag Manager -->
 
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KFMMCC7');</script>
-<!-- End Google Tag Manager -->
-
-
-
-
-
-
-
-
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-KFMMCC7");
+		</script>
+		<!-- End Google Tag Manager -->
 	</head>
 
 	<body>
-
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
 		<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9MW4HF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KFMMCC7"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
- 
-
-
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-KFMMCC7"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 
 		<app-header-pack-multienlace
 			logo='{
