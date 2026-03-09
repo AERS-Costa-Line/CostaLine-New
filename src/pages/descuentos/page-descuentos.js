@@ -16,8 +16,8 @@ import "../../components/app-forms.js";
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageDescuentos extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
 
             
@@ -38,7 +38,7 @@ class PageDescuentos extends HTMLElement {
                   <div class="__grid-container">
                     <article class="__article__promo">
                         <h3 class="__article-title">Compra con descuento </h3>
-                       <a class="__article-link" href="../../../ofertas-en-1-click.html">  <img src="../src/assets/img/promociones/costa-descuentos.webp" alt="Atencion a clientes"> </a>
+                       <a class="__article-link" href="../../../promociones/ofertas-en-1-click.html">  <img src="../src/assets/img/promociones/costa-descuentos.webp" alt="Atencion a clientes"> </a>
                     </article>
                     <article class="__article__promo">
                         <h3 class="__article-title">Acumula Puntos Doters</h3>
@@ -57,6 +57,6 @@ class PageDescuentos extends HTMLElement {
                   </article>
             </section>
         `;
-	}
+  }
 }
 customElements.define("page-descuentos", PageDescuentos);
