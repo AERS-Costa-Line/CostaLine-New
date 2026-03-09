@@ -5,13 +5,13 @@ class AppBannerSlider extends HTMLElement {
     // Genera dinámicamente las diapositivas
     const slidesHTML = slidesData
       .map(
-        (slide) => `
+        (slide, index) => `
                   <div class="slide" aria-label="${slide.title}" role="group">
                     <a href="${slide.link}" target="_blank" rel="noopener noreferrer" class="banner-slider-link" aria-label="Enlace del banner ${slide.title}">
                         <picture>
                             <source srcset="${slide.mediumImage}" media="(min-width: 30.125rem) and (max-width: 61.875rem)"> <!-- 482px and 990px to rem -->
                             <source srcset="${slide.smallImage}" media="(max-width: 30rem)"> <!-- 480px to rem -->
-                            <img src="${slide.image}" alt="${slide.title}">
+                            <img src="${slide.image}" alt="${slide.title}" ${index > 0 ? 'loading="lazy"' : ""}>
                         </picture>
                     </a>
                   </div>
@@ -31,10 +31,10 @@ class AppBannerSlider extends HTMLElement {
       const indicatorsHTML = slidesData
         .map(
           (_, index) => `
-        <div class="indicator" data-index="${index}" role="button" tabindex="0" aria-label="Ir a la diapositiva ${
-          index + 1
-        }"></div>
-    `,
+            <div class="indicator" data-index="${index}" role="button" tabindex="0" aria-label="Ir a la diapositiva ${
+              index + 1
+            }"></div>
+          `,
         )
         .join("");
 
