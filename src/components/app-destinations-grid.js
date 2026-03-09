@@ -1,3 +1,7 @@
+/*-------------------------SCRIPTS---------------------------*/
+
+import "../js/slick.js?v=1.0.2";
+
 class AppDestinationsGrid extends HTMLElement {
   static #instanceCounter = 0;
 
@@ -30,7 +34,12 @@ class AppDestinationsGrid extends HTMLElement {
     this.actualizarClases = this.actualizarClases.bind(this);
     window.addEventListener("resize", this.actualizarClases);
 
-    this.actualizarClases();
+    // Se difiere la inicialización hasta que el documento esté listo.
+    // Esto asegura que jQuery y el plugin Slick estén disponibles,
+    // replicando el comportamiento del componente app-payments que sí funciona.
+    $(document).ready(() => {
+      this.actualizarClases();
+    });
   }
 
   disconnectedCallback() {
