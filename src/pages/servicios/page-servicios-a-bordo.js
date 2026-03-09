@@ -8,10 +8,12 @@ import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
 import "../../components/app-cotiza.js";
+import "../../components/app-card-image.js";
 import "../../components/app-banner-slider.js";
 import "../../components/app-payments.js";
 import "../../components/app-section-title.js";
 import "../../components/app-card-text.js";
+import "../../components/app-cards-text-image.js";
 import "../../components/app-card-text-bg-blue-gray.js";
 
 /*-------------------------SCRIPTS---------------------------*/
@@ -20,11 +22,6 @@ class PageServiciosABordo extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
             <app-cotiza></app-cotiza>
-
-            
-
-            
-
 
             <section class="__section __section__servicio-autobus">
                 <app-section-title section-title="Servicios a bordo: Autobus de doble piso Marco Polo"></app-section-title>
@@ -90,13 +87,13 @@ class PageServiciosABordo extends HTMLElement {
     };
 
     this.loadAndRenderComponentList(
-      "../../../src/data/cards-text-image-comodidad.json",
+      "../../src/data/cards-text-image-comodidad.json",
       "#comodidad-cards-container",
       "app-cards-text-image",
       textImageMapper,
     );
     this.loadAndRenderComponentList(
-      "../../../src/data/cards-text-image-asientos.json",
+      "../../src/data/cards-text-image-asientos.json",
       "#asientos-cards-container",
       "app-cards-text-image",
       textImageMapper,
@@ -117,7 +114,7 @@ class PageServiciosABordo extends HTMLElement {
     }
     try {
       const responseCardsText = await fetch(
-        "../../../src/data/card-text-servicios-abordo-data.json",
+        "../../src/data/card-text-servicios-abordo-data.json",
       );
       if (!responseCardsText.ok) {
         throw new Error(
