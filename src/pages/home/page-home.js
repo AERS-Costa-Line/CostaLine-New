@@ -18,6 +18,7 @@ import "../../components/app-other-services.js";
 import "../../components/app-blog.js";
 import "../../components/app-img-shop-left.js";
 import "../../components/app-section-title.js";
+import "../../components/app-dropdown.js";
 
 class PageHome extends HTMLElement {
 	connectedCallback() {
