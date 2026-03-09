@@ -7,7 +7,7 @@
   bottom: 0;
   z-index: 9999999999; // Mantiene el valor original
   display: none;
-  width: 100%;
+  width: 100vw;
   background-color: $primary-color; // #0d385a
   color: $white; // #FFF
   box-shadow: $shadow-dark, rgba(0, 0, 0, 0.4) 0px 30px 90px; // Ajuste con sombra existente
