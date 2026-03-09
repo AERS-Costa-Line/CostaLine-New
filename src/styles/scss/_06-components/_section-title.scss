@@ -18,7 +18,7 @@ app-section-title {
     margin-top: 10px;
 
     @include media("md") {
-        height: 4.5rem;
+        height: auto;
         font-size: 1.3rem;
     }
 }
