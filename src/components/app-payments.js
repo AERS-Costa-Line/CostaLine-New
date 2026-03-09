@@ -1,7 +1,7 @@
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/slick.js?v=1.0.2";
+import "../js/slick.min.js?v=1.0.2";
 
 class AppPayments extends HTMLElement {
   connectedCallback() {

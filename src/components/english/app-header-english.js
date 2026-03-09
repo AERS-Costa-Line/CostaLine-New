@@ -54,7 +54,7 @@ class AppHeaderEnglish extends HTMLElement {
 					<img src="../../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 				</button>
 				<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Login Doters">
-					<img src="../../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+					<img src="../../../../src/assets/img/logos/doters.svg" alt="Doters" width="66px" height="21px" loading="lazy">
 				</button>
 				<a class="li__languaje desktop-languaje" href="../../../../" aria-label="Change language">
 					<img src='../../../../src/assets/icons/icons-img/MX_Flag.webp' alt="English" loading="lazy">
@@ -106,7 +106,7 @@ class AppHeaderEnglish extends HTMLElement {
 								<img src="../../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 							</button>
 							<button id="openDotersModalMovil" class="btn-doters" aria-label="Login Doters">
-								<img src="../../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+								<img src="../../../../src/assets/img/logos/doters.svg" alt="Doters" width="66px" height="21px" loading="lazy">
 							</button>
 						</li>
 					</ul>

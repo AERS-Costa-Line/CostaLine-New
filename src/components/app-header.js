@@ -59,7 +59,7 @@ class AppHeader extends HTMLElement {
 					<img src="../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 				</button>
 				<button id="openDotersModal" class="btn btn-doters desktop-doters" aria-label="Iniciar sesión Doters">
-					<img id="modalDoters-logo" src='../../../src/assets/img/logos/doters.svg' alt="Doters" loading="lazy">
+					<img id="modalDoters-logo" src='../../../src/assets/img/logos/doters.svg' alt="Doters" width="66px" height="21px" loading="lazy">
 				</button>
 
 				<!-- Username desktop (se muestra cuando hay token) -->
@@ -117,7 +117,7 @@ class AppHeader extends HTMLElement {
 								<img src="../../../src/assets/img/logos/logo-monedero-electronico.webp" alt="Monedero Electrónico" loading="lazy">
 							</button>
 							<button id="openDotersModalMovil" class="btn-doters" aria-label="Iniciar sesión Doters">
-								<img id="modalDoters-logoMovil" src="../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+								<img id="modalDoters-logoMovil" src="../../../src/assets/img/logos/doters.svg" alt="Doters" width="66px" height="21px" loading="lazy">
 							</button>
 							<!-- Username mobile (se muestra cuando hay token) -->
 							<div id="modalDoters-welcomeMessageMovil" class="doters-welcome" style="display:none;"></div>
