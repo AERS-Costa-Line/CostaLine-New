@@ -112,8 +112,8 @@ class AppCotiza extends HTMLElement {
       searchButton.classList.add("search-button");
       searchButton.style.display = "none";
       searchButton.style.position = "fixed";
-      // start with top just under the header; we'll update when showing
-      searchButton.style.top = `${buy.getBoundingClientRect().bottom}px`;
+      // Se posiciona en la parte inferior derecha para evitar el desbordamiento horizontal.
+      searchButton.style.bottom = "5.45rem";
       searchButton.style.right = "1.25rem";
       searchButton.style.zIndex = "9999";
       searchButton.style.padding = "0.2125rem";
@@ -138,8 +138,7 @@ class AppCotiza extends HTMLElement {
         (entries) => {
           entries.forEach((entry) => {
             if (!entry.isIntersecting) {
-              // Si "buy" no está visible, reposicionar debajo y mostrar el botón
-              searchButton.style.top = `${buy.getBoundingClientRect().bottom}px`;
+              // Si "buy" no está visible, mostrar el botón
               searchButton.style.display = "block";
               setTimeout(() => {
                 searchButton.style.transform = "translateY(0) scale(1)";
