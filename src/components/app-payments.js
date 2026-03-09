@@ -148,7 +148,7 @@ class AppPayments extends HTMLElement {
           <div>
             <picture>
               <source srcset="${logo.srcset}" type="image/webp">
-              <img src="${logo.src}" title="${logo.title}" width="1" height="1" alt="${logo.alt}">
+              <img src="${logo.src}" title="${logo.title}" width="210" height="87" alt="${logo.alt}">
             </picture>
           </div>
         `);
