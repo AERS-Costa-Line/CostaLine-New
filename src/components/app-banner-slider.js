@@ -1,23 +1,40 @@
 class AppBannerSlider extends HTMLElement {
   connectedCallback() {
-    const slidesData = JSON.parse(this.getAttribute("slides-data") || "[]");
+    const preRenderedSlide = this.querySelector(".slide");
+    let initialSlideHTML = "";
+    let slidesData = JSON.parse(this.getAttribute("slides-data") || "[]");
+    let slidesToGenerate = slidesData;
+
+    if (preRenderedSlide) {
+      initialSlideHTML = preRenderedSlide.outerHTML;
+      preRenderedSlide.remove();
+      slidesToGenerate = slidesData.slice(1);
+    }
 
     // Genera dinámicamente las diapositivas
-    const slidesHTML = slidesData
-      .map(
-        (slide) => `
+    const dynamicSlidesHTML = slidesToGenerate
+      .map((slide, index) => {
+        // Si no hay un slide pre-renderizado, el primero generado dinámicamente es el candidato a LCP.
+        const isLcpCandidate = !preRenderedSlide && index === 0;
+        const imgAttributes = isLcpCandidate
+          ? 'fetchpriority="high"'
+          : 'loading="lazy"';
+
+        return `
                   <div class="slide" aria-label="${slide.title}" role="group">
                     <a href="${slide.link}" target="_blank" rel="noopener noreferrer" class="banner-slider-link" aria-label="Enlace del banner ${slide.title}">
                         <picture>
                             <source srcset="${slide.mediumImage}" media="(min-width: 30.125rem) and (max-width: 61.875rem)"> <!-- 482px and 990px to rem -->
                             <source srcset="${slide.smallImage}" media="(max-width: 30rem)"> <!-- 480px to rem -->
-                            <img src="${slide.image}" alt="${slide.title}">
+                            <img src="${slide.image}" alt="${slide.title}" ${imgAttributes}>
                         </picture>
                     </a>
                   </div>
-                `,
-      )
+                `;
+      })
       .join("");
+
+    const slidesHTML = initialSlideHTML + dynamicSlidesHTML;
 
     let prevButtonHTML = "";
     let nextButtonHTML = "";
@@ -31,10 +48,10 @@ class AppBannerSlider extends HTMLElement {
       const indicatorsHTML = slidesData
         .map(
           (_, index) => `
-        <div class="indicator" data-index="${index}" role="button" tabindex="0" aria-label="Ir a la diapositiva ${
-          index + 1
-        }"></div>
-    `,
+            <div class="indicator" data-index="${index}" role="button" tabindex="0" aria-label="Ir a la diapositiva ${
+              index + 1
+            }"></div>
+          `,
         )
         .join("");
 

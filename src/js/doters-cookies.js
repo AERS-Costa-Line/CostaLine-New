@@ -45,7 +45,7 @@ function showLoggedOutUI() {
     btnD.style.display = "inline-block";
     btnD.innerHTML = `
       <!-- use root-relative path so it works regardless of page depth -->
-      <img id="modalDoters-logo" src="../../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+      <img id="modalDoters-logo" src="../../../src/assets/img/logos/doters.svg" width="66px" height="21px" alt="Doters" loading="lazy">
     `;
     btnD.onclick = () => {
       // abre modal login (tu lógica ya la tienes en app-header / ensureLogin)
@@ -63,7 +63,7 @@ function showLoggedOutUI() {
     btnM.style.display = "inline-block";
     btnM.innerHTML = `
       <!-- same root-relative fix for mobile button -->
-      <img id="modalDoters-logoMovil" src="../../src/assets/img/logos/doters.svg" alt="Doters" loading="lazy">
+      <img id="modalDoters-logoMovil" src="../../src/assets/img/logos/doters.svg" alt="Doters" width="66px" height="21px" loading="lazy">
     `;
     btnM.onclick = () => {
       const login =

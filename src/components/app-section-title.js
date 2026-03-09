@@ -2,7 +2,7 @@ class AppSectionTitle extends HTMLElement {
     connectedCallback() {
       const sectionTitle = this.getAttribute('section-title');
       this.innerHTML = `
-        <h1 class="__title">${sectionTitle}</h1>     
+        <h2 class="__title">${sectionTitle}</h2>     
       `;
     }
   }

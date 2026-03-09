@@ -23,7 +23,14 @@ class PageMasKomodo extends HTMLElement {
             
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/promociones/web/banner-mas-komodo-descuento-85-desde-mexico-sur-a-acapulco-papagayo.webp","mediumImage": "../../src/assets/img/banner/promociones/tablet/banner-ofertas-en-un-click-50-descuento.webp", "smallImage": "../src/assets/img/banner/promociones/movil/banner-ofertas-en-un-click-50-descuento.webp", "link": "#index.html/banner1"}
+                    {
+                        "id": "slide1", 
+                        "title": "Banner 1", 
+                        "image": "../../src/assets/img/banner/promociones/web/banner-mas-komodo-descuento-85-desde-mexico-sur-a-acapulco-papagayo.webp",
+                        "mediumImage": "../../src/assets/img/banner/promociones/tablet/banner-mas-komodo-descuento-85-desde-mexico-sur-a-acapulco-papagayo.webp", 
+                        "smallImage": "../../src/assets/img/banner/promociones/movil/banner-mas-komodo-descuento-85-desde-mexico-sur-a-acapulco-papagayo.webp", 
+                        "link": "../boletos-autobus/acapulco.html"
+                    }
                 ]'
             >
             </app-banner-slider>

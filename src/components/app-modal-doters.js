@@ -22,7 +22,7 @@ class AppModalDoters extends HTMLElement {
         <div class="modalDoters-modal-content">
           <div class="modalHeader">
             <!-- root-relative to avoid broken image on deep paths -->
-            <img src="../../../../src/assets/img/logos/doters.svg" alt="Logotipo Doters" title="Doters" loading="lazy">
+            <img src="../../../../src/assets/img/logos/logo-doters-24-blanc.webp" alt="Logotipo Doters" width="66px" height="21px" title="Doters" loading="lazy">
             <button class="modalDoters-close" aria-label="Cerrar modal">×</button>
           </div>
           <div class="modalContenido">

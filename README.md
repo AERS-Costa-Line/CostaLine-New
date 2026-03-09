@@ -222,7 +222,7 @@ COSTA-LINE/
 ```html
 <script src="./src/js/doters-cookies.js"></script>
 <script src="./src/js/jquery.min.js?v=1.0.4"></script>
-<script src="./src/js/slick.js?v=1.0.4"></script>
+<script src="./src/js/slick.min.js?v=1.0.4"></script>
 ```
 
 ## Inclusión de Estilos
@@ -604,7 +604,7 @@ COSTA-LINE/
 ```html
 <script src="./src/js/doters-cookies.js"></script>
 <script src="./src/js/jquery.min.js?v=1.0.4"></script>
-<script src="./src/js/slick.js?v=1.0.4"></script>
+<script src="./src/js/slick.min.js?v=1.0.4"></script>
 ```
 
 ## Styles Inclusion
