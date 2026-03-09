@@ -17,7 +17,8 @@ import "../../../components/app-footer-pack-multienlace.js";
 class PageCotizadorDatosPack extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
-      <app-cotiza-pack></app-cotiza-pack>
+            <app-cotiza-pack></app-cotiza-pack>
+            <div class="cotiza-pack-space"></div>
 
             <app-banner-slider
             slides-data='[

@@ -18,7 +18,7 @@ class PagePackMultienlace extends HTMLElement {
 	connectedCallback() {
 		this.innerHTML = `
             <app-cotiza-pack></app-cotiza-pack>
-
+            <div class="cotiza-pack-space"></div>
             <app-banner-slider
             slides-data='[
               {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/paqueteria/banner/web/pack-home-web.webp","mediumImage": "../../src/assets/img/paqueteria/banner/tablet/pack-home-tablet.webp", "smallImage": "../../src/assets/img/paqueteria/banner/movil/pack-home-mobile.webp", "link": "#index.html/banner1"}

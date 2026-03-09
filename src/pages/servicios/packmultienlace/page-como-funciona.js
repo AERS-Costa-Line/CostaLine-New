@@ -17,7 +17,8 @@ class PageComoFunciona extends HTMLElement {
 	async connectedCallback() {
 		// Make connectedCallback async
 		this.innerHTML = `
-        <app-cotiza></app-cotiza>
+            <app-cotiza-pack></app-cotiza-pack>
+            <div class="cotiza-pack-space"></div>
 
         <app-banner-slider
             slides-data='[
