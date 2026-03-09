@@ -1,7 +1,7 @@
 
 /*-------------------------SCRIPTS---------------------------*/
 
-import "../js/slick.js?v=1.0.2";
+import "../js/slick.min.js?v=1.0.2";
 
 class AppPayments extends HTMLElement {
   connectedCallback() {
@@ -148,7 +148,7 @@ class AppPayments extends HTMLElement {
           <div>
             <picture>
               <source srcset="${logo.srcset}" type="image/webp">
-              <img src="${logo.src}" title="${logo.title}" width="1" height="1" alt="${logo.alt}">
+              <img src="${logo.src}" title="${logo.title}" width="210" height="87" alt="${logo.alt}">
             </picture>
           </div>
         `);

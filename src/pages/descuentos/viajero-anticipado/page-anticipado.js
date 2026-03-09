@@ -23,7 +23,14 @@ class PageAnticipado extends HTMLElement {
             
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../../../src/assets/img/banner/promociones/web/banner-mas-komodo-descuento-85-desde-mexico-sur-a-acapulco-papagayo.webp","mediumImage": "../../src/assets/img/banner/promociones/tablet/banner-ofertas-en-un-click-50-descuento.webp", "smallImage": "../src/assets/img/banner/promociones/movil/banner-ofertas-en-un-click-50-descuento.webp", "link": "#index.html/banner1"}
+                    {
+                        "id": "slide1", 
+                        "title": "Banner 1", 
+                        "image": "../../../src/assets/img/promociones/viajero-anticipado/banners/web/banner-viajero-anticipado-promocion-40-desc.webp",
+                        "mediumImage": "../../../src/assets/img/promociones/viajero-anticipado/banners/tablet/banner-viajero-anticipado-promocion-40-desc.webp", 
+                        "smallImage": "../../../src/assets/img/promociones/viajero-anticipado/banners/mobile/banner-viajero-anticipado-promocion-40-desc.webp", 
+                        "link": "#index.html/banner1"
+                    }
                 ]'
             >
             </app-banner-slider>
@@ -31,41 +38,60 @@ class PageAnticipado extends HTMLElement {
             <app-payments></app-payments>
 
             <section class="__section">
-                <p style="width: 90%; margin: auto; text-align: left; color: #003a5d; font-size: 20px; ">
-                    +Komodo es el servicio exclusivo de <strong>Costa Line </strong>que te permite viajar con mayor comodidad asegurando el asiento de al lado, podrá adquirirse con un 85% de descuento aplicable sobre la tarifa de adulto. Perfecto para disfrutar de más espacio personal, privacidad y confort durante tu trayecto.
-                </p>
-            </section>
-            
-            <section class="__section">
                 <app-section-title section-title="Términos y Condiciones"></app-section-title>
             </section>
 
             <section class="__sections">
                 <article class="__bg-blue">
-
-                    <p>
-                        <strong>El servicio +KOMODO es un beneficio adicional que permite al pasajero adquirir el asiento junto al suyo o también denominado asiento contiguo para mayor comodidad y espacio personal durante el viaje.</strong>
-                    </p>
-                    
                     <ul class="__terms-purchase-list">
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                <strong>Este asiento podrá adquirirse con un 85% de descuento aplicable sobre la tarifa de adulto.</strong>
+                                Viajero Anticipado aplica tanto para venta en sitio web, taquillas, puntos de venta propios AERS, centro de contacto telefónico y se puede realizar la compra con cualquier forma de pago.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                <strong>El servicio +KOMODO está sujeto a disponibilidad.</strong>
+                                No aplica para canales o puntos de venta externos.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                <strong>El servicio +KOMODO está disponible en COSTA LINE únicamente en Servicio Plus, en la ruta México Sur Taxqueña – Acapulco Papagayo y Acapulco Papagayo - México Sur Taxqueña.</strong>
+                                Al adquirir tu boleto en Web, app o Call Center tendrán un descuento de Viajero Anticipado de hasta el 40%. Descuento sujeto a disponibilidad.
                             </p>
                         </li>
                         <li class="__terms-purchase-item">
                             <p class="__terms-purchase-text">
-                                <strong>El descuento puede variar dependiendo de la ruta participante, horario, temporada y demanda, y se mostrará al momento de la compra.</strong>
+                                Al adquirir tus boletos en Taquilla tendrán un descuento de Viajero Anticipado de hasta el 40%. Descuento sujeto a disponibilidad. En las rutas definidas para Viajero Anticipado no se podrán vender Boletos Abiertos, solo confirmados. Se podrán vender boletos abiertos pero con una tarifa a precio de adulto.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Las tarifas de Viajero Anticipado no aplican ni son acumulables con otro tipo de descuentos o promociones.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Las Tarifas de Viajero Anticipado son personales e intransferibles, para hacerla efectiva el cliente deberá presentar una identificación oficial antes de abordar el autobús, si no cumple con el requisito deberá pagar la Tarifa Completa.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                El periodo para comprar boletos de autobús y obtener la tarifa de Viajero Anticipado es a partir del primer minuto del día siguiente a la consulta y hasta dos meses posteriores, disponible en internet, taquillas y centro telefónico. En caso de NO contar con tarifa anticipada, aplica el descuento del 10% por viaje redondo comprando en línea o bien aplica el 10% el cual aplica en el viaje de regreso.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                La tarifa y los descuentos siempre estarán sujetos a disponibilidad.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                La promoción de 50% de descuento para pasajeros de Viva Aerobús, será únicamente sobre la tarifa adulto La tarifa de Viajero Anticipado no aplica en la compra de boletos con beneficios de INAPAM, menores, estudiantes, maestros y boletos abiertos.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Se reubicará sin costo a la próxima salida disponible al pasajero que haya perdido su viaje y llegue a la terminal dentro de los próximos 30 minutos a su hora de salida. Si llega después de los 30 minutos a su hora de salida o requiere salir después u otro día se cobrará 50% de la tarifa adulto.
                             </p>
                         </li>
                     </ul>
@@ -74,158 +100,113 @@ class PageAnticipado extends HTMLElement {
 
             <section class="__sections">
                 <article class="__bg-white">
-                    <h3 class="__subtitle-section">Condiciones de uso</h3>
-
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            El servicio +KOMODO adquirido no podrá ser ocupado por otra persona ni por una mascota durante el viaje.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            El beneficio +KOMODO con descuento está limitado a 4 asientos por autobús.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            El boleto del beneficio +KOMODO es para uso exclusivo del comprador y para los fines establecidos del mismo; no podrá ser cambiado de forma independiente, cualquier cambio debe realizarse en conjunto con el boleto principal.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            En caso de no utilizarse, no se otorgará reembolso ni compensación alguna.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            El asiento contiguo debe ser adquirido junto con el boleto principal o desde una reservación activa.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            Disponible únicamente en la ruta seleccionada y sujeto a la disponibilidad de cada autobús.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            Aplica para compras realizadas en taquilla, sitio web oficial y aplicación móvil de Costa Line.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            El servicio no aplica en boletos abiertos, únicamente en boletos confirmados.
-                        </p>
-                    </li>
-
-                   
+                    <h3 class="__subtitle-section">Políticas de Pagos Referenciados Viajero Anticipado</h3>
+                    <ul class="__terms-purchase-list">
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Para las referencias que genere el sistema por operaciones de Viajero Anticipado el cliente tendrá 24 horas para realizar el pago correspondiente.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                El pago de las reservación de viaje de operaciones de Tarifa Completa podrán efectuarse 24 hrs. antes de la salida del autobús.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                En las reservaciones que involucren operaciones de Viajero Anticipado y Tarifas Completas el cliente tendrá 24 horas para realizar el pago correspondiente.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Pasado los tiempos mencionados, sin excepción alguna la reservación será cancelada automáticamente por el sistema y el asiento será liberado para su venta.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Las Tarifas de Viajero Anticipado son personales e intransferibles, para hacerla efectiva el cliente deberá presentar una identificación oficial antes de abordar el autobús, si no cumple con el requisito deberá pagar la Tarifa Completa.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                El cliente puede realizar cambio de fecha y hora. Para tarifas de Festival de Viajes no aplica cambio de nombre de pasajero, teniendo que pagar el cliente la diferencia con la tarifa vigente en taquilla al momento de realizar el viaje.
+                            </p>
+                        </li>
+                    </ul>
                 </article>
             </section>
 
             <section class="__sections">
                 <article class="__bg-blue">
-                    <h3 class="__subtitle-section">Restricciones</h3>
-
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            El asiento contiguo no es reembolsable, transferible ni canjeable por otro servicio, fecha o destino.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            No aplica cambio de nombre de pasajero.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            No es acumulable con otros descuentos o promociones.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            La disponibilidad del asiento de junto está sujeta al inventario al momento de la compra, sin garantía de existencia en todos los horarios o rutas.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            No se permiten cancelaciones en la compra del asiento de junto (+KOMODO).
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            No aplica para viajar en periodos vacacionales (temporada alta), puentes o días feriados establecidos por la Ley Federal del Trabajo y/o la Secretaría de Educación Pública.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            Los viajes perdidos por no abordar el autobús en tiempo y forma no serán reembolsables; los reembolsos que procedan de acuerdo con la Ley serán realizados en la misma forma en que se efectuó el pago.
-                        </p>
-                    </li>
-
+                    <h3 class="__subtitle-section">Políticas de Intercambio de Boletos</h3>
+                    <ul class="__terms-purchase-list">
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Para tarifas Viajero Anticipado no aplica cambio de nombre de pasajero.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                El cambio de itinerario de viaje (fecha u hora) se puede realizar directamente desde la página de internet (www.costaline.com.mx) en la sección “modifique su itinerario” o también podrán ser realizados en taquillas y/o puntos de venta ETN presentando el pase de abordar y una identificación oficial vigente. Cada operación está limitada a un máximo de dos cambios por boleto.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                En caso de que la tarifa vigente al momento del cambio de corrida sea mayor a la tarifa Viajero Anticipado pagada, el cliente deberá pagar la diferencia entre la tarifa pagada y tarifa vigente al momento del cambio de la corrida original, dicho pago deberá ser cubierto con la misma forma de pago realizada previamente. Aplica con todas las formas de pago.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                En caso de que la tarifa vigente al momento del cambio de corrida sea menor a la tarifa Viajero Anticipado pagada, no habrá devoluciones.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                El Monedero electrónico aplica como forma de pago.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Con la tarifa de Viajero Anticipado no se aceptan cancelaciones.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Aplica todas las formas de pago en taquilla y sitio web.
+                            </p>
+                        </li>
+                    </ul>
                 </article>
             </section>
-
 
             <section class="__sections">
                 <article class="__bg-white">
-                    <h3 class="__subtitle-section">Cambios y cancelaciones</h3>
-
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            En caso de cancelación del boleto principal, el asiento contiguo se pierde automáticamente sin derecho a reembolso.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            En caso de cambio de hora o día del boleto principal, la compra del asiento contiguo quedará sujeta a disponibilidad en la nueva corrida.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            Si no existe disponibilidad, el asiento contiguo se pierde sin derecho a reembolso.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            Cada operación está limitada a 2 cambios por internet y 1 en taquilla (pendiente de confirmación).
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            En caso de que la tarifa vigente al momento del cambio sea menor a la tarifa original pagada, no habrá devoluciones.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            Si la tarifa vigente al momento del cambio es mayor a la tarifa original pagada, el cliente deberá cubrir la diferencia entre la tarifa pagada y la vigente.
-                        </p>
-                    </li>
-                    <li class="__terms-purchase-item">
-                        <p class="__terms-purchase-text">
-                            Aplica con todas las formas de pago.
-                        </p>
-                    </li>
-
+                    <ul class="__terms-purchase-list">
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Marcas participantes: Costaline AERS.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Asientos sujetos a disponibilidad, consúltalos en www.costaline.com.mx y taquillas.
+                            </p>
+                        </li>
+                        <li class="__terms-purchase-item">
+                            <p class="__terms-purchase-text">
+                                Para dudas y comentarios, comunícate a nuestro centro de atención a clientes a los teléfonos 800 0037 635 y 800 2490 460
+                            </p>
+                        </li>
+                    </ul>
                 </article>
             </section>
-
-
-            <section class="__sections">
-                <article class="__bg-blue">
-                    <h3 class="__subtitle-section">Aceptación de condiciones</h3>
-
-                    <p>
-                        <strong>Al adquirir el servicio +KOMODO el usuario reconoce haber leído, entendido y aceptado todos los términos y condiciones aquí descritos. Costa Line se reserva el derecho de modificar los presentes términos y condiciones sin previo aviso.</strong>
-                    </p>
-                </article>
-            </section>
-
+            
             <section class="__section __section__FATQs">
                 <app-section-title section-title="Preguntas frecuentes sobre +Komodo"></app-section-title>
                <article class="__grid-cards-container__dropdown" id="dropdowns-container">
-                    <app-dropdown items-src="../src/data/dropdown-preguntas-mas-komodo.json"></app-dropdown>
+                    <app-dropdown items-src="../../src/data/dropdown-preguntas-mas-komodo.json"></app-dropdown>
                 </article>
             </section>
-
         `;
 	}
 }
