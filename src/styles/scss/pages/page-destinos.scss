@@ -18,17 +18,7 @@
 @use '../_06-components/footer';
 
 
-/*--------------------ESTILOS REPETITIVOS DEL LAYOUT RENTA DE AUTOBUSES---------------------*/
-.__panthom_space {
-  height: 200px;
-  width: 100%;
-  display: block;
 
-  @media (max-width: 900px) {
-    height: 100px;
-
-  }
-}
 .__paragraph-left {
   display: flex;
   align-items: center;
