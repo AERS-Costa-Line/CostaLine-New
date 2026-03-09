@@ -23,7 +23,7 @@ class PageMasKomodo extends HTMLElement {
             
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-mas-komodo-descuento-85-desde-mexico-sur-a-acapulco-papagayo.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/banner-ofertas-en-un-click-50-descuento.webp", "smallImage": "../src/assets/img/banner/promociones/movil/banner-ofertas-en-un-click-50-descuento.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../../src/assets/img/banner/promociones/web/banner-mas-komodo-descuento-85-desde-mexico-sur-a-acapulco-papagayo.webp","mediumImage": "../../src/assets/img/banner/promociones/tablet/banner-ofertas-en-un-click-50-descuento.webp", "smallImage": "../src/assets/img/banner/promociones/movil/banner-ofertas-en-un-click-50-descuento.webp", "link": "#index.html/banner1"}
                 ]'
             >
             </app-banner-slider>
@@ -222,7 +222,7 @@ class PageMasKomodo extends HTMLElement {
             <section class="__section __section__FATQs">
                 <app-section-title section-title="Preguntas frecuentes sobre +Komodo"></app-section-title>
                <article class="__grid-cards-container__dropdown" id="dropdowns-container">
-                    <app-dropdown items-src="../src/data/dropdown-preguntas-mas-komodo.json"></app-dropdown>
+                    <app-dropdown items-src="../../src/data/dropdown-preguntas-mas-komodo.json"></app-dropdown>
                 </article>
             </section>
 
