@@ -45,72 +45,76 @@ class AppCotizaPack extends HTMLElement {
         <!-- Fin Widget Ventas Reservamos -->
         </div>
             `;
-    document.addEventListener("DOMContentLoaded", () => {
-      const buy = document.querySelector(".cotiza");
-      const searchButton = document.createElement("button");
-      searchButton.innerHTML = `
+    const buy = this.querySelector(".cotiza");
+    if (!buy) return;
+
+    // Crear botón flotante (si no existe ya)
+    const existingBtn = document.querySelector(".search-button-pack");
+    if (existingBtn) existingBtn.remove();
+
+    const searchButton = document.createElement("button");
+    searchButton.innerHTML = `
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 250 250" fill="currentColor">
                   <path class="bbvaicn" d="M182.85 162.85a90 90 0 1 0-20 20L220 240l20-20zM150 110a40 40 0 0 0-40-40V50a60 60 0 0 1 60 60z"></path>
                 </svg>
               `;
-      searchButton.setAttribute("role", "button");
-      searchButton.setAttribute("aria-label", "Ir al cotizador");
-      searchButton.setAttribute("tabindex", "0");
-      searchButton.classList.add("search-button");
-      searchButton.style.display = "none";
-      searchButton.style.position = "fixed";
-      searchButton.style.bottom = "5.45rem";
-      searchButton.style.right = "1.25rem";
-      searchButton.style.zIndex = "9999";
-      searchButton.style.padding = "0.2125rem";
-      searchButton.style.backgroundImage =
-        "radial-gradient( #3a6ea5 40%, #15395a 100%)";
-      searchButton.style.color = "#fff";
-      searchButton.style.border = "none";
-      searchButton.style.borderRadius = "100%";
-      searchButton.style.cursor = "pointer";
-      searchButton.style.transform = "translateY(-6.25rem) scale(0.5)";
-      searchButton.style.opacity = "0";
-      searchButton.style.transition = "transform 0.8s ease, opacity 0.8s ease";
-      document.body.appendChild(searchButton);
+    searchButton.setAttribute("role", "button");
+    searchButton.setAttribute("aria-label", "Ir al cotizador de paquetería");
+    searchButton.setAttribute("tabindex", "0");
+    searchButton.classList.add("search-button", "search-button-pack");
+    searchButton.style.display = "none";
+    searchButton.style.position = "fixed";
+    searchButton.style.bottom = "5.45rem";
+    searchButton.style.right = "1.25rem";
+    searchButton.style.zIndex = "9999";
+    searchButton.style.padding = "0.2125rem";
+    searchButton.style.backgroundImage =
+      "radial-gradient( #3a6ea5 40%, #15395a 100%)";
+    searchButton.style.color = "#fff";
+    searchButton.style.border = "none";
+    searchButton.style.borderRadius = "100%";
+    searchButton.style.cursor = "pointer";
+    searchButton.style.transform = "translateY(-6.25rem) scale(0.5)";
+    searchButton.style.opacity = "0";
+    searchButton.style.transition = "transform 0.8s ease, opacity 0.8s ease";
+    document.body.appendChild(searchButton);
 
-      // Evento para desplazar la página hacia el elemento "buy"
-      searchButton.addEventListener("click", () => {
-        buy.scrollIntoView({ behavior: "smooth", block: "center" });
-      });
+    const onBtnClick = () => {
+      buy.scrollIntoView({ behavior: "smooth", block: "center" });
+    };
+    searchButton.addEventListener("click", onBtnClick);
 
-      // Detectar cuando "buy" sale de la vista
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (!entry.isIntersecting) {
-              // Si "buy" no está visible, mostrar el botón con animación
-              searchButton.style.display = "block";
-              setTimeout(() => {
-                searchButton.style.transform = "translateY(0) scale(1)";
-                searchButton.style.opacity = "1";
-              }, 10);
-            } else {
-              // Si "buy" está visible, ocultar el botón con animación
-              searchButton.style.transform = "translateY(-5.25rem) scale(0.5)";
-              searchButton.style.opacity = "0";
-              setTimeout(() => {
-                searchButton.style.display = "none";
-              }, 800);
-            }
-          });
-        },
-        { threshold: 0.1 }
-      );
+    // Detectar cuando "buy" sale de la vista
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            // Si "buy" no está visible, mostrar el botón con animación
+            searchButton.style.display = "block";
+            setTimeout(() => {
+              searchButton.style.transform = "translateY(0) scale(1)";
+              searchButton.style.opacity = "1";
+            }, 10);
+          } else {
+            // Si "buy" está visible, ocultar el botón con animación
+            searchButton.style.transform = "translateY(-5.25rem) scale(0.5)";
+            searchButton.style.opacity = "0";
+            setTimeout(() => {
+              searchButton.style.display = "none";
+            }, 800);
+          }
+        });
+      },
+      { threshold: 0.1 },
+    );
 
-      observer.observe(buy);
-    });
+    observer.observe(buy);
 
-    const header = document.querySelector(".cotiza");
+    const header = buy;
     let lastScrollY = window.scrollY;
 
     // Evento para manejar el scroll
-    window.addEventListener("scroll", () => {
+    const onScroll = () => {
       if (window.innerWidth >= 990) {
         const currentScrollY = window.scrollY;
 
@@ -126,7 +130,18 @@ class AppCotizaPack extends HTMLElement {
 
         lastScrollY = currentScrollY;
       }
-    });
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    // Cleanup para evitar duplicar observers/listeners al re-render
+    this._cleanup = () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", onScroll);
+      searchButton.removeEventListener("click", onBtnClick);
+      if (searchButton && searchButton.parentNode) searchButton.remove();
+      this._cleanup = null;
+    };
   }
 }
 customElements.define("app-cotiza-pack", AppCotizaPack);
