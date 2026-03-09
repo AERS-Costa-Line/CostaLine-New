@@ -30,7 +30,7 @@ class AppHeader extends HTMLElement {
 						<li><a href="https://viaje.costaline.com.mx/exchange/itinerary">Modificar itinerario</a></li>
 							</ul>
 						</li>
-						<li><a href="../../../servicios/mas-komodo.html">Mas Komodo</a></li>
+						<li><a href="../../../servicios/mas-komodo.html">Más Komodo</a></li>
 						<li><a href="../../../servicios/monedero-electronico.html">Monedero</a></li>
 						<li><a href="../../../destinos/">Destinos</a></li>
 						<li class="submenu">
