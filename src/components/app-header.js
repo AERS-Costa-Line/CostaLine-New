@@ -2,6 +2,7 @@
 
 import "../components/app-modal-travelpass.js?v=1.0.2";
 import "../components/app-modal-doters.js?v=1.0.2";
+import "../components/app-modal-doters-profile.js?v=1.0.2";
 
 /*-------------------------SCRIPTS---------------------------*/
 
