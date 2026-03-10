@@ -24,7 +24,7 @@ class PageViajeroProtegido extends HTMLElement {
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-viajero-protegido-seguro-de-viaje.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/viajero-protegido-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/viajero-protegido-mobile.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/web/banner-viajero-protegido-seguro-de-viaje.webp","mediumImage": "../src/assets/img/banner/tablet/banner-viajero-protegido-seguro-de-viaje.webp", "smallImage": "../src/assets/img/banner/movil/banner-viajero-protegido-seguro-de-viaje.webp", "link": "../servicios/viajero-protegido.html"}
                 ]'
             >
             </app-banner-slider>
