@@ -1,9 +1,6 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../../../components/app-header.js?v=1.1.3";
-import "../../../components/app-cookies-policy.js?v=1.0.3";
-import "../../../components/app-button-whats.js?v=1.0.2";
-import "../../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
@@ -16,8 +13,8 @@ import "../../../components/app-table-pets.js";
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageTerminosHotSale extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <app-cotiza></app-cotiza>
 
         
@@ -207,6 +204,6 @@ class PageTerminosHotSale extends HTMLElement {
                 <app-destinations-table src="../src/data/destinos-cl.json"></app-destinations-table>
             </section>
     `;
-	}
+  }
 }
 customElements.define("page-terminos-hot-sale", PageTerminosHotSale);

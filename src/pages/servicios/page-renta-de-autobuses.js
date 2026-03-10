@@ -1,9 +1,6 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../../components/app-header.js?v=1.1.3";
-import "../../components/app-cookies-policy.js?v=1.0.3";
-import "../../components/app-button-whats.js?v=1.0.2";
-import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
@@ -20,8 +17,8 @@ import "../../components/app-forms.js";
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageRentaDeAutobuses extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
 
             
@@ -116,254 +113,254 @@ class PageRentaDeAutobuses extends HTMLElement {
                 </article>
             </section>
         `;
-		this.loadAndRenderCards();
-		this.loadAndRenderCardsWhats();
-		this.loadAndRenderHoverCards();
-		this.loadAndRenderImageCards();
-		this.loadAndSetFormDataToAppForms();
-	}
-	async loadAndRenderHoverCards() {
-		// Select both containers
-		const hoverCardContainer24Seats = this.querySelector(
-			".hover-cards-24-seats",
-		);
-		const hoverCardContainer44Seats = this.querySelector(
-			".hover-cards-44-seats",
-		);
+    this.loadAndRenderCards();
+    this.loadAndRenderCardsWhats();
+    this.loadAndRenderHoverCards();
+    this.loadAndRenderImageCards();
+    this.loadAndSetFormDataToAppForms();
+  }
+  async loadAndRenderHoverCards() {
+    // Select both containers
+    const hoverCardContainer24Seats = this.querySelector(
+      ".hover-cards-24-seats",
+    );
+    const hoverCardContainer44Seats = this.querySelector(
+      ".hover-cards-44-seats",
+    );
 
-		if (!hoverCardContainer24Seats || !hoverCardContainer44Seats) {
-			console.error(
-				"Uno o ambos contenedores '.hover-cards-24-seats' o '.hover-cards-44-seats' para app-hover-card no fueron encontrados.",
-			);
-			if (hoverCardContainer24Seats)
-				hoverCardContainer24Seats.innerHTML =
-					"<p>Error al cargar contenedor.</p>";
-			if (hoverCardContainer44Seats)
-				hoverCardContainer44Seats.innerHTML =
-					"<p>Error al cargar contenedor.</p>";
-			return;
-		}
-		try {
-			const response = await fetch("../src/data/card-hover-sits.json");
-			if (!response.ok) {
-				throw new Error(
-					`HTTP error! status: ${response.status} al cargar hover-cards-data.json`,
-				);
-			}
-			const cardsData = await response.json();
+    if (!hoverCardContainer24Seats || !hoverCardContainer44Seats) {
+      console.error(
+        "Uno o ambos contenedores '.hover-cards-24-seats' o '.hover-cards-44-seats' para app-hover-card no fueron encontrados.",
+      );
+      if (hoverCardContainer24Seats)
+        hoverCardContainer24Seats.innerHTML =
+          "<p>Error al cargar contenedor.</p>";
+      if (hoverCardContainer44Seats)
+        hoverCardContainer44Seats.innerHTML =
+          "<p>Error al cargar contenedor.</p>";
+      return;
+    }
+    try {
+      const response = await fetch("../src/data/card-hover-sits.json");
+      if (!response.ok) {
+        throw new Error(
+          `HTTP error! status: ${response.status} al cargar hover-cards-data.json`,
+        );
+      }
+      const cardsData = await response.json();
 
-			if (!cardsData || !Array.isArray(cardsData)) {
-				throw new Error(
-					"Formato de datos incorrecto o vacío para hover-cards-data.json",
-				);
-			}
+      if (!cardsData || !Array.isArray(cardsData)) {
+        throw new Error(
+          "Formato de datos incorrecto o vacío para hover-cards-data.json",
+        );
+      }
 
-			// Populate the first 9 cards into the 24-seats container
-			cardsData.slice(0, 9).forEach((data) => {
-				const hoverCardElement = document.createElement("app-hover-card");
-				hoverCardElement.setAttribute("card-title", data.title);
-				hoverCardElement.setAttribute("icon-src", data.iconSrc);
-				hoverCardContainer24Seats.appendChild(hoverCardElement);
-			});
+      // Populate the first 9 cards into the 24-seats container
+      cardsData.slice(0, 9).forEach((data) => {
+        const hoverCardElement = document.createElement("app-hover-card");
+        hoverCardElement.setAttribute("card-title", data.title);
+        hoverCardElement.setAttribute("icon-src", data.iconSrc);
+        hoverCardContainer24Seats.appendChild(hoverCardElement);
+      });
 
-			// Populate the rest of the cards into the 44-seats container
-			cardsData.slice(9).forEach((data) => {
-				const hoverCardElement = document.createElement("app-hover-card");
-				hoverCardElement.setAttribute("card-title", data.title);
-				hoverCardElement.setAttribute("icon-src", data.iconSrc);
-				hoverCardContainer44Seats.appendChild(hoverCardElement);
-			});
-		} catch (error) {
-			console.error("Error al cargar o renderizar app-hover-card:", error);
-			if (hoverCardContainer24Seats)
-				hoverCardContainer24Seats.innerHTML =
-					"<p>Error al cargar la información de las tarjetas hover.</p>";
-			if (hoverCardContainer44Seats)
-				hoverCardContainer44Seats.innerHTML =
-					"<p>Error al cargar la información de las tarjetas hover.</p>";
-		}
-	}
+      // Populate the rest of the cards into the 44-seats container
+      cardsData.slice(9).forEach((data) => {
+        const hoverCardElement = document.createElement("app-hover-card");
+        hoverCardElement.setAttribute("card-title", data.title);
+        hoverCardElement.setAttribute("icon-src", data.iconSrc);
+        hoverCardContainer44Seats.appendChild(hoverCardElement);
+      });
+    } catch (error) {
+      console.error("Error al cargar o renderizar app-hover-card:", error);
+      if (hoverCardContainer24Seats)
+        hoverCardContainer24Seats.innerHTML =
+          "<p>Error al cargar la información de las tarjetas hover.</p>";
+      if (hoverCardContainer44Seats)
+        hoverCardContainer44Seats.innerHTML =
+          "<p>Error al cargar la información de las tarjetas hover.</p>";
+    }
+  }
 
-	async loadAndRenderImageCards() {
-		const imageCardContainer = this.querySelector(".__grid-cards-container");
-		if (!imageCardContainer) {
-			console.error(
-				"El contenedor '.__grid-cards-container' para app-card-image no fue encontrado.",
-			);
-			return;
-		}
+  async loadAndRenderImageCards() {
+    const imageCardContainer = this.querySelector(".__grid-cards-container");
+    if (!imageCardContainer) {
+      console.error(
+        "El contenedor '.__grid-cards-container' para app-card-image no fue encontrado.",
+      );
+      return;
+    }
 
-		try {
-			const response = await fetch("../src/data/card-image-rent.json");
-			if (!response.ok) {
-				throw new Error(
-					`HTTP error! status: ${response.status} al cargar card-image-rent.json`,
-				);
-			}
-			const cardsData = await response.json();
+    try {
+      const response = await fetch("../src/data/card-image-rent.json");
+      if (!response.ok) {
+        throw new Error(
+          `HTTP error! status: ${response.status} al cargar card-image-rent.json`,
+        );
+      }
+      const cardsData = await response.json();
 
-			if (!cardsData || !Array.isArray(cardsData)) {
-				throw new Error(
-					"Formato de datos incorrecto o vacío para card-image-rent.json",
-				);
-			}
+      if (!cardsData || !Array.isArray(cardsData)) {
+        throw new Error(
+          "Formato de datos incorrecto o vacío para card-image-rent.json",
+        );
+      }
 
-			cardsData.forEach((data) => {
-				const cardElement = document.createElement("app-card-image");
-				imageCardContainer.appendChild(cardElement);
-				cardElement.populateCard(data);
-			});
+      cardsData.forEach((data) => {
+        const cardElement = document.createElement("app-card-image");
+        imageCardContainer.appendChild(cardElement);
+        cardElement.populateCard(data);
+      });
 
-			// Añadir el div "center-botton" después de las tarjetas
-			const centerButtonDiv = document.createElement("div");
-			centerButtonDiv.classList.add("center-botton");
-			centerButtonDiv.innerHTML = "<p>Renta</p>";
-			imageCardContainer.appendChild(centerButtonDiv);
-		} catch (error) {
-			console.error("Error al cargar o renderizar app-card-image:", error);
-			if (imageCardContainer) {
-				imageCardContainer.innerHTML =
-					"<p>Error al cargar la información de las tarjetas de imagen.</p>";
-			}
-		}
-	}
-	// ...
+      // Añadir el div "center-botton" después de las tarjetas
+      const centerButtonDiv = document.createElement("div");
+      centerButtonDiv.classList.add("center-botton");
+      centerButtonDiv.innerHTML = "<p>Renta</p>";
+      imageCardContainer.appendChild(centerButtonDiv);
+    } catch (error) {
+      console.error("Error al cargar o renderizar app-card-image:", error);
+      if (imageCardContainer) {
+        imageCardContainer.innerHTML =
+          "<p>Error al cargar la información de las tarjetas de imagen.</p>";
+      }
+    }
+  }
+  // ...
 
-	async loadAndRenderCards() {
-		try {
-			const responseIconsCards = await fetch(
-				"../src/data/cards-icons-data.json",
-			); // Ruta ajustada
-			if (!responseIconsCards.ok) {
-				throw new Error(`HTTP error! status: ${responseIconsCards.status}`);
-			}
-			const cardsIconsData = await responseIconsCards.json();
-			this.renderCards(cardsIconsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear cards-icons-data.json:", error);
-			const container = this.querySelector("#icons-cards-container");
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar la información de las cards.</p>";
-			}
-		}
-	}
+  async loadAndRenderCards() {
+    try {
+      const responseIconsCards = await fetch(
+        "../src/data/cards-icons-data.json",
+      ); // Ruta ajustada
+      if (!responseIconsCards.ok) {
+        throw new Error(`HTTP error! status: ${responseIconsCards.status}`);
+      }
+      const cardsIconsData = await responseIconsCards.json();
+      this.renderCards(cardsIconsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear cards-icons-data.json:", error);
+      const container = this.querySelector("#icons-cards-container");
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar la información de las cards.</p>";
+      }
+    }
+  }
 
-	renderCards(cardsIconsData) {
-		const container = this.querySelector("#icons-cards-container");
-		if (!container) {
-			console.error("El contenedor de cards no fue encontrado.");
-			return;
-		}
+  renderCards(cardsIconsData) {
+    const container = this.querySelector("#icons-cards-container");
+    if (!container) {
+      console.error("El contenedor de cards no fue encontrado.");
+      return;
+    }
 
-		if (
-			!cardsIconsData ||
-			!Array.isArray(cardsIconsData) ||
-			cardsIconsData.length === 0 // Corregido: usar cardsIconsData en lugar de cardsData
-		) {
-			console.error(
-				"No se pudieron cargar los datos para las cards o el formato es incorrecto.",
-			);
-			container.innerHTML =
-				"<p>No hay datos disponibles para mostrar las cards.</p>";
-			return;
-		}
+    if (
+      !cardsIconsData ||
+      !Array.isArray(cardsIconsData) ||
+      cardsIconsData.length === 0 // Corregido: usar cardsIconsData en lugar de cardsData
+    ) {
+      console.error(
+        "No se pudieron cargar los datos para las cards o el formato es incorrecto.",
+      );
+      container.innerHTML =
+        "<p>No hay datos disponibles para mostrar las cards.</p>";
+      return;
+    }
 
-		cardsIconsData.forEach((data) => {
-			// Corregido: usar cardsIconsData en lugar de cardsData
-			const cardElement = document.createElement("app-cards-icons");
-			container.appendChild(cardElement); // Es importante añadir al DOM antes para que connectedCallback de app-cards-icons se ejecute.
-			cardElement.contentCardsIcons(data); // Luego se configura el contenido.
-		});
-	}
+    cardsIconsData.forEach((data) => {
+      // Corregido: usar cardsIconsData en lugar de cardsData
+      const cardElement = document.createElement("app-cards-icons");
+      container.appendChild(cardElement); // Es importante añadir al DOM antes para que connectedCallback de app-cards-icons se ejecute.
+      cardElement.contentCardsIcons(data); // Luego se configura el contenido.
+    });
+  }
 
-	async loadAndRenderCardsWhats() {
-		try {
-			const responseWhats = await fetch("../src/data/cards-whats-data.json"); // Ajusta la ruta si es necesario
-			if (!responseWhats.ok) {
-				// Corregido: usar responseWhats
-				throw new Error(`HTTP error! status: ${responseWhats.status}`);
-			}
-			const cardsWhatsData = await responseWhats.json();
-			this.renderWhatsCards(cardsWhatsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear cards-whats-data.json:", error); // Corregido el nombre del archivo en el mensaje
-			const container = this.querySelector("#cards-whats-container");
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar la información de las cards.</p>";
-			}
-		}
-	}
+  async loadAndRenderCardsWhats() {
+    try {
+      const responseWhats = await fetch("../src/data/cards-whats-data.json"); // Ajusta la ruta si es necesario
+      if (!responseWhats.ok) {
+        // Corregido: usar responseWhats
+        throw new Error(`HTTP error! status: ${responseWhats.status}`);
+      }
+      const cardsWhatsData = await responseWhats.json();
+      this.renderWhatsCards(cardsWhatsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear cards-whats-data.json:", error); // Corregido el nombre del archivo en el mensaje
+      const container = this.querySelector("#cards-whats-container");
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar la información de las cards.</p>";
+      }
+    }
+  }
 
-	renderWhatsCards(cardsWhatsData) {
-		const container = this.querySelector("#cards-whats-container"); // Corregido: selector del contenedor correcto
-		if (!container) {
-			console.error("El contenedor de cards no fue encontrado.");
-			return;
-		}
+  renderWhatsCards(cardsWhatsData) {
+    const container = this.querySelector("#cards-whats-container"); // Corregido: selector del contenedor correcto
+    if (!container) {
+      console.error("El contenedor de cards no fue encontrado.");
+      return;
+    }
 
-		if (
-			!cardsWhatsData ||
-			!Array.isArray(cardsWhatsData) ||
-			cardsWhatsData.length === 0
-		) {
-			console.error(
-				"No se pudieron cargar los datos para las cards o el formato es incorrecto.",
-			);
-			container.innerHTML =
-				"<p>No hay datos disponibles para mostrar las cards.</p>";
-			return;
-		}
+    if (
+      !cardsWhatsData ||
+      !Array.isArray(cardsWhatsData) ||
+      cardsWhatsData.length === 0
+    ) {
+      console.error(
+        "No se pudieron cargar los datos para las cards o el formato es incorrecto.",
+      );
+      container.innerHTML =
+        "<p>No hay datos disponibles para mostrar las cards.</p>";
+      return;
+    }
 
-		cardsWhatsData.forEach((data) => {
-			// Corregido: iterar sobre cardsWhatsData
-			const cardElement = document.createElement("app-cards-contact-whats");
-			container.appendChild(cardElement); // Es importante añadir al DOM antes para que connectedCallback de app-cards-icons se ejecute.
-			cardElement.contentCardsWhats(data); // Luego se configura el contenido.
-		});
-	}
+    cardsWhatsData.forEach((data) => {
+      // Corregido: iterar sobre cardsWhatsData
+      const cardElement = document.createElement("app-cards-contact-whats");
+      container.appendChild(cardElement); // Es importante añadir al DOM antes para que connectedCallback de app-cards-icons se ejecute.
+      cardElement.contentCardsWhats(data); // Luego se configura el contenido.
+    });
+  }
 
-	async loadAndSetFormDataToAppForms() {
-		const appFormsElement = this.querySelector("app-forms");
-		if (!appFormsElement) {
-			console.error("Elemento app-forms no encontrado en el layout.");
-			return;
-		}
+  async loadAndSetFormDataToAppForms() {
+    const appFormsElement = this.querySelector("app-forms");
+    if (!appFormsElement) {
+      console.error("Elemento app-forms no encontrado en el layout.");
+      return;
+    }
 
-		try {
-			const response = await fetch("../src/data/forms-cotiza.json");
-			if (!response.ok) {
-				throw new Error(
-					`Error HTTP: ${response.status} al cargar forms-cotiza.json`,
-				);
-			}
-			const formData = await response.json();
+    try {
+      const response = await fetch("../src/data/forms-cotiza.json");
+      if (!response.ok) {
+        throw new Error(
+          `Error HTTP: ${response.status} al cargar forms-cotiza.json`,
+        );
+      }
+      const formData = await response.json();
 
-			if (typeof appFormsElement.setFormData === "function") {
-				appFormsElement.setFormData(formData);
-			} else {
-				console.error(
-					"El método setFormData no existe en el elemento app-forms. Asegúrate de que el componente app-forms esté definido y cargado correctamente.",
-				);
+      if (typeof appFormsElement.setFormData === "function") {
+        appFormsElement.setFormData(formData);
+      } else {
+        console.error(
+          "El método setFormData no existe en el elemento app-forms. Asegúrate de que el componente app-forms esté definido y cargado correctamente.",
+        );
 
-				appFormsElement.innerHTML =
-					'<p class="error-message">Error al inicializar el componente de formulario.</p>';
-			}
-		} catch (error) {
-			console.error(
-				"No se pudo cargar o procesar los datos del formulario para app-forms:",
-				error,
-			);
-			const formContainer = appFormsElement.querySelector(".dynamic-form");
-			if (formContainer) {
-				formContainer.innerHTML =
-					'<p class="error-message">Error al cargar la configuración del formulario. Por favor, inténtelo más tarde.</p>';
-			} else {
-				appFormsElement.innerHTML =
-					'<p class="error-message">Error crítico al cargar la configuración del formulario.</p>';
-			}
-		}
-	}
+        appFormsElement.innerHTML =
+          '<p class="error-message">Error al inicializar el componente de formulario.</p>';
+      }
+    } catch (error) {
+      console.error(
+        "No se pudo cargar o procesar los datos del formulario para app-forms:",
+        error,
+      );
+      const formContainer = appFormsElement.querySelector(".dynamic-form");
+      if (formContainer) {
+        formContainer.innerHTML =
+          '<p class="error-message">Error al cargar la configuración del formulario. Por favor, inténtelo más tarde.</p>';
+      } else {
+        appFormsElement.innerHTML =
+          '<p class="error-message">Error crítico al cargar la configuración del formulario.</p>';
+      }
+    }
+  }
 }
 customElements.define("page-renta-de-autobuses", PageRentaDeAutobuses);

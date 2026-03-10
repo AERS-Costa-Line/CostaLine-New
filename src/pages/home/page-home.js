@@ -1,9 +1,6 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../../components/app-header.js?v=1.1.3";
-import "../../components/app-cookies-policy.js?v=1.0.3";
-import "../../components/app-button-whats.js?v=1.0.2";
-import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
@@ -21,8 +18,8 @@ import "../../components/app-section-title.js";
 import "../../components/app-dropdown.js";
 
 class PageHome extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
             
             <app-banner-slider
@@ -107,6 +104,6 @@ class PageHome extends HTMLElement {
 
             <app-blog></app-blog>
         `;
-	}
+  }
 }
 customElements.define("page-home", PageHome);

@@ -1,9 +1,6 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../../components/app-header.js?v=1.1.3";
-import "../../components/app-cookies-policy.js?v=1.0.3";
-import "../../components/app-button-whats.js?v=1.0.2";
-import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
@@ -52,14 +49,16 @@ class PageTerminalesTaquillas extends HTMLElement {
       return;
     }
 
-		try {
-			const response = await fetch("../../src/data/terminales-y-taquillas/card-image-term-taqui.json");
-			if (!response.ok) {
-				throw new Error(
-					`HTTP error! status: ${response.status} al cargar card-image-term-taqui.json`,
-				);
-			}
-			const cardsData = await response.json();
+    try {
+      const response = await fetch(
+        "../../src/data/terminales-y-taquillas/card-image-term-taqui.json",
+      );
+      if (!response.ok) {
+        throw new Error(
+          `HTTP error! status: ${response.status} al cargar card-image-term-taqui.json`,
+        );
+      }
+      const cardsData = await response.json();
 
       if (!cardsData || !Array.isArray(cardsData)) {
         throw new Error(
@@ -88,25 +87,25 @@ class PageTerminalesTaquillas extends HTMLElement {
     }
   }
 
-	async loadAndRenderDropdowns() {
-		try {
-			const response = await fetch(
-				"../../src/data/dropdown-preguntas-frecuentes.json",
-			);
-			if (!response.ok) {
-				throw new Error(`HTTP error! status: ${response.status}`);
-			}
-			const dropdownsData = await response.json();
-			this.renderDropdowns(dropdownsData);
-		} catch (error) {
-			console.error("Error al cargar o parsear dropdown-data.json:", error);
-			const container = this.querySelector("#dropdowns-container");
-			if (container) {
-				container.innerHTML =
-					"<p>Error al cargar las preguntas frecuentes.</p>";
-			}
-		}
-	}
+  async loadAndRenderDropdowns() {
+    try {
+      const response = await fetch(
+        "../../src/data/dropdown-preguntas-frecuentes.json",
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const dropdownsData = await response.json();
+      this.renderDropdowns(dropdownsData);
+    } catch (error) {
+      console.error("Error al cargar o parsear dropdown-data.json:", error);
+      const container = this.querySelector("#dropdowns-container");
+      if (container) {
+        container.innerHTML =
+          "<p>Error al cargar las preguntas frecuentes.</p>";
+      }
+    }
+  }
 
   renderDropdowns(dropdownsData) {
     const container = this.querySelector("#dropdowns-container");

@@ -1,9 +1,6 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../../components/app-header.js?v=1.1.3";
-import "../../components/app-cookies-policy.js?v=1.0.3";
-import "../../components/app-button-whats.js?v=1.0.2";
-import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM HOME PAGE -----------------*/
@@ -19,8 +16,8 @@ import "../../components/app-modal-image.js";
 import "../../components/app-destiny-grid.js";
 
 class CdmxAiguala extends HTMLElement {
-	async connectedCallback() {
-		this.innerHTML = `
+  async connectedCallback() {
+    this.innerHTML = `
 			<app-cotiza></app-cotiza>
             <app-banner-slider
                 slides-data='[
@@ -87,6 +84,6 @@ class CdmxAiguala extends HTMLElement {
             <app-button-eva-trip></app-button-eva-trip>
 
         `;
-	}
+  }
 }
 customElements.define("page-ruta-cdmx-a-iguala", CdmxAiguala);

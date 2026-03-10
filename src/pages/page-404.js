@@ -1,9 +1,6 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../components/app-header.js?v=1.1.3";
-import "../components/app-cookies-policy.js?v=1.0.3";
-import "../components/app-button-whats.js?v=1.0.2";
-import "../components/app-button-eva-trip.js?v=1.0.2";
 import "../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
@@ -11,8 +8,8 @@ import "../components/app-footer.js?v=1.0.2";
 /*-------------------------SCRIPTS---------------------------*/
 
 class Page404 extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             
             <section class="page-404-section">
                 <div class="container">
@@ -28,6 +25,6 @@ class Page404 extends HTMLElement {
 			
 			<app-button-eva-trip></app-button-eva-trip>
         `;
-	}
+  }
 }
 customElements.define("page-404", Page404);

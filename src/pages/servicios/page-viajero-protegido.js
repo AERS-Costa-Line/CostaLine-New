@@ -1,9 +1,6 @@
 /*-------------COMPONENTES PRINCIPALES ------------------------- */
 
 import "../../components/app-header.js?v=1.1.3";
-import "../../components/app-cookies-policy.js?v=1.0.3";
-import "../../components/app-button-whats.js?v=1.0.2";
-import "../../components/app-button-eva-trip.js?v=1.0.2";
 import "../../components/app-footer.js?v=1.0.2";
 
 /*--------------IMPORT COMPONENTS FROM LANDING PAGE -----------------*/
@@ -17,8 +14,8 @@ import "../../components/app-destinations-table.js";
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageViajeroProtegido extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
             <app-cotiza></app-cotiza>
 
 
@@ -854,7 +851,7 @@ class PageViajeroProtegido extends HTMLElement {
                 </article>
             </section> 
     `;
-	}
+  }
 }
 
 customElements.define("page-viajero-protegido", PageViajeroProtegido);
