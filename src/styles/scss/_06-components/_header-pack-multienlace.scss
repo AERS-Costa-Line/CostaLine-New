@@ -88,6 +88,31 @@ header {
 
 }
 
+// --- Global Page Spacing Rules ---
+
+// SCENARIO 1: Cotiza-pack is present. En las páginas de "Pack", esto implica que el Banner Slider también está siempre presente.
+body:has(app-cotiza-pack) {
+
+    // On desktop, the header and cotiza are fixed. We add padding to the body to push all content down.
+    @media screen and (min-width: 991px) {
+        padding-top: 8rem; // Approx height of header + cotiza-pack
+    }
+
+
+
+    // When the user scrolls down, the inner .cotiza of app-cotiza-pack gets a '.hidden' class.
+    // We reduce the margin to pull the content up, leaving space only for the header.
+    &:has(app-cotiza-pack .cotiza.hidden) {
+        app-cotiza-pack+*:not(script):not(style) {
+            @media screen and (min-width: 991px) {
+                // Space for header only
+                margin-top: 6.5rem;
+            }
+        }
+    }
+}
+
+
 //submenu
 .submenu {
     position: relative;

@@ -1,6 +1,21 @@
 @use '../_01-settings/variables' as *;
 @use '../_02-tools/mixin' as *;
 
+.cotiza-pack-space {
+    @media screen and (max-width:990px) {
+        height: 5.25rem;
+    }
+
+    @media screen and (max-width:480px) {
+        height: 4rem;
+    }
+
+    /* Altura del header para evitar superposición */
+}
+.titulo-widget{
+    font-size: 12px;
+    margin-top: 5px
+}
 .cotiza {
     position: fixed;
     top: 5.25rem;
@@ -41,12 +56,4 @@
         transition: all 0.3s ease;
         transition: transform 0.8s ease;
     }
-}
-
-
-p.titulo-widget {
-  color: #003b73;
-  font-size: 1.2rem; // Mantiene la variable existente
-  padding: 5px;
-  text-align: center;
 }
