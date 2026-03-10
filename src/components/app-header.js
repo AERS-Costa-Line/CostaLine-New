@@ -130,6 +130,7 @@ class AppHeader extends HTMLElement {
 				
 			<app-modal-travelpass></app-modal-travelpass>
 			<app-modal-doters></app-modal-doters>
+			<app-modal-doters-profile></app-modal-doters-profile>
 		`;
 
     this.openDesktopSubmenuInstance = null;
