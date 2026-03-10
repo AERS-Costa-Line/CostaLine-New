@@ -143,6 +143,7 @@ header {
         height: calc(100vh - 5rem);
         overflow: hidden;
         z-index: 9999;
+        pointer-events: none;
 
         @include media("md") {
             display: block;
