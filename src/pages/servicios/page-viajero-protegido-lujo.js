@@ -17,15 +17,15 @@ import "../../components/app-destinations-table.js";
 /*-------------------------SCRIPTS---------------------------*/
 
 class PageViajeroProtegidoLujo extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         <app-cotiza></app-cotiza>
 
             
 
             <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/promociones/web/banner-viajero-protegido-seguro-de-viaje.webp","mediumImage": "../src/assets/img/banner/promociones/tablet/viajero-protegido-tablet.webp", "smallImage": "../src/assets/img/banner/promociones/movil/viajero-protegido-mobile.webp", "link": "#index.html/banner1"}
+                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/web/banner-viajero-protegido-seguro-de-viaje.webp","mediumImage": "../src/assets/img/banner/tablet/banner-viajero-protegido-seguro-de-viaje.webp", "smallImage": "../src/assets/img/banner/movil/banner-viajero-protegido-seguro-de-viaje.webp", "link": "../servicios/viajero-protegido.html"}
                 ]'
             >
             </app-banner-slider>
@@ -1466,17 +1466,17 @@ class PageViajeroProtegidoLujo extends HTMLElement {
             </section>
 
     `;
-		this.loadAndSetPetsTableData(
-			"#pets-table",
-			"../src/data/table-pets-3.json",
-		);
-	}
-	async loadAndSetPetsTableData(tableElementSelector, jsonPath) {
-		const tableElement = this.querySelector(tableElementSelector);
-		const response = await fetch(jsonPath);
-		const data = await response.json();
-		tableElement.setTableData(data);
-	}
+    this.loadAndSetPetsTableData(
+      "#pets-table",
+      "../src/data/table-pets-3.json",
+    );
+  }
+  async loadAndSetPetsTableData(tableElementSelector, jsonPath) {
+    const tableElement = this.querySelector(tableElementSelector);
+    const response = await fetch(jsonPath);
+    const data = await response.json();
+    tableElement.setTableData(data);
+  }
 }
 
 customElements.define("page-viajero-protegido-lujo", PageViajeroProtegidoLujo);
