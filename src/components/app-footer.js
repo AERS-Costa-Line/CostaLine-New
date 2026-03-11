@@ -1,5 +1,5 @@
 import "../components/app-cookies-policy.js?v=1.0.3";
-import "../components/app-button-whats.js?v=1.0.2";
+
 import "../components/app-button-eva-trip.js?v=1.0.2";
 
 class AppFooter extends HTMLElement {
@@ -28,7 +28,7 @@ class AppFooter extends HTMLElement {
       </footer>
       <app-cookies-policy></app-cookies-policy>
       <app-button-eva-trip></app-button-eva-trip>
-      <app-button-whats></app-button-whats>
+      
     `;
 
     this.fillFooterColumns();
@@ -41,7 +41,10 @@ class AppFooter extends HTMLElement {
         title: "Sobre la empresa",
         links: [
           { text: "Acerca de nosotros", href: "../../../nosotros/" },
-          { text: "Bolsa de trabajo", href: "https://grupo-de-empresas-de-autotransporte.pandape.computrabajo.com/?utm_source=chatgpt.com" },
+          {
+            text: "Bolsa de trabajo",
+            href: "https://grupo-de-empresas-de-autotransporte.pandape.computrabajo.com/?utm_source=chatgpt.com",
+          },
         ],
       },
       {
@@ -61,10 +64,22 @@ class AppFooter extends HTMLElement {
         title: "Servicios",
         links: [
           { text: "Factuarción", href: "../../../servicios/facturacion.html" },
-          { text: "Agencias", href: "https://ventas.costaline.com.mx/request.aspx?APPNAME=Navegante&PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES&_ga=2.70363408.1421465980.1688335622-27413750.1682467979&_gl=1*1ljvuz9*_gcl_au*MTE5NTUxODc1MS4xNzY5MDMwOTg3" },
-          { text: "Viaje protegido", href: "../../../servicios/viajero-protegido.html" },
-          { text: "Viaje protegido Plus", href: "../../../servicios/viajero-protegido-plus.html" },
-          { text: "Viaje protegido Lujo", href: "../../../servicios/viajero-protegido-lujo.html" },
+          {
+            text: "Agencias",
+            href: "https://ventas.costaline.com.mx/request.aspx?APPNAME=Navegante&PRGNAME=AccesoEx&ARGUMENTS=-AAG,-AH,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-A,-AES&_ga=2.70363408.1421465980.1688335622-27413750.1682467979&_gl=1*1ljvuz9*_gcl_au*MTE5NTUxODc1MS4xNzY5MDMwOTg3",
+          },
+          {
+            text: "Viaje protegido",
+            href: "../../../servicios/viajero-protegido.html",
+          },
+          {
+            text: "Viaje protegido Plus",
+            href: "../../../servicios/viajero-protegido-plus.html",
+          },
+          {
+            text: "Viaje protegido Lujo",
+            href: "../../../servicios/viajero-protegido-lujo.html",
+          },
         ],
       },
       {
@@ -74,8 +89,11 @@ class AppFooter extends HTMLElement {
             text: "Preguntas frecuentes",
             href: "../../../nosotros/preguntas-frecuentes.html",
           },
-          { text: "Cuentanos tu experiencia", href: "http://iamsateescucha.com/survey/#/pull" },
-          { text: "Mapa de Sitio", href: "../../../sitemap.html" }
+          {
+            text: "Cuentanos tu experiencia",
+            href: "http://iamsateescucha.com/survey/#/pull",
+          },
+          { text: "Mapa de Sitio", href: "../../../sitemap.html" },
         ],
       },
       {
@@ -133,7 +151,7 @@ class AppFooter extends HTMLElement {
           subSection.classList.add("footer__sublevel");
           subSection.append(
             this.createTitle(title, false),
-            this.createLinkList(links, false)
+            this.createLinkList(links, false),
           );
           section.appendChild(subSection);
         });
@@ -143,14 +161,14 @@ class AppFooter extends HTMLElement {
           subSection.classList.add("footer__sublevel");
           subSection.append(
             this.createTitleOrButton(title),
-            this.createLinkList(links)
+            this.createLinkList(links),
           );
           section.appendChild(subSection);
         });
       } else {
         section.append(
           this.createTitleOrButton(col.title),
-          this.createLinkList(col.links)
+          this.createLinkList(col.links),
         );
       }
 

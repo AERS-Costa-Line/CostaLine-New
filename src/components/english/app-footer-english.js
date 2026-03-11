@@ -1,4 +1,3 @@
-
 import "../../components/app-button-whats.js?v=1.0.2";
 import "../../components/app-cookies-policy.js?v=1.0.3";
 import "../../components/app-button-eva-trip.js?v=1.0.2";
@@ -29,7 +28,7 @@ class AppFooterEnglish extends HTMLElement {
       </footer>
       <app-cookies-policy></app-cookies-policy>
       <app-button-eva-trip></app-button-eva-trip>
-      <app-button-whats></app-button-whats>
+      
     `;
 
     this.fillFooterColumns();
@@ -131,7 +130,7 @@ class AppFooterEnglish extends HTMLElement {
           subSection.classList.add("footer__sublevel");
           subSection.append(
             this.createTitle(title, false),
-            this.createLinkList(links, false)
+            this.createLinkList(links, false),
           );
           section.appendChild(subSection);
         });
@@ -141,14 +140,14 @@ class AppFooterEnglish extends HTMLElement {
           subSection.classList.add("footer__sublevel");
           subSection.append(
             this.createTitleOrButton(title),
-            this.createLinkList(links)
+            this.createLinkList(links),
           );
           section.appendChild(subSection);
         });
       } else {
         section.append(
           this.createTitleOrButton(col.title),
-          this.createLinkList(col.links)
+          this.createLinkList(col.links),
         );
       }
 
