@@ -47,7 +47,7 @@ Redirect 301 /acerca-de-nosotros.html https://costaline.com.mx/nosotros
 Redirect 301 /aviso-privacidad.html https://costaline.com.mx/nosotros/aviso-de-privacidad.html
 Redirect 301 /preguntas-frecuentes.html https://costaline.com.mx/nosotros/preguntas-frecuentes.html
 Redirect 301 /terminos-condiciones.html https://costaline.com.mx/nosotros/terminos-condiciones.html
-
+Redirect 301 /boletos-de-autobus-a-acapulco.html https://costaline.com.mx/boletos-autobus/acapulco.html
 
 # Redireccionar de www a no-www
 RewriteCond %{HTTP_HOST} ^www\.costaline\.com\.mx [NC]
