@@ -67,11 +67,10 @@ class AppDestinationsTable extends HTMLElement {
         table.classList.add("destinations-table");
 
         const thead = table.createTHead();
-
         const headerRow = thead.insertRow();
         headerRow.setAttribute("role", "button");
         headerRow.setAttribute("tabindex", "0");
-        headerRow.setAttribute("aria-expanded", "false");
+        headerRow.setAttribute("aria-expanded", "false"); // Por defecto cerrado en móvil
         headerRow.setAttribute("aria-controls", `table-body-${i}`);
 
         const th1 = document.createElement("th");
@@ -79,14 +78,12 @@ class AppDestinationsTable extends HTMLElement {
         headerRow.appendChild(th1);
 
         const th2 = document.createElement("th");
-        th2.innerHTML = `${
-          headers[this.language].destino
-        } <span class="accordion-icon"></span>`;
+        th2.innerHTML = `${headers[this.language].destino} <span class="accordion-icon"></span>`;
         headerRow.appendChild(th2);
 
         const tbody = table.createTBody();
         tbody.id = `table-body-${i}`;
-        tbody.classList.add("destinations-table-body");
+        tbody.classList.add("destinations-table-body"); // El CSS se encargará de mostrarlo
 
         chunk.forEach((dest) => {
           const row = tbody.insertRow();
@@ -97,20 +94,13 @@ class AppDestinationsTable extends HTMLElement {
         tableWrapper.appendChild(table);
         container.appendChild(tableWrapper);
 
+        // Lógica del acordeón (funcional principalmente en móvil gracias al CSS)
         const toggleAccordion = () => {
           const isExpanded = headerRow.getAttribute("aria-expanded") === "true";
 
-          container
-            .querySelectorAll("thead tr")
-            .forEach((tr) => tr.setAttribute("aria-expanded", "false"));
-          container
-            .querySelectorAll("tbody.destinations-table-body")
-            .forEach((tb) => tb.classList.remove("active"));
-
-          if (!isExpanded) {
-            headerRow.setAttribute("aria-expanded", "true");
-            tbody.classList.add("active");
-          }
+          // Alternar estado
+          headerRow.setAttribute("aria-expanded", !isExpanded);
+          tbody.classList.toggle("active");
         };
 
         headerRow.addEventListener("click", toggleAccordion);

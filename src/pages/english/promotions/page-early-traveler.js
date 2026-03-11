@@ -149,8 +149,12 @@ class PageEarlyTraveler extends HTMLElement {
 
                 </article>
             </section>
+            <section class="__sections">
                         
-            <h3 class="__title__section">Routes</h3>
+            <app-section-title section-title="Routes"></app-section-title>
+
+            </section>
+
 
             <section class="__sections __destinations-table-section">
                 <app-destinations-table src="../../../src/data/destinos-cl.json" language="en"></app-destinations-table>
