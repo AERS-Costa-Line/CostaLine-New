@@ -1,0 +1,132 @@
+@use '../_01-settings/variables' as *;
+@use '../_02-tools/mixin' as *;
+
+// Estilos para el componente app-destinations-table
+app-destinations-table {
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.destinations-tables-container {
+    display: flex;
+    flex-direction: row; // Escritorio: en fila
+    align-items: flex-start;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    @include media("lg") {
+        padding: 0;
+        flex-direction: column; // Móvil: en columna
+        max-width: 100%;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1.2rem;
+        color: gray;
+    }
+}
+
+.destinations-table-wrapper {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    flex: 1; // Para que ocupen el mismo ancho en escritorio
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+    @include media("lg") {
+        border-radius: 0;
+        width: 100%;
+    }
+}
+
+.destinations-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    thead {
+        background-color: $primary-color; // Utiliza tu variable de color principal
+        color: white;
+
+        tr {
+
+            // En escritorio no parece botón, en móvil sí
+            @include media("lg") {
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+                user-select: none;
+
+                &:hover {
+                    filter: brightness(0.9);
+                }
+            }
+
+            &[aria-expanded="true"] .accordion-icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        th {
+            padding: 1rem 1.5rem;
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    }
+
+    tbody.destinations-table-body {
+        display: table-row-group; // Mostrar siempre el cuerpo de la tabla
+        background-color: #f9f9f9;
+
+        @include media("lg") {
+            display: none; // Oculto por defecto en móvil
+
+            &.active {
+                display: table-row-group; // Mostrar si tiene clase active
+            }
+        }
+
+        tr {
+            border-bottom: 1px solid #e0e0e0;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                background-color: #f1f1f1;
+            }
+        }
+
+        td {
+            padding: 0.8rem 1.5rem;
+            color: #333;
+        }
+    }
+}
+
+// Icono de flecha (visible solo en móvil)
+.accordion-icon {
+    display: none; // Oculto en escritorio
+
+    @include media("lg") {
+        display: inline-block;
+        vertical-align: middle;
+        width: 0.8rem;
+        height: 0.8rem;
+        margin-left: 0.5rem;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.3s ease;
+    }
+}
