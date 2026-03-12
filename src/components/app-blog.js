@@ -211,6 +211,18 @@ class AppBlog extends HTMLElement {
 		const nextButton = this.querySelector("#slide-next");
 
 		if (slider) {
+			const updateAccessibility = () => {
+				// Set tabindex on links based on slide visibility
+				slider.querySelectorAll(".slick-slide").forEach((slide) => {
+					const isHidden = slide.getAttribute("aria-hidden") === "true";
+					slide
+						.querySelectorAll("a")
+						.forEach((link) => link.setAttribute("tabindex", isHidden ? "-1" : "0"));
+				});
+			};
+
+			$(slider).on("init afterChange", updateAccessibility);
+
 			$(slider).slick({
 				vertical: true,
 				verticalSwiping: true,
