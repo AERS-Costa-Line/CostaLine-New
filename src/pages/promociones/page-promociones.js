@@ -21,9 +21,32 @@ class PagePromociones extends HTMLElement {
 
              <app-banner-slider
                 slides-data='[
-                {"id": "slide1", "title": "Banner 1", "image": "../src/assets/img/banner/web/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp","mediumImage": "../src/assets/img/banner/tablet/banner-compra-en-internet-descuento-10-de-regreso-con-3-clics.webp", "smallImage": "../src/assets/img/banner/movil/banner-3-clics.webp", "link": "#index.html/banner1"},
-                {"id": "slide2", "title": "Banner 2", "image": "../src/assets/img/banner/web/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp", "mediumImage": "../src/assets/img/banner/tablet/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp","smallImage": "../src/assets/img/banner/movil/banner-aca-diamante.webp", "link": "#index.html/banner2"},
-                {"id": "slide3", "title": "Banner 3", "image": "../src/assets/img/banner/web/banner-viaja-de-chilpancingo-a-acapulco-diamante-descuento-10-de-regreso.webp", "mediumImage": "../src/assets/img/banner/tablet/banner-viaja-de-chilpancingo-a-acapulco-diamante-descuento-10-de-regreso.webp","smallImage": "../src/assets/img/banner/movil/banner-chil-aca.webp", "link": "#index.html/banner3"}
+                    {
+                        "id": "slide1", 
+                        "title": "Banner 1", 
+                        "image": "../../src/assets/img/home/banners/web/banner-viaja-en-semana-santa-en-3-clics-descuento-10-de-regreso.webp",
+                        "mediumImage": "../../src/assets/img/home/banners/tablet/banner-viaja-en-semana-santa-en-3-clics-descuento-10-de-regreso.webp", 
+                        "smallImage": "../../src/assets/img/home/banners/mobile/banner-viaja-en-semana-santa-en-3-clics-descuento-10-de-regreso-2.webp", 
+                        "link": "./descuentos/temporada-semana-santa.html"
+                    },
+
+                    {
+                        "id": "slide2", 
+                        "title": "Banner 2", 
+                        "image": "../../src/assets/img/banner/web/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp", 
+                        "mediumImage": "../../src/assets/img/banner/tablet/banner-viaja-acapulco-diamante-sin-escalas-10-desccuento-de-regreso.webp",
+                        "smallImage": "../../src/assets/img/banner/movil/banner-aca-diamante.webp", 
+                        "link": "./boletos-autobus/acapulco-diamante.html"
+                    },
+                    
+                    {
+                        "id": "slide3", 
+                        "title": "Banner 3", 
+                        "image": "../../src/assets/img/home/banners/web/banner-nuevas-rutas-viaj-desde-taxco-a-acapulco.webp",
+                        "mediumImage": "../../src/assets/img/home/banners/tablet/banner-nuevas-rutas-viaj-desde-taxco-a-acapulco.webp", 
+                        "smallImage": "../../src/assets/img/home/banners/mobile/banner-nuevas-rutas-viaj-desde-taxco-a-acapulco.webp", 
+                        "link": "./boletos-autobus/acapulco.html"
+                    }
                 ]'
             >
             </app-banner-slider>
@@ -35,17 +58,17 @@ class PagePromociones extends HTMLElement {
                   <div class="__grid-container">
                     <article class="__article__promo">
                         <h3 class="__article-title">Compra con descuento </h3>
-                       <a class="__article-link" href="../../../promociones/ofertas-en-1-click.html">  <img src="../src/assets/img/promociones/costa-descuentos.webp" alt="Atencion a clientes"> </a>
+                       <a class="__article-link" href="../descuentos/viajero-anticipado/">  <img src="../src/assets/img/promociones/costa-descuentos.webp" alt="Atencion a clientes"> </a>
                     </article>
                     <article class="__article__promo">
                         <h3 class="__article-title">Acumula Puntos Doters</h3>
-                       <a class="__article-link" href="https://costaline.com.mx/doters/"> <img src="../src/assets/img/promociones/costa-doters.webp" alt="Atencion a clientes">  </a>
+                       <a class="__article-link" href="../doters/"> <img src="../src/assets/img/promociones/costa-doters.webp" alt="Atencion a clientes">  </a>
                     </article>
                 </div>
               <app-section-title section-title="Descuentos de Temporadas"></app-section-title>
                   <article class="__article__banner">
                       <h3 class="__article-title">Buen fin </h3>
-                      <a class="__article-banner-link" href="../../../buen-fin/index.html">  <img src="../src/assets/img/banner/promociones/web/banner-buen-fin-descuento-55.webp" alt="Atencion a clientes"> </a>
+                      <a class="__article-banner-link" href="./buen-fin.html">  <img src="../src/assets/img/banner/promociones/web/banner-buen-fin-descuento-55.webp" alt="Atencion a clientes"> </a>
                   </article>
               <app-section-title section-title="Convenios"></app-section-title>
                   <article class="__article__guide">
