@@ -1,0 +1,20 @@
+[
+  {
+    "href": "https://www.costaline.com.mx/doters",
+    "imageSrc": "../src/assets/img/home/mosaicos/mosaico-viaja-con-puntos-doters.webp",
+    "imageAlt": "Mosaico promocional de puntos Doters",
+    "title": "Puntos Doters"
+  },
+  {
+    "href": "./servicios/mas-komodo.html",
+    "imageSrc": "../src/assets/img/home/mosaicos/mosaico-viaja-desde-mexico-sur-a-acapulco-papagayo-mas-komodo-descuento-85.webp",
+    "imageAlt": "Mosaico promocional del programa de +Komodo con descuento del 85% para viajar desde el sur de México a Acapulco y Papagayo",
+    "title": "Programa +Komodo descueto del 85% para viajar del sur de México a Acapulco y Papagayo"
+  },
+  {
+    "href": "./servicios/packmultienlace",
+    "imageSrc": "../src/assets/img/home/mosaicos/mosaico-kuesky-pay-metodo-de-pago.webp",
+    "imageAlt": "Mosaico promocional del metodo de pago Kuesky Pay para compras en linea de boletos de autobús en quincenas",
+    "title": "Metodo de pago Kuesky Pay"
+  }
+]

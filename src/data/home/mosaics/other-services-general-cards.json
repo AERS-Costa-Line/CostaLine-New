@@ -1,0 +1,14 @@
+[
+  {
+    "href": "./servicios/viajero-protegido.html",
+    "imageSrc": "../src/assets/img/home/mosaicos/mosaico-viajero-protegido-seguro-de-viaje.webp",
+    "imageAlt": "Mosaico promocional del servicio de Viajero Protegido",
+    "title": "Seguro viajero protegido"
+  },
+  {
+    "href": "./servicios/packmultienlace",
+    "imageSrc": "../src/assets/img/home/mosaicos/mosaico-envios-extra-urgentes-paqueteria-terrestre-pack-multienlace.webp",
+    "imageAlt": "Mosaico promocional del servicio de Multienlace",
+    "title": "Servicio de paqueteria Pack Multienlace"
+  }
+]

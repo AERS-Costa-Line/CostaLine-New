@@ -87,10 +87,18 @@ class PageHome extends HTMLElement {
 
             <app-other-services
                 section-title-id="other-programs-section"
-                title-data-src="../../src/data/other-services-loyalty-titles.json"
-                cards-data-src="../../src/data/other-services-loyalty-cards.json"
+                title-data-src="../../src/data/home/mosaics/other-services-loyalty-titles.json"
+                cards-data-src="../../src/data/home/mosaics/other-services-loyalty-cards.json"
             >
             </app-other-services>
+
+            <app-other-services
+                section-title-id="other-services-section"
+                title-data-src="../../src/data/home/mosaics/other-services-general-titles.json"
+                cards-data-src="../../src/data/home/mosaics/other-services-general-cards.json"
+            >
+            </app-other-services>
+            
             <section class="__section __section__FATQs">
                 <app-section-title section-title="Preguntas Frecuentes de tu Viaje en Autobús"></app-section-title>
                <article class="__grid-cards-container__dropdown" id="dropdowns-container">
